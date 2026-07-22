@@ -1,0 +1,68 @@
+name: Update PetSwap Values
+
+on:
+  schedule:
+    # 06:00 and 18:00 UTC daily. Adjust to whatever "twice daily" means for you.
+    - cron: "0 6 * * *"
+    - cron: "0 18 * * *"
+  workflow_dispatch: {} # lets you trigger it manually from the Actions tab too
+
+permissions:
+  contents: write
+
+env:
+  # Without this, Python buffers stdout when it's not an interactive terminal
+  # (exactly the case in Actions), so print() statements can sit unflushed
+  # for the whole run instead of showing up live -- looks exactly like a
+  # hang even when the script is working fine. This forces real-time output.
+  PYTHONUNBUFFERED: "1"
+
+jobs:
+  update-values:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Scrape AMVGG (static HTML)
+        working-directory: scripts
+        run: python scrape_amvgg.py
+        continue-on-error: true # one source failing shouldn't block the other
+
+      - name: Scrape StarPets (direct API)
+        working-directory: scripts
+        run: python scrape_starpets.py
+        continue-on-error: true
+
+      # Elvebredd is nullified for now, not deleted -- scrape_elvebredd.py
+      # still exists and blend.py still supports a 3rd source. To bring it
+      # back: uncomment this step, uncomment "elvebredd" in blend.py's
+      # WEIGHTS dict, and uncomment playwright in requirements.txt (only
+      # Elvebredd needs a real browser; StarPets/AMVGG are plain HTTP now).
+      # - name: Scrape Elvebredd (Playwright)
+      #   working-directory: scripts
+      #   run: |
+      #     playwright install --with-deps chromium
+      #     python scrape_elvebredd.py
+      #   continue-on-error: true
+
+      - name: Blend sources into data.js
+        working-directory: scripts
+        run: |
+          cp ../data.js data.js
+          python blend.py
+          cp data.js ../data.js
+
+      - name: Commit updated data.js and images if changed
+        run: |
+          git config user.name "petswap-value-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.js images/
+          git diff --cached --quiet && echo "No changes" || git commit -m "Auto-update values ($(date -u +%Y-%m-%d\ %H:%M\ UTC))"
+          git push
