@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title>My Inventory — petswap.me</title>
+<meta name="description" content="Your Adopt Me inventory, tracked locally on petswap.me.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="index.html" class="nav-link">Trade Calculator</a>
+    <a href="inventory.html" class="nav-link active">My Inventory</a>
+    <a href="about.html" class="nav-link">About</a>
+  </nav>
+
+  <header class="site-header">
+    <h1 class="wordmark">
+      <img src="logo.png" alt="petswap.me" class="wordmark-logo">
+    </h1>
+    <p class="subheader">Everything you've confirmed into your inventory from the calculator.</p>
+  </header>
+
+  <main class="calc-shell">
+    <section class="calc-card" aria-label="Your inventory">
+
+      <div class="totals-row inventory-totals-row">
+        <div class="total total-inventory">
+          <span class="total-label">Total value</span>
+          <span class="total-value" id="inventoryTotal">0</span>
+        </div>
+      </div>
+
+      <div class="grid inventory-grid" id="inventoryGrid"></div>
+
+      <p class="inventory-empty" id="inventoryEmpty" hidden>
+        Nothing here yet. Confirm a trade from the Trade Calculator to start building your inventory.
+      </p>
+
+    </section>
+
+    <p class="disclaimer">
+      Your inventory is stored locally in this browser only — it isn't tied to an account yet,
+      so it won't follow you to another device or browser. Account integration (so your inventory
+      and value updates automatically as you trade) is planned.
+    </p>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="common.js"></script>
+  <script src="inventory.js"></script>
+</body>
+</html>
