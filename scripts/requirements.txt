@@ -1,0 +1,3 @@
+requests>=2.31
+beautifulsoup4>=4.12
+# playwright>=1.44  # only needed if you re-enable scrape_elvebredd.py -- uncomment then
