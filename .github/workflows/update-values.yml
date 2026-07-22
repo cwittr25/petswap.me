@@ -65,4 +65,19 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data.js images/
           git diff --cached --quiet && echo "No changes" || git commit -m "Auto-update values ($(date -u +%Y-%m-%d\ %H:%M\ UTC))"
+
+          # If the repo moved on since this job started (e.g. someone edited
+          # the site directly on GitHub while the scraper was running), a
+          # plain push gets rejected. Since this workflow only ever touches
+          # data.js/images/, rebasing onto the latest remote should resolve
+          # cleanly almost every time -- if it genuinely conflicts (someone
+          # editing data.js by hand at the same moment), abort safely rather
+          # than leaving the repo in a half-rebased state; this run's data
+          # is lost but the next scheduled run tries again from a clean slate.
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "::warning::Rebase conflict against a concurrent commit -- aborting this run's push. Will retry next scheduled run."
+            git rebase --abort
+            exit 1
+          fi
           git push
