@@ -106,5276 +106,348 @@ function getVariantMultiplier(flags) {
 */
 const ITEMS = [
   {
-    "id": "pets-wooly-rhino",
-    "name": "Wooly Rhino",
-    "category": "pets",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/pets/wooly-rhino.webp"
-  },
-  {
-    "id": "petwear-festive-light-crown",
-    "name": "Festive Light Crown",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/festive-light-crown.webp"
-  },
-  {
-    "id": "pets-snowball-pet",
-    "name": "Snowball Pet",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/pets/snowball-pet.webp"
-  },
-  {
-    "id": "stickers-round-fallow-deer-sticker",
-    "name": "Round Fallow Deer Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/round-fallow-deer-sticker.webp"
-  },
-  {
-    "id": "pets-swordfish",
-    "name": "Swordfish",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/swordfish.webp"
-  },
-  {
-    "id": "vehicles-red-skateboard",
-    "name": "Neon Red Skateboard",
-    "category": "vehicles",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/vehicles/neon-red-skateboard.webp"
-  },
-  {
-    "id": "vehicles-glass-snowboard",
-    "name": "Glass Snowboard",
-    "category": "vehicles",
-    "value": 2.1125,
-    "demand": 1,
-    "image": "images/vehicles/glass-snowboard.webp"
-  },
-  {
-    "id": "pets-yellowlipped-sea-krait",
-    "name": "Yellow-Lipped Sea Krait",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/yellow-lipped-sea-krait.webp"
-  },
-  {
-    "id": "toys-snow-cone-stand",
-    "name": "Snow Cone Stand",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/snow-cone-stand.webp"
-  },
-  {
-    "id": "vehicles-firework-cycle",
-    "name": "Firework Cycle",
-    "category": "vehicles",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/vehicles/firework-cycle.webp"
-  },
-  {
-    "id": "vehicles-charons-boat",
-    "name": "Charon's Boat",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/charon-s-boat.webp"
-  },
-  {
-    "id": "pets-brown-bear",
-    "name": "Brown Bear",
-    "category": "pets",
-    "value": 2.366,
-    "demand": 2,
-    "image": "images/pets/brown-bear.webp"
-  },
-  {
-    "id": "vehicles-sunshine-chariot",
-    "name": "Sunshine Chariot",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/sunshine-chariot.webp"
-  },
-  {
-    "id": "petwear-rainbow-maker",
-    "name": "Rainbow Maker",
-    "category": "petwear",
-    "value": 32.955,
-    "demand": 3,
-    "image": "images/petwear/rainbow-maker.webp"
-  },
-  {
-    "id": "petwear-golden-walrus-crown",
-    "name": "Golden Walrus Crown",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/golden-walrus-crown.webp"
-  },
-  {
-    "id": "pets-frostbite-cub",
-    "name": "Frostbite Cub",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/frostbite-cub.webp"
-  },
-  {
-    "id": "toys-classic-trade-stand",
-    "name": "Classic Trade Stand",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/toys/classic-trade-stand.webp"
-  },
-  {
-    "id": "pets-dog",
-    "name": "Dog",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/dog.webp"
-  },
-  {
-    "id": "petwear-chimney-hat",
-    "name": "Chimney Hat",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/chimney-hat.webp"
-  },
-  {
-    "id": "petwear-top-hat",
-    "name": "Top Hat",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/top-hat.webp"
-  },
-  {
-    "id": "potions-preferred-potion",
-    "name": "Preferred Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "eggs-river",
-    "name": "River",
-    "category": "eggs",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/eggs/river.webp"
-  },
-  {
-    "id": "pets-sheepdog-ducky",
-    "name": "Sheepdog Ducky",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/sheepdog-ducky.webp"
-  },
-  {
-    "id": "pets-cryptid",
-    "name": "Cryptid",
-    "category": "pets",
-    "value": 70.98,
-    "demand": 3,
-    "image": "images/pets/cryptid.webp"
-  },
-  {
-    "id": "pets-cherub-chipmunk",
-    "name": "Cherub Chipmunk",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/cherub-chipmunk.webp"
-  },
-  {
-    "id": "pets-lion",
-    "name": "Lion",
-    "category": "pets",
-    "value": 7.1825,
-    "demand": 3,
-    "image": "images/pets/lion.webp"
-  },
-  {
-    "id": "pets-seabed-creeper",
-    "name": "Seabed Creeper",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/pets/seabed-creeper.webp"
-  },
-  {
-    "id": "pets-mochi-meow",
-    "name": "Mochi Meow",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/mochi-meow.webp"
-  },
-  {
     "id": "pets-moonpine",
     "name": "Moonpine",
     "category": "pets",
-    "value": 0.338,
+    "value": 0.33,
     "demand": 1,
     "image": "images/pets/moonpine.webp"
-  },
-  {
-    "id": "petwear-gold-fairy-crown",
-    "name": "Gold Fairy Crown",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/gold-fairy-crown.webp"
-  },
-  {
-    "id": "pets-camel",
-    "name": "Camel",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/camel.webp"
-  },
-  {
-    "id": "vehicles-hot-air-balloon",
-    "name": "Hot Air Balloon",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/hot-air-balloon.webp"
-  },
-  {
-    "id": "pets-dire-stag",
-    "name": "Dire Stag",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/dire-stag.webp"
-  },
-  {
-    "id": "strollers-pea-pod-stroller",
-    "name": "Pea Pod Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/pea-pod-stroller.webp"
-  },
-  {
-    "id": "pets-sheeeeep",
-    "name": "Sheeeeep",
-    "category": "pets",
-    "value": 3.0842,
-    "demand": 2,
-    "image": "images/pets/sheeeeep.webp"
-  },
-  {
-    "id": "pets-munchkin-cat",
-    "name": "Munchkin Cat",
-    "category": "pets",
-    "value": 5.7038,
-    "demand": 3,
-    "image": "images/pets/munchkin-cat.webp"
-  },
-  {
-    "id": "stickers-cocoadile-sticker",
-    "name": "Cocoadile Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/cocoadile-sticker.webp"
-  },
-  {
-    "id": "pets-island-tarsier",
-    "name": "Island Tarsier",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/island-tarsier.webp"
-  },
-  {
-    "id": "pets-aye-aye",
-    "name": "Aye Aye",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/aye-aye.webp"
-  },
-  {
-    "id": "vehicles-rocket-sled",
-    "name": "Rocket Sled",
-    "category": "vehicles",
-    "value": 11.83,
-    "demand": 2,
-    "image": "images/vehicles/rocket-sled.webp"
-  },
-  {
-    "id": "toys-stygian-hang-glider",
-    "name": "Stygian Hang Glider",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/stygian-hang-glider.webp"
-  },
-  {
-    "id": "petwear-lava-lamp-hat",
-    "name": "Lava Lamp Hat",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/lava-lamp-hat.webp"
-  },
-  {
-    "id": "toys-banana-pogo",
-    "name": "Banana Pogo",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/banana-pogo.webp"
-  },
-  {
-    "id": "pets-piranha",
-    "name": "Piranha",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/piranha.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-party-horn",
-    "name": "2022 Birthday Party Horn",
-    "category": "petwear",
-    "value": 6.9713,
-    "demand": 3,
-    "image": "images/petwear/2022-birthday-party-horn.webp"
-  },
-  {
-    "id": "pets-cattuccino",
-    "name": "Cattuccino",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 2,
-    "image": "images/pets/cattuccino.webp"
-  },
-  {
-    "id": "food-honey",
-    "name": "Honey",
-    "category": "food",
-    "value": 0.3802,
-    "demand": 2,
-    "image": "images/food/honey.webp"
-  },
-  {
-    "id": "food-chocolate-drop",
-    "name": "Chocolate Drop",
-    "category": "food",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/food/chocolate-drop.webp"
-  },
-  {
-    "id": "pets-sea-skeleton-panda",
-    "name": "Sea Skeleton Panda",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/sea-skeleton-panda.webp"
-  },
-  {
-    "id": "pets-quokka",
-    "name": "Quokka",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/quokka.webp"
-  },
-  {
-    "id": "pets-leopard-shark",
-    "name": "Leopard Shark",
-    "category": "pets",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/pets/leopard-shark.webp"
-  },
-  {
-    "id": "vehicles-egg-delivery-machine",
-    "name": "Egg Delivery Machine",
-    "category": "vehicles",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/vehicles/egg-delivery-machine.webp"
-  },
-  {
-    "id": "pets-english-sheepdog",
-    "name": "English Sheepdog",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 2,
-    "image": "images/pets/english-sheepdog.webp"
-  },
-  {
-    "id": "vehicles-gummy-biplane",
-    "name": "Gummy Biplane",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/gummy-biplane.webp"
-  },
-  {
-    "id": "pets-snowman",
-    "name": "Snowman",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/snowman.webp"
-  },
-  {
-    "id": "pets-mrs-whiskerpips",
-    "name": "Mrs. Whiskerpips",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/mrs-whiskerpips.webp"
-  },
-  {
-    "id": "pets-naga-dragon",
-    "name": "Naga Dragon",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/pets/naga-dragon.webp"
-  },
-  {
-    "id": "stickers-pets-plus-sticker-pack",
-    "name": "Pets Plus Sticker Pack",
-    "category": "stickers",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/stickers/pets-plus-sticker-pack.webp"
-  },
-  {
-    "id": "food-golden-corn",
-    "name": "Golden Corn",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-corn.webp"
-  },
-  {
-    "id": "pets-white-sand-dollar",
-    "name": "White Sand Dollar",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/white-sand-dollar.webp"
-  },
-  {
-    "id": "gifts-christmas-gift",
-    "name": "Christmas Gift",
-    "category": "gifts",
-    "value": 5.9467,
-    "demand": 2,
-    "image": "images/gifts/christmas-gift.webp"
-  },
-  {
-    "id": "petwear-waterfall-hat",
-    "name": "Waterfall Hat",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/waterfall-hat.webp"
-  },
-  {
-    "id": "pets-blue-butterfly",
-    "name": "Blue Butterfly",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/blue-butterfly.webp"
-  },
-  {
-    "id": "petwear-headband",
-    "name": "Headband",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/headband.webp"
-  },
-  {
-    "id": "pets-ground-sloth",
-    "name": "Ground Sloth",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/ground-sloth.webp"
-  },
-  {
-    "id": "pets-metal-ox",
-    "name": "Metal Ox",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/metal-ox.webp"
-  },
-  {
-    "id": "vehicles-ice-cream-truck",
-    "name": "Ice Cream Truck",
-    "category": "vehicles",
-    "value": 0.4647,
-    "demand": 2,
-    "image": "images/vehicles/ice-cream-truck.webp"
-  },
-  {
-    "id": "vehicles-santa-copter",
-    "name": "Santa Copter",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/santa-copter.webp"
-  },
-  {
-    "id": "eggs-danger-egg",
-    "name": "Danger Egg",
-    "category": "eggs",
-    "value": 0.5312,
-    "demand": 2,
-    "image": "images/eggs/danger-egg.webp"
-  },
-  {
-    "id": "petwear-modern-jetpack",
-    "name": "Modern Jetpack",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/modern-jetpack.webp"
-  },
-  {
-    "id": "pets-golden-jaguar",
-    "name": "Golden Jaguar",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/golden-jaguar.webp"
-  },
-  {
-    "id": "strollers-baby-basket-stroller",
-    "name": "Baby Basket Stroller",
-    "category": "strollers",
-    "value": 0.8719,
-    "demand": 2,
-    "image": "images/strollers/baby-basket-stroller.webp"
-  },
-  {
-    "id": "pets-blue-betta-fish",
-    "name": "Blue Betta Fish",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/blue-betta-fish.webp"
-  },
-  {
-    "id": "pets-narwhal",
-    "name": "Narwhal",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/narwhal.webp"
-  },
-  {
-    "id": "petwear-music-box-hat",
-    "name": "Music Box Hat",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/music-box-hat.webp"
-  },
-  {
-    "id": "stickers-jimothy",
-    "name": "Jimothy",
-    "category": "stickers",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/stickers/jimothy.webp"
-  },
-  {
-    "id": "strollers-web-stroller",
-    "name": "Web Stroller",
-    "category": "strollers",
-    "value": 0.4484,
-    "demand": 1,
-    "image": "images/strollers/web-stroller.webp"
-  },
-  {
-    "id": "toys-pumpkin-rattle",
-    "name": "Pumpkin Rattle",
-    "category": "toys",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/toys/pumpkin-rattle.webp"
-  },
-  {
-    "id": "potions-antigravity-potion",
-    "name": "Anti-gravity Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-2022-birthday-confetti-drape",
-    "name": "2022 Birthday Confetti Drape",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/2022-birthday-confetti-drape.webp"
-  },
-  {
-    "id": "toys-hot-cocoa-stand",
-    "name": "Hot Cocoa Stand",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/toys/hot-cocoa-stand.webp"
-  },
-  {
-    "id": "pets-bubblegeist",
-    "name": "Bubblegeist",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/bubblegeist.webp"
-  },
-  {
-    "id": "toys-money-rattle",
-    "name": "Money Rattle",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/money-rattle.webp"
-  },
-  {
-    "id": "pets-zombie-buffalo",
-    "name": "Zombie Buffalo",
-    "category": "pets",
-    "value": 5.7038,
-    "demand": 2,
-    "image": "images/pets/zombie-buffalo.webp"
-  },
-  {
-    "id": "petwear-copter-hat",
-    "name": "Copter Hat",
-    "category": "petwear",
-    "value": 1.014,
-    "demand": 2,
-    "image": "images/petwear/copter-hat.webp"
-  },
-  {
-    "id": "vehicles-squirrel-car",
-    "name": "Squirrel Car",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/squirrel-car.webp"
-  },
-  {
-    "id": "pets-diamond-hummingbird",
-    "name": "Diamond Hummingbird",
-    "category": "pets",
-    "value": 4.0137,
-    "demand": 2,
-    "image": "images/pets/diamond-hummingbird.webp"
-  },
-  {
-    "id": "pets-candy-hare",
-    "name": "Candy Hare",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 2,
-    "image": "images/pets/candy-hare.webp"
-  },
-  {
-    "id": "vehicles-horse-cycle",
-    "name": "Horse Cycle",
-    "category": "vehicles",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/vehicles/horse-cycle.webp"
-  },
-  {
-    "id": "petwear-picnic-basket",
-    "name": "Picnic Basket",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/picnic-basket.webp"
-  },
-  {
-    "id": "eggs-pistachio",
-    "name": "Pistachio",
-    "category": "eggs",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/eggs/pistachio.webp"
-  },
-  {
-    "id": "potions-big-brew-potion",
-    "name": "Big Brew Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "vehicles-inspector-sherbet-bus",
-    "name": "Inspector Sherbet Bus",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/inspector-sherbet-bus.webp"
-  },
-  {
-    "id": "toys-tea-party-chair",
-    "name": "Tea Party Chair",
-    "category": "toys",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/toys/tea-party-chair.webp"
-  },
-  {
-    "id": "vehicles-white-skateboard",
-    "name": "White Skateboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/white-skateboard.webp"
-  },
-  {
-    "id": "vehicles-magical-girl-car",
-    "name": "Magical Girl Car",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/magical-girl-car.webp"
-  },
-  {
-    "id": "pets-rainbow-trout",
-    "name": "Rainbow Trout",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/rainbow-trout.webp"
-  },
-  {
-    "id": "pets-sweetheart-rat",
-    "name": "Sweetheart Rat",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/sweetheart-rat.webp"
-  },
-  {
-    "id": "vehicles-ice-queen-sleigh",
-    "name": "Ice Queen Sleigh",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/ice-queen-sleigh.webp"
-  },
-  {
-    "id": "vehicles-clown-car",
-    "name": "Clown Car",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/clown-car.webp"
-  },
-  {
-    "id": "stickers-sasquatch-sticker",
-    "name": "Sasquatch Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/sasquatch-sticker.webp"
-  },
-  {
-    "id": "pets-lamb",
-    "name": "Lamb",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/lamb.webp"
-  },
-  {
-    "id": "pets-merhorse",
-    "name": "Merhorse",
-    "category": "pets",
-    "value": 0.4014,
-    "demand": 1,
-    "image": "images/pets/merhorse.webp"
-  },
-  {
-    "id": "pets-chestnut-glyptodon",
-    "name": "Chestnut Glyptodon",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/chestnut-glyptodon.webp"
-  },
-  {
-    "id": "pets-black-moon-bear",
-    "name": "Black Moon Bear",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/black-moon-bear.webp"
-  },
-  {
-    "id": "petwear-jetpack",
-    "name": "Jetpack",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/jetpack.webp"
-  },
-  {
-    "id": "petwear-cotton-candy-hat",
-    "name": "Cotton Candy Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/petwear/cotton-candy-hat.webp"
-  },
-  {
-    "id": "pets-rock-pigeon",
-    "name": "Rock Pigeon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/rock-pigeon.webp"
-  },
-  {
-    "id": "toys-hugging-egg",
-    "name": "Hugging Egg",
-    "category": "toys",
-    "value": 1.2675,
-    "demand": 1,
-    "image": "images/toys/hugging-egg.webp"
-  },
-  {
-    "id": "pets-pirate-ghost-capuchin-monkey",
-    "name": "Pirate Ghost Capuchin Monkey",
-    "category": "pets",
-    "value": 6.76,
-    "demand": 2,
-    "image": "images/pets/pirate-ghost-capuchin-monkey.webp"
-  },
-  {
-    "id": "eggs-aztec-egg",
-    "name": "Aztec Egg",
-    "category": "eggs",
-    "value": 0.0411,
-    "demand": 1,
-    "image": "images/eggs/aztec-egg.webp"
-  },
-  {
-    "id": "pets-cuddly-candle",
-    "name": "Cuddly Candle",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/cuddly-candle.webp"
-  },
-  {
-    "id": "eggs-ocean-egg",
-    "name": "Ocean Egg",
-    "category": "eggs",
-    "value": 0.3319,
-    "demand": 2,
-    "image": "images/eggs/ocean-egg.webp"
-  },
-  {
-    "id": "pets-classic-teapot",
-    "name": "Classic Teapot",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/classic-teapot.webp"
-  },
-  {
-    "id": "food-christmas-pudding-pup-bait",
-    "name": "Christmas Pudding Pup Bait",
-    "category": "food",
-    "value": 3.8025,
-    "demand": 2,
-    "image": "images/food/christmas-pudding-pup-bait.webp"
-  },
-  {
-    "id": "toys-candy-cannon",
-    "name": "Candy Cannon",
-    "category": "toys",
-    "value": 109.85,
-    "demand": 2,
-    "image": "images/toys/candy-cannon.webp"
-  },
-  {
-    "id": "vehicles-cupids-coupe",
-    "name": "Cupid's Coupe",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/cupid-s-coupe.webp"
-  },
-  {
-    "id": "pets-crab",
-    "name": "Crab",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/crab.webp"
-  },
-  {
-    "id": "toys-starpower-wand",
-    "name": "Starpower Wand",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/starpower-wand.webp"
-  },
-  {
-    "id": "strollers-bunny-stroller",
-    "name": "Bunny Stroller",
-    "category": "strollers",
-    "value": 0.6493,
-    "demand": 2,
-    "image": "images/strollers/bunny-stroller.webp"
-  },
-  {
-    "id": "pets-happy-clam",
-    "name": "Happy Clam",
-    "category": "pets",
-    "value": 2.3237,
-    "demand": 2,
-    "image": "images/pets/happy-clam.webp"
-  },
-  {
-    "id": "petwear-festive-scarf",
-    "name": "Festive Scarf",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/festive-scarf.webp"
-  },
-  {
-    "id": "petwear-gold-tiara",
-    "name": "Gold Tiara",
-    "category": "petwear",
-    "value": 0.1056,
-    "demand": 1,
-    "image": "images/petwear/gold-tiara.webp"
-  },
-  {
-    "id": "toys-throwing-pumpkin",
-    "name": "Throwing Pumpkin",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/throwing-pumpkin.webp"
-  },
-  {
-    "id": "pets-ballet-swan",
-    "name": "Ballet Swan",
-    "category": "pets",
-    "value": 2.873,
-    "demand": 2,
-    "image": "images/pets/ballet-swan.webp"
-  },
-  {
-    "id": "pets-snow-cat",
-    "name": "Snow Cat",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/snow-cat.webp"
-  },
-  {
-    "id": "pets-jumpscare",
-    "name": "Jumpscare",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/jumpscare.webp"
-  },
-  {
-    "id": "pets-otter",
-    "name": "Otter",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/otter.webp"
-  },
-  {
-    "id": "toys-candy-flare-paint",
-    "name": "Candy Flare Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/candy-flare-mega-neon-paint.webp"
-  },
-  {
-    "id": "strollers-meadow-barrow-stroller",
-    "name": "Meadow Barrow Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-balloons",
-    "name": "Balloons",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/balloons.webp"
-  },
-  {
-    "id": "pets-kookaburra",
-    "name": "Kookaburra",
-    "category": "pets",
-    "value": 1.5633,
-    "demand": 2,
-    "image": "images/pets/kookaburra.webp"
-  },
-  {
-    "id": "pets-matcha-cat",
-    "name": "Matcha Cat",
-    "category": "pets",
-    "value": 4.225,
-    "demand": 2,
-    "image": "images/pets/matcha-cat.webp"
-  },
-  {
-    "id": "vehicles-choo-choo-train",
-    "name": "Choo Choo Train",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/choo-choo-train.webp"
-  },
-  {
-    "id": "pets-walrus",
-    "name": "Walrus",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/walrus.webp"
-  },
-  {
-    "id": "pets-bandicoot",
-    "name": "Bandicoot",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/bandicoot.webp"
-  },
-  {
-    "id": "petwear-heart-ribbon",
-    "name": "Heart Ribbon",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/heart-ribbon.webp"
-  },
-  {
-    "id": "pets-rock",
-    "name": "Rock",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/rock.webp"
-  },
-  {
-    "id": "petwear-police-cap",
-    "name": "Police Cap",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/police-cap.webp"
-  },
-  {
-    "id": "pets-ancient-dragon",
-    "name": "Ancient Dragon",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/ancient-dragon.webp"
-  },
-  {
-    "id": "petwear-buttoned-ushanka",
-    "name": "Buttoned Ushanka",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/buttoned-ushanka.webp"
-  },
-  {
-    "id": "pets-water-rabbit",
-    "name": "Water Rabbit",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 2,
-    "image": "images/pets/water-rabbit.webp"
-  },
-  {
-    "id": "stickers-blazing-lion-animated-sticker",
-    "name": "Blazing Lion Animated Sticker",
-    "category": "stickers",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/stickers/blazing-lion-animated-sticker.webp"
-  },
-  {
-    "id": "pets-african-wild-dog",
-    "name": "African Wild Dog",
-    "category": "pets",
-    "value": 74.36,
-    "demand": 3,
-    "image": "images/pets/african-wild-dog.webp"
-  },
-  {
-    "id": "vehicles-gingerbread-stunt-plane",
-    "name": "Gingerbread Stunt Plane",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/gingerbread-stunt-plane.webp"
-  },
-  {
-    "id": "pets-kiwi-kiwi",
-    "name": "Kiwi Kiwi",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/kiwi-kiwi.webp"
-  },
-  {
-    "id": "vehicles-pink-skateboard",
-    "name": "Pink Skateboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/pink-skateboard.webp"
-  },
-  {
-    "id": "strollers-lunar-stroller",
-    "name": "Lunar Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/lunar-stroller.webp"
-  },
-  {
-    "id": "pets-latte-kitsune",
-    "name": "Latte Kitsune",
-    "category": "pets",
-    "value": 1.9857,
-    "demand": 2,
-    "image": "images/pets/latte-kitsune.webp"
-  },
-  {
-    "id": "stickers-coconut-friend-sticker",
-    "name": "Coconut Friend Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/coconut-friend-sticker.webp"
-  },
-  {
-    "id": "pets-mechapup",
-    "name": "Mechapup",
-    "category": "pets",
-    "value": 9.0838,
-    "demand": 2,
-    "image": "images/pets/mechapup.webp"
-  },
-  {
-    "id": "strollers-vampire-stroller",
-    "name": "Vampire Stroller",
-    "category": "strollers",
-    "value": 2.0219,
-    "demand": 2,
-    "image": "images/strollers/vampire-stroller.webp"
-  },
-  {
-    "id": "pets-phoenix",
-    "name": "Phoenix",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/phoenix.webp"
-  },
-  {
-    "id": "pets-magpie",
-    "name": "Magpie",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/magpie.webp"
-  },
-  {
-    "id": "pets-bat",
-    "name": "Bat",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/bat.webp"
-  },
-  {
-    "id": "vehicles-fissy-skateboard",
-    "name": "Fissy Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/fissy-skateboard.webp"
-  },
-  {
-    "id": "pets-goldhorn",
-    "name": "Goldhorn",
-    "category": "pets",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/pets/goldhorn.webp"
-  },
-  {
-    "id": "vehicles-festive-wagon",
-    "name": "Festive Wagon",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/festive-wagon.webp"
-  },
-  {
-    "id": "gifts-moon-bear-box",
-    "name": "Moon Bear Box",
-    "category": "gifts",
-    "value": 0.2981,
-    "demand": 1,
-    "image": "images/gifts/moon-bear-box.webp"
-  },
-  {
-    "id": "pets-zombie-wolf",
-    "name": "Zombie Wolf",
-    "category": "pets",
-    "value": 1.5633,
-    "demand": 2,
-    "image": "images/pets/zombie-wolf.webp"
-  },
-  {
-    "id": "stickers-orange-butterfly-sticker",
-    "name": "Orange Butterfly Sticker",
-    "category": "stickers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/stickers/orange-butterfly-sticker.webp"
-  },
-  {
-    "id": "vehicles-gyrocopter",
-    "name": "Gyrocopter",
-    "category": "vehicles",
-    "value": 1.0563,
-    "demand": 1,
-    "image": "images/vehicles/gyrocopter.webp"
-  },
-  {
-    "id": "vehicles-husky-sled",
-    "name": "Husky Sled",
-    "category": "vehicles",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/vehicles/husky-sled.webp"
-  },
-  {
-    "id": "petwear-chick-backpack",
-    "name": "Chick Backpack",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/chick-backpack.webp"
-  },
-  {
-    "id": "pets-unicorn",
-    "name": "Unicorn",
-    "category": "pets",
-    "value": 0.9295,
-    "demand": 3,
-    "image": "images/pets/unicorn.webp"
-  },
-  {
-    "id": "pets-crocodile",
-    "name": "Crocodile",
-    "category": "pets",
-    "value": 7.1825,
-    "demand": 3,
-    "image": "images/pets/crocodile.webp"
-  },
-  {
-    "id": "toys-unicorn-leash",
-    "name": "Unicorn Leash",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/unicorn-leash.webp"
-  },
-  {
-    "id": "pets-arctic-fox",
-    "name": "Arctic Fox",
-    "category": "pets",
-    "value": 4.732,
-    "demand": 3,
-    "image": "images/pets/arctic-fox.webp"
-  },
-  {
-    "id": "vehicles-medieval-wagon",
-    "name": "Medieval Wagon",
-    "category": "vehicles",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/vehicles/medieval-wagon.webp"
-  },
-  {
-    "id": "pets-pain-au-chat",
-    "name": "Pain au Chat",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 2,
-    "image": "images/pets/pain-au-chat.webp"
-  },
-  {
-    "id": "stickers-shark-puppy-sticker",
-    "name": "Shark Puppy Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/shark-puppy-sticker.webp"
-  },
-  {
-    "id": "pets-jester-dragon",
-    "name": "Jester Dragon",
-    "category": "pets",
-    "value": 4.6475,
-    "demand": 2,
-    "image": "images/pets/jester-dragon.webp"
-  },
-  {
-    "id": "pets-princess-mare",
-    "name": "Princess Mare",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/princess-mare.webp"
-  },
-  {
-    "id": "pets-balloon-unicorn",
-    "name": "Balloon Unicorn",
-    "category": "pets",
-    "value": 79.0075,
-    "demand": 3,
-    "image": "images/pets/balloon-unicorn.webp"
-  },
-  {
-    "id": "vehicles-flying-cloud",
-    "name": "Flying Cloud",
-    "category": "vehicles",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/vehicles/flying-cloud.webp"
-  },
-  {
-    "id": "pets-kitty-bat",
-    "name": "Kitty Bat",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/kitty-bat.webp"
-  },
-  {
-    "id": "vehicles-trireme",
-    "name": "Trireme",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/trireme.webp"
-  },
-  {
-    "id": "petwear-rain-hat",
-    "name": "Rain Hat",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/petwear/rain-hat.webp"
-  },
-  {
-    "id": "gifts-monkey-box",
-    "name": "Monkey Box",
-    "category": "gifts",
-    "value": 8.4352,
-    "demand": 2,
-    "image": "images/gifts/monkey-box.webp"
-  },
-  {
-    "id": "pets-persian-cat",
-    "name": "Persian Cat",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/persian-cat.webp"
-  },
-  {
-    "id": "potions-busy-body-potion",
-    "name": "Busy Body Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-toasty-red-panda-sticker",
-    "name": "Toasty Red Panda Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/toasty-red-panda-sticker.webp"
-  },
-  {
-    "id": "strollers-reindeer-stroller",
-    "name": "Reindeer Stroller",
-    "category": "strollers",
-    "value": 0.1447,
-    "demand": 1,
-    "image": "images/strollers/reindeer-stroller.webp"
-  },
-  {
-    "id": "strollers-droplet-stroller",
-    "name": "Droplet Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/droplet-stroller.webp"
-  },
-  {
-    "id": "vehicles-speedboat",
-    "name": "Speedboat",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/speedboat.webp"
-  },
-  {
-    "id": "pets-diamond-butterfly",
-    "name": "Diamond Butterfly",
-    "category": "pets",
-    "value": 32.5325,
-    "demand": 2,
-    "image": "images/pets/diamond-butterfly.webp"
-  },
-  {
-    "id": "petwear-unicorn-backpack",
-    "name": "Unicorn Backpack",
-    "category": "petwear",
-    "value": 2.3237,
-    "demand": 2,
-    "image": "images/petwear/unicorn-backpack.webp"
-  },
-  {
-    "id": "strollers-old-lump-of-log-stroller",
-    "name": "Old Lump of Log Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-halloween-orange-pumpkin-friend-hat",
-    "name": "Halloween Orange Pumpkin Friend Hat",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/halloween-orange-pumpkin-friend-hat.webp"
-  },
-  {
-    "id": "pets-dark-choccybunny",
-    "name": "Dark Choccybunny",
-    "category": "pets",
-    "value": 0.3634,
-    "demand": 1,
-    "image": "images/pets/dark-choccybunny.webp"
-  },
-  {
-    "id": "pets-dragonfruit-fox",
-    "name": "Dragonfruit Fox",
-    "category": "pets",
-    "value": 1.7745,
-    "demand": 2,
-    "image": "images/pets/dragonfruit-fox.webp"
-  },
-  {
-    "id": "pets-astronaut-gorilla",
-    "name": "Astronaut Gorilla",
-    "category": "pets",
-    "value": 0.9718,
-    "demand": 2,
-    "image": "images/pets/astronaut-gorilla.webp"
-  },
-  {
-    "id": "pets-super-saru",
-    "name": "Super Saru",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/super-saru.webp"
-  },
-  {
-    "id": "toys-llama-plush",
-    "name": "Llama Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/llama-plush.webp"
-  },
-  {
-    "id": "petwear-swamp-mist-wings",
-    "name": "Swamp Mist Wings",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/swamp-mist-wings.webp"
-  },
-  {
-    "id": "pets-malaysian-tapir",
-    "name": "Malaysian Tapir",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/malaysian-tapir.webp"
-  },
-  {
-    "id": "pets-nautilus",
-    "name": "Nautilus",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/nautilus.webp"
-  },
-  {
-    "id": "pets-waffle-wyrm",
-    "name": "Waffle Wyrm",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/waffle-wyrm.webp"
-  },
-  {
-    "id": "pets-hare",
-    "name": "Hare",
-    "category": "pets",
-    "value": 1.8167,
-    "demand": 2,
-    "image": "images/pets/hare.webp"
-  },
-  {
-    "id": "toys-ice-grapple",
-    "name": "Ice Grapple",
-    "category": "toys",
-    "value": 0.2324,
-    "demand": 1,
-    "image": "images/toys/ice-grapple.webp"
-  },
-  {
-    "id": "vehicles-axel",
-    "name": "Axel",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/axel.webp"
-  },
-  {
-    "id": "strollers-egg-basket-stroller",
-    "name": "Egg Basket Stroller",
-    "category": "strollers",
-    "value": 0.123,
-    "demand": 1,
-    "image": "images/strollers/egg-basket-stroller.webp"
-  },
-  {
-    "id": "eggs-urban-egg",
-    "name": "Urban Egg",
-    "category": "eggs",
-    "value": 0.524,
-    "demand": 2,
-    "image": "images/eggs/urban-egg.webp"
   },
   {
     "id": "petwear-mystic-wing-crown",
     "name": "Mystic Wing Crown",
     "category": "petwear",
-    "value": 0.1268,
+    "value": 0.1237,
     "demand": 1,
     "image": "images/petwear/mystic-wing-crown.webp"
-  },
-  {
-    "id": "petwear-cheesecake-hat",
-    "name": "Cheesecake Hat",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/cheesecake-hat.webp"
-  },
-  {
-    "id": "gifts-duckling-box",
-    "name": "Duckling Box",
-    "category": "gifts",
-    "value": 0.6903,
-    "demand": 2,
-    "image": "images/gifts/duckling-box.webp"
-  },
-  {
-    "id": "pets-violet-friend",
-    "name": "Violet Friend",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/violet-friend.webp"
-  },
-  {
-    "id": "toys-cherry-blossom-hang-glider",
-    "name": "Cherry Blossom Hang Glider",
-    "category": "toys",
-    "value": 3.042,
-    "demand": 2,
-    "image": "images/toys/cherry-blossom-hang-glider.webp"
-  },
-  {
-    "id": "pets-2025-birthday-butterfly",
-    "name": "2025 Birthday Butterfly",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/2025-birthday-butterfly.webp"
-  },
-  {
-    "id": "strollers-catapult-stroller",
-    "name": "Catapult Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/catapult-stroller.webp"
-  },
-  {
-    "id": "pets-headless-horse",
-    "name": "Headless Horse",
-    "category": "pets",
-    "value": 0.9718,
-    "demand": 2,
-    "image": "images/pets/headless-horse.webp"
-  },
-  {
-    "id": "pets-nightmare-owl",
-    "name": "Nightmare Owl",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/nightmare-owl.webp"
-  },
-  {
-    "id": "vehicles-green-skateboard",
-    "name": "Neon Green Skateboard",
-    "category": "vehicles",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/vehicles/neon-green-skateboard.webp"
-  },
-  {
-    "id": "stickers-fire-dimension-sticker-pack",
-    "name": "Fire Dimension Sticker Pack",
-    "category": "stickers",
-    "value": 0.0296,
-    "demand": 1,
-    "image": "images/stickers/fire-dimension-sticker-pack.webp"
-  },
-  {
-    "id": "pets-firefighter-gibbon",
-    "name": "Firefighter Gibbon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/firefighter-gibbon.webp"
-  },
-  {
-    "id": "pets-velocirooster",
-    "name": "Velocirooster",
-    "category": "pets",
-    "value": 4.6475,
-    "demand": 2,
-    "image": "images/pets/velocirooster.webp"
-  },
-  {
-    "id": "pets-catte",
-    "name": "Catte",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/catte.webp"
-  },
-  {
-    "id": "toys-camping-tent",
-    "name": "Camping Tent",
-    "category": "toys",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/toys/camping-tent.webp"
-  },
-  {
-    "id": "petwear-firey-aura",
-    "name": "Firey Aura",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/firey-aura.webp"
-  },
-  {
-    "id": "potions-polymorph-potion",
-    "name": "Polymorph Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-snow-leopard",
-    "name": "Snow Leopard",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/snow-leopard.webp"
-  },
-  {
-    "id": "petwear-spring-bunny-feet",
-    "name": "Spring Bunny Feet",
-    "category": "petwear",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/petwear/spring-bunny-feet.webp"
-  },
-  {
-    "id": "pets-tortuga-de-la-isla",
-    "name": "Tortuga de la Isla",
-    "category": "pets",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/pets/tortuga-de-la-isla.webp"
-  },
-  {
-    "id": "pets-irish-setter",
-    "name": "Irish Setter",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/irish-setter.webp"
-  },
-  {
-    "id": "petwear-grinder-hat",
-    "name": "Grinder Hat",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/grinder-hat.webp"
-  },
-  {
-    "id": "petwear-rotating-periscope",
-    "name": "Rotating Periscope",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/rotating-periscope.webp"
-  },
-  {
-    "id": "vehicles-chairlift",
-    "name": "Chairlift",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/chairlift.webp"
-  },
-  {
-    "id": "pets-ghost-chick",
-    "name": "Ghost Chick",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/ghost-chick.webp"
-  },
-  {
-    "id": "pets-ghostly-cat",
-    "name": "Ghostly Cat",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/ghostly-cat.webp"
-  },
-  {
-    "id": "pets-cake-friend",
-    "name": "Cake Friend",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/pets/cake-friend.webp"
-  },
-  {
-    "id": "toys-phoenix-plush",
-    "name": "Phoenix Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/phoenix-plush.webp"
-  },
-  {
-    "id": "petwear-gold-crown",
-    "name": "Gold Crown",
-    "category": "petwear",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/petwear/gold-crown.webp"
-  },
-  {
-    "id": "toys-flying-broomstick",
-    "name": "Flying Broomstick",
-    "category": "toys",
-    "value": 43.095,
-    "demand": 2,
-    "image": "images/toys/flying-broomstick.webp"
-  },
-  {
-    "id": "gifts-ice-tray",
-    "name": "Ice Tray",
-    "category": "gifts",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/gifts/ice-tray.webp"
-  },
-  {
-    "id": "pets-frost-dragon",
-    "name": "Frost Dragon",
-    "category": "pets",
-    "value": 147.03,
-    "demand": 3,
-    "image": "images/pets/frost-dragon.webp"
-  },
-  {
-    "id": "pets-oryx",
-    "name": "Oryx",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/oryx.webp"
-  },
-  {
-    "id": "strollers-tulip-stroller",
-    "name": "Tulip Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/tulip-stroller.webp"
-  },
-  {
-    "id": "petwear-strawberry-clip",
-    "name": "Strawberry Clip",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/strawberry-clip.webp"
-  },
-  {
-    "id": "pets-bee",
-    "name": "Bee",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/bee.webp"
-  },
-  {
-    "id": "pets-tawny-frogmouth",
-    "name": "Tawny Frogmouth",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/tawny-frogmouth.webp"
-  },
-  {
-    "id": "petwear-strawberry-shortcake-bow",
-    "name": "Strawberry Shortcake Bow",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/strawberry-shortcake-bow.webp"
-  },
-  {
-    "id": "toys-dandelion-propeller",
-    "name": "Dandelion Propeller",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/dandelion-propeller.webp"
-  },
-  {
-    "id": "pets-ox",
-    "name": "Ox",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/ox.webp"
-  },
-  {
-    "id": "pets-partridge",
-    "name": "Partridge",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/partridge.webp"
-  },
-  {
-    "id": "pets-robot",
-    "name": "Robot",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/robot.webp"
-  },
-  {
-    "id": "pets-pink-cat",
-    "name": "Pink Cat",
-    "category": "pets",
-    "value": 4.732,
-    "demand": 3,
-    "image": "images/pets/pink-cat.webp"
-  },
-  {
-    "id": "pets-humbug",
-    "name": "Humbug",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/humbug.webp"
-  },
-  {
-    "id": "toys-puppy-plush",
-    "name": "Puppy Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/puppy-plush.webp"
-  },
-  {
-    "id": "pets-giant-blue-scarab",
-    "name": "Giant Blue Scarab",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/giant-blue-scarab.webp"
-  },
-  {
-    "id": "petwear-sushi-skateboard",
-    "name": "Sushi Skateboard",
-    "category": "petwear",
-    "value": 1.014,
-    "demand": 2,
-    "image": "images/petwear/sushi-skateboard.webp"
-  },
-  {
-    "id": "vehicles-stocked-santa-sleigh",
-    "name": "Stocked Santa Sleigh",
-    "category": "vehicles",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/vehicles/stocked-santa-sleigh.webp"
-  },
-  {
-    "id": "gifts-wolf-box",
-    "name": "Wolf Box",
-    "category": "gifts",
-    "value": 0.7353,
-    "demand": 2,
-    "image": "images/gifts/wolf-box.webp"
-  },
-  {
-    "id": "food-goldenrod-flower",
-    "name": "Goldenrod Flower",
-    "category": "food",
-    "value": 4.225,
-    "demand": 2,
-    "image": "images/food/goldenrod-flower.webp"
-  },
-  {
-    "id": "pets-rose-dragon",
-    "name": "Rose Dragon",
-    "category": "pets",
-    "value": 2.028,
-    "demand": 2,
-    "image": "images/pets/rose-dragon.webp"
-  },
-  {
-    "id": "pets-red-cardinal",
-    "name": "Red Cardinal",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/red-cardinal.webp"
-  },
-  {
-    "id": "pets-frogspawn",
-    "name": "Frogspawn",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/frogspawn.webp"
-  },
-  {
-    "id": "food-stars-egg",
-    "name": "Stars Egg",
-    "category": "food",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/food/stars-egg.webp"
-  },
-  {
-    "id": "potions-bonus-bucks-potion",
-    "name": "Bonus Bucks Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "strollers-crate-stroller",
-    "name": "Crate Stroller",
-    "category": "strollers",
-    "value": 0.0429,
-    "demand": 1,
-    "image": "images/strollers/crate-stroller.webp"
-  },
-  {
-    "id": "vehicles-headless-horsemans-biplane",
-    "name": "Headless Horseman's Biplane",
-    "category": "vehicles",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/vehicles/headless-horseman-s-biplane.webp"
-  },
-  {
-    "id": "pets-black-kite",
-    "name": "Black Kite",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/black-kite.webp"
-  },
-  {
-    "id": "pets-subzero-scorpion",
-    "name": "Subzero Scorpion",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/subzero-scorpion.webp"
-  },
-  {
-    "id": "pets-sugar-axolotl",
-    "name": "Sugar Axolotl",
-    "category": "pets",
-    "value": 6.76,
-    "demand": 2,
-    "image": "images/pets/sugar-axolotl.webp"
-  },
-  {
-    "id": "pets-chocolate-labrador",
-    "name": "Chocolate Labrador",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/chocolate-labrador.webp"
-  },
-  {
-    "id": "toys-frosty-glow-paint",
-    "name": "Frosty Glow Mega Neon Paint",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 3,
-    "image": "images/toys/frosty-glow-mega-neon-paint.webp"
-  },
-  {
-    "id": "pets-lammergeier",
-    "name": "Lammergeier",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/lammergeier.webp"
-  },
-  {
-    "id": "vehicles-bathtub",
-    "name": "Bathtub",
-    "category": "vehicles",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/vehicles/bathtub.webp"
-  },
-  {
-    "id": "pets-ash-zebra",
-    "name": "Ash Zebra",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/ash-zebra.webp"
-  },
-  {
-    "id": "pets-sushi-penguin",
-    "name": "Sushi Penguin",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/sushi-penguin.webp"
-  },
-  {
-    "id": "strollers-apple-barrel-stroller",
-    "name": "Apple Barrel Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/apple-barrel-stroller.webp"
-  },
-  {
-    "id": "pets-yeti",
-    "name": "Yeti",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 2,
-    "image": "images/pets/yeti.webp"
-  },
-  {
-    "id": "vehicles-bubble-car",
-    "name": "Bubble Car",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/bubble-car.webp"
-  },
-  {
-    "id": "vehicles-unicorn-zombie-ponycycle",
-    "name": "Unicorn Zombie Ponycycle",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/unicorn-zombie-ponycycle.webp"
-  },
-  {
-    "id": "toys-skeleton-pogo-stick",
-    "name": "Skeleton Pogo Stick",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/skeleton-pogo-stick.webp"
-  },
-  {
-    "id": "pets-kirin",
-    "name": "Kirin",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/kirin.webp"
-  },
-  {
-    "id": "petwear-money-hat",
-    "name": "Money Hat",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/money-hat.webp"
-  },
-  {
-    "id": "pets-rat",
-    "name": "Rat",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/rat.webp"
-  },
-  {
-    "id": "pets-white-amazon",
-    "name": "White Amazon",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/white-amazon.webp"
-  },
-  {
-    "id": "pets-kitsune",
-    "name": "Kitsune",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/kitsune.webp"
-  },
-  {
-    "id": "pets-glyptodon-ducky",
-    "name": "Glyptodon Ducky",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/glyptodon-ducky.webp"
-  },
-  {
-    "id": "pets-priceless-shrimp",
-    "name": "Priceless Shrimp",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/priceless-shrimp.webp"
-  },
-  {
-    "id": "food-taco",
-    "name": "Taco",
-    "category": "food",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/food/taco.webp"
-  },
-  {
-    "id": "potions-hyperspeed-potion",
-    "name": "Hyperspeed Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-halloween-evil-dachshund",
-    "name": "Halloween Evil Dachshund",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/halloween-evil-dachshund.webp"
-  },
-  {
-    "id": "pets-ranger-beaver",
-    "name": "Ranger Beaver",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/ranger-beaver.webp"
-  },
-  {
-    "id": "pets-kid-goat",
-    "name": "Kid Goat",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/kid-goat.webp"
-  },
-  {
-    "id": "gifts-oakee-box",
-    "name": "Oakee Box",
-    "category": "gifts",
-    "value": 0.0085,
-    "demand": 1,
-    "image": "images/gifts/oakee-box.webp"
-  },
-  {
-    "id": "vehicles-duck-scooter",
-    "name": "Duck Scooter",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/duck-scooter.webp"
-  },
-  {
-    "id": "toys-axe-rattle",
-    "name": "Axe Rattle",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/axe-rattle.webp"
-  },
-  {
-    "id": "pets-buffalo",
-    "name": "Buffalo",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/buffalo.webp"
-  },
-  {
-    "id": "potions-small-sip-potion",
-    "name": "Small Sip Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-pink-hightops",
-    "name": "Pink Hightops",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/pink-hightops.webp"
-  },
-  {
-    "id": "gifts-2d-box",
-    "name": "2D Box",
-    "category": "gifts",
-    "value": 0.0988,
-    "demand": 1,
-    "image": "images/gifts/2d-box.webp"
-  },
-  {
-    "id": "vehicles-paint-roller-truck",
-    "name": "Paint Roller Truck",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/paint-roller-truck.webp"
-  },
-  {
-    "id": "food-chocolate-egg",
-    "name": "Chocolate Egg",
-    "category": "food",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/food/chocolate-egg.webp"
-  },
-  {
-    "id": "pets-silly-duck",
-    "name": "Silly Duck",
-    "category": "pets",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/pets/silly-duck.webp"
-  },
-  {
-    "id": "pets-birthday-butterfly-2023",
-    "name": "Birthday Butterfly 2023",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/birthday-butterfly-2023.webp"
-  },
-  {
-    "id": "vehicles-adopt-me-boy-scooter",
-    "name": "Adopt Me Boy Scooter",
-    "category": "vehicles",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/vehicles/adopt-me-boy-scooter.webp"
-  },
-  {
-    "id": "stickers-christmas-dog-sticker",
-    "name": "Christmas Dog Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/christmas-dog-sticker.webp"
-  },
-  {
-    "id": "pets-sunglider",
-    "name": "Sunglider",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/sunglider.webp"
-  },
-  {
-    "id": "petwear-pterodactyl-wings",
-    "name": "Pterodactyl Wings",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/pterodactyl-wings.webp"
-  },
-  {
-    "id": "stickers-mermicorn-animated-sticker",
-    "name": "Mermicorn Animated Sticker",
-    "category": "stickers",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/stickers/mermicorn-animated-sticker.webp"
-  },
-  {
-    "id": "petwear-halloween-black-axe-guitar-accessory",
-    "name": "Halloween Black Axe Guitar Accessory",
-    "category": "petwear",
-    "value": 1.014,
-    "demand": 2,
-    "image": "images/petwear/halloween-black-axe-guitar-accessory.webp"
-  },
-  {
-    "id": "strollers-dog-house-stroller",
-    "name": "Dog House Stroller",
-    "category": "strollers",
-    "value": 0.0836,
-    "demand": 1,
-    "image": "images/strollers/dog-house-stroller.webp"
-  },
-  {
-    "id": "petwear-heart-lock-necklace",
-    "name": "Heart Lock Necklace",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/heart-lock-necklace.webp"
-  },
-  {
-    "id": "pets-onza",
-    "name": "Onza",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/onza.webp"
-  },
-  {
-    "id": "petwear-clam-wings",
-    "name": "Clam Wings",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/clam-wings.webp"
-  },
-  {
-    "id": "stickers-cherry-blossom-tree-sticker",
-    "name": "Cherry Blossom Tree Sticker",
-    "category": "stickers",
-    "value": 0.0211,
-    "demand": 1,
-    "image": "images/stickers/cherry-blossom-tree-sticker.webp"
-  },
-  {
-    "id": "toys-paint-sealer",
-    "name": "Paint Sealer",
-    "category": "toys",
-    "value": 0.0465,
-    "demand": 2,
-    "image": "images/toys/paint-sealer.webp"
-  },
-  {
-    "id": "strollers-snowman-stroller",
-    "name": "Snowman Stroller",
-    "category": "strollers",
-    "value": 0.0522,
-    "demand": 1,
-    "image": "images/strollers/snowman-stroller.webp"
-  },
-  {
-    "id": "petwear-shadow-wings",
-    "name": "Shadow Wings",
-    "category": "petwear",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/petwear/shadow-wings.webp"
-  },
-  {
-    "id": "strollers-throne-stroller",
-    "name": "Throne Stroller",
-    "category": "strollers",
-    "value": 0.0836,
-    "demand": 1,
-    "image": "images/strollers/throne-stroller.webp"
-  },
-  {
-    "id": "pets-mexican-wolf",
-    "name": "Mexican Wolf",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/mexican-wolf.webp"
-  },
-  {
-    "id": "toys-whoopee-cushion",
-    "name": "Whoopee Cushion",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/whoopee-cushion.webp"
-  },
-  {
-    "id": "pets-peachick",
-    "name": "Peachick",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/peachick.webp"
-  },
-  {
-    "id": "petwear-watermelon-backpack",
-    "name": "Watermelon Backpack",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/watermelon-backpack.webp"
-  },
-  {
-    "id": "food-mud-ball",
-    "name": "Mud Ball",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/mud-ball.webp"
-  },
-  {
-    "id": "strollers-kangaroo-stroller",
-    "name": "Kangaroo Stroller",
-    "category": "strollers",
-    "value": 0.2266,
-    "demand": 1,
-    "image": "images/strollers/kangaroo-stroller.webp"
-  },
-  {
-    "id": "vehicles-hoverboard",
-    "name": "Hoverboard",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/hoverboard.webp"
-  },
-  {
-    "id": "pets-steppe-lion",
-    "name": "Steppe Lion",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/steppe-lion.webp"
-  },
-  {
-    "id": "pets-gingerbread-hare",
-    "name": "Gingerbread Hare",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/gingerbread-hare.webp"
-  },
-  {
-    "id": "stickers-walrus-sticker",
-    "name": "Walrus Sticker",
-    "category": "stickers",
-    "value": 0.0592,
-    "demand": 1,
-    "image": "images/stickers/walrus-sticker.webp"
-  },
-  {
-    "id": "petwear-macaw-wings",
-    "name": "Macaw Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/macaw-wings.webp"
-  },
-  {
-    "id": "pets-white-choccybunny",
-    "name": "White Choccybunny",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/white-choccybunny.webp"
-  },
-  {
-    "id": "pets-blue-jay",
-    "name": "Blue Jay",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/blue-jay.webp"
-  },
-  {
-    "id": "petwear-chef-hat",
-    "name": "Chef Hat",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/chef-hat.webp"
-  },
-  {
-    "id": "pets-drake",
-    "name": "Drake",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/drake.webp"
-  },
-  {
-    "id": "potions-goofy-potion",
-    "name": "Goofy Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-mochi-meow-tumble-animated-sticker",
-    "name": "Mochi Meow Tumble Animated Sticker",
-    "category": "stickers",
-    "value": 0.4647,
-    "demand": 2,
-    "image": "images/stickers/mochi-meow-tumble-animated-sticker.webp"
-  },
-  {
-    "id": "toys-polar-bear-plush",
-    "name": "Polar Bear Plush",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/polar-bear-plush.webp"
   },
   {
     "id": "pets-striped-eggy",
     "name": "Striped Eggy",
     "category": "pets",
-    "value": 0.5493,
+    "value": 0.5363,
     "demand": 1,
     "image": "images/pets/striped-eggy.webp"
   },
   {
-    "id": "pets-zebra",
-    "name": "Zebra",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/zebra.webp"
-  },
-  {
-    "id": "strollers-sailboat-stroller",
-    "name": "Sailboat Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-dancing-tube-hat",
-    "name": "Dancing Tube Hat",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/dancing-tube-hat.webp"
-  },
-  {
-    "id": "toys-sour-glider",
-    "name": "Sour Glider",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/sour-glider.webp"
-  },
-  {
-    "id": "stickers-balloon-unicorn-sticker",
-    "name": "Balloon Unicorn Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/stickers/balloon-unicorn-sticker.webp"
-  },
-  {
-    "id": "potions-super-ageup-potion",
-    "name": "Super Age-Up Potion",
-    "category": "potions",
-    "value": 5.93,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-heart-rattle",
-    "name": "Heart Rattle",
-    "category": "toys",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/toys/heart-rattle.webp"
-  },
-  {
-    "id": "eggs-retired-egg",
-    "name": "Retired Egg",
-    "category": "eggs",
-    "value": 0.0355,
-    "demand": 1,
-    "image": "images/eggs/retired-egg.webp"
-  },
-  {
-    "id": "petwear-goth-shoes",
-    "name": "Goth Shoes",
-    "category": "petwear",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/petwear/goth-shoes.webp"
-  },
-  {
-    "id": "toys-creepy-balloon",
-    "name": "Creepy Balloon",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/creepy-balloon.webp"
-  },
-  {
-    "id": "vehicles-landsailer",
-    "name": "Landsailer",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/landsailer.webp"
-  },
-  {
-    "id": "petwear-pancake-stack",
-    "name": "Pancake Stack",
-    "category": "petwear",
-    "value": 1.6055,
-    "demand": 2,
-    "image": "images/petwear/pancake-stack.webp"
-  },
-  {
-    "id": "petwear-eco-brown-earthwizard-hat",
-    "name": "Eco Brown Earth-Wizard Hat",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/eco-brown-earth-wizard-hat.webp"
-  },
-  {
-    "id": "pets-influencer-gibbon",
-    "name": "Influencer Gibbon",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/pets/influencer-gibbon.webp"
-  },
-  {
-    "id": "pets-reindeer",
-    "name": "Reindeer",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/reindeer.webp"
-  },
-  {
-    "id": "pets-trapdoor-snail",
-    "name": "Trapdoor Snail",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/trapdoor-snail.webp"
-  },
-  {
-    "id": "petwear-blue-butterfly-wings",
-    "name": "Blue Butterfly Wings",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/blue-butterfly-wings.webp"
-  },
-  {
-    "id": "petwear-city-hat",
-    "name": "City Hat",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/city-hat.webp"
-  },
-  {
-    "id": "petwear-elf-shoes",
-    "name": "Elf Shoes",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/elf-shoes.webp"
-  },
-  {
-    "id": "pets-lunar-moon-bear",
-    "name": "Lunar Moon Bear",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/lunar-moon-bear.webp"
-  },
-  {
-    "id": "pets-pink-dog",
-    "name": "Pink Dog",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/pink-dog.webp"
-  },
-  {
-    "id": "gifts-special-lunar-new-year-gift-box",
-    "name": "Special Lunar New Year Gift Box",
-    "category": "gifts",
-    "value": 0.4122,
-    "demand": 1,
-    "image": "images/gifts/special-lunar-new-year-gift-box.webp"
-  },
-  {
-    "id": "petwear-glormy-backpack",
-    "name": "Glormy Backpack",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/glormy-backpack.webp"
-  },
-  {
-    "id": "strollers-rocket-ship-stroller",
-    "name": "Rocket Ship Stroller",
-    "category": "strollers",
-    "value": 0.0577,
-    "demand": 1,
-    "image": "images/strollers/rocket-ship-stroller.webp"
-  },
-  {
-    "id": "pets-therapy-dog",
-    "name": "Therapy Dog",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/therapy-dog.webp"
-  },
-  {
-    "id": "vehicles-hovertible",
-    "name": "Hovertible",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/hovertible.webp"
-  },
-  {
-    "id": "petwear-yellow-designer-backpack",
-    "name": "Yellow Designer Backpack",
-    "category": "petwear",
-    "value": 0.0169,
-    "demand": 1,
-    "image": "images/petwear/yellow-designer-backpack.webp"
-  },
-  {
-    "id": "vehicles-rabbit-helicopter",
-    "name": "Rabbit Helicopter",
-    "category": "vehicles",
-    "value": 1.014,
-    "demand": 1,
-    "image": "images/vehicles/rabbit-helicopter.webp"
-  },
-  {
-    "id": "stickers-state-fair-sticker-pack",
-    "name": "State Fair Sticker Pack",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/state-fair-sticker-pack.webp"
-  },
-  {
-    "id": "pets-forest-sprite",
-    "name": "Forest Sprite",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/forest-sprite.webp"
-  },
-  {
-    "id": "pets-glyptodon",
-    "name": "Glyptodon",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/glyptodon.webp"
-  },
-  {
-    "id": "pets-harp-seal",
-    "name": "Harp Seal",
-    "category": "pets",
-    "value": 0.9718,
-    "demand": 2,
-    "image": "images/pets/harp-seal.webp"
-  },
-  {
-    "id": "stickers-octopus-sticker",
-    "name": "Octopus Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/octopus-sticker.webp"
-  },
-  {
-    "id": "stickers-dodo-sticker",
-    "name": "Dodo Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/dodo-sticker.webp"
-  },
-  {
-    "id": "petwear-unfortunate-eyelashes",
-    "name": "Unfortunate Eyelashes",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/unfortunate-eyelashes.webp"
-  },
-  {
-    "id": "vehicles-red-scooter",
-    "name": "Neon Red Scooter",
-    "category": "vehicles",
-    "value": 1.014,
-    "demand": 1,
-    "image": "images/vehicles/neon-red-scooter.webp"
-  },
-  {
-    "id": "eggs-pink-egg",
-    "name": "Pink Egg",
-    "category": "eggs",
-    "value": 13.6406,
-    "demand": 2,
-    "image": "images/eggs/pink-egg.webp"
-  },
-  {
-    "id": "pets-amber-butterfly",
-    "name": "Amber Butterfly",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/amber-butterfly.webp"
-  },
-  {
-    "id": "pets-cocoadile",
-    "name": "Cocoadile",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/cocoadile.webp"
-  },
-  {
-    "id": "vehicles-tundra-exploration-machine",
-    "name": "Tundra Exploration Machine",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/tundra-exploration-machine.webp"
-  },
-  {
-    "id": "petwear-jade-moth-wings",
-    "name": "Jade Moth Wings",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/jade-moth-wings.webp"
-  },
-  {
-    "id": "gifts-bat-box",
-    "name": "Bat Box",
-    "category": "gifts",
-    "value": 0.8382,
-    "demand": 2,
-    "image": "images/gifts/bat-box.webp"
-  },
-  {
-    "id": "pets-skelicorn",
-    "name": "Skelicorn",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/skelicorn.webp"
-  },
-  {
-    "id": "pets-three-blind-mice",
-    "name": "Three Blind Mice",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/three-blind-mice.webp"
-  },
-  {
-    "id": "pets-billy-goat",
-    "name": "Billy Goat",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/billy-goat.webp"
-  },
-  {
-    "id": "petwear-fishbowl-hat",
-    "name": "Fishbowl Hat",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/fishbowl-hat.webp"
-  },
-  {
-    "id": "pets-trex",
-    "name": "T-Rex",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/t-rex.webp"
-  },
-  {
-    "id": "pets-mecha-meow",
-    "name": "Mecha Meow",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/mecha-meow.webp"
-  },
-  {
-    "id": "toys-santa-throne",
-    "name": "Santa Throne",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/toys/santa-throne.webp"
-  },
-  {
-    "id": "pets-monkey-king",
-    "name": "Monkey King",
-    "category": "pets",
-    "value": 17.745,
-    "demand": 2,
-    "image": "images/pets/monkey-king.webp"
-  },
-  {
-    "id": "pets-royal-capuchin-monkey",
-    "name": "Royal Capuchin Monkey",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 1,
-    "image": "images/pets/royal-capuchin-monkey.webp"
-  },
-  {
-    "id": "stickers-koala-sticker",
-    "name": "Koala Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/koala-sticker.webp"
-  },
-  {
-    "id": "toys-marsh-balloon",
-    "name": "Marsh Balloon",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/marsh-balloon.webp"
-  },
-  {
-    "id": "food-broken-egg",
-    "name": "Broken Egg",
+    "id": "food-goldenrod-flower",
+    "name": "Goldenrod Flower",
     "category": "food",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/food/broken-egg.webp"
-  },
-  {
-    "id": "toys-hotdog-stand",
-    "name": "Hotdog Stand",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/hotdog-stand.webp"
-  },
-  {
-    "id": "petwear-ponytail",
-    "name": "Ponytail",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/ponytail.webp"
-  },
-  {
-    "id": "toys-smores-pogo-stick",
-    "name": "S'mores Pogo Stick",
-    "category": "toys",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/toys/s-mores-pogo-stick.webp"
-  },
-  {
-    "id": "petwear-clockwork-wings",
-    "name": "Clockwork Wings",
-    "category": "petwear",
-    "value": 0.9295,
+    "value": 4.125,
     "demand": 2,
-    "image": "images/petwear/clockwork-wings.webp"
+    "image": "images/food/goldenrod-flower.webp"
   },
   {
-    "id": "vehicles-orange-snowboard",
-    "name": "Orange Neon Snowboard",
-    "category": "vehicles",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/vehicles/orange-neon-snowboard.webp"
-  },
-  {
-    "id": "strollers-toilet-stroller",
-    "name": "Toilet Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/toilet-stroller.webp"
-  },
-  {
-    "id": "petwear-burger-bun-hat",
-    "name": "Burger Bun Hat",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/burger-bun-hat.webp"
-  },
-  {
-    "id": "petwear-jester-hat",
-    "name": "Jester Hat",
-    "category": "petwear",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/petwear/jester-hat.webp"
-  },
-  {
-    "id": "vehicles-dapper-friend-carrier",
-    "name": "Dapper Friend Carrier",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/dapper-friend-carrier.webp"
-  },
-  {
-    "id": "toys-staff-ingredient",
-    "name": "Staff Ingredient",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/toys/staff-ingredient.webp"
-  },
-  {
-    "id": "vehicles-doge-skateboard",
-    "name": "Doge Skateboard",
-    "category": "vehicles",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/vehicles/doge-skateboard.webp"
-  },
-  {
-    "id": "pets-borhyaena-gigantica",
-    "name": "Borhyaena Gigantica",
+    "id": "pets-hammerhead-shark",
+    "name": "Hammerhead Shark",
     "category": "pets",
-    "value": 0.2958,
+    "value": 0.33,
     "demand": 1,
-    "image": "images/pets/borhyaena-gigantica.webp"
+    "image": "images/pets/hammerhead-shark.webp"
   },
   {
-    "id": "strollers-swan-stroller",
-    "name": "Swan Stroller",
-    "category": "strollers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/strollers/swan-stroller.webp"
-  },
-  {
-    "id": "pets-french-bulldog",
-    "name": "French Bulldog",
+    "id": "pets-orca",
+    "name": "Orca",
     "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/french-bulldog.webp"
-  },
-  {
-    "id": "food-subzero-popsicle-bait",
-    "name": "Subzero Popsicle Bait",
-    "category": "food",
-    "value": 0.0845,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/food/subzero-popsicle-bait.webp"
+    "image": "images/pets/orca.webp"
   },
   {
-    "id": "strollers-quad-stroller",
-    "name": "Quad Stroller",
-    "category": "strollers",
-    "value": 3.9305,
-    "demand": 2,
-    "image": "images/strollers/quad-stroller.webp"
-  },
-  {
-    "id": "pets-angelfish",
-    "name": "Angelfish",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/angelfish.webp"
-  },
-  {
-    "id": "pets-hedgehog",
-    "name": "Hedgehog",
-    "category": "pets",
-    "value": 36.7575,
-    "demand": 3,
-    "image": "images/pets/hedgehog.webp"
-  },
-  {
-    "id": "pets-komodo-dragon",
-    "name": "Komodo Dragon",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/komodo-dragon.webp"
-  },
-  {
-    "id": "vehicles-camper-van",
-    "name": "Camper Van",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/camper-van.webp"
-  },
-  {
-    "id": "stickers-pelican-sticker",
-    "name": "Pelican Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/pelican-sticker.webp"
-  },
-  {
-    "id": "toys-vampire-teeth-grappling-hook",
-    "name": "Vampire Teeth Grappling Hook",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/vampire-teeth-grappling-hook.webp"
-  },
-  {
-    "id": "strollers-popsicle-stroller",
-    "name": "Popsicle Stroller",
-    "category": "strollers",
-    "value": 0.3102,
-    "demand": 1,
-    "image": "images/strollers/popsicle-stroller.webp"
-  },
-  {
-    "id": "pets-sasquatch",
-    "name": "Sasquatch",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/sasquatch.webp"
-  },
-  {
-    "id": "pets-chipmunk",
-    "name": "Chipmunk",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/chipmunk.webp"
-  },
-  {
-    "id": "petwear-giraffe-backpack",
-    "name": "Giraffe Backpack",
-    "category": "petwear",
-    "value": 32.11,
-    "demand": 2,
-    "image": "images/petwear/giraffe-backpack.webp"
-  },
-  {
-    "id": "pets-pirate-hermit-crab",
-    "name": "Pirate Hermit Crab",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/pirate-hermit-crab.webp"
-  },
-  {
-    "id": "petwear-love-letter",
-    "name": "Love Letter",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/love-letter.webp"
-  },
-  {
-    "id": "pets-diamond-mahi-mahi",
-    "name": "Diamond Mahi Mahi",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/diamond-mahi-mahi.webp"
-  },
-  {
-    "id": "gifts-box-of-jokes",
-    "name": "Box of Jokes",
+    "id": "gifts-easter-eggy-box",
+    "name": "Easter Eggy Box",
     "category": "gifts",
-    "value": 0.0423,
+    "value": 0.3187,
     "demand": 1,
-    "image": "images/gifts/box-of-jokes.webp"
+    "image": "images/gifts/easter-eggy-box.webp"
   },
   {
-    "id": "pets-papa-moose",
-    "name": "Papa Moose",
-    "category": "pets",
-    "value": 4.0137,
-    "demand": 2,
-    "image": "images/pets/papa-moose.webp"
-  },
-  {
-    "id": "petwear-cupcake-sprinkle-wings",
-    "name": "Cupcake Sprinkle Wings",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 2,
-    "image": "images/petwear/cupcake-sprinkle-wings.webp"
-  },
-  {
-    "id": "stickers-candyfloss-chick-sticker",
-    "name": "Candyfloss Chick Sticker",
-    "category": "stickers",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/stickers/candyfloss-chick-sticker.webp"
-  },
-  {
-    "id": "petwear-puddleducks-hood",
-    "name": "Puddleducks Hood",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/puddleducks-hood.webp"
-  },
-  {
-    "id": "stickers-squished-red-pandorama-sticker",
-    "name": "Squished Red Pandorama Sticker",
-    "category": "stickers",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/stickers/squished-red-pandorama-sticker.webp"
-  },
-  {
-    "id": "pets-cabbit",
-    "name": "Cabbit",
-    "category": "pets",
-    "value": 14.5762,
-    "demand": 3,
-    "image": "images/pets/cabbit.webp"
-  },
-  {
-    "id": "eggs-golden-egg",
-    "name": "Golden Egg",
-    "category": "eggs",
-    "value": 0.1414,
-    "demand": 1,
-    "image": "images/eggs/golden-egg.webp"
-  },
-  {
-    "id": "pets-california-condor",
-    "name": "California Condor",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/california-condor.webp"
-  },
-  {
-    "id": "toys-sleigh-bells-rattle",
-    "name": "Sleigh Bells Rattle",
+    "id": "toys-banana-pogo",
+    "name": "Banana Pogo",
     "category": "toys",
-    "value": 0.0845,
+    "value": 0.2063,
     "demand": 1,
-    "image": "images/toys/sleigh-bells-rattle.webp"
+    "image": "images/toys/banana-pogo.webp"
   },
   {
-    "id": "vehicles-rose-petal-carriage",
-    "name": "Rose Petal Carriage",
-    "category": "vehicles",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/vehicles/rose-petal-carriage.webp"
-  },
-  {
-    "id": "toys-balloon",
-    "name": "Balloon",
-    "category": "toys",
-    "value": 0.2112,
+    "id": "pets-albatross",
+    "name": "Albatross",
+    "category": "pets",
+    "value": 0.4125,
     "demand": 1,
-    "image": "images/toys/balloon.webp"
+    "image": "images/pets/albatross.webp"
   },
   {
     "id": "vehicles-ketchup-and-mustard-jetpack",
     "name": "Ketchup and Mustard Jetpack",
     "category": "vehicles",
-    "value": 1.014,
+    "value": 0.99,
     "demand": 2,
     "image": "images/vehicles/ketchup-and-mustard-jetpack.webp"
   },
   {
-    "id": "toys-sunrise-hang-glider",
-    "name": "Sunrise Hang Glider",
-    "category": "toys",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/toys/sunrise-hang-glider.webp"
-  },
-  {
-    "id": "pets-criosphinx",
-    "name": "Criosphinx",
+    "id": "pets-skelicorn",
+    "name": "Skelicorn",
     "category": "pets",
-    "value": 0.5915,
+    "value": 0.4125,
     "demand": 1,
-    "image": "images/pets/criosphinx.webp"
+    "image": "images/pets/skelicorn.webp"
   },
   {
-    "id": "pets-black-chowchow",
-    "name": "Black Chow-Chow",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/black-chow-chow.webp"
-  },
-  {
-    "id": "vehicles-snow-globetrotter",
-    "name": "Snow Globetrotter",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/snow-globetrotter.webp"
-  },
-  {
-    "id": "toys-chinese-lantern",
-    "name": "Chinese Lantern",
-    "category": "toys",
-    "value": 4.225,
-    "demand": 2,
-    "image": "images/toys/chinese-lantern.webp"
-  },
-  {
-    "id": "stickers-solaris-animated-sticker",
-    "name": "Solaris Animated Sticker",
-    "category": "stickers",
-    "value": 0.4647,
-    "demand": 2,
-    "image": "images/stickers/solaris-animated-sticker.webp"
-  },
-  {
-    "id": "strollers-pizza-stroller",
-    "name": "Pizza Stroller",
-    "category": "strollers",
-    "value": 0.3785,
-    "demand": 1,
-    "image": "images/strollers/pizza-stroller.webp"
-  },
-  {
-    "id": "pets-flaming-zebra",
-    "name": "Flaming Zebra",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/flaming-zebra.webp"
-  },
-  {
-    "id": "gifts-premium-capuchin-box",
-    "name": "Premium Capuchin Box",
-    "category": "gifts",
-    "value": 1.6466,
-    "demand": 2,
-    "image": "images/gifts/premium-capuchin-box.webp"
-  },
-  {
-    "id": "pets-wyvern",
-    "name": "Wyvern",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/wyvern.webp"
-  },
-  {
-    "id": "petwear-sakura-wings",
-    "name": "Sakura Wings",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/sakura-wings.webp"
-  },
-  {
-    "id": "pets-volcanic-rhino",
-    "name": "Volcanic Rhino",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/volcanic-rhino.webp"
-  },
-  {
-    "id": "pets-caterpillar",
-    "name": "Caterpillar",
-    "category": "pets",
-    "value": 8.6612,
-    "demand": 2,
-    "image": "images/pets/caterpillar.webp"
-  },
-  {
-    "id": "pets-tortoiseshell-guinea-pig",
-    "name": "Tortoiseshell Guinea Pig",
-    "category": "pets",
-    "value": 9.9287,
-    "demand": 2,
-    "image": "images/pets/tortoiseshell-guinea-pig.webp"
-  },
-  {
-    "id": "petwear-hive-backpack",
-    "name": "Hive Backpack",
-    "category": "petwear",
-    "value": 29.575,
-    "demand": 2,
-    "image": "images/petwear/hive-backpack.webp"
-  },
-  {
-    "id": "vehicles-douglas",
-    "name": "Douglas",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/douglas.webp"
-  },
-  {
-    "id": "pets-frost-fury",
-    "name": "Frost Fury",
-    "category": "pets",
-    "value": 3.1687,
-    "demand": 3,
-    "image": "images/pets/frost-fury.webp"
-  },
-  {
-    "id": "toys-chocolate-bunny-balloon",
-    "name": "Chocolate Bunny Balloon",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/chocolate-bunny-balloon.webp"
-  },
-  {
-    "id": "strollers-drone-stroller",
-    "name": "Drone Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/drone-stroller.webp"
-  },
-  {
-    "id": "petwear-aestus-mane",
-    "name": "Aestus Mane",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/aestus-mane.webp"
-  },
-  {
-    "id": "pets-glacier-moth",
-    "name": "Glacier Moth",
-    "category": "pets",
-    "value": 3.042,
-    "demand": 2,
-    "image": "images/pets/glacier-moth.webp"
-  },
-  {
-    "id": "petwear-halo",
-    "name": "Halo",
-    "category": "petwear",
-    "value": 18.59,
-    "demand": 3,
-    "image": "images/petwear/halo.webp"
-  },
-  {
-    "id": "stickers-pretty-please-snowball-sticker",
-    "name": "Pretty Please Snowball Sticker",
-    "category": "stickers",
-    "value": 0.2958,
-    "demand": 2,
-    "image": "images/stickers/pretty-please-snowball-sticker.webp"
-  },
-  {
-    "id": "pets-tan-chowchow",
-    "name": "Tan Chow-Chow",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/tan-chow-chow.webp"
-  },
-  {
-    "id": "pets-badger",
-    "name": "Badger",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/badger.webp"
-  },
-  {
-    "id": "stickers-space-whale-sticker",
-    "name": "Space Whale Sticker",
-    "category": "stickers",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/stickers/space-whale-sticker.webp"
-  },
-  {
-    "id": "pets-red-panda",
-    "name": "Red Panda",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/red-panda.webp"
-  },
-  {
-    "id": "petwear-watery-wings",
-    "name": "Watery Wings",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/watery-wings.webp"
-  },
-  {
-    "id": "pets-dj-snooze",
-    "name": "DJ Snooze",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/dj-snooze.webp"
-  },
-  {
-    "id": "pets-clownfish",
-    "name": "Clownfish",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/clownfish.webp"
-  },
-  {
-    "id": "stickers-pet-rock-sticker",
-    "name": "Pet Rock Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/pet-rock-sticker.webp"
-  },
-  {
-    "id": "stickers-dinner-discourse-cat-sticker",
-    "name": "Dinner Discourse Cat Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/stickers/dinner-discourse-cat-sticker.webp"
-  },
-  {
-    "id": "strollers-cradle-stroller",
-    "name": "Cradle Stroller",
-    "category": "strollers",
-    "value": 1.0664,
-    "demand": 1,
-    "image": "images/strollers/cradle-stroller.webp"
-  },
-  {
-    "id": "pets-2026-birthday-butterfly",
-    "name": "2026 Birthday Butterfly",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/2026-birthday-butterfly.webp"
-  },
-  {
-    "id": "pets-kangaroo",
-    "name": "Kangaroo",
-    "category": "pets",
-    "value": 9.9287,
-    "demand": 3,
-    "image": "images/pets/kangaroo.webp"
-  },
-  {
-    "id": "toys-glider",
-    "name": "Glider",
-    "category": "toys",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/toys/glider.webp"
-  },
-  {
-    "id": "pets-peach-owl",
-    "name": "Peach Owl",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/peach-owl.webp"
-  },
-  {
-    "id": "pets-sea-slug",
-    "name": "Sea Slug",
-    "category": "pets",
-    "value": 6.1262,
-    "demand": 2,
-    "image": "images/pets/sea-slug.webp"
-  },
-  {
-    "id": "petwear-purple-heart-glasses",
-    "name": "Purple Heart Glasses",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/purple-heart-glasses.webp"
-  },
-  {
-    "id": "vehicles-gingerbread-sleigh",
-    "name": "Gingerbread Sleigh",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/vehicles/gingerbread-sleigh.webp"
-  },
-  {
-    "id": "toys-creator-rattle",
-    "name": "Creator Rattle (Bethink)",
-    "category": "toys",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/toys/creator-rattle-bethink.webp"
-  },
-  {
-    "id": "stickers-ginger-cat-sticker",
-    "name": "Ginger Cat Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/ginger-cat-sticker.webp"
-  },
-  {
-    "id": "strollers-spikey-chariot-stroller",
-    "name": "Spikey Chariot Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-ibex",
-    "name": "Ibex",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/ibex.webp"
-  },
-  {
-    "id": "vehicles-soccer-car",
-    "name": "Soccer Car",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/soccer-car.webp"
-  },
-  {
-    "id": "pets-arctic-hare",
-    "name": "Arctic Hare",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/arctic-hare.webp"
-  },
-  {
-    "id": "vehicles-gokart",
-    "name": "GoKart",
-    "category": "vehicles",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/vehicles/gokart.webp"
-  },
-  {
-    "id": "pets-slime",
-    "name": "Slime",
-    "category": "pets",
-    "value": 1.9857,
-    "demand": 2,
-    "image": "images/pets/slime.webp"
-  },
-  {
-    "id": "pets-maleo-bird",
-    "name": "Maleo Bird",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/maleo-bird.webp"
-  },
-  {
-    "id": "gifts-pony-box",
-    "name": "Pony Box",
-    "category": "gifts",
-    "value": 0.2772,
-    "demand": 2,
-    "image": "images/gifts/pony-box.webp"
-  },
-  {
-    "id": "toys-tombstone-ghostify",
-    "name": "Tombstone Ghostify",
-    "category": "toys",
-    "value": 21.97,
-    "demand": 2,
-    "image": "images/toys/tombstone-ghostify.webp"
-  },
-  {
-    "id": "strollers-double-stroller",
-    "name": "Double Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/double-stroller.webp"
-  },
-  {
-    "id": "vehicles-hot-rod-sleigh",
-    "name": "Hot Rod Sleigh",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/hot-rod-sleigh.webp"
-  },
-  {
-    "id": "stickers-shark-sticker",
-    "name": "Shark Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/shark-sticker.webp"
-  },
-  {
-    "id": "vehicles-black-snowboard",
-    "name": "Black Snowboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/black-snowboard.webp"
-  },
-  {
-    "id": "pets-chocolate-chowchow",
-    "name": "Chocolate Chow-Chow",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/chocolate-chow-chow.webp"
-  },
-  {
-    "id": "pets-fanghorn-tortoise",
-    "name": "Fanghorn Tortoise",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/fanghorn-tortoise.webp"
-  },
-  {
-    "id": "food-snapdragon-flower",
-    "name": "Snapdragon Flower",
+    "id": "food-ice-tub",
+    "name": "Ice Tub",
     "category": "food",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/food/snapdragon-flower.webp"
-  },
-  {
-    "id": "petwear-ember-wings",
-    "name": "Ember Wings",
-    "category": "petwear",
-    "value": 2.535,
+    "value": 0.825,
     "demand": 2,
-    "image": "images/petwear/ember-wings.webp"
+    "image": "images/food/ice-tub.webp"
   },
   {
-    "id": "pets-milk-choccybunny",
-    "name": "Milk Choccybunny",
+    "id": "pets-tio-de-nadal",
+    "name": "Tio De Nadal",
     "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/milk-choccybunny.webp"
-  },
-  {
-    "id": "pets-border-collie",
-    "name": "Border Collie",
-    "category": "pets",
-    "value": 6.5487,
-    "demand": 3,
-    "image": "images/pets/border-collie.webp"
-  },
-  {
-    "id": "pets-bali-starling",
-    "name": "Bali Starling",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/bali-starling.webp"
-  },
-  {
-    "id": "petwear-yellow-instant-camera",
-    "name": "Yellow Instant Camera",
-    "category": "petwear",
-    "value": 0.2535,
+    "value": 12.375,
     "demand": 2,
-    "image": "images/petwear/yellow-instant-camera.webp"
+    "image": "images/pets/tio-de-nadal.webp"
   },
   {
-    "id": "strollers-ice-cream-stroller",
-    "name": "Ice Cream Stroller",
-    "category": "strollers",
-    "value": 0.3994,
-    "demand": 1,
-    "image": "images/strollers/ice-cream-stroller.webp"
-  },
-  {
-    "id": "petwear-chick-hat",
-    "name": "Chick Hat",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/chick-hat.webp"
-  },
-  {
-    "id": "pets-golden-ladybug",
-    "name": "Golden Ladybug",
+    "id": "pets-reindeer",
+    "name": "Reindeer",
     "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/golden-ladybug.webp"
-  },
-  {
-    "id": "pets-apple-owl",
-    "name": "Apple Owl",
-    "category": "pets",
-    "value": 0.7605,
+    "value": 0.66,
     "demand": 2,
-    "image": "images/pets/apple-owl.webp"
+    "image": "images/pets/reindeer.webp"
   },
   {
-    "id": "petwear-cat-backpack",
-    "name": "Cat Backpack",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/cat-backpack.webp"
-  },
-  {
-    "id": "pets-dancing-dragon",
-    "name": "Dancing Dragon",
+    "id": "pets-moonbeam-butterfly",
+    "name": "Moonbeam Butterfly",
     "category": "pets",
-    "value": 1.9435,
+    "value": 1.0725,
     "demand": 2,
-    "image": "images/pets/dancing-dragon.webp"
+    "image": "images/pets/moonbeam-butterfly.webp"
   },
   {
-    "id": "gifts-admin-abuse-box",
-    "name": "Admin Abuse Box",
-    "category": "gifts",
-    "value": 0.0392,
-    "demand": 1,
-    "image": "images/gifts/admin-abuse-box.webp"
-  },
-  {
-    "id": "stickers-super-saru-animated-sticker",
-    "name": "Super Saru Animated Sticker",
+    "id": "stickers-shadow-dragon-animated-sticker",
+    "name": "Shadow Dragon Animated Sticker",
     "category": "stickers",
-    "value": 0.845,
+    "value": 0.6188,
     "demand": 2,
-    "image": "images/stickers/super-saru-animated-sticker.webp"
+    "image": "images/stickers/shadow-dragon-animated-sticker.webp"
   },
   {
-    "id": "toys-ice-cream-plush",
-    "name": "Ice Cream Plush",
-    "category": "toys",
-    "value": 0.0845,
+    "id": "vehicles-white-scooter",
+    "name": "White Scooter",
+    "category": "vehicles",
+    "value": 0.4538,
     "demand": 1,
-    "image": "images/toys/ice-cream-plush.webp"
+    "image": "images/vehicles/white-scooter.webp"
   },
   {
-    "id": "stickers-aurora-fox-sticker",
-    "name": "Aurora Fox Sticker",
+    "id": "pets-mushroom-friend",
+    "name": "Mushroom Friend",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/mushroom-friend.webp"
+  },
+  {
+    "id": "pets-field-mouse",
+    "name": "Field Mouse",
+    "category": "pets",
+    "value": 2.7225,
+    "demand": 2,
+    "image": "images/pets/field-mouse.webp"
+  },
+  {
+    "id": "pets-octopus",
+    "name": "Octopus",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/octopus.webp"
+  },
+  {
+    "id": "food-ash-zebra-bait",
+    "name": "Ash Zebra Bait",
+    "category": "food",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/food/ash-zebra-bait.webp"
+  },
+  {
+    "id": "stickers-frostbite-bear-and-cub-animated-sticker",
+    "name": "Frostbite Bear and Cub Animated Sticker",
     "category": "stickers",
-    "value": 0.0423,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/stickers/aurora-fox-sticker.webp"
-  },
-  {
-    "id": "pets-rabbit",
-    "name": "Rabbit",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/rabbit.webp"
-  },
-  {
-    "id": "potions-big-head-potion",
-    "name": "Big Head Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-triceratops",
-    "name": "Triceratops",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/triceratops.webp"
-  },
-  {
-    "id": "toys-easter-bunny-plush",
-    "name": "Easter Bunny Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/easter-bunny-plush.webp"
-  },
-  {
-    "id": "pets-golden-griffin",
-    "name": "Golden Griffin",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/golden-griffin.webp"
-  },
-  {
-    "id": "pets-lava-wolf",
-    "name": "Lava Wolf",
-    "category": "pets",
-    "value": 1.1407,
-    "demand": 2,
-    "image": "images/pets/lava-wolf.webp"
-  },
-  {
-    "id": "pets-toxic-kaijunior",
-    "name": "Toxic Kaijunior",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/toxic-kaijunior.webp"
-  },
-  {
-    "id": "pets-seafoam-butterfly",
-    "name": "Seafoam Butterfly",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/seafoam-butterfly.webp"
-  },
-  {
-    "id": "toys-premium-fire-pit",
-    "name": "Premium Fire Pit",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/premium-fire-pit.webp"
-  },
-  {
-    "id": "strollers-cannon-stroller",
-    "name": "Cannon Stroller",
-    "category": "strollers",
-    "value": 0.2057,
-    "demand": 1,
-    "image": "images/strollers/cannon-stroller.webp"
-  },
-  {
-    "id": "toys-witches-wand",
-    "name": "Witches Wand",
-    "category": "toys",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/toys/witches-wand.webp"
-  },
-  {
-    "id": "strollers-pirate-captain-stroller",
-    "name": "Pirate Captain Stroller",
-    "category": "strollers",
-    "value": 0.0804,
-    "demand": 1,
-    "image": "images/strollers/pirate-captain-stroller.webp"
-  },
-  {
-    "id": "pets-ice-cream-hermit-crab",
-    "name": "Ice Cream Hermit Crab",
-    "category": "pets",
-    "value": 1.3942,
-    "demand": 2,
-    "image": "images/pets/ice-cream-hermit-crab.webp"
-  },
-  {
-    "id": "toys-banana-plush",
-    "name": "Banana Plush",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/banana-plush.webp"
-  },
-  {
-    "id": "pets-rosy-maple-moth",
-    "name": "Rosy Maple Moth",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/rosy-maple-moth.webp"
-  },
-  {
-    "id": "pets-silverback-gorilla",
-    "name": "Silverback Gorilla",
-    "category": "pets",
-    "value": 7.1825,
-    "demand": 2,
-    "image": "images/pets/silverback-gorilla.webp"
-  },
-  {
-    "id": "petwear-festive-beard",
-    "name": "Festive Beard",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/festive-beard.webp"
-  },
-  {
-    "id": "vehicles-suv",
-    "name": "SUV",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/suv.webp"
-  },
-  {
-    "id": "pets-ice-golem",
-    "name": "Ice Golem",
-    "category": "pets",
-    "value": 1.9435,
-    "demand": 2,
-    "image": "images/pets/ice-golem.webp"
-  },
-  {
-    "id": "vehicles-flower-wagon",
-    "name": "Flower Wagon",
-    "category": "vehicles",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/vehicles/flower-wagon.webp"
-  },
-  {
-    "id": "toys-festive-bells-balloon",
-    "name": "Festive Bells Balloon",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/festive-bells-balloon.webp"
-  },
-  {
-    "id": "pets-ehecatl",
-    "name": "Ehecatl",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/ehecatl.webp"
-  },
-  {
-    "id": "petwear-ferris-wheel-hat",
-    "name": "Ferris Wheel Hat",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/ferris-wheel-hat.webp"
-  },
-  {
-    "id": "vehicles-adopt-me-snowboard-2",
-    "name": "Adopt Me Snowboard 2",
-    "category": "vehicles",
-    "value": 1.6055,
-    "demand": 1,
-    "image": "images/vehicles/adopt-me-snowboard-2.webp"
-  },
-  {
-    "id": "pets-snow-owl",
-    "name": "Snow Owl",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/snow-owl.webp"
-  },
-  {
-    "id": "pets-kage-crow",
-    "name": "Kage Crow",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/kage-crow.webp"
-  },
-  {
-    "id": "pets-goldfish",
-    "name": "Goldfish",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/goldfish.webp"
-  },
-  {
-    "id": "strollers-magic-moon-stroller",
-    "name": "Magic Moon Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-black-tiger",
-    "name": "Black Tiger",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/black-tiger.webp"
-  },
-  {
-    "id": "stickers-phantom-dragon-sticker",
-    "name": "Phantom Dragon Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/phantom-dragon-sticker.webp"
-  },
-  {
-    "id": "pets-business-monkey",
-    "name": "Business Monkey",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/business-monkey.webp"
-  },
-  {
-    "id": "vehicles-blue-skateboard",
-    "name": "Blue Skateboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/blue-skateboard.webp"
-  },
-  {
-    "id": "stickers-panda-sticker",
-    "name": "Panda Sticker",
-    "category": "stickers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/stickers/panda-sticker.webp"
-  },
-  {
-    "id": "pets-zeopod",
-    "name": "Zeopod",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/zeopod.webp"
-  },
-  {
-    "id": "pets-koi-carp",
-    "name": "Koi Carp",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/koi-carp.webp"
-  },
-  {
-    "id": "pets-werewolf",
-    "name": "Werewolf",
-    "category": "pets",
-    "value": 16.2662,
-    "demand": 2,
-    "image": "images/pets/werewolf.webp"
-  },
-  {
-    "id": "toys-tea-party-set",
-    "name": "Tea Party Set",
-    "category": "toys",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/toys/tea-party-set.webp"
-  },
-  {
-    "id": "pets-scarebear",
-    "name": "Scarebear",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 2,
-    "image": "images/pets/scarebear.webp"
+    "image": "images/stickers/frostbite-bear-and-cub-animated-sticker.webp"
   },
   {
     "id": "pets-princess-capuchin-monkey",
     "name": "Princess Capuchin Monkey",
     "category": "pets",
-    "value": 0.676,
+    "value": 0.66,
     "demand": 1,
     "image": "images/pets/princess-capuchin-monkey.webp"
   },
   {
-    "id": "toys-noob-balloon",
-    "name": "Noob Balloon",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/noob-balloon.webp"
-  },
-  {
-    "id": "pets-flying-fish",
-    "name": "Flying Fish",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/flying-fish.webp"
-  },
-  {
-    "id": "potions-translucent-tea-potion",
-    "name": "Translucent Tea Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-golden-penguin",
-    "name": "Golden Penguin",
-    "category": "pets",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/pets/golden-penguin.webp"
-  },
-  {
-    "id": "petwear-white-chef-hat",
-    "name": "White Chef Hat",
+    "id": "petwear-sailor-cap",
+    "name": "Sailor Cap",
     "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/white-chef-hat.webp"
-  },
-  {
-    "id": "pets-angus-cow",
-    "name": "Angus Cow",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/angus-cow.webp"
-  },
-  {
-    "id": "pets-dilophosaurus",
-    "name": "Dilophosaurus",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/dilophosaurus.webp"
-  },
-  {
-    "id": "pets-bluebottle",
-    "name": "Bluebottle Fly",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/bluebottle-fly.webp"
-  },
-  {
-    "id": "eggs-fossil-egg",
-    "name": "Fossil Egg",
-    "category": "eggs",
-    "value": 0.4886,
+    "value": 1.0725,
     "demand": 2,
-    "image": "images/eggs/fossil-egg.webp"
+    "image": "images/petwear/sailor-cap.webp"
+  },
+  {
+    "id": "pets-budgie-witch",
+    "name": "Budgie Witch",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/budgie-witch.webp"
+  },
+  {
+    "id": "pets-burning-bunny",
+    "name": "Burning Bunny",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/burning-bunny.webp"
+  },
+  {
+    "id": "pets-armadillo",
+    "name": "Armadillo",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/armadillo.webp"
+  },
+  {
+    "id": "pets-cerberus",
+    "name": "Cerberus",
+    "category": "pets",
+    "value": 2.145,
+    "demand": 2,
+    "image": "images/pets/cerberus.webp"
+  },
+  {
+    "id": "gifts-rubber-ducky-box",
+    "name": "Rubber Ducky Box",
+    "category": "gifts",
+    "value": 0.0124,
+    "demand": 1,
+    "image": "images/gifts/rubber-ducky-box.webp"
+  },
+  {
+    "id": "pets-slug",
+    "name": "Slug",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/slug.webp"
   },
   {
     "id": "toys-moon-viewing-bench",
     "name": "Moon Viewing Bench",
     "category": "toys",
-    "value": 0.1268,
+    "value": 0.1237,
     "demand": 1,
     "image": "images/toys/moon-viewing-bench.webp"
   },
   {
-    "id": "pets-temple-friend",
-    "name": "Temple Friend",
+    "id": "pets-evil-basilisk",
+    "name": "Evil Basilisk",
     "category": "pets",
-    "value": 0.4225,
+    "value": 0.5363,
     "demand": 1,
-    "image": "images/pets/temple-friend.webp"
+    "image": "images/pets/evil-basilisk.webp"
   },
   {
-    "id": "vehicles-dragon-train",
-    "name": "Dragon Train",
-    "category": "vehicles",
-    "value": 2.1125,
-    "demand": 1,
-    "image": "images/vehicles/dragon-train.webp"
-  },
-  {
-    "id": "strollers-big-leaf-stroller",
-    "name": "Big Leaf Stroller",
-    "category": "strollers",
-    "value": 0.05,
+    "id": "pets-arctic-reindeer",
+    "name": "Arctic Reindeer",
+    "category": "pets",
+    "value": 24.75,
     "demand": 3,
-    "image": ""
+    "image": "images/pets/arctic-reindeer.webp"
   },
   {
-    "id": "pets-ghost",
-    "name": "Ghost",
+    "id": "pets-starfish",
+    "name": "Starfish",
     "category": "pets",
-    "value": 0.338,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/pets/ghost.webp"
+    "image": "images/pets/starfish.webp"
   },
   {
-    "id": "stickers-tree-decorating-animated-sticker",
-    "name": "Tree Decorating Animated Sticker",
-    "category": "stickers",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/stickers/tree-decorating-animated-sticker.webp"
-  },
-  {
-    "id": "pets-hamster",
-    "name": "Hamster",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/hamster.webp"
-  },
-  {
-    "id": "eggs-royal-egg",
-    "name": "Royal Egg",
-    "category": "eggs",
-    "value": 0.0392,
-    "demand": 1,
-    "image": "images/eggs/royal-egg.webp"
-  },
-  {
-    "id": "pets-lunar-ox",
-    "name": "Lunar Ox",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/lunar-ox.webp"
-  },
-  {
-    "id": "petwear-ssbd-sunnies",
-    "name": "SSBD Sunnies",
-    "category": "petwear",
-    "value": 67.6,
-    "demand": 2,
-    "image": "images/petwear/ssbd-sunnies.webp"
-  },
-  {
-    "id": "toys-sock-chew-toy",
-    "name": "Sock Chew Toy",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/sock-chew-toy.webp"
-  },
-  {
-    "id": "pets-dotted-eggy",
-    "name": "Dotted Eggy",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/dotted-eggy.webp"
-  },
-  {
-    "id": "gifts-kaijunior-box",
-    "name": "Kaijunior Box",
-    "category": "gifts",
-    "value": 0.1888,
-    "demand": 1,
-    "image": "images/gifts/kaijunior-box.webp"
-  },
-  {
-    "id": "pets-water-opossum",
-    "name": "Water Opossum",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/water-opossum.webp"
-  },
-  {
-    "id": "pets-chick",
-    "name": "Chick",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/chick.webp"
-  },
-  {
-    "id": "pets-gingerbread-reindeer",
-    "name": "Gingerbread Reindeer",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/gingerbread-reindeer.webp"
-  },
-  {
-    "id": "food-stripes-egg",
-    "name": "Stripes Egg",
+    "id": "food-teleportation-potion",
+    "name": "Teleportation Potion",
     "category": "food",
-    "value": 0.2535,
+    "value": 1.0725,
     "demand": 1,
-    "image": "images/food/stripes-egg.webp"
+    "image": "images/food/teleportation-potion.webp"
   },
   {
-    "id": "strollers-flower-stroller",
-    "name": "Flower Stroller",
-    "category": "strollers",
-    "value": 0.2676,
-    "demand": 1,
-    "image": "images/strollers/flower-stroller.webp"
-  },
-  {
-    "id": "gifts-halloween-mummy-cat-box",
-    "name": "Halloween Mummy Cat Box",
-    "category": "gifts",
-    "value": 0.3391,
-    "demand": 1,
-    "image": "images/gifts/halloween-mummy-cat-box.webp"
-  },
-  {
-    "id": "petwear-flower-wings",
-    "name": "Flower Wings",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/flower-wings.webp"
-  },
-  {
-    "id": "pets-chilling-spider",
-    "name": "Chilling Spider",
+    "id": "pets-corn-doggo",
+    "name": "Corn Doggo",
     "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/chilling-spider.webp"
-  },
-  {
-    "id": "pets-giant-gold-scarab",
-    "name": "Giant Gold Scarab",
-    "category": "pets",
-    "value": 2.7463,
+    "value": 1.0725,
     "demand": 2,
-    "image": "images/pets/giant-gold-scarab.webp"
+    "image": "images/pets/corn-doggo.webp"
   },
   {
-    "id": "pets-ghost-bunny",
-    "name": "Ghost Bunny",
-    "category": "pets",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/pets/ghost-bunny.webp"
-  },
-  {
-    "id": "petwear-blue-cat-ear-headphones",
-    "name": "Blue Cat Ear Headphones",
-    "category": "petwear",
-    "value": 0.4647,
-    "demand": 2,
-    "image": "images/petwear/blue-cat-ear-headphones.webp"
-  },
-  {
-    "id": "strollers-airplane-stroller",
-    "name": "Airplane Stroller",
-    "category": "strollers",
-    "value": 0.7795,
-    "demand": 2,
-    "image": "images/strollers/airplane-stroller.webp"
-  },
-  {
-    "id": "strollers-floating-hand-stroller",
-    "name": "Floating Hand Stroller",
-    "category": "strollers",
-    "value": 1.2046,
-    "demand": 2,
-    "image": "images/strollers/floating-hand-stroller.webp"
-  },
-  {
-    "id": "pets-emu",
-    "name": "Emu",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/emu.webp"
-  },
-  {
-    "id": "petwear-icey-aura",
-    "name": "Icey Aura",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/icey-aura.webp"
-  },
-  {
-    "id": "toys-cat-plush",
-    "name": "Cat Plush",
+    "id": "toys-balloon",
+    "name": "Balloon",
     "category": "toys",
-    "value": 0.5493,
+    "value": 0.2063,
     "demand": 1,
-    "image": "images/toys/cat-plush.webp"
+    "image": "images/toys/balloon.webp"
   },
   {
-    "id": "gifts-regal-wing-chest",
-    "name": "Regal Wing Chest",
-    "category": "gifts",
-    "value": 1.0672,
-    "demand": 2,
-    "image": "images/gifts/regal-wing-chest.webp"
-  },
-  {
-    "id": "pets-mongoose",
-    "name": "Mongoose",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/mongoose.webp"
-  },
-  {
-    "id": "pets-abyssinian-cat",
-    "name": "Abyssinian Cat",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/abyssinian-cat.webp"
-  },
-  {
-    "id": "pets-pig",
-    "name": "Pig",
-    "category": "pets",
-    "value": 5.2812,
-    "demand": 3,
-    "image": "images/pets/pig.webp"
-  },
-  {
-    "id": "vehicles-adopt-me-snowboard-1",
-    "name": "Adopt Me Snowboard 1",
-    "category": "vehicles",
-    "value": 1.6055,
-    "demand": 1,
-    "image": "images/vehicles/adopt-me-snowboard-1.webp"
-  },
-  {
-    "id": "vehicles-melon-skateboard",
-    "name": "Melon Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/melon-skateboard.webp"
-  },
-  {
-    "id": "stickers-long-ermine-sticker",
-    "name": "Long Ermine Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/long-ermine-sticker.webp"
-  },
-  {
-    "id": "pets-frost-unicorn",
-    "name": "Frost Unicorn",
-    "category": "pets",
-    "value": 11.4075,
-    "demand": 3,
-    "image": "images/pets/frost-unicorn.webp"
-  },
-  {
-    "id": "petwear-ice-cream-heels",
-    "name": "Ice Cream Heels",
+    "id": "petwear-pink-hightops",
+    "name": "Pink Hightops",
     "category": "petwear",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/petwear/ice-cream-heels.webp"
-  },
-  {
-    "id": "petwear-pink-designer-backpack",
-    "name": "Pink Designer Backpack",
-    "category": "petwear",
-    "value": 0.2535,
+    "value": 0.1237,
     "demand": 1,
-    "image": "images/petwear/pink-designer-backpack.webp"
+    "image": "images/petwear/pink-hightops.webp"
   },
   {
-    "id": "pets-tasmanian-tiger",
-    "name": "Tasmanian Tiger",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/tasmanian-tiger.webp"
-  },
-  {
-    "id": "vehicles-glyptodon-van",
-    "name": "Glyptodon Van",
+    "id": "vehicles-squirrel-car",
+    "name": "Squirrel Car",
     "category": "vehicles",
-    "value": 0.0423,
+    "value": 0.165,
     "demand": 1,
-    "image": "images/vehicles/glyptodon-van.webp"
+    "image": "images/vehicles/squirrel-car.webp"
   },
   {
-    "id": "stickers-hamster-selfie-sticker",
-    "name": "Hamster Selfie Sticker",
-    "category": "stickers",
-    "value": 0.2535,
+    "id": "pets-latte-kitsune",
+    "name": "Latte Kitsune",
+    "category": "pets",
+    "value": 1.9387,
     "demand": 2,
-    "image": "images/stickers/hamster-selfie-sticker.webp"
+    "image": "images/pets/latte-kitsune.webp"
   },
   {
-    "id": "pets-toasty-red-panda",
-    "name": "Toasty Red Panda",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/toasty-red-panda.webp"
-  },
-  {
-    "id": "pets-salamander",
-    "name": "Salamander",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/salamander.webp"
-  },
-  {
-    "id": "gifts-hare-box",
-    "name": "Hare Box",
-    "category": "gifts",
-    "value": 0.5722,
-    "demand": 2,
-    "image": "images/gifts/hare-box.webp"
-  },
-  {
-    "id": "vehicles-ghoul-mobile",
-    "name": "Ghoul Mobile",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/ghoul-mobile.webp"
-  },
-  {
-    "id": "vehicles-festive-deliveries-present-truck",
-    "name": "Festive Deliveries Present Truck",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/festive-deliveries-present-truck.webp"
-  },
-  {
-    "id": "pets-tegu",
-    "name": "Tegu",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/tegu.webp"
-  },
-  {
-    "id": "petwear-propeller-hat",
-    "name": "Propeller Hat",
-    "category": "petwear",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/petwear/propeller-hat.webp"
-  },
-  {
-    "id": "pets-manekineko",
-    "name": "Maneki-Neko",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/maneki-neko.webp"
-  },
-  {
-    "id": "gifts-standard-gibbon-box",
-    "name": "Standard Gibbon Box",
-    "category": "gifts",
-    "value": 0.1286,
-    "demand": 1,
-    "image": "images/gifts/standard-gibbon-box.webp"
-  },
-  {
-    "id": "pets-scarecrow-horse",
-    "name": "Scarecrow Horse",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/scarecrow-horse.webp"
-  },
-  {
-    "id": "petwear-flower-aura",
-    "name": "Flower Aura",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/flower-aura.webp"
-  },
-  {
-    "id": "pets-golden-dragon",
-    "name": "Golden Dragon",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/golden-dragon.webp"
-  },
-  {
-    "id": "pets-ermine",
-    "name": "Ermine",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/ermine.webp"
-  },
-  {
-    "id": "pets-longhorn-cow",
-    "name": "Longhorn Cow",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/longhorn-cow.webp"
-  },
-  {
-    "id": "pets-coyote",
-    "name": "Coyote",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/coyote.webp"
-  },
-  {
-    "id": "pets-nutcracker-squirrel",
-    "name": "Nutcracker Squirrel",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/nutcracker-squirrel.webp"
-  },
-  {
-    "id": "eggs-christmas-egg",
-    "name": "Christmas Egg",
-    "category": "eggs",
-    "value": 8.9137,
-    "demand": 2,
-    "image": "images/eggs/christmas-egg.webp"
-  },
-  {
-    "id": "pets-river-otter",
-    "name": "River Otter",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/river-otter.webp"
-  },
-  {
-    "id": "petwear-bee-hive",
-    "name": "Bee Hive",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/bee-hive.webp"
-  },
-  {
-    "id": "pets-pangolin",
-    "name": "Pangolin",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/pangolin.webp"
-  },
-  {
-    "id": "vehicles-black-cab",
-    "name": "Black Cab",
-    "category": "vehicles",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/vehicles/black-cab.webp"
-  },
-  {
-    "id": "pets-primal-kaijunior",
-    "name": "Primal Kaijunior",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/primal-kaijunior.webp"
-  },
-  {
-    "id": "pets-owlbear",
-    "name": "Owlbear",
-    "category": "pets",
-    "value": 2.535,
-    "demand": 2,
-    "image": "images/pets/owlbear.webp"
-  },
-  {
-    "id": "gifts-halloween-chick-box",
-    "name": "Halloween Chick Box",
-    "category": "gifts",
-    "value": 0.3263,
-    "demand": 1,
-    "image": "images/gifts/halloween-chick-box.webp"
-  },
-  {
-    "id": "pets-tasmanian-devil",
-    "name": "Tasmanian Devil",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 2,
-    "image": "images/pets/tasmanian-devil.webp"
-  },
-  {
-    "id": "petwear-pirate-hat",
-    "name": "Pirate Hat",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/pirate-hat.webp"
-  },
-  {
-    "id": "pets-golden-hamster",
-    "name": "Golden Hamster",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/golden-hamster.webp"
-  },
-  {
-    "id": "pets-mistletroll",
-    "name": "Mistletroll",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/mistletroll.webp"
-  },
-  {
-    "id": "pets-parrot",
-    "name": "Parrot",
-    "category": "pets",
-    "value": 90.8375,
-    "demand": 3,
-    "image": "images/pets/parrot.webp"
-  },
-  {
-    "id": "toys-halloween-slime-paint",
-    "name": "Halloween Slime Mega Neon Paint",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 3,
-    "image": "images/toys/halloween-slime-mega-neon-paint.webp"
-  },
-  {
-    "id": "stickers-halloween-2024-sticker-pack",
-    "name": "Halloween 2024 Sticker Pack",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/halloween-2024-sticker-pack.webp"
-  },
-  {
-    "id": "toys-rose-quartz-glow-paint",
-    "name": "Rose Quartz Glow Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/rose-quartz-glow-mega-neon-paint.webp"
-  },
-  {
-    "id": "potions-sugar-skull-potion",
-    "name": "Sugar Skull Potion",
-    "category": "potions",
-    "value": 2.38,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "strollers-sleigh-stroller",
-    "name": "Sleigh Stroller",
+    "id": "strollers-pirate-captain-stroller",
+    "name": "Pirate Captain Stroller",
     "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-halloween-green-zombie-bat-wings",
-    "name": "Halloween Green Zombie Bat Wings",
-    "category": "petwear",
-    "value": 0.1268,
+    "value": 0.0799,
     "demand": 1,
-    "image": "images/petwear/halloween-green-zombie-bat-wings.webp"
+    "image": "images/strollers/pirate-captain-stroller.webp"
   },
   {
-    "id": "pets-shetland-pony-white",
-    "name": "Shetland Pony White",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/shetland-pony-white.webp"
-  },
-  {
-    "id": "pets-queen-bee",
-    "name": "Queen Bee",
-    "category": "pets",
-    "value": 1.7323,
-    "demand": 2,
-    "image": "images/pets/queen-bee.webp"
-  },
-  {
-    "id": "pets-lava-dragon",
-    "name": "Lava Dragon",
-    "category": "pets",
-    "value": 2.535,
-    "demand": 2,
-    "image": "images/pets/lava-dragon.webp"
-  },
-  {
-    "id": "petwear-heart-bow",
-    "name": "Heart Bow",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/petwear/heart-bow.webp"
-  },
-  {
-    "id": "pets-green-butterfly",
-    "name": "Green Butterfly",
-    "category": "pets",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/pets/green-butterfly.webp"
-  },
-  {
-    "id": "eggs-dylan",
-    "name": "Dylan",
-    "category": "eggs",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/eggs/dylan.webp"
-  },
-  {
-    "id": "vehicles-crabby-cruiser",
-    "name": "Crabby Cruiser",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/crabby-cruiser.webp"
-  },
-  {
-    "id": "pets-tree-kangaroo",
-    "name": "Tree Kangaroo",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/tree-kangaroo.webp"
-  },
-  {
-    "id": "eggs-christmas-future-egg",
-    "name": "Christmas Future Egg",
-    "category": "eggs",
-    "value": 0.2829,
-    "demand": 2,
-    "image": "images/eggs/christmas-future-egg.webp"
-  },
-  {
-    "id": "strollers-shipwreck-stroller",
-    "name": "Shipwreck Stroller",
+    "id": "strollers-dog-house-stroller",
+    "name": "Dog House Stroller",
     "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "gifts-standard-wing-chest",
-    "name": "Standard Wing Chest",
-    "category": "gifts",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-rainbow-dragon",
-    "name": "Rainbow Dragon",
-    "category": "pets",
-    "value": 1.7745,
-    "demand": 2,
-    "image": "images/pets/rainbow-dragon.webp"
-  },
-  {
-    "id": "pets-cat",
-    "name": "Cat",
-    "category": "pets",
-    "value": 0.2535,
+    "value": 0.0823,
     "demand": 1,
-    "image": "images/pets/cat.webp"
+    "image": "images/strollers/dog-house-stroller.webp"
   },
   {
-    "id": "petwear-halloween-evil-barrel-backpack",
-    "name": "Halloween Evil Barrel Backpack",
+    "id": "petwear-aviator-hat",
+    "name": "Aviator Hat",
     "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/halloween-evil-barrel-backpack.webp"
-  },
-  {
-    "id": "eggs-southeast-asia-egg",
-    "name": "Southeast Asia Egg",
-    "category": "eggs",
-    "value": 0.3038,
+    "value": 0.5363,
     "demand": 2,
-    "image": "images/eggs/southeast-asia-egg.webp"
-  },
-  {
-    "id": "pets-moon-rabbit",
-    "name": "Moon Rabbit",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/moon-rabbit.webp"
-  },
-  {
-    "id": "vehicles-wood-scooter",
-    "name": "Wood Scooter",
-    "category": "vehicles",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/vehicles/wood-scooter.webp"
-  },
-  {
-    "id": "pets-crow",
-    "name": "Crow",
-    "category": "pets",
-    "value": 82.3875,
-    "demand": 3,
-    "image": "images/pets/crow.webp"
-  },
-  {
-    "id": "strollers-coconut-stroller",
-    "name": "Coconut Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-otter-sticker",
-    "name": "Otter Sticker",
-    "category": "stickers",
-    "value": 0.0592,
-    "demand": 1,
-    "image": "images/stickers/otter-sticker.webp"
-  },
-  {
-    "id": "pets-dugong",
-    "name": "Dugong",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/dugong.webp"
-  },
-  {
-    "id": "strollers-humbug-stroller",
-    "name": "Humbug Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "food-golden-clam",
-    "name": "Golden Clam",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-clam.webp"
-  },
-  {
-    "id": "pets-stegosaurus",
-    "name": "Stegosaurus",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/stegosaurus.webp"
-  },
-  {
-    "id": "pets-chef-gorilla",
-    "name": "Chef Gorilla",
-    "category": "pets",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/pets/chef-gorilla.webp"
-  },
-  {
-    "id": "toys-elephant-plush",
-    "name": "Elephant Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/elephant-plush.webp"
-  },
-  {
-    "id": "pets-diamond-king-penguin",
-    "name": "Diamond King Penguin",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/diamond-king-penguin.webp"
-  },
-  {
-    "id": "vehicles-giant-cheetah-mount",
-    "name": "Giant Cheetah Mount",
-    "category": "vehicles",
-    "value": 6.3375,
-    "demand": 2,
-    "image": "images/vehicles/giant-cheetah-mount.webp"
-  },
-  {
-    "id": "pets-diamond-dragon",
-    "name": "Diamond Dragon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/diamond-dragon.webp"
-  },
-  {
-    "id": "pets-guardian-lion",
-    "name": "Guardian Lion",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/guardian-lion.webp"
-  },
-  {
-    "id": "petwear-back-taco",
-    "name": "Back Taco",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 2,
-    "image": "images/petwear/back-taco.webp"
-  },
-  {
-    "id": "petwear-energy-wings",
-    "name": "Energy Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/energy-wings.webp"
-  },
-  {
-    "id": "vehicles-unstable-triangle-car",
-    "name": "Unstable Triangle Car",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/unstable-triangle-car.webp"
-  },
-  {
-    "id": "pets-sunrise-duckling",
-    "name": "Sunrise Duckling",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/sunrise-duckling.webp"
+    "image": "images/petwear/aviator-hat.webp"
   },
   {
     "id": "strollers-campers-wheelbarrow-stroller",
@@ -5386,4740 +458,108 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "strollers-cauldron-stroller",
-    "name": "Cauldron Stroller",
-    "category": "strollers",
-    "value": 0.3472,
-    "demand": 1,
-    "image": "images/strollers/cauldron-stroller.webp"
-  },
-  {
-    "id": "pets-hopbop",
-    "name": "Hopbop",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/hopbop.webp"
-  },
-  {
-    "id": "strollers-flower-cart-stroller",
-    "name": "Flower Cart Stroller",
-    "category": "strollers",
-    "value": 0.0503,
-    "demand": 1,
-    "image": "images/strollers/flower-cart-stroller.webp"
-  },
-  {
-    "id": "strollers-scarebear-stroller",
-    "name": "Scarebear Stroller",
-    "category": "strollers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/strollers/scarebear-stroller.webp"
-  },
-  {
-    "id": "stickers-rat-sticker",
-    "name": "Rat Sticker",
+    "id": "stickers-poodle-sticker",
+    "name": "Poodle Sticker",
     "category": "stickers",
-    "value": 0.0592,
+    "value": 0.0742,
     "demand": 1,
-    "image": "images/stickers/rat-sticker.webp"
-  },
-  {
-    "id": "pets-sloth",
-    "name": "Sloth",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/sloth.webp"
-  },
-  {
-    "id": "stickers-volcanic-rhino-sticker",
-    "name": "Volcanic Rhino Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/volcanic-rhino-sticker.webp"
-  },
-  {
-    "id": "toys-strawberry-toast-flying-disc",
-    "name": "Strawberry Toast Flying Disc",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/strawberry-toast-flying-disc.webp"
-  },
-  {
-    "id": "pets-stygian-owl",
-    "name": "Stygian Owl",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/stygian-owl.webp"
-  },
-  {
-    "id": "vehicles-monomoped",
-    "name": "Mono-Moped",
-    "category": "vehicles",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/vehicles/mono-moped.webp"
-  },
-  {
-    "id": "food-teleportation-potion",
-    "name": "Teleportation Potion",
-    "category": "food",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/food/teleportation-potion.webp"
-  },
-  {
-    "id": "petwear-festive-antlers",
-    "name": "Festive Antlers",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/festive-antlers.webp"
-  },
-  {
-    "id": "pets-dragonfly",
-    "name": "Dragonfly",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/dragonfly.webp"
-  },
-  {
-    "id": "stickers-dragon-breath-animated-sticker",
-    "name": "Dragon Breath Animated Sticker",
-    "category": "stickers",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/stickers/dragon-breath-animated-sticker.webp"
-  },
-  {
-    "id": "pets-bakeneko",
-    "name": "Bakeneko",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/bakeneko.webp"
-  },
-  {
-    "id": "strollers-red-wagon-stroller",
-    "name": "Red Wagon Stroller",
-    "category": "strollers",
-    "value": 0.1021,
-    "demand": 1,
-    "image": "images/strollers/red-wagon-stroller.webp"
-  },
-  {
-    "id": "stickers-winter-2024-sticker-pack",
-    "name": "Winter 2024 Sticker Pack",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/winter-2024-sticker-pack.webp"
-  },
-  {
-    "id": "pets-caelum-cervi",
-    "name": "Caelum Cervi",
-    "category": "pets",
-    "value": 3.6758,
-    "demand": 2,
-    "image": "images/pets/caelum-cervi.webp"
-  },
-  {
-    "id": "pets-penguin",
-    "name": "Penguin",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/penguin.webp"
-  },
-  {
-    "id": "toys-discosplosion",
-    "name": "Discosplosion",
-    "category": "toys",
-    "value": 0.3802,
-    "demand": 2,
-    "image": "images/toys/discosplosion.webp"
-  },
-  {
-    "id": "pets-alley-cat",
-    "name": "Alley Cat",
-    "category": "pets",
-    "value": 1.7323,
-    "demand": 2,
-    "image": "images/pets/alley-cat.webp"
-  },
-  {
-    "id": "petwear-puppeteer-hand",
-    "name": "Puppeteer Hand",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/puppeteer-hand.webp"
-  },
-  {
-    "id": "pets-tanuki",
-    "name": "Tanuki",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/tanuki.webp"
-  },
-  {
-    "id": "strollers-palanquin-stroller",
-    "name": "Palanquin Stroller",
-    "category": "strollers",
-    "value": 0.1021,
-    "demand": 1,
-    "image": "images/strollers/palanquin-stroller.webp"
-  },
-  {
-    "id": "toys-banjo",
-    "name": "Banjo",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/toys/banjo.webp"
-  },
-  {
-    "id": "pets-dragon",
-    "name": "Dragon",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/dragon.webp"
-  },
-  {
-    "id": "pets-king-penguin",
-    "name": "King Penguin",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/king-penguin.webp"
-  },
-  {
-    "id": "pets-diamond-amazon",
-    "name": "Diamond Amazon",
-    "category": "pets",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/pets/diamond-amazon.webp"
-  },
-  {
-    "id": "petwear-pirate-hat-friend",
-    "name": "Pirate Hat & Friend",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/pirate-hat-friend.webp"
-  },
-  {
-    "id": "pets-ghost-dog",
-    "name": "Ghost Dog",
-    "category": "pets",
-    "value": 1.1407,
-    "demand": 2,
-    "image": "images/pets/ghost-dog.webp"
-  },
-  {
-    "id": "toys-squid-plush",
-    "name": "Squid Plush",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/squid-plush.webp"
-  },
-  {
-    "id": "pets-hydra",
-    "name": "Hydra",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/hydra.webp"
-  },
-  {
-    "id": "vehicles-heart-hoverboard",
-    "name": "Heart Hoverboard",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/heart-hoverboard.webp"
-  },
-  {
-    "id": "toys-netzooka",
-    "name": "Netzooka",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/netzooka.webp"
-  },
-  {
-    "id": "pets-red-panda-ducky",
-    "name": "Red Panda Ducky",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/red-panda-ducky.webp"
-  },
-  {
-    "id": "pets-frostbite-bear",
-    "name": "Frostbite Bear",
-    "category": "pets",
-    "value": 16.6888,
-    "demand": 2,
-    "image": "images/pets/frostbite-bear.webp"
-  },
-  {
-    "id": "petwear-dragonfly-fairy-wings",
-    "name": "Dragonfly Fairy Wings",
-    "category": "petwear",
-    "value": 5.915,
-    "demand": 2,
-    "image": "images/petwear/dragonfly-fairy-wings.webp"
-  },
-  {
-    "id": "pets-yule-log-dog",
-    "name": "Yule Log Dog",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/yule-log-dog.webp"
-  },
-  {
-    "id": "pets-spinosaurus",
-    "name": "Spinosaurus",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/spinosaurus.webp"
-  },
-  {
-    "id": "vehicles-hot-tub-muscle-car",
-    "name": "Hot Tub Muscle Car",
-    "category": "vehicles",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/vehicles/hot-tub-muscle-car.webp"
-  },
-  {
-    "id": "vehicles-motorized-sofa",
-    "name": "Motorized Sofa",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/motorized-sofa.webp"
-  },
-  {
-    "id": "petwear-ruff",
-    "name": "Ruff",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/ruff.webp"
-  },
-  {
-    "id": "pets-king-bee",
-    "name": "King Bee",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/king-bee.webp"
-  },
-  {
-    "id": "petwear-red-yellow-beads",
-    "name": "Red & Yellow Beads",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/red-yellow-beads.webp"
-  },
-  {
-    "id": "pets-winged-horse",
-    "name": "Winged Horse",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/winged-horse.webp"
-  },
-  {
-    "id": "strollers-santas-helper-stroller",
-    "name": "Santa's Helper Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/santa-s-helper-stroller.webp"
-  },
-  {
-    "id": "pets-baku",
-    "name": "Baku",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/baku.webp"
-  },
-  {
-    "id": "toys-carrot-friend-plushie",
-    "name": "Carrot Friend Plushie",
-    "category": "toys",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/toys/carrot-friend-plushie.webp"
-  },
-  {
-    "id": "toys-panda-pal",
-    "name": "Panda Pal",
-    "category": "toys",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/toys/panda-pal.webp"
-  },
-  {
-    "id": "petwear-leprechaun-hat",
-    "name": "Leprechaun Hat",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/leprechaun-hat.webp"
-  },
-  {
-    "id": "petwear-spring-bunny-nose",
-    "name": "Spring Bunny Nose",
-    "category": "petwear",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/petwear/spring-bunny-nose.webp"
-  },
-  {
-    "id": "pets-ruddy-duck",
-    "name": "Ruddy Duck",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/ruddy-duck.webp"
-  },
-  {
-    "id": "petwear-festive-stocking-shoes",
-    "name": "Festive Stocking Shoes",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/festive-stocking-shoes.webp"
-  },
-  {
-    "id": "gifts-ox-box",
-    "name": "Ox Box",
-    "category": "gifts",
-    "value": 0.1559,
-    "demand": 1,
-    "image": "images/gifts/ox-box.webp"
-  },
-  {
-    "id": "pets-cuteacabra",
-    "name": "Cute-A-Cabra",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/cute-a-cabra.webp"
-  },
-  {
-    "id": "toys-horse-plush",
-    "name": "Horse Plush",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/horse-plush.webp"
-  },
-  {
-    "id": "potions-choosy-potion",
-    "name": "Choosy Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-ice-saber",
-    "name": "Ice Saber",
-    "category": "toys",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/toys/ice-saber.webp"
-  },
-  {
-    "id": "toys-crossbow-grappling-hook",
-    "name": "Crossbow Grappling Hook",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/crossbow-grappling-hook.webp"
-  },
-  {
-    "id": "pets-sprout-snail",
-    "name": "Sprout Snail",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/sprout-snail.webp"
-  },
-  {
-    "id": "strollers-snow-mobile-stroller",
-    "name": "Snow Mobile Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/snow-mobile-stroller.webp"
-  },
-  {
-    "id": "gifts-premium-monkey-box",
-    "name": "Premium Monkey Box",
-    "category": "gifts",
-    "value": 26.64,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "vehicles-festive-deliveries-sleigh",
-    "name": "Festive Deliveries Sleigh",
-    "category": "vehicles",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/vehicles/festive-deliveries-sleigh.webp"
-  },
-  {
-    "id": "pets-octopus",
-    "name": "Octopus",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/octopus.webp"
-  },
-  {
-    "id": "vehicles-blue-scooter",
-    "name": "Blue Scooter",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/blue-scooter.webp"
-  },
-  {
-    "id": "pets-st-bernard",
-    "name": "St Bernard",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/st-bernard.webp"
-  },
-  {
-    "id": "pets-corgi",
-    "name": "Corgi",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/corgi.webp"
-  },
-  {
-    "id": "pets-bunny-swirl",
-    "name": "Bunny Swirl",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 2,
-    "image": "images/pets/bunny-swirl.webp"
-  },
-  {
-    "id": "pets-jumping-spider",
-    "name": "Jumping Spider",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/jumping-spider.webp"
-  },
-  {
-    "id": "pets-gecko",
-    "name": "Gecko",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/gecko.webp"
-  },
-  {
-    "id": "vehicles-emoji-scooter",
-    "name": "Emoji Scooter",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/emoji-scooter.webp"
-  },
-  {
-    "id": "pets-dodo",
-    "name": "Dodo",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/dodo.webp"
-  },
-  {
-    "id": "toys-wing-hang-glider",
-    "name": "Wing Hang Glider",
-    "category": "toys",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/toys/wing-hang-glider.webp"
-  },
-  {
-    "id": "vehicles-ghost-vehicle",
-    "name": "Ghost Vehicle",
-    "category": "vehicles",
-    "value": 16.055,
-    "demand": 2,
-    "image": "images/vehicles/ghost-vehicle.webp"
-  },
-  {
-    "id": "toys-heart-plushie",
-    "name": "Heart Plushie",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/heart-plushie.webp"
-  },
-  {
-    "id": "vehicles-celestial-carrier",
-    "name": "Celestial Carrier",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/celestial-carrier.webp"
-  },
-  {
-    "id": "vehicles-royal-carriage",
-    "name": "Royal Carriage",
-    "category": "vehicles",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/vehicles/royal-carriage.webp"
-  },
-  {
-    "id": "petwear-respectful-mustache",
-    "name": "Respectful Mustache",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/respectful-mustache.webp"
-  },
-  {
-    "id": "pets-jekyll-hydra",
-    "name": "Jekyll Hydra",
-    "category": "pets",
-    "value": 33.3775,
-    "demand": 2,
-    "image": "images/pets/jekyll-hydra.webp"
-  },
-  {
-    "id": "pets-blue-dog",
-    "name": "Blue Dog",
-    "category": "pets",
-    "value": 6.9713,
-    "demand": 2,
-    "image": "images/pets/blue-dog.webp"
-  },
-  {
-    "id": "vehicles-prince-carriage",
-    "name": "Prince Carriage",
-    "category": "vehicles",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/vehicles/prince-carriage.webp"
-  },
-  {
-    "id": "vehicles-wood-skateboard",
-    "name": "Wood Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/wood-skateboard.webp"
-  },
-  {
-    "id": "toys-fancy-umbrella",
-    "name": "Fancy Umbrella",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/fancy-umbrella.webp"
-  },
-  {
-    "id": "pets-shark-puppy",
-    "name": "Shark Puppy",
-    "category": "pets",
-    "value": 6.3375,
-    "demand": 3,
-    "image": "images/pets/shark-puppy.webp"
-  },
-  {
-    "id": "toys-octopus-plush",
-    "name": "Octopus Plush",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/octopus-plush.webp"
-  },
-  {
-    "id": "stickers-pirate-dog-sticker",
-    "name": "Pirate Dog Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/pirate-dog-sticker.webp"
-  },
-  {
-    "id": "stickers-peppermint-penguin-sticker",
-    "name": "Peppermint Penguin Sticker",
-    "category": "stickers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/stickers/peppermint-penguin-sticker.webp"
-  },
-  {
-    "id": "gifts-premium-gorilla-box",
-    "name": "Premium Gorilla Box",
-    "category": "gifts",
-    "value": 1.829,
-    "demand": 2,
-    "image": "images/gifts/premium-gorilla-box.webp"
-  },
-  {
-    "id": "toys-orbweaver-glider",
-    "name": "Orbweaver Glider",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/orbweaver-glider.webp"
-  },
-  {
-    "id": "pets-lavender-dragon",
-    "name": "Lavender Dragon",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/lavender-dragon.webp"
-  },
-  {
-    "id": "stickers-soulfire-animated-sticker",
-    "name": "Soulfire Animated Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/soulfire-animated-sticker.webp"
-  },
-  {
-    "id": "food-kitty-biscuit",
-    "name": "Kitty Biscuit",
-    "category": "food",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/food/kitty-biscuit.webp"
-  },
-  {
-    "id": "pets-polar-bear",
-    "name": "Polar Bear",
-    "category": "pets",
-    "value": 2.2392,
-    "demand": 2,
-    "image": "images/pets/polar-bear.webp"
-  },
-  {
-    "id": "stickers-grim-dragon-sticker",
-    "name": "Grim Dragon Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/grim-dragon-sticker.webp"
-  },
-  {
-    "id": "pets-black-macaque",
-    "name": "Black Macaque",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 2,
-    "image": "images/pets/black-macaque.webp"
-  },
-  {
-    "id": "pets-grave-owl",
-    "name": "Grave Owl",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/grave-owl.webp"
-  },
-  {
-    "id": "petwear-nest-of-eggs",
-    "name": "Nest of Eggs",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/nest-of-eggs.webp"
-  },
-  {
-    "id": "stickers-naughty-mistletroll-sticker",
-    "name": "Naughty Mistletroll Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/naughty-mistletroll-sticker.webp"
-  },
-  {
-    "id": "vehicles-royal-crown-carriage",
-    "name": "Royal Crown Carriage",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/royal-crown-carriage.webp"
-  },
-  {
-    "id": "potions-home-potion",
-    "name": "Home Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "eggs-fool-egg",
-    "name": "Fool Egg",
-    "category": "eggs",
-    "value": 0.6879,
-    "demand": 2,
-    "image": "images/eggs/fool-egg.webp"
-  },
-  {
-    "id": "pets-fallow-deer",
-    "name": "Fallow Deer",
-    "category": "pets",
-    "value": 2.3237,
-    "demand": 2,
-    "image": "images/pets/fallow-deer.webp"
-  },
-  {
-    "id": "vehicles-spinning-teacup-vehicle",
-    "name": "Spinning Teacup Vehicle",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/spinning-teacup-vehicle.webp"
-  },
-  {
-    "id": "petwear-security-spotlight",
-    "name": "Security Spotlight",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/security-spotlight.webp"
-  },
-  {
-    "id": "strollers-high-heel-stroller",
-    "name": "High Heel Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/high-heel-stroller.webp"
-  },
-  {
-    "id": "pets-mole",
-    "name": "Mole",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/mole.webp"
-  },
-  {
-    "id": "pets-fire-stallion",
-    "name": "Fire Stallion",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/fire-stallion.webp"
-  },
-  {
-    "id": "strollers-egg-stroller",
-    "name": "Egg Stroller",
-    "category": "strollers",
-    "value": 20.98,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-magma-snail",
-    "name": "Magma Snail",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/magma-snail.webp"
-  },
-  {
-    "id": "pets-karate-gorilla",
-    "name": "Karate Gorilla",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/pets/karate-gorilla.webp"
-  },
-  {
-    "id": "pets-ram",
-    "name": "Ram",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/ram.webp"
-  },
-  {
-    "id": "gifts-rubber-ducky-box",
-    "name": "Rubber Ducky Box",
-    "category": "gifts",
-    "value": 0.0127,
-    "demand": 1,
-    "image": "images/gifts/rubber-ducky-box.webp"
-  },
-  {
-    "id": "food-golden-plantain",
-    "name": "Golden Plantain",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-plantain.webp"
-  },
-  {
-    "id": "gifts-choccybunny-box",
-    "name": "Choccybunny Box",
-    "category": "gifts",
-    "value": 0.0431,
-    "demand": 1,
-    "image": "images/gifts/choccybunny-box.webp"
-  },
-  {
-    "id": "pets-evil-rock",
-    "name": "Evil Rock",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/evil-rock.webp"
-  },
-  {
-    "id": "petwear-jeffs-nametag",
-    "name": "Jeff's Nametag",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/jeff-s-nametag.webp"
-  },
-  {
-    "id": "vehicles-white-snowboard",
-    "name": "White Snowboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/white-snowboard.webp"
-  },
-  {
-    "id": "food-burnt-bites-bait",
-    "name": "Burnt Bites Bait",
-    "category": "food",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/food/burnt-bites-bait.webp"
-  },
-  {
-    "id": "pets-gummy-guana",
-    "name": "Gummy Guana",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/gummy-guana.webp"
-  },
-  {
-    "id": "pets-happy-duckling",
-    "name": "Happy Duckling",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/happy-duckling.webp"
-  },
-  {
-    "id": "pets-lobster",
-    "name": "Lobster",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/lobster.webp"
-  },
-  {
-    "id": "vehicles-pink-snowboard",
-    "name": "Pink Neon Snowboard",
-    "category": "vehicles",
-    "value": 3.8025,
-    "demand": 2,
-    "image": "images/vehicles/pink-neon-snowboard.webp"
-  },
-  {
-    "id": "pets-mule",
-    "name": "Mule",
-    "category": "pets",
-    "value": 0.9718,
-    "demand": 2,
-    "image": "images/pets/mule.webp"
-  },
-  {
-    "id": "toys-heart-balloon",
-    "name": "Heart Balloon",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/heart-balloon.webp"
-  },
-  {
-    "id": "petwear-elf-bandana",
-    "name": "Elf Bandana",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/elf-bandana.webp"
-  },
-  {
-    "id": "vehicles-gold-skateboard",
-    "name": "Gold Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/gold-skateboard.webp"
-  },
-  {
-    "id": "pets-basilisk",
-    "name": "Basilisk",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/basilisk.webp"
-  },
-  {
-    "id": "vehicles-pumpkin-carriage",
-    "name": "Pumpkin Carriage",
-    "category": "vehicles",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/vehicles/pumpkin-carriage.webp"
-  },
-  {
-    "id": "pets-horse",
-    "name": "Horse",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/pets/horse.webp"
-  },
-  {
-    "id": "petwear-cloud-wings",
-    "name": "Cloud Wings",
-    "category": "petwear",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/petwear/cloud-wings.webp"
-  },
-  {
-    "id": "pets-blackfooted-ferret",
-    "name": "Black-Footed Ferret",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/black-footed-ferret.webp"
-  },
-  {
-    "id": "pets-choco-penguin",
-    "name": "Choco Penguin",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/choco-penguin.webp"
-  },
-  {
-    "id": "toys-cymbal-ingredient",
-    "name": "Cymbal Ingredient",
-    "category": "toys",
-    "value": 0.1056,
-    "demand": 1,
-    "image": "images/toys/cymbal-ingredient.webp"
-  },
-  {
-    "id": "pets-mushroom-friend",
-    "name": "Mushroom Friend",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/mushroom-friend.webp"
-  },
-  {
-    "id": "pets-eel",
-    "name": "Eel",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/eel.webp"
-  },
-  {
-    "id": "pets-feesh",
-    "name": "Feesh",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/feesh.webp"
-  },
-  {
-    "id": "vehicles-black-scooter",
-    "name": "Black Scooter",
-    "category": "vehicles",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/vehicles/black-scooter.webp"
-  },
-  {
-    "id": "pets-lunar-tiger",
-    "name": "Lunar Tiger",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/lunar-tiger.webp"
-  },
-  {
-    "id": "pets-puffer-fish",
-    "name": "Puffer Fish",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/puffer-fish.webp"
-  },
-  {
-    "id": "stickers-trex-sticker",
-    "name": "T-Rex Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/t-rex-sticker.webp"
-  },
-  {
-    "id": "petwear-easter-egg-friends",
-    "name": "Easter Egg Friends",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/easter-egg-friends.webp"
-  },
-  {
-    "id": "toys-briefcase-ingredient",
-    "name": "Briefcase Ingredient",
-    "category": "toys",
-    "value": 0.1056,
-    "demand": 1,
-    "image": "images/toys/briefcase-ingredient.webp"
-  },
-  {
-    "id": "pets-australian-kelpie",
-    "name": "Australian Kelpie",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/australian-kelpie.webp"
-  },
-  {
-    "id": "pets-owl",
-    "name": "Owl",
-    "category": "pets",
-    "value": 113.6525,
-    "demand": 3,
-    "image": "images/pets/owl.webp"
-  },
-  {
-    "id": "pets-majestic-pony",
-    "name": "Majestic Pony",
-    "category": "pets",
-    "value": 1.3942,
-    "demand": 2,
-    "image": "images/pets/majestic-pony.webp"
-  },
-  {
-    "id": "pets-floral-eggy",
-    "name": "Floral Eggy",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/floral-eggy.webp"
-  },
-  {
-    "id": "pets-toy-monkey",
-    "name": "Toy Monkey",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/toy-monkey.webp"
-  },
-  {
-    "id": "petwear-fairy-wings",
-    "name": "Fairy Wings",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/fairy-wings.webp"
-  },
-  {
-    "id": "pets-beaver",
-    "name": "Beaver",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/beaver.webp"
-  },
-  {
-    "id": "toys-caticorn-rattle",
-    "name": "Caticorn Rattle",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/caticorn-rattle.webp"
-  },
-  {
-    "id": "pets-patchy-bear",
-    "name": "Patchy Bear",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/patchy-bear.webp"
-  },
-  {
-    "id": "stickers-lava-dragon-sticker",
-    "name": "Lava Dragon Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/lava-dragon-sticker.webp"
-  },
-  {
-    "id": "petwear-cherryontop",
-    "name": "Cherry-On-Top",
-    "category": "petwear",
-    "value": 16.4775,
-    "demand": 2,
-    "image": "images/petwear/cherry-on-top.webp"
-  },
-  {
-    "id": "gifts-kelp-raider-box",
-    "name": "Kelp Raider Box",
-    "category": "gifts",
-    "value": 0.1382,
-    "demand": 1,
-    "image": "images/gifts/kelp-raider-box.webp"
-  },
-  {
-    "id": "petwear-corndog-mustache",
-    "name": "Corndog Mustache",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/corndog-mustache.webp"
-  },
-  {
-    "id": "vehicles-monocycle",
-    "name": "Monocycle",
-    "category": "vehicles",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/vehicles/monocycle.webp"
-  },
-  {
-    "id": "vehicles-rift-rider",
-    "name": "Rift Rider",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/rift-rider.webp"
-  },
-  {
-    "id": "eggs-throwback-egg",
-    "name": "Throwback Egg",
-    "category": "eggs",
-    "value": 0.0329,
-    "demand": 1,
-    "image": "images/eggs/throwback-egg.webp"
-  },
-  {
-    "id": "pets-show-pony",
-    "name": "Show Pony",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/show-pony.webp"
-  },
-  {
-    "id": "pets-singularity-pisces",
-    "name": "Singularity Pisces",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/singularity-pisces.webp"
-  },
-  {
-    "id": "pets-slimingo",
-    "name": "Slimingo",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/slimingo.webp"
-  },
-  {
-    "id": "pets-flower-power-duckling",
-    "name": "Flower Power Duckling",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/flower-power-duckling.webp"
-  },
-  {
-    "id": "food-super-ageup-potion",
-    "name": "Super Age-Up Potion",
-    "category": "food",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/food/super-age-up-potion.webp"
-  },
-  {
-    "id": "strollers-rgb-stroller",
-    "name": "RGB Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-strawberry-shortcake-bat-dragon-sticker",
-    "name": "Strawberry Shortcake Bat Dragon Sticker",
-    "category": "stickers",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/stickers/strawberry-shortcake-bat-dragon-sticker.webp"
-  },
-  {
-    "id": "gifts-lunar-new-year-gift-box",
-    "name": "Lunar New Year Gift Box",
-    "category": "gifts",
-    "value": 0.29,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-sack-of-cash",
-    "name": "Sack of Cash",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/sack-of-cash.webp"
-  },
-  {
-    "id": "petwear-strawberry-shortcake-bat-dragon-backpack",
-    "name": "Strawberry Shortcake Bat Dragon Backpack",
-    "category": "petwear",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/petwear/strawberry-shortcake-bat-dragon-backpack.webp"
-  },
-  {
-    "id": "pets-frostclaw",
-    "name": "Frostclaw",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/frostclaw.webp"
-  },
-  {
-    "id": "pets-giant-anteater",
-    "name": "Giant Anteater",
-    "category": "pets",
-    "value": 4.8588,
-    "demand": 2,
-    "image": "images/pets/giant-anteater.webp"
-  },
-  {
-    "id": "pets-preppy-capuchin-monkey",
-    "name": "Preppy Capuchin Monkey",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/preppy-capuchin-monkey.webp"
-  },
-  {
-    "id": "petwear-pink-instant-camera",
-    "name": "Pink Instant Camera",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/petwear/pink-instant-camera.webp"
-  },
-  {
-    "id": "toys-skull-drum",
-    "name": "Skull Drum",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/skull-drum.webp"
-  },
-  {
-    "id": "pets-tealwood-monster",
-    "name": "Tealwood Monster",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/tealwood-monster.webp"
-  },
-  {
-    "id": "gifts-scarecrow-box",
-    "name": "Scarecrow Box",
-    "category": "gifts",
-    "value": 0.4854,
-    "demand": 2,
-    "image": "images/gifts/scarecrow-box.webp"
-  },
-  {
-    "id": "gifts-easter-eggy-box",
-    "name": "Easter Eggy Box",
-    "category": "gifts",
-    "value": 0.3223,
-    "demand": 1,
-    "image": "images/gifts/easter-eggy-box.webp"
-  },
-  {
-    "id": "petwear-magic-girl-wings",
-    "name": "Magic Girl Wings",
-    "category": "petwear",
-    "value": 10.985,
-    "demand": 2,
-    "image": "images/petwear/magic-girl-wings.webp"
-  },
-  {
-    "id": "strollers-takoyaki-stroller",
-    "name": "Takoyaki Stroller",
-    "category": "strollers",
-    "value": 0.1085,
-    "demand": 1,
-    "image": "images/strollers/takoyaki-stroller.webp"
-  },
-  {
-    "id": "strollers-fall-wheelbarrow-stroller",
-    "name": "Fall Wheelbarrow Stroller",
-    "category": "strollers",
-    "value": 0.0522,
-    "demand": 1,
-    "image": "images/strollers/fall-wheelbarrow-stroller.webp"
-  },
-  {
-    "id": "pets-praying-mantis",
-    "name": "Praying Mantis",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/praying-mantis.webp"
-  },
-  {
-    "id": "strollers-elephant-stroller",
-    "name": "Elephant Stroller",
-    "category": "strollers",
-    "value": 0.1913,
-    "demand": 1,
-    "image": "images/strollers/elephant-stroller.webp"
-  },
-  {
-    "id": "petwear-burger-boots",
-    "name": "Burger Boots",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/burger-boots.webp"
-  },
-  {
-    "id": "toys-amethyst-skies-paint",
-    "name": "Amethyst Skies Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/amethyst-skies-mega-neon-paint.webp"
-  },
-  {
-    "id": "vehicles-candy-camper",
-    "name": "Candy Camper",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/candy-camper.webp"
-  },
-  {
-    "id": "toys-homeing-rocket",
-    "name": "Homeing Rocket",
-    "category": "toys",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/toys/homeing-rocket.webp"
-  },
-  {
-    "id": "stickers-sakura-spirit-sticker",
-    "name": "Sakura Spirit Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/sakura-spirit-sticker.webp"
-  },
-  {
-    "id": "pets-peregrine-falcon",
-    "name": "Peregrine Falcon",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/peregrine-falcon.webp"
-  },
-  {
-    "id": "food-golden-lettuce",
-    "name": "Golden Lettuce",
-    "category": "food",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/food/golden-lettuce.webp"
-  },
-  {
-    "id": "vehicles-snow-snowboard",
-    "name": "Snow Snowboard",
-    "category": "vehicles",
-    "value": 4.6475,
-    "demand": 1,
-    "image": "images/vehicles/snow-snowboard.webp"
-  },
-  {
-    "id": "eggs-basic-egg",
-    "name": "Basic Egg",
-    "category": "eggs",
-    "value": 0.0326,
-    "demand": 1,
-    "image": "images/eggs/basic-egg.webp"
-  },
-  {
-    "id": "pets-field-mouse",
-    "name": "Field Mouse",
-    "category": "pets",
-    "value": 2.7885,
-    "demand": 2,
-    "image": "images/pets/field-mouse.webp"
-  },
-  {
-    "id": "petwear-heart-hat",
-    "name": "Heart Hat",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/heart-hat.webp"
-  },
-  {
-    "id": "pets-wren",
-    "name": "Wren",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/wren.webp"
-  },
-  {
-    "id": "pets-donkey",
-    "name": "Donkey",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/donkey.webp"
+    "image": "images/stickers/poodle-sticker.webp"
   },
   {
     "id": "pets-shiver-wolf",
     "name": "Shiver Wolf",
     "category": "pets",
-    "value": 0.5704,
+    "value": 0.5569,
     "demand": 2,
     "image": "images/pets/shiver-wolf.webp"
-  },
-  {
-    "id": "stickers-majestic-pony-sticker",
-    "name": "Majestic Pony Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/majestic-pony-sticker.webp"
-  },
-  {
-    "id": "toys-elf-plush",
-    "name": "Elf Plush",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/elf-plush.webp"
-  },
-  {
-    "id": "gifts-rat-box",
-    "name": "Rat Box",
-    "category": "gifts",
-    "value": 5.798,
-    "demand": 2,
-    "image": "images/gifts/rat-box.webp"
-  },
-  {
-    "id": "pets-dolphin",
-    "name": "Dolphin",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/dolphin.webp"
-  },
-  {
-    "id": "strollers-car-stroller",
-    "name": "Car Stroller",
-    "category": "strollers",
-    "value": 0.0577,
-    "demand": 1,
-    "image": "images/strollers/car-stroller.webp"
-  },
-  {
-    "id": "pets-wood-pigeon",
-    "name": "Wood Pigeon",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/wood-pigeon.webp"
-  },
-  {
-    "id": "pets-snow-monkey",
-    "name": "Snow Monkey",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 2,
-    "image": "images/pets/snow-monkey.webp"
-  },
-  {
-    "id": "pets-pterodactyl",
-    "name": "Pterodactyl",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/pterodactyl.webp"
-  },
-  {
-    "id": "pets-honey-badger",
-    "name": "Honey Badger",
-    "category": "pets",
-    "value": 2.9575,
-    "demand": 2,
-    "image": "images/pets/honey-badger.webp"
-  },
-  {
-    "id": "pets-strawberry-tortle",
-    "name": "Strawberry Tortle",
-    "category": "pets",
-    "value": 13.52,
-    "demand": 2,
-    "image": "images/pets/strawberry-tortle.webp"
-  },
-  {
-    "id": "petwear-eco-orange-pumpkin-pie-wings",
-    "name": "Eco Orange Pumpkin Pie Wings",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/eco-orange-pumpkin-pie-wings.webp"
-  },
-  {
-    "id": "potions-cure-all-potion",
-    "name": "Cure All Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-angus-calf",
-    "name": "Angus Calf",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/angus-calf.webp"
-  },
-  {
-    "id": "stickers-priceless-shrimp-sticker",
-    "name": "Priceless Shrimp Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/priceless-shrimp-sticker.webp"
-  },
-  {
-    "id": "pets-glormy-crab",
-    "name": "Glormy Crab",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/glormy-crab.webp"
-  },
-  {
-    "id": "pets-summer-walrus",
-    "name": "Summer Walrus",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/summer-walrus.webp"
-  },
-  {
-    "id": "stickers-wet-owl-sticker",
-    "name": "Wet Owl Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/stickers/wet-owl-sticker.webp"
-  },
-  {
-    "id": "strollers-stocking-stroller",
-    "name": "Stocking Stroller",
-    "category": "strollers",
-    "value": 0.0635,
-    "demand": 1,
-    "image": "images/strollers/stocking-stroller.webp"
-  },
-  {
-    "id": "vehicles-cupcake-scooter",
-    "name": "Cupcake Scooter",
-    "category": "vehicles",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/vehicles/cupcake-scooter.webp"
-  },
-  {
-    "id": "stickers-shadow-dragon-animated-sticker",
-    "name": "Shadow Dragon Animated Sticker",
-    "category": "stickers",
-    "value": 0.6337,
-    "demand": 2,
-    "image": "images/stickers/shadow-dragon-animated-sticker.webp"
-  },
-  {
-    "id": "pets-hippogriff",
-    "name": "Hippogriff",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/hippogriff.webp"
-  },
-  {
-    "id": "pets-undead-jousting-horse",
-    "name": "Undead Jousting Horse",
-    "category": "pets",
-    "value": 37.18,
-    "demand": 2,
-    "image": "images/pets/undead-jousting-horse.webp"
-  },
-  {
-    "id": "vehicles-regal-roller",
-    "name": "Regal Roller",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/regal-roller.webp"
-  },
-  {
-    "id": "pets-emperor-gorilla",
-    "name": "Emperor Gorilla",
-    "category": "pets",
-    "value": 7.1825,
-    "demand": 2,
-    "image": "images/pets/emperor-gorilla.webp"
-  },
-  {
-    "id": "stickers-parrot-sticker",
-    "name": "Parrot Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/parrot-sticker.webp"
-  },
-  {
-    "id": "eggs-moon-egg",
-    "name": "Moon Egg",
-    "category": "eggs",
-    "value": 0.0634,
-    "demand": 1,
-    "image": "images/eggs/moon-egg.webp"
-  },
-  {
-    "id": "pets-rhino",
-    "name": "Rhino",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/rhino.webp"
-  },
-  {
-    "id": "vehicles-latte-motorcycle",
-    "name": "Latte Motorcycle",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/latte-motorcycle.webp"
-  },
-  {
-    "id": "petwear-star-sunglasses",
-    "name": "Star Sunglasses",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/star-sunglasses.webp"
-  },
-  {
-    "id": "food-levitation-potion",
-    "name": "Levitation Potion",
-    "category": "food",
-    "value": 1.2675,
-    "demand": 1,
-    "image": "images/food/levitation-potion.webp"
-  },
-  {
-    "id": "pets-scarlet-butterfly",
-    "name": "Scarlet Butterfly",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/scarlet-butterfly.webp"
-  },
-  {
-    "id": "toys-dance-arcade-stand",
-    "name": "Dance Arcade Stand",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/toys/dance-arcade-stand.webp"
-  },
-  {
-    "id": "eggs-admin-abuse-egg",
-    "name": "Admin Abuse Egg",
-    "category": "eggs",
-    "value": 0.0429,
-    "demand": 2,
-    "image": "images/eggs/admin-abuse-egg.webp"
-  },
-  {
-    "id": "petwear-flower-monocle",
-    "name": "Flower Monocle",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/flower-monocle.webp"
-  },
-  {
-    "id": "pets-coconut-friend",
-    "name": "Coconut Friend",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/coconut-friend.webp"
-  },
-  {
-    "id": "pets-evil-unicorn",
-    "name": "Evil Unicorn",
-    "category": "pets",
-    "value": 54.5025,
-    "demand": 3,
-    "image": "images/pets/evil-unicorn.webp"
-  },
-  {
-    "id": "strollers-banana-stroller",
-    "name": "Banana Stroller",
-    "category": "strollers",
-    "value": 0.1021,
-    "demand": 1,
-    "image": "images/strollers/banana-stroller.webp"
-  },
-  {
-    "id": "eggs-endangered-egg",
-    "name": "Endangered Egg",
-    "category": "eggs",
-    "value": 0.0355,
-    "demand": 1,
-    "image": "images/eggs/endangered-egg.webp"
-  },
-  {
-    "id": "pets-nessie",
-    "name": "Nessie",
-    "category": "pets",
-    "value": 2.8308,
-    "demand": 2,
-    "image": "images/pets/nessie.webp"
-  },
-  {
-    "id": "pets-giant-black-scarab",
-    "name": "Giant Black Scarab",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/giant-black-scarab.webp"
-  },
-  {
-    "id": "toys-velvet-fuchsia-paint",
-    "name": "Velvet Fuchsia Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/velvet-fuchsia-mega-neon-paint.webp"
-  },
-  {
-    "id": "strollers-shopping-cart-stroller",
-    "name": "Shopping Cart Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-zombie-buffalo-plush",
-    "name": "Zombie Buffalo Plush",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/toys/zombie-buffalo-plush.webp"
-  },
-  {
-    "id": "toys-donut-rattle",
-    "name": "Donut Rattle",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/donut-rattle.webp"
-  },
-  {
-    "id": "pets-shadow-dragon",
-    "name": "Shadow Dragon",
-    "category": "pets",
-    "value": 316.875,
-    "demand": 3,
-    "image": "images/pets/shadow-dragon.webp"
-  },
-  {
-    "id": "pets-goose",
-    "name": "Goose",
-    "category": "pets",
-    "value": 18.8012,
-    "demand": 3,
-    "image": "images/pets/goose.webp"
-  },
-  {
-    "id": "pets-shetland-pony-light-brown",
-    "name": "Shetland Pony Light Brown",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/pets/shetland-pony-light-brown.webp"
-  },
-  {
-    "id": "food-shiver-cone-bait",
-    "name": "Shiver Cone Bait",
-    "category": "food",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/food/shiver-cone-bait.webp"
-  },
-  {
-    "id": "stickers-skelerex-sticker",
-    "name": "Skele-Rex Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/skele-rex-sticker.webp"
-  },
-  {
-    "id": "toys-electric-tide-paint",
-    "name": "Electric Tide Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/electric-tide-mega-neon-paint.webp"
-  },
-  {
-    "id": "stickers-dimorphodon-sticker",
-    "name": "Dimorphodon Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/dimorphodon-sticker.webp"
-  },
-  {
-    "id": "petwear-personal-controller",
-    "name": "Personal Controller",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/personal-controller.webp"
-  },
-  {
-    "id": "pets-glacier-kitsune",
-    "name": "Glacier Kitsune",
-    "category": "pets",
-    "value": 3.4645,
-    "demand": 2,
-    "image": "images/pets/glacier-kitsune.webp"
-  },
-  {
-    "id": "vehicles-pink-scooter",
-    "name": "Pink Scooter",
-    "category": "vehicles",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/vehicles/pink-scooter.webp"
-  },
-  {
-    "id": "pets-glormy-hound",
-    "name": "Glormy Hound",
-    "category": "pets",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/pets/glormy-hound.webp"
-  },
-  {
-    "id": "pets-toucan",
-    "name": "Toucan",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/toucan.webp"
-  },
-  {
-    "id": "pets-alpaca",
-    "name": "Alpaca",
-    "category": "pets",
-    "value": 11.1963,
-    "demand": 3,
-    "image": "images/pets/alpaca.webp"
-  },
-  {
-    "id": "pets-rattlesnake",
-    "name": "Rattlesnake",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/rattlesnake.webp"
-  },
-  {
-    "id": "petwear-golden-hair",
-    "name": "Golden Hair",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/golden-hair.webp"
-  },
-  {
-    "id": "stickers-kitsune-sticker",
-    "name": "Kitsune Sticker",
-    "category": "stickers",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/stickers/kitsune-sticker.webp"
-  },
-  {
-    "id": "pets-vermilion-butterfly",
-    "name": "Vermilion Butterfly",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/vermilion-butterfly.webp"
-  },
-  {
-    "id": "gifts-1000-bucks-silk-bag",
-    "name": "1000 Bucks Silk Bag",
-    "category": "gifts",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/gifts/1000-bucks-silk-bag.webp"
-  },
-  {
-    "id": "pets-scorching-kaijunior",
-    "name": "Scorching Kaijunior",
-    "category": "pets",
-    "value": 1.9435,
-    "demand": 2,
-    "image": "images/pets/scorching-kaijunior.webp"
-  },
-  {
-    "id": "vehicles-ice-plane",
-    "name": "Ice Plane",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/ice-plane.webp"
-  },
-  {
-    "id": "pets-muskrat",
-    "name": "Muskrat",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/muskrat.webp"
-  },
-  {
-    "id": "pets-kelp-raider",
-    "name": "Kelp Raider",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/kelp-raider.webp"
-  },
-  {
-    "id": "pets-mirai-moth",
-    "name": "Mirai Moth",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/mirai-moth.webp"
-  },
-  {
-    "id": "eggs-gemstone-egg",
-    "name": "Gemstone Egg",
-    "category": "eggs",
-    "value": 0.3592,
-    "demand": 2,
-    "image": "images/eggs/gemstone-egg.webp"
-  },
-  {
-    "id": "pets-mini-pig",
-    "name": "Mini Pig",
-    "category": "pets",
-    "value": 21.125,
-    "demand": 3,
-    "image": "images/pets/mini-pig.webp"
-  },
-  {
-    "id": "petwear-rainbow-cloud-wings",
-    "name": "Rainbow Cloud Wings",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/petwear/rainbow-cloud-wings.webp"
-  },
-  {
-    "id": "petwear-strawberry-cupcake-shoes",
-    "name": "Strawberry Cupcake Shoes",
-    "category": "petwear",
-    "value": 80.275,
-    "demand": 2,
-    "image": "images/petwear/strawberry-cupcake-shoes.webp"
-  },
-  {
-    "id": "petwear-bear-hood",
-    "name": "Bear Hood",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/bear-hood.webp"
-  },
-  {
-    "id": "pets-undead-elk",
-    "name": "Undead Elk",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/undead-elk.webp"
-  },
-  {
-    "id": "eggs-royal-aztec-egg",
-    "name": "Royal Aztec Egg",
-    "category": "eggs",
-    "value": 0.5609,
-    "demand": 2,
-    "image": "images/eggs/royal-aztec-egg.webp"
-  },
-  {
-    "id": "vehicles-bumper-car",
-    "name": "Bumper Car",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/bumper-car.webp"
-  },
-  {
-    "id": "vehicles-blue-snowboard",
-    "name": "Blue Snowboard",
-    "category": "vehicles",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/vehicles/blue-snowboard.webp"
-  },
-  {
-    "id": "pets-boohoo",
-    "name": "Boohoo",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/boohoo.webp"
-  },
-  {
-    "id": "vehicles-crescent-moon-car",
-    "name": "Crescent Moon Car",
-    "category": "vehicles",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/vehicles/crescent-moon-car.webp"
-  },
-  {
-    "id": "pets-cow-calf",
-    "name": "Cow Calf",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/cow-calf.webp"
-  },
-  {
-    "id": "pets-royal-corgi",
-    "name": "Royal Corgi",
-    "category": "pets",
-    "value": 1.1407,
-    "demand": 2,
-    "image": "images/pets/royal-corgi.webp"
-  },
-  {
-    "id": "potions-secret-talent-potion",
-    "name": "Secret Talent Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-diamond-griffin",
-    "name": "Diamond Griffin",
-    "category": "pets",
-    "value": 0.4014,
-    "demand": 1,
-    "image": "images/pets/diamond-griffin.webp"
-  },
-  {
-    "id": "pets-dirty-ducky",
-    "name": "Dirty Ducky",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/dirty-ducky.webp"
-  },
-  {
-    "id": "pets-water-moon-bear",
-    "name": "Water Moon Bear",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/water-moon-bear.webp"
-  },
-  {
-    "id": "pets-puma",
-    "name": "Puma",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/puma.webp"
-  },
-  {
-    "id": "vehicles-corsair-cruiser",
-    "name": "Corsair Cruiser",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/corsair-cruiser.webp"
-  },
-  {
-    "id": "strollers-balloon-stroller",
-    "name": "Balloon Stroller",
-    "category": "strollers",
-    "value": 0.1688,
-    "demand": 1,
-    "image": "images/strollers/balloon-stroller.webp"
-  },
-  {
-    "id": "pets-seahorse",
-    "name": "Seahorse",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/seahorse.webp"
-  },
-  {
-    "id": "strollers-halloween-black-witch-hat-stroller",
-    "name": "Halloween Black Witch Hat Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/halloween-black-witch-hat-stroller.webp"
-  },
-  {
-    "id": "pets-garden-snake",
-    "name": "Garden Snake",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/garden-snake.webp"
-  },
-  {
-    "id": "pets-golden-albatross",
-    "name": "Golden Albatross",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/golden-albatross.webp"
-  },
-  {
-    "id": "pets-prismatic-butterfly",
-    "name": "Prismatic Butterfly",
-    "category": "pets",
-    "value": 0.9718,
-    "demand": 2,
-    "image": "images/pets/prismatic-butterfly.webp"
-  },
-  {
-    "id": "strollers-ufo-stroller",
-    "name": "UFO Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/ufo-stroller.webp"
-  },
-  {
-    "id": "pets-wild-boar",
-    "name": "Wild Boar",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/wild-boar.webp"
-  },
-  {
-    "id": "petwear-ghost-kitty-backpack",
-    "name": "Ghost Kitty Backpack",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/ghost-kitty-backpack.webp"
-  },
-  {
-    "id": "pets-canadian-goose",
-    "name": "Canadian Goose",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/canadian-goose.webp"
-  },
-  {
-    "id": "pets-royal-mistletroll",
-    "name": "Royal Mistletroll",
-    "category": "pets",
-    "value": 16.6888,
-    "demand": 2,
-    "image": "images/pets/royal-mistletroll.webp"
-  },
-  {
-    "id": "petwear-knitted-pumpkin-hat",
-    "name": "Knitted Pumpkin Hat",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/knitted-pumpkin-hat.webp"
-  },
-  {
-    "id": "vehicles-convertible",
-    "name": "Convertible",
-    "category": "vehicles",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/vehicles/convertible.webp"
-  },
-  {
-    "id": "toys-celebration-firework-launcher",
-    "name": "Celebration Firework Launcher",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/toys/celebration-firework-launcher.webp"
-  },
-  {
-    "id": "pets-halloween-black-mummy-cat",
-    "name": "Halloween Black Mummy Cat",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/halloween-black-mummy-cat.webp"
-  },
-  {
-    "id": "pets-seagull",
-    "name": "Seagull",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/seagull.webp"
-  },
-  {
-    "id": "vehicles-beachgoer",
-    "name": "Beachgoer",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/beachgoer.webp"
   },
   {
     "id": "pets-chocolate-dutch-guinea-pig",
     "name": "Chocolate Dutch Guinea Pig",
     "category": "pets",
-    "value": 1.0985,
+    "value": 1.0725,
     "demand": 2,
     "image": "images/pets/chocolate-dutch-guinea-pig.webp"
   },
   {
-    "id": "pets-snow-puma",
-    "name": "Snow Puma",
+    "id": "pets-classic-teapot",
+    "name": "Classic Teapot",
     "category": "pets",
-    "value": 0.2535,
+    "value": 0.33,
     "demand": 1,
-    "image": "images/pets/snow-puma.webp"
+    "image": "images/pets/classic-teapot.webp"
   },
   {
-    "id": "pets-highland-cow",
-    "name": "Highland Cow",
+    "id": "pets-donkey",
+    "name": "Donkey",
     "category": "pets",
-    "value": 0.5493,
+    "value": 0.2557,
     "demand": 1,
-    "image": "images/pets/highland-cow.webp"
+    "image": "images/pets/donkey.webp"
   },
   {
-    "id": "pets-mr-whiskerpips",
-    "name": "Mr. Whiskerpips",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/pets/mr-whiskerpips.webp"
-  },
-  {
-    "id": "petwear-magpie-wings",
-    "name": "Magpie Wings",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/magpie-wings.webp"
-  },
-  {
-    "id": "petwear-white-designer-backpack",
-    "name": "White Designer Backpack",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/white-designer-backpack.webp"
-  },
-  {
-    "id": "pets-dimorphodon",
-    "name": "Dimorphodon",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/dimorphodon.webp"
-  },
-  {
-    "id": "pets-pelican",
-    "name": "Pelican",
-    "category": "pets",
-    "value": 16.9,
-    "demand": 2,
-    "image": "images/pets/pelican.webp"
-  },
-  {
-    "id": "eggs-blue-egg",
-    "name": "Blue Egg",
-    "category": "eggs",
-    "value": 17.4169,
-    "demand": 2,
-    "image": "images/eggs/blue-egg.webp"
-  },
-  {
-    "id": "pets-ratatoskr",
-    "name": "Ratatoskr",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/ratatoskr.webp"
-  },
-  {
-    "id": "pets-ladybug",
-    "name": "Ladybug",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/ladybug.webp"
-  },
-  {
-    "id": "pets-gumball-caterpillar",
-    "name": "Gumball Caterpillar",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/gumball-caterpillar.webp"
-  },
-  {
-    "id": "pets-candyfloss-chick",
-    "name": "Candyfloss Chick",
-    "category": "pets",
-    "value": 10.5625,
+    "id": "potions-polymorph-potion",
+    "name": "Polymorph Potion",
+    "category": "potions",
+    "value": 0.05,
     "demand": 3,
-    "image": "images/pets/candyfloss-chick.webp"
+    "image": ""
   },
   {
-    "id": "pets-golden-king-penguin",
-    "name": "Golden King Penguin",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/golden-king-penguin.webp"
-  },
-  {
-    "id": "toys-tropical-surge-paint",
-    "name": "Tropical Surge Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/tropical-surge-mega-neon-paint.webp"
-  },
-  {
-    "id": "pets-brown-springer-spaniel",
-    "name": "Brown Springer Spaniel",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/brown-springer-spaniel.webp"
-  },
-  {
-    "id": "vehicles-emperors-chariot",
-    "name": "Emperor's Chariot",
+    "id": "vehicles-inspector-sherbet-bus",
+    "name": "Inspector Sherbet Bus",
     "category": "vehicles",
-    "value": 0.3802,
+    "value": 0.165,
     "demand": 1,
-    "image": "images/vehicles/emperor-s-chariot.webp"
+    "image": "images/vehicles/inspector-sherbet-bus.webp"
   },
   {
-    "id": "pets-blue-cat",
-    "name": "Blue Cat",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/blue-cat.webp"
-  },
-  {
-    "id": "pets-yellow-butterfly",
-    "name": "Yellow Butterfly",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/yellow-butterfly.webp"
-  },
-  {
-    "id": "vehicles-flower-truck",
-    "name": "Flower Truck",
-    "category": "vehicles",
-    "value": 1.69,
+    "id": "petwear-santa-hat",
+    "name": "Santa Hat",
+    "category": "petwear",
+    "value": 1.2375,
     "demand": 2,
-    "image": "images/vehicles/flower-truck.webp"
+    "image": "images/petwear/santa-hat.webp"
   },
   {
-    "id": "pets-hermit-crab",
-    "name": "Hermit Crab",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/hermit-crab.webp"
-  },
-  {
-    "id": "strollers-snow-globe-stroller",
-    "name": "Snow Globe Stroller",
+    "id": "strollers-snow-mobile-stroller",
+    "name": "Snow Mobile Stroller",
     "category": "strollers",
-    "value": 0.0466,
+    "value": 0.0462,
     "demand": 1,
-    "image": "images/strollers/snow-globe-stroller.webp"
+    "image": "images/strollers/snow-mobile-stroller.webp"
   },
   {
-    "id": "eggs-diamond-egg",
-    "name": "Diamond Egg",
-    "category": "eggs",
-    "value": 0.2194,
+    "id": "pets-fire-mare",
+    "name": "Fire Mare",
+    "category": "pets",
+    "value": 0.495,
     "demand": 1,
-    "image": "images/eggs/diamond-egg.webp"
+    "image": "images/pets/fire-mare.webp"
   },
   {
-    "id": "gifts-premium-gibbon-box",
-    "name": "Premium Gibbon Box",
-    "category": "gifts",
-    "value": 1.3508,
+    "id": "pets-ram",
+    "name": "Ram",
+    "category": "pets",
+    "value": 0.8663,
     "demand": 2,
-    "image": "images/gifts/premium-gibbon-box.webp"
+    "image": "images/pets/ram.webp"
   },
   {
-    "id": "petwear-human-feet-shoes",
-    "name": "Human Feet Shoes",
+    "id": "petwear-three-egg-basket",
+    "name": "Three Egg Basket",
     "category": "petwear",
-    "value": 0.0845,
+    "value": 0.2063,
     "demand": 1,
-    "image": "images/petwear/human-feet-shoes.webp"
+    "image": "images/petwear/three-egg-basket.webp"
   },
   {
-    "id": "pets-budgie-witch",
-    "name": "Budgie Witch",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/budgie-witch.webp"
-  },
-  {
-    "id": "pets-winter-doe",
-    "name": "Winter Doe",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/winter-doe.webp"
-  },
-  {
-    "id": "toys-snowball-launcher",
-    "name": "Snowball Launcher",
-    "category": "toys",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/toys/snowball-launcher.webp"
-  },
-  {
-    "id": "pets-kelp-captain",
-    "name": "Kelp Captain",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 1,
-    "image": "images/pets/kelp-captain.webp"
-  },
-  {
-    "id": "vehicles-dolphin-cruiser",
-    "name": "Dolphin Cruiser",
+    "id": "vehicles-summer-spectacle",
+    "name": "Summer Spectacle",
     "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/dolphin-cruiser.webp"
-  },
-  {
-    "id": "pets-musk-ox",
-    "name": "Musk Ox",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/musk-ox.webp"
-  },
-  {
-    "id": "vehicles-white-scooter",
-    "name": "White Scooter",
-    "category": "vehicles",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/vehicles/white-scooter.webp"
-  },
-  {
-    "id": "pets-chanekeh",
-    "name": "Chanekeh",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/chanekeh.webp"
-  },
-  {
-    "id": "pets-lion-cub",
-    "name": "Lion Cub",
-    "category": "pets",
-    "value": 4.0137,
+    "value": 0.66,
     "demand": 2,
-    "image": "images/pets/lion-cub.webp"
-  },
-  {
-    "id": "pets-shetland-pony-dark-brown",
-    "name": "Shetland Pony Dark Brown",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/shetland-pony-dark-brown.webp"
-  },
-  {
-    "id": "pets-gaelic-fae",
-    "name": "Gaelic Fae",
-    "category": "pets",
-    "value": 1.1407,
-    "demand": 2,
-    "image": "images/pets/gaelic-fae.webp"
-  },
-  {
-    "id": "food-ice-tub",
-    "name": "Ice Tub",
-    "category": "food",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/food/ice-tub.webp"
-  },
-  {
-    "id": "strollers-strawberry-stroller",
-    "name": "Strawberry Stroller",
-    "category": "strollers",
-    "value": 0.1744,
-    "demand": 1,
-    "image": "images/strollers/strawberry-stroller.webp"
-  },
-  {
-    "id": "vehicles-dino-truck",
-    "name": "Dino Truck",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/dino-truck.webp"
-  },
-  {
-    "id": "pets-brachiosaurus",
-    "name": "Brachiosaurus",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/brachiosaurus.webp"
-  },
-  {
-    "id": "pets-rubber-ducky",
-    "name": "Rubber Ducky",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/rubber-ducky.webp"
-  },
-  {
-    "id": "pets-bush-elephant",
-    "name": "Bush Elephant",
-    "category": "pets",
-    "value": 11.1963,
-    "demand": 2,
-    "image": "images/pets/bush-elephant.webp"
-  },
-  {
-    "id": "pets-many-mackerel",
-    "name": "Many Mackerel",
-    "category": "pets",
-    "value": 3.5067,
-    "demand": 2,
-    "image": "images/pets/many-mackerel.webp"
-  },
-  {
-    "id": "pets-shark",
-    "name": "Shark",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/shark.webp"
-  },
-  {
-    "id": "pets-tuxedo-cat",
-    "name": "Tuxedo Cat",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/tuxedo-cat.webp"
-  },
-  {
-    "id": "pets-dracula-parrot",
-    "name": "Dracula Parrot",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/dracula-parrot.webp"
-  },
-  {
-    "id": "petwear-ice-cream-cone-hat",
-    "name": "Ice Cream Cone Hat",
-    "category": "petwear",
-    "value": 3.8025,
-    "demand": 2,
-    "image": "images/petwear/ice-cream-cone-hat.webp"
-  },
-  {
-    "id": "pets-castle-hermit-crab",
-    "name": "Castle Hermit Crab",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/castle-hermit-crab.webp"
-  },
-  {
-    "id": "pets-orange-butterfly",
-    "name": "Orange Butterfly",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/orange-butterfly.webp"
-  },
-  {
-    "id": "vehicles-lavender-teapot-carriage",
-    "name": "Lavender Teapot Carriage",
-    "category": "vehicles",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/vehicles/lavender-teapot-carriage.webp"
-  },
-  {
-    "id": "vehicles-wizard-caravan",
-    "name": "Wizard Caravan",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/wizard-caravan.webp"
-  },
-  {
-    "id": "pets-pineapple-owl",
-    "name": "Pineapple Owl",
-    "category": "pets",
-    "value": 1.8167,
-    "demand": 2,
-    "image": "images/pets/pineapple-owl.webp"
-  },
-  {
-    "id": "pets-giant-panda",
-    "name": "Giant Panda",
-    "category": "pets",
-    "value": 101.8225,
-    "demand": 3,
-    "image": "images/pets/giant-panda.webp"
-  },
-  {
-    "id": "petwear-alien-eyes-hat",
-    "name": "Alien Eyes Hat",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/alien-eyes-hat.webp"
-  },
-  {
-    "id": "petwear-chocolate-chip-bat-dragon-backpack",
-    "name": "Chocolate Chip Bat Dragon Backpack",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/chocolate-chip-bat-dragon-backpack.webp"
-  },
-  {
-    "id": "pets-llama",
-    "name": "Llama",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/llama.webp"
-  },
-  {
-    "id": "petwear-head-chef",
-    "name": "Head Chef",
-    "category": "petwear",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/petwear/head-chef.webp"
-  },
-  {
-    "id": "petwear-purple-green-beads",
-    "name": "Purple & Green Beads",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/purple-green-beads.webp"
-  },
-  {
-    "id": "pets-indian-leopard",
-    "name": "Indian Leopard",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/indian-leopard.webp"
-  },
-  {
-    "id": "food-chocolate-twist",
-    "name": "Chocolate Twist",
-    "category": "food",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/food/chocolate-twist.webp"
-  },
-  {
-    "id": "toys-marsh-plush",
-    "name": "Marsh Plush",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/marsh-plush.webp"
-  },
-  {
-    "id": "pets-ribbon-seal",
-    "name": "Ribbon Seal",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/ribbon-seal.webp"
-  },
-  {
-    "id": "pets-alicorn",
-    "name": "Alicorn",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/alicorn.webp"
-  },
-  {
-    "id": "pets-granny-wolf",
-    "name": "Granny Wolf",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/granny-wolf.webp"
-  },
-  {
-    "id": "pets-ostrich",
-    "name": "Ostrich",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/ostrich.webp"
-  },
-  {
-    "id": "pets-red-crowned-crane",
-    "name": "Red Crowned Crane",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/red-crowned-crane.webp"
-  },
-  {
-    "id": "eggs-royal-fairytale-egg",
-    "name": "Royal Fairytale Egg",
-    "category": "eggs",
-    "value": 0.2105,
-    "demand": 1,
-    "image": "images/eggs/royal-fairytale-egg.webp"
-  },
-  {
-    "id": "pets-bauble-buddies",
-    "name": "Bauble Buddies",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/bauble-buddies.webp"
-  },
-  {
-    "id": "pets-snorgle",
-    "name": "Snorgle",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/snorgle.webp"
-  },
-  {
-    "id": "pets-golden-walrus",
-    "name": "Golden Walrus",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/golden-walrus.webp"
-  },
-  {
-    "id": "pets-parakeet",
-    "name": "Parakeet",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/parakeet.webp"
-  },
-  {
-    "id": "pets-sunflower-friend",
-    "name": "Sunflower Friend",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/sunflower-friend.webp"
-  },
-  {
-    "id": "vehicles-fidget-skateboard",
-    "name": "Fidget Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/fidget-skateboard.webp"
-  },
-  {
-    "id": "pets-halloween-golden-mummy-cat",
-    "name": "Halloween Golden Mummy Cat",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/halloween-golden-mummy-cat.webp"
-  },
-  {
-    "id": "pets-chocolate-chip-bat-dragon",
-    "name": "Chocolate Chip Bat Dragon",
-    "category": "pets",
-    "value": 22.815,
-    "demand": 3,
-    "image": "images/pets/chocolate-chip-bat-dragon.webp"
-  },
-  {
-    "id": "strollers-froggy-stroller",
-    "name": "Froggy Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/froggy-stroller.webp"
-  },
-  {
-    "id": "pets-gilded-snake",
-    "name": "Gilded Snake",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/gilded-snake.webp"
-  },
-  {
-    "id": "pets-griffin",
-    "name": "Griffin",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/griffin.webp"
-  },
-  {
-    "id": "petwear-witch-hat",
-    "name": "Witch Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/witch-hat.webp"
-  },
-  {
-    "id": "pets-ibis",
-    "name": "Ibis",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/ibis.webp"
-  },
-  {
-    "id": "toys-ornament-throw-toy",
-    "name": "Ornament Throw Toy",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/ornament-throw-toy.webp"
-  },
-  {
-    "id": "food-apet-potion",
-    "name": "Ride-A-Pet Potion",
-    "category": "food",
-    "value": 0.5915,
-    "demand": 3,
-    "image": "images/food/ride-a-pet-potion.webp"
-  },
-  {
-    "id": "pets-puptune",
-    "name": "Puptune",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/puptune.webp"
-  },
-  {
-    "id": "eggs-garden-egg",
-    "name": "Garden Egg",
-    "category": "eggs",
-    "value": 0.0972,
-    "demand": 1,
-    "image": "images/eggs/garden-egg.webp"
-  },
-  {
-    "id": "pets-hummingbird",
-    "name": "Hummingbird",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/hummingbird.webp"
-  },
-  {
-    "id": "petwear-bunny-ear-tiara",
-    "name": "Bunny Ear Tiara",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/bunny-ear-tiara.webp"
-  },
-  {
-    "id": "pets-clubtail-dragonfly",
-    "name": "Clubtail Dragonfly",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/clubtail-dragonfly.webp"
-  },
-  {
-    "id": "eggs-zodiac-minion-egg",
-    "name": "Zodiac Minion Egg",
-    "category": "eggs",
-    "value": 0.1322,
-    "demand": 1,
-    "image": "images/eggs/zodiac-minion-egg.webp"
-  },
-  {
-    "id": "petwear-flying-fairy",
-    "name": "Flying Fairy",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/flying-fairy.webp"
-  },
-  {
-    "id": "petwear-steampunk-clock-hat",
-    "name": "Steampunk Clock Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/steampunk-clock-hat.webp"
-  },
-  {
-    "id": "pets-vampire-dragon",
-    "name": "Vampire Dragon",
-    "category": "pets",
-    "value": 6.76,
-    "demand": 2,
-    "image": "images/pets/vampire-dragon.webp"
-  },
-  {
-    "id": "stickers-spinning-cat-animated-sticker",
-    "name": "Spinning Cat Animated Sticker",
-    "category": "stickers",
-    "value": 10.14,
-    "demand": 2,
-    "image": "images/stickers/spinning-cat-animated-sticker.webp"
-  },
-  {
-    "id": "pets-ninja-monkey",
-    "name": "Ninja Monkey",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/ninja-monkey.webp"
-  },
-  {
-    "id": "pets-capybara",
-    "name": "Capybara",
-    "category": "pets",
-    "value": 0.8027,
-    "demand": 2,
-    "image": "images/pets/capybara.webp"
-  },
-  {
-    "id": "pets-black-widow",
-    "name": "Black Widow",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/black-widow.webp"
-  },
-  {
-    "id": "eggs-fairytale-egg",
-    "name": "Fairytale Egg",
-    "category": "eggs",
-    "value": 0.0355,
-    "demand": 1,
-    "image": "images/eggs/fairytale-egg.webp"
-  },
-  {
-    "id": "pets-pink-betta-fish",
-    "name": "Pink Betta Fish",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/pink-betta-fish.webp"
-  },
-  {
-    "id": "pets-sandfish",
-    "name": "Sandfish",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/sandfish.webp"
-  },
-  {
-    "id": "vehicles-personal-cannon-launcher",
-    "name": "Personal Cannon Launcher",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/personal-cannon-launcher.webp"
-  },
-  {
-    "id": "vehicles-candy-snowmobile",
-    "name": "Candy Snowmobile",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/candy-snowmobile.webp"
-  },
-  {
-    "id": "pets-strawberry-shortcake-bat-dragon",
-    "name": "Strawberry Shortcake Bat Dragon",
-    "category": "pets",
-    "value": 23.2375,
-    "demand": 3,
-    "image": "images/pets/strawberry-shortcake-bat-dragon.webp"
-  },
-  {
-    "id": "vehicles-bee-shuttle",
-    "name": "Bee Shuttle",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/bee-shuttle.webp"
-  },
-  {
-    "id": "petwear-shark-swimcap",
-    "name": "Shark Swimcap",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/shark-swimcap.webp"
-  },
-  {
-    "id": "pets-arctic-dusk-dragon",
-    "name": "Arctic Dusk Dragon",
-    "category": "pets",
-    "value": 3.2955,
-    "demand": 3,
-    "image": "images/pets/arctic-dusk-dragon.webp"
-  },
-  {
-    "id": "vehicles-witchs-caravan",
-    "name": "Witch's Caravan",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/witch-s-caravan.webp"
-  },
-  {
-    "id": "stickers-cherry-blossom-flower-sticker",
-    "name": "Cherry Blossom Flower Sticker",
-    "category": "stickers",
-    "value": 0.0211,
-    "demand": 1,
-    "image": "images/stickers/cherry-blossom-flower-sticker.webp"
-  },
-  {
-    "id": "toys-golden-goblet",
-    "name": "Golden Goblet",
-    "category": "toys",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/toys/golden-goblet.webp"
-  },
-  {
-    "id": "pets-zombie-chick",
-    "name": "Zombie Chick",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/zombie-chick.webp"
-  },
-  {
-    "id": "petwear-ghost-hat",
-    "name": "Ghost Hat",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/ghost-hat.webp"
-  },
-  {
-    "id": "pets-burger-bear",
-    "name": "Burger Bear",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/burger-bear.webp"
-  },
-  {
-    "id": "toys-teddy-skele",
-    "name": "Teddy Skele",
-    "category": "toys",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/toys/teddy-skele.webp"
-  },
-  {
-    "id": "pets-cobra",
-    "name": "Cobra",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/cobra.webp"
-  },
-  {
-    "id": "pets-turkey",
-    "name": "Turkey",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 2,
-    "image": "images/pets/turkey.webp"
-  },
-  {
-    "id": "pets-nebula-snake",
-    "name": "Nebula Snake",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/nebula-snake.webp"
-  },
-  {
-    "id": "pets-mini-schnauzer",
-    "name": "Mini Schnauzer",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/mini-schnauzer.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-party-hat",
-    "name": "2022 Birthday Party Hat",
-    "category": "petwear",
-    "value": 13.7312,
-    "demand": 3,
-    "image": "images/petwear/2022-birthday-party-hat.webp"
-  },
-  {
-    "id": "pets-elephant",
-    "name": "Elephant",
-    "category": "pets",
-    "value": 8.6612,
-    "demand": 3,
-    "image": "images/pets/elephant.webp"
-  },
-  {
-    "id": "pets-mouse",
-    "name": "Mouse",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/mouse.webp"
-  },
-  {
-    "id": "pets-glormy-leo",
-    "name": "Glormy Leo",
-    "category": "pets",
-    "value": 2.366,
-    "demand": 2,
-    "image": "images/pets/glormy-leo.webp"
-  },
-  {
-    "id": "petwear-sandwich-hat",
-    "name": "Sandwich Hat",
-    "category": "petwear",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/petwear/sandwich-hat.webp"
-  },
-  {
-    "id": "vehicles-harvest-truck",
-    "name": "Harvest Truck",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/harvest-truck.webp"
-  },
-  {
-    "id": "petwear-eco-brown-hiking-backpack",
-    "name": "Eco Brown Hiking Backpack",
-    "category": "petwear",
-    "value": 1.014,
-    "demand": 2,
-    "image": "images/petwear/eco-brown-hiking-backpack.webp"
-  },
-  {
-    "id": "pets-strawberry-shortcake-ducky",
-    "name": "Strawberry Shortcake Ducky",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/strawberry-shortcake-ducky.webp"
-  },
-  {
-    "id": "pets-blackchested-pheasant",
-    "name": "Black-Chested Pheasant",
-    "category": "pets",
-    "value": 8.6612,
-    "demand": 2,
-    "image": "images/pets/black-chested-pheasant.webp"
-  },
-  {
-    "id": "stickers-kelp-captain-sticker",
-    "name": "Kelp Captain Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/kelp-captain-sticker.webp"
-  },
-  {
-    "id": "toys-carrot-rattle",
-    "name": "Carrot Rattle",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/carrot-rattle.webp"
-  },
-  {
-    "id": "vehicles-horse-and-carriage",
-    "name": "Horse And Carriage",
-    "category": "vehicles",
-    "value": 2.9575,
-    "demand": 2,
-    "image": "images/vehicles/horse-and-carriage.webp"
-  },
-  {
-    "id": "food-maple-leaf-treat",
-    "name": "Maple Leaf Treat",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/maple-leaf-treat.webp"
-  },
-  {
-    "id": "pets-dingo",
-    "name": "Dingo",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/dingo.webp"
-  },
-  {
-    "id": "toys-premium-camping-tent",
-    "name": "Premium Camping Tent",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/premium-camping-tent.webp"
-  },
-  {
-    "id": "pets-ocelot",
-    "name": "Ocelot",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/ocelot.webp"
-  },
-  {
-    "id": "food-golden-bone",
-    "name": "Golden Bone",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-bone.webp"
-  },
-  {
-    "id": "vehicles-dragonster",
-    "name": "Dragonster",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/dragonster.webp"
-  },
-  {
-    "id": "petwear-fantastical-wings",
-    "name": "Fantastical Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/fantastical-wings.webp"
-  },
-  {
-    "id": "food-golden-seed-ball",
-    "name": "Golden Seed Ball",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-seed-ball.webp"
-  },
-  {
-    "id": "pets-gila-monster",
-    "name": "Gila Monster",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/gila-monster.webp"
-  },
-  {
-    "id": "toys-skeleton-winged-glider",
-    "name": "Skeleton Winged Glider",
-    "category": "toys",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/toys/skeleton-winged-glider.webp"
-  },
-  {
-    "id": "petwear-gold-circle-glasses",
-    "name": "Gold Circle Glasses",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 2,
-    "image": "images/petwear/gold-circle-glasses.webp"
-  },
-  {
-    "id": "pets-snowy-mammoth",
-    "name": "Snowy Mammoth",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/snowy-mammoth.webp"
-  },
-  {
-    "id": "gifts-aberdeen-angus-box",
-    "name": "Aberdeen Angus Box",
-    "category": "gifts",
-    "value": 0.0599,
-    "demand": 1,
-    "image": "images/gifts/aberdeen-angus-box.webp"
-  },
-  {
-    "id": "pets-albino-bat",
-    "name": "Albino Bat",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/albino-bat.webp"
-  },
-  {
-    "id": "toys-turkey-plush",
-    "name": "Turkey Plush",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/turkey-plush.webp"
-  },
-  {
-    "id": "petwear-demon-wings",
-    "name": "Demon Wings",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/demon-wings.webp"
-  },
-  {
-    "id": "pets-chameleon",
-    "name": "Chameleon",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/chameleon.webp"
-  },
-  {
-    "id": "pets-scarecrow-crow",
-    "name": "Scarecrow Crow",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/scarecrow-crow.webp"
-  },
-  {
-    "id": "pets-urchin",
-    "name": "Urchin",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/urchin.webp"
-  },
-  {
-    "id": "pets-easter-bunny",
-    "name": "Easter Bunny",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/easter-bunny.webp"
-  },
-  {
-    "id": "pets-possum",
-    "name": "Possum",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/possum.webp"
-  },
-  {
-    "id": "eggs-royal-desert-egg",
-    "name": "Royal Desert Egg",
-    "category": "eggs",
-    "value": 0.6951,
-    "demand": 2,
-    "image": "images/eggs/royal-desert-egg.webp"
-  },
-  {
-    "id": "pets-hawk",
-    "name": "Hawk",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/hawk.webp"
-  },
-  {
-    "id": "pets-ice-cube",
-    "name": "Ice Cube",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/ice-cube.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-5-badge",
-    "name": "2022 Birthday 5 Badge",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/2022-birthday-5-badge.webp"
-  },
-  {
-    "id": "pets-greenchested-pheasant",
-    "name": "Green-Chested Pheasant",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/green-chested-pheasant.webp"
-  },
-  {
-    "id": "pets-wolf",
-    "name": "Wolf",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/wolf.webp"
-  },
-  {
-    "id": "petwear-eco-brown-branch-headphones",
-    "name": "Eco Brown Branch Headphones",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/eco-brown-branch-headphones.webp"
-  },
-  {
-    "id": "pets-tree-sasquatch",
-    "name": "Tree Sasquatch",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/tree-sasquatch.webp"
-  },
-  {
-    "id": "toys-wooden-pogo",
-    "name": "Wooden Pogo",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/wooden-pogo.webp"
-  },
-  {
-    "id": "pets-bird-of-paradise",
-    "name": "Bird of Paradise",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/bird-of-paradise.webp"
-  },
-  {
-    "id": "pets-moonlight-moth",
-    "name": "Moonlight Moth",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/moonlight-moth.webp"
-  },
-  {
-    "id": "pets-kelp-crewmate",
-    "name": "Kelp Crewmate",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/kelp-crewmate.webp"
-  },
-  {
-    "id": "pets-sabertooth",
-    "name": "Sabertooth",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/sabertooth.webp"
-  },
-  {
-    "id": "petwear-buzzing-honeypot-hat",
-    "name": "Buzzing Honeypot Hat",
-    "category": "petwear",
-    "value": 60.84,
-    "demand": 2,
-    "image": "images/petwear/buzzing-honeypot-hat.webp"
-  },
-  {
-    "id": "strollers-rainbow-stroller",
-    "name": "Rainbow Stroller",
-    "category": "strollers",
-    "value": 0.6164,
-    "demand": 2,
-    "image": "images/strollers/rainbow-stroller.webp"
-  },
-  {
-    "id": "eggs-mythic-egg",
-    "name": "Mythic Egg",
-    "category": "eggs",
-    "value": 0.2475,
-    "demand": 2,
-    "image": "images/eggs/mythic-egg.webp"
-  },
-  {
-    "id": "pets-candy-cane-snail",
-    "name": "Candy Cane Snail",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/candy-cane-snail.webp"
-  },
-  {
-    "id": "pets-kiwi",
-    "name": "Kiwi",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/kiwi.webp"
-  },
-  {
-    "id": "vehicles-snow-plow",
-    "name": "Snow Plow",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/snow-plow.webp"
-  },
-  {
-    "id": "vehicles-lava-racer",
-    "name": "Lava Racer",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/lava-racer.webp"
-  },
-  {
-    "id": "petwear-volcanic-boots",
-    "name": "Volcanic Boots",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/volcanic-boots.webp"
-  },
-  {
-    "id": "vehicles-waffle-wagon",
-    "name": "Waffle Wagon",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/waffle-wagon.webp"
-  },
-  {
-    "id": "pets-skelebat",
-    "name": "Skelebat",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/skelebat.webp"
-  },
-  {
-    "id": "petwear-aviator-hat",
-    "name": "Aviator Hat",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/aviator-hat.webp"
-  },
-  {
-    "id": "pets-christmas-pudding-pup",
-    "name": "Christmas Pudding Pup",
-    "category": "pets",
-    "value": 4.3095,
-    "demand": 2,
-    "image": "images/pets/christmas-pudding-pup.webp"
-  },
-  {
-    "id": "petwear-midnight-wings",
-    "name": "Midnight Wings",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/midnight-wings.webp"
-  },
-  {
-    "id": "pets-ginger-cat",
-    "name": "Ginger Cat",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/ginger-cat.webp"
-  },
-  {
-    "id": "food-sugar-skull-potion",
-    "name": "Sugar Skull Potion",
-    "category": "food",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/food/sugar-skull-potion.webp"
-  },
-  {
-    "id": "pets-bullfrog",
-    "name": "Bullfrog",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/bullfrog.webp"
-  },
-  {
-    "id": "petwear-founders-crown",
-    "name": "Founder's Crown",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/founder-s-crown.webp"
-  },
-  {
-    "id": "pets-roadrunner",
-    "name": "Roadrunner",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/roadrunner.webp"
-  },
-  {
-    "id": "gifts-golden-mistletoe",
-    "name": "Golden Mistletoe",
-    "category": "gifts",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/gifts/golden-mistletoe.webp"
-  },
-  {
-    "id": "pets-chickatrice",
-    "name": "Chickatrice",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/chickatrice.webp"
-  },
-  {
-    "id": "pets-snowball-pug",
-    "name": "Snowball Pug",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/snowball-pug.webp"
-  },
-  {
-    "id": "petwear-aztec-crown",
-    "name": "Aztec Crown",
-    "category": "petwear",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/petwear/aztec-crown.webp"
-  },
-  {
-    "id": "petwear-rain-cloud-hat",
-    "name": "Rain Cloud Hat",
-    "category": "petwear",
-    "value": 8.45,
-    "demand": 3,
-    "image": "images/petwear/rain-cloud-hat.webp"
-  },
-  {
-    "id": "petwear-flower-beret",
-    "name": "Flower Beret",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/flower-beret.webp"
-  },
-  {
-    "id": "strollers-hatched-egg-stroller",
-    "name": "Hatched Egg Stroller",
-    "category": "strollers",
-    "value": 0.0836,
-    "demand": 1,
-    "image": "images/strollers/hatched-egg-stroller.webp"
-  },
-  {
-    "id": "pets-woolly-mammoth",
-    "name": "Woolly Mammoth",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/woolly-mammoth.webp"
-  },
-  {
-    "id": "pets-red-fox",
-    "name": "Red Fox",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/red-fox.webp"
-  },
-  {
-    "id": "pets-orca",
-    "name": "Orca",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/orca.webp"
-  },
-  {
-    "id": "petwear-unicorn-horn",
-    "name": "Unicorn Horn",
-    "category": "petwear",
-    "value": 10.985,
-    "demand": 3,
-    "image": "images/petwear/unicorn-horn.webp"
-  },
-  {
-    "id": "stickers-african-painted-dog-sticker",
-    "name": "African Painted Dog Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/african-painted-dog-sticker.webp"
-  },
-  {
-    "id": "pets-dalmatian",
-    "name": "Dalmatian",
-    "category": "pets",
-    "value": 30.8425,
-    "demand": 3,
-    "image": "images/pets/dalmatian.webp"
-  },
-  {
-    "id": "pets-thorny-devil",
-    "name": "Thorny Devil",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/thorny-devil.webp"
-  },
-  {
-    "id": "pets-shih-tzu",
-    "name": "Shih Tzu",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/shih-tzu.webp"
-  },
-  {
-    "id": "pets-brownchested-pheasant",
-    "name": "Brown-Chested Pheasant",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/brown-chested-pheasant.webp"
-  },
-  {
-    "id": "pets-love-bird",
-    "name": "Love Bird",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/love-bird.webp"
-  },
-  {
-    "id": "petwear-sakura-scythe",
-    "name": "Sakura Scythe",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/sakura-scythe.webp"
-  },
-  {
-    "id": "pets-cassowary",
-    "name": "Cassowary",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/cassowary.webp"
-  },
-  {
-    "id": "petwear-energy-aura-feet",
-    "name": "Energy Aura Feet",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/energy-aura-feet.webp"
-  },
-  {
-    "id": "pets-japanese-snow-fairy",
-    "name": "Japanese Snow Fairy",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/japanese-snow-fairy.webp"
-  },
-  {
-    "id": "petwear-angel-wings",
-    "name": "Angel Wings",
-    "category": "petwear",
-    "value": 16.4775,
-    "demand": 3,
-    "image": "images/petwear/angel-wings.webp"
-  },
-  {
-    "id": "vehicles-galleon",
-    "name": "Galleon",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/galleon.webp"
-  },
-  {
-    "id": "vehicles-toxic-barrel",
-    "name": "Toxic Barrel",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/toxic-barrel.webp"
-  },
-  {
-    "id": "stickers-flamingo-sticker",
-    "name": "Flamingo Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/flamingo-sticker.webp"
-  },
-  {
-    "id": "vehicles-unicorn-cycle",
-    "name": "Unicorn Cycle",
-    "category": "vehicles",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/vehicles/unicorn-cycle.webp"
-  },
-  {
-    "id": "pets-shoebill",
-    "name": "Shoebill",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/shoebill.webp"
-  },
-  {
-    "id": "pets-gold-mahi-mahi",
-    "name": "Gold Mahi Mahi",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/gold-mahi-mahi.webp"
-  },
-  {
-    "id": "pets-emberlight",
-    "name": "Emberlight",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/emberlight.webp"
-  },
-  {
-    "id": "pets-kraken",
-    "name": "Kraken",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/kraken.webp"
-  },
-  {
-    "id": "pets-red-dutch-guinea-pig",
-    "name": "Red Dutch Guinea Pig",
-    "category": "pets",
-    "value": 2.8308,
-    "demand": 2,
-    "image": "images/pets/red-dutch-guinea-pig.webp"
-  },
-  {
-    "id": "pets-liger",
-    "name": "Liger",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/liger.webp"
-  },
-  {
-    "id": "pets-rice-cake-rabbit",
-    "name": "Rice Cake Rabbit",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/rice-cake-rabbit.webp"
-  },
-  {
-    "id": "pets-green-amazon",
-    "name": "Green Amazon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/green-amazon.webp"
-  },
-  {
-    "id": "pets-evil-chickatrice",
-    "name": "Evil Chickatrice",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/evil-chickatrice.webp"
-  },
-  {
-    "id": "vehicles-toy-rescue-helicopter",
-    "name": "Toy Rescue Helicopter",
-    "category": "vehicles",
-    "value": 1.014,
-    "demand": 1,
-    "image": "images/vehicles/toy-rescue-helicopter.webp"
-  },
-  {
-    "id": "petwear-leaf-hat",
-    "name": "Leaf Hat",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/leaf-hat.webp"
-  },
-  {
-    "id": "pets-sugar-glider",
-    "name": "Sugar Glider",
-    "category": "pets",
-    "value": 14.1538,
-    "demand": 3,
-    "image": "images/pets/sugar-glider.webp"
-  },
-  {
-    "id": "pets-leviathan",
-    "name": "Leviathan",
-    "category": "pets",
-    "value": 1.3942,
-    "demand": 2,
-    "image": "images/pets/leviathan.webp"
-  },
-  {
-    "id": "pets-toy-poodle",
-    "name": "Toy Poodle",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/toy-poodle.webp"
-  },
-  {
-    "id": "pets-cow",
-    "name": "Cow",
-    "category": "pets",
-    "value": 18.1675,
-    "demand": 3,
-    "image": "images/pets/cow.webp"
-  },
-  {
-    "id": "food-strawberry-shortcake",
-    "name": "Strawberry Shortcake",
-    "category": "food",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/food/strawberry-shortcake.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-cupcake-shoes",
-    "name": "2022 Birthday Cupcake Shoes",
-    "category": "petwear",
-    "value": 10.14,
-    "demand": 3,
-    "image": "images/petwear/2022-birthday-cupcake-shoes.webp"
-  },
-  {
-    "id": "stickers-fairy-bat-dragon-sticker",
-    "name": "Fairy Bat Dragon Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/fairy-bat-dragon-sticker.webp"
-  },
-  {
-    "id": "strollers-smores-stroller",
-    "name": "S'mores Stroller",
-    "category": "strollers",
-    "value": 0.3202,
-    "demand": 1,
-    "image": "images/strollers/s-mores-stroller.webp"
-  },
-  {
-    "id": "stickers-frostclaw-animated-sticker",
-    "name": "Frostclaw Animated Sticker",
-    "category": "stickers",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/stickers/frostclaw-animated-sticker.webp"
-  },
-  {
-    "id": "stickers-sunrise-duckling-sticker",
-    "name": "Sunrise Duckling Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/sunrise-duckling-sticker.webp"
-  },
-  {
-    "id": "gifts-golden-gift",
-    "name": "Golden Gift",
-    "category": "gifts",
-    "value": 11.3205,
-    "demand": 2,
-    "image": "images/gifts/golden-gift.webp"
-  },
-  {
-    "id": "petwear-shadow-aura",
-    "name": "Shadow Aura",
-    "category": "petwear",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/petwear/shadow-aura.webp"
-  },
-  {
-    "id": "petwear-marshmallow-friend",
-    "name": "Marshmallow Friend",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/marshmallow-friend.webp"
-  },
-  {
-    "id": "toys-pumpkin",
-    "name": "Pumpkin",
-    "category": "toys",
-    "value": 6.3375,
-    "demand": 2,
-    "image": "images/toys/pumpkin.webp"
-  },
-  {
-    "id": "toys-scarab-crossbow-grappling-hook",
-    "name": "Scarab Crossbow Grappling Hook",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/scarab-crossbow-grappling-hook.webp"
-  },
-  {
-    "id": "pets-sakura-spirit",
-    "name": "Sakura Spirit",
-    "category": "pets",
-    "value": 4.4363,
-    "demand": 2,
-    "image": "images/pets/sakura-spirit.webp"
-  },
-  {
-    "id": "vehicles-hovercar",
-    "name": "Hovercar",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/hovercar.webp"
-  },
-  {
-    "id": "pets-general-sheepdog",
-    "name": "General Sheepdog",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/general-sheepdog.webp"
-  },
-  {
-    "id": "gifts-walrus-box",
-    "name": "Walrus Box",
-    "category": "gifts",
-    "value": 0.4484,
-    "demand": 2,
-    "image": "images/gifts/walrus-box.webp"
-  },
-  {
-    "id": "petwear-brain-jar",
-    "name": "Brain Jar",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/brain-jar.webp"
-  },
-  {
-    "id": "vehicles-shadow-rider",
-    "name": "Shadow Rider",
-    "category": "vehicles",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/vehicles/shadow-rider.webp"
-  },
-  {
-    "id": "pets-dango-penguins",
-    "name": "Dango Penguins",
-    "category": "pets",
-    "value": 1.5633,
-    "demand": 3,
-    "image": "images/pets/dango-penguins.webp"
-  },
-  {
-    "id": "eggs-desert-egg",
-    "name": "Desert Egg",
-    "category": "eggs",
-    "value": 0.2314,
-    "demand": 2,
-    "image": "images/eggs/desert-egg.webp"
-  },
-  {
-    "id": "pets-pine-marten",
-    "name": "Pine Marten",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/pine-marten.webp"
-  },
-  {
-    "id": "toys-campfire-stories-paint",
-    "name": "Campfire Stories Mega Neon Paint",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 3,
-    "image": "images/toys/campfire-stories-mega-neon-paint.webp"
-  },
-  {
-    "id": "pets-scarecrow-cat",
-    "name": "Scarecrow Cat",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/scarecrow-cat.webp"
-  },
-  {
-    "id": "pets-angus-bull",
-    "name": "Angus Bull",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/angus-bull.webp"
-  },
-  {
-    "id": "pets-magma-moose",
-    "name": "Magma Moose",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/magma-moose.webp"
-  },
-  {
-    "id": "pets-birthday-butterfly-2024",
-    "name": "Birthday Butterfly 2024",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/birthday-butterfly-2024.webp"
-  },
-  {
-    "id": "strollers-easter-egg-stroller",
-    "name": "Easter Egg Stroller",
-    "category": "strollers",
-    "value": 1.1202,
-    "demand": 2,
-    "image": "images/strollers/easter-egg-stroller.webp"
-  },
-  {
-    "id": "petwear-mule-baskets",
-    "name": "Mule Baskets",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/mule-baskets.webp"
-  },
-  {
-    "id": "food-snowflake-potion",
-    "name": "Snowflake Potion",
-    "category": "food",
-    "value": 3.38,
-    "demand": 2,
-    "image": "images/food/snowflake-potion.webp"
-  },
-  {
-    "id": "food-baked-alaska-bait",
-    "name": "Baked Alaska Bait",
-    "category": "food",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/food/baked-alaska-bait.webp"
-  },
-  {
-    "id": "petwear-elf-hat",
-    "name": "Elf Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/elf-hat.webp"
-  },
-  {
-    "id": "toys-donut-throw-toy",
-    "name": "Donut Throw Toy",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/donut-throw-toy.webp"
-  },
-  {
-    "id": "pets-prism-snake",
-    "name": "Prism Snake",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/prism-snake.webp"
-  },
-  {
-    "id": "vehicles-ice-scooter",
-    "name": "Ice Scooter",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/ice-scooter.webp"
-  },
-  {
-    "id": "pets-goat",
-    "name": "Goat",
-    "category": "pets",
-    "value": 3.6335,
-    "demand": 2,
-    "image": "images/pets/goat.webp"
-  },
-  {
-    "id": "pets-blazing-lion",
-    "name": "Blazing Lion",
-    "category": "pets",
-    "value": 92.95,
-    "demand": 3,
-    "image": "images/pets/blazing-lion.webp"
-  },
-  {
-    "id": "pets-gorilla",
-    "name": "Gorilla",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/gorilla.webp"
-  },
-  {
-    "id": "gifts-standard-capuchin-box",
-    "name": "Standard Capuchin Box",
-    "category": "gifts",
-    "value": 0.2234,
-    "demand": 1,
-    "image": "images/gifts/standard-capuchin-box.webp"
-  },
-  {
-    "id": "petwear-lightbulb-hat",
-    "name": "Lightbulb Hat",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/lightbulb-hat.webp"
-  },
-  {
-    "id": "toys-gift-throw-toy",
-    "name": "Gift Throw Toy",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/gift-throw-toy.webp"
-  },
-  {
-    "id": "pets-orchid-butterfly",
-    "name": "Orchid Butterfly",
-    "category": "pets",
-    "value": 55.77,
-    "demand": 2,
-    "image": "images/pets/orchid-butterfly.webp"
-  },
-  {
-    "id": "stickers-sledding-penguin-sticker",
-    "name": "Sledding Penguin Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/sledding-penguin-sticker.webp"
-  },
-  {
-    "id": "pets-turtle",
-    "name": "Turtle",
-    "category": "pets",
-    "value": 13.0975,
-    "demand": 3,
-    "image": "images/pets/turtle.webp"
-  },
-  {
-    "id": "pets-capuchin-monkey",
-    "name": "Capuchin Monkey",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/capuchin-monkey.webp"
-  },
-  {
-    "id": "food-ash-zebra-bait",
-    "name": "Ash Zebra Bait",
-    "category": "food",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/food/ash-zebra-bait.webp"
-  },
-  {
-    "id": "vehicles-cloud-car",
-    "name": "Cloud Car",
-    "category": "vehicles",
-    "value": 14.365,
-    "demand": 2,
-    "image": "images/vehicles/cloud-car.webp"
-  },
-  {
-    "id": "pets-bison",
-    "name": "Bison",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/bison.webp"
-  },
-  {
-    "id": "pets-diamond-ladybug",
-    "name": "Diamond Ladybug",
-    "category": "pets",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/pets/diamond-ladybug.webp"
-  },
-  {
-    "id": "pets-grinmoire",
-    "name": "Grinmoire",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/grinmoire.webp"
-  },
-  {
-    "id": "pets-ghost-wolf",
-    "name": "Ghost Wolf",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/ghost-wolf.webp"
-  },
-  {
-    "id": "stickers-poodle-sticker",
-    "name": "Poodle Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/poodle-sticker.webp"
-  },
-  {
-    "id": "pets-blossom-snake",
-    "name": "Blossom Snake",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/blossom-snake.webp"
-  },
-  {
-    "id": "pets-koala",
-    "name": "Koala",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/koala.webp"
-  },
-  {
-    "id": "food-chocolate",
-    "name": "Chocolate",
-    "category": "food",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/food/chocolate.webp"
-  },
-  {
-    "id": "stickers-cow-sticker",
-    "name": "Cow Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/cow-sticker.webp"
-  },
-  {
-    "id": "pets-frankenfeline",
-    "name": "Frankenfeline",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/frankenfeline.webp"
-  },
-  {
-    "id": "pets-raccoon",
-    "name": "Raccoon",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/raccoon.webp"
-  },
-  {
-    "id": "vehicles-bunny-carriage",
-    "name": "Bunny Carriage",
-    "category": "vehicles",
-    "value": 4.6475,
-    "demand": 2,
-    "image": "images/vehicles/bunny-carriage.webp"
-  },
-  {
-    "id": "pets-ms-muffet",
-    "name": "Ms. Muffet",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/ms-muffet.webp"
-  },
-  {
-    "id": "petwear-cheese-hat",
-    "name": "Cheese Hat",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/cheese-hat.webp"
-  },
-  {
-    "id": "petwear-rb-battles-trophy-hat",
-    "name": "RB Battles Trophy Hat",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/rb-battles-trophy-hat.webp"
-  },
-  {
-    "id": "petwear-tiny-wings",
-    "name": "Tiny Wings",
-    "category": "petwear",
-    "value": 5.4925,
-    "demand": 3,
-    "image": "images/petwear/tiny-wings.webp"
-  },
-  {
-    "id": "pets-sado-mole",
-    "name": "Sado Mole",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/sado-mole.webp"
-  },
-  {
-    "id": "pets-trihorned-treehopper",
-    "name": "Tri-horned Treehopper",
-    "category": "pets",
-    "value": 4.6475,
-    "demand": 2,
-    "image": "images/pets/tri-horned-treehopper.webp"
-  },
-  {
-    "id": "strollers-half-egg-stroller",
-    "name": "Half Egg Stroller",
-    "category": "strollers",
-    "value": 0.6309,
-    "demand": 2,
-    "image": "images/strollers/half-egg-stroller.webp"
-  },
-  {
-    "id": "stickers-santa-pet-rock-sticker",
-    "name": "Santa Pet Rock Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/santa-pet-rock-sticker.webp"
-  },
-  {
-    "id": "pets-bunny",
-    "name": "Bunny",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/bunny.webp"
-  },
-  {
-    "id": "vehicles-prehistoric-car",
-    "name": "Prehistoric Car",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/prehistoric-car.webp"
-  },
-  {
-    "id": "pets-chimera",
-    "name": "Chimera",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/chimera.webp"
-  },
-  {
-    "id": "pets-marabou-stork",
-    "name": "Marabou Stork",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/marabou-stork.webp"
-  },
-  {
-    "id": "vehicles-black-skateboard",
-    "name": "Black Skateboard",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/black-skateboard.webp"
-  },
-  {
-    "id": "pets-halloween-white-skeleton-dog",
-    "name": "Halloween White Skeleton Dog",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/halloween-white-skeleton-dog.webp"
-  },
-  {
-    "id": "petwear-snow-cloud-wings",
-    "name": "Snow Cloud Wings",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/snow-cloud-wings.webp"
-  },
-  {
-    "id": "pets-burning-bunny",
-    "name": "Burning Bunny",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/burning-bunny.webp"
-  },
-  {
-    "id": "pets-ringtailed-lemur",
-    "name": "Ring-Tailed Lemur",
-    "category": "pets",
-    "value": 2.6195,
-    "demand": 2,
-    "image": "images/pets/ring-tailed-lemur.webp"
+    "image": "images/vehicles/summer-spectacle.webp"
   },
   {
     "id": "strollers-nest-stroller",
@@ -10130,1308 +570,380 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "stickers-scorching-kaijunior-sticker",
-    "name": "Scorching Kaijunior Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/scorching-kaijunior-sticker.webp"
-  },
-  {
-    "id": "pets-robin",
-    "name": "Robin",
+    "id": "pets-cheetah",
+    "name": "Cheetah",
     "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/robin.webp"
-  },
-  {
-    "id": "pets-golden-unicorn",
-    "name": "Golden Unicorn",
-    "category": "pets",
-    "value": 0.4014,
-    "demand": 1,
-    "image": "images/pets/golden-unicorn.webp"
-  },
-  {
-    "id": "toys-rib-guitar",
-    "name": "Rib Guitar",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/rib-guitar.webp"
-  },
-  {
-    "id": "pets-flamingo",
-    "name": "Flamingo",
-    "category": "pets",
-    "value": 10.5625,
-    "demand": 3,
-    "image": "images/pets/flamingo.webp"
-  },
-  {
-    "id": "pets-haetae",
-    "name": "Haetae",
-    "category": "pets",
-    "value": 70.135,
-    "demand": 3,
-    "image": "images/pets/haetae.webp"
-  },
-  {
-    "id": "petwear-santas-bow",
-    "name": "Santa's Bow",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/santa-s-bow.webp"
-  },
-  {
-    "id": "toys-candyfloss-paint",
-    "name": "Candyfloss Mega Neon Paint",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 3,
-    "image": "images/toys/candyfloss-mega-neon-paint.webp"
-  },
-  {
-    "id": "gifts-spider-gift",
-    "name": "Spider Gift",
-    "category": "gifts",
-    "value": 0.0676,
-    "demand": 1,
-    "image": "images/gifts/spider-gift.webp"
-  },
-  {
-    "id": "pets-black-springer-spaniel",
-    "name": "Black Springer Spaniel",
-    "category": "pets",
-    "value": 0.7605,
+    "value": 1.2788,
     "demand": 2,
-    "image": "images/pets/black-springer-spaniel.webp"
+    "image": "images/pets/cheetah.webp"
   },
   {
-    "id": "gifts-hermit-crab-box",
-    "name": "Hermit Crab Box",
-    "category": "gifts",
-    "value": 0.6903,
+    "id": "pets-angus-bull",
+    "name": "Angus Bull",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/angus-bull.webp"
+  },
+  {
+    "id": "pets-kiwi",
+    "name": "Kiwi",
+    "category": "pets",
+    "value": 0.7425,
     "demand": 2,
-    "image": "images/gifts/hermit-crab-box.webp"
+    "image": "images/pets/kiwi.webp"
   },
   {
-    "id": "pets-sneak-weasel",
-    "name": "Sneak Weasel",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/sneak-weasel.webp"
-  },
-  {
-    "id": "pets-cockroach",
-    "name": "Cockroach",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/cockroach.webp"
-  },
-  {
-    "id": "pets-flaming-fox",
-    "name": "Flaming Fox",
-    "category": "pets",
-    "value": 1.352,
-    "demand": 2,
-    "image": "images/pets/flaming-fox.webp"
-  },
-  {
-    "id": "pets-armadillo",
-    "name": "Armadillo",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/armadillo.webp"
-  },
-  {
-    "id": "pets-fire-mare",
-    "name": "Fire Mare",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/fire-mare.webp"
-  },
-  {
-    "id": "pets-mecha-r4bbit",
-    "name": "Mecha R4BBIT",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/mecha-r4bbit.webp"
-  },
-  {
-    "id": "pets-bloodhound",
-    "name": "Bloodhound",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/bloodhound.webp"
-  },
-  {
-    "id": "pets-siamese-cat",
-    "name": "Siamese Cat",
-    "category": "pets",
-    "value": 11.6188,
-    "demand": 3,
-    "image": "images/pets/siamese-cat.webp"
-  },
-  {
-    "id": "pets-angler-fish",
-    "name": "Angler Fish",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/angler-fish.webp"
-  },
-  {
-    "id": "stickers-kraken-sticker",
-    "name": "Kraken Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/kraken-sticker.webp"
-  },
-  {
-    "id": "gifts-rgb-reward-box",
-    "name": "RGB Reward Box",
-    "category": "gifts",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-fancy-balloon",
-    "name": "Fancy Balloon",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/fancy-balloon.webp"
-  },
-  {
-    "id": "toys-magic-house-door",
-    "name": "Magic House Door",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 2,
-    "image": "images/toys/magic-house-door.webp"
-  },
-  {
-    "id": "eggs-woodland-egg",
-    "name": "Woodland Egg",
-    "category": "eggs",
-    "value": 0.3825,
-    "demand": 2,
-    "image": "images/eggs/woodland-egg.webp"
-  },
-  {
-    "id": "gifts-small-gift",
-    "name": "Small Gift",
-    "category": "gifts",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "petwear-toaster-hat",
-    "name": "Toaster Hat",
-    "category": "petwear",
-    "value": 5.7038,
-    "demand": 3,
-    "image": "images/petwear/toaster-hat.webp"
-  },
-  {
-    "id": "stickers-candicorn-sticker",
-    "name": "Candicorn Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/candicorn-sticker.webp"
-  },
-  {
-    "id": "petwear-venus-flytrap-hat",
-    "name": "Venus Flytrap Hat",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/venus-flytrap-hat.webp"
-  },
-  {
-    "id": "pets-pomeranian",
-    "name": "Pomeranian",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/pomeranian.webp"
-  },
-  {
-    "id": "vehicles-snowblower-toboggan",
-    "name": "Snowblower Toboggan",
+    "id": "vehicles-landsailer",
+    "name": "Landsailer",
     "category": "vehicles",
-    "value": 0.3802,
+    "value": 0.0825,
     "demand": 1,
-    "image": "images/vehicles/snowblower-toboggan.webp"
+    "image": "images/vehicles/landsailer.webp"
   },
   {
-    "id": "pets-tio-de-nadal",
-    "name": "Tio De Nadal",
-    "category": "pets",
-    "value": 12.8863,
-    "demand": 2,
-    "image": "images/pets/tio-de-nadal.webp"
-  },
-  {
-    "id": "vehicles-adopt-me-girl-scooter",
-    "name": "Adopt Me Girl Scooter",
-    "category": "vehicles",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/vehicles/adopt-me-girl-scooter.webp"
-  },
-  {
-    "id": "petwear-pink-cat-ear-headphones",
-    "name": "Pink Cat Ear Headphones",
-    "category": "petwear",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/petwear/pink-cat-ear-headphones.webp"
-  },
-  {
-    "id": "pets-binturong",
-    "name": "Binturong",
-    "category": "pets",
-    "value": 0.7183,
-    "demand": 2,
-    "image": "images/pets/binturong.webp"
-  },
-  {
-    "id": "pets-villain-gibbon",
-    "name": "Villain Gibbon",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/villain-gibbon.webp"
-  },
-  {
-    "id": "toys-rocket-pogo",
-    "name": "Rocket Pogo",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/toys/rocket-pogo.webp"
-  },
-  {
-    "id": "pets-black-panther",
-    "name": "Black Panther",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/black-panther.webp"
-  },
-  {
-    "id": "pets-chihuahua",
-    "name": "Chihuahua",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 2,
-    "image": "images/pets/chihuahua.webp"
-  },
-  {
-    "id": "pets-dire-wolf",
-    "name": "Dire Wolf",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/dire-wolf.webp"
-  },
-  {
-    "id": "petwear-giraffe-hat",
-    "name": "Giraffe Hat",
-    "category": "petwear",
-    "value": 20.7025,
-    "demand": 2,
-    "image": "images/petwear/giraffe-hat.webp"
-  },
-  {
-    "id": "stickers-dalmatian-sticker",
-    "name": "Dalmatian Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/dalmatian-sticker.webp"
-  },
-  {
-    "id": "pets-albino-gorilla",
-    "name": "Albino Gorilla",
-    "category": "pets",
-    "value": 1.352,
-    "demand": 2,
-    "image": "images/pets/albino-gorilla.webp"
-  },
-  {
-    "id": "petwear-strawberry-plushie-rider",
-    "name": "Strawberry Plushie Rider",
-    "category": "petwear",
-    "value": 49.855,
-    "demand": 2,
-    "image": "images/petwear/strawberry-plushie-rider.webp"
-  },
-  {
-    "id": "petwear-invisible-wings",
-    "name": "Invisible Wings",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/invisible-wings.webp"
-  },
-  {
-    "id": "pets-banded-palm-civet",
-    "name": "Banded Palm Civet",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/banded-palm-civet.webp"
-  },
-  {
-    "id": "vehicles-ice-snowboard",
-    "name": "Ice Snowboard",
-    "category": "vehicles",
-    "value": 4.225,
-    "demand": 1,
-    "image": "images/vehicles/ice-snowboard.webp"
-  },
-  {
-    "id": "toys-cotton-candy-stand",
-    "name": "Cotton Candy Stand",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/cotton-candy-stand.webp"
-  },
-  {
-    "id": "vehicles-shooting-star-board",
-    "name": "Shooting Star Board",
-    "category": "vehicles",
-    "value": 2.7463,
-    "demand": 2,
-    "image": "images/vehicles/shooting-star-board.webp"
-  },
-  {
-    "id": "pets-shrew",
-    "name": "Shrew",
-    "category": "pets",
-    "value": 3.8025,
-    "demand": 2,
-    "image": "images/pets/shrew.webp"
-  },
-  {
-    "id": "strollers-duck-stroller",
-    "name": "Duck Stroller",
+    "id": "strollers-floating-hand-stroller",
+    "name": "Floating Hand Stroller",
     "category": "strollers",
-    "value": 0.7321,
-    "demand": 1,
-    "image": "images/strollers/duck-stroller.webp"
+    "value": 1.1937,
+    "demand": 2,
+    "image": "images/strollers/floating-hand-stroller.webp"
   },
   {
-    "id": "petwear-volcano-hat",
-    "name": "Volcano Hat",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/volcano-hat.webp"
-  },
-  {
-    "id": "toys-teddy-bear",
-    "name": "Teddy Bear",
-    "category": "toys",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/toys/teddy-bear.webp"
-  },
-  {
-    "id": "pets-fairy-bat-dragon",
-    "name": "Fairy Bat Dragon",
+    "id": "pets-christmas-pudding-pup",
+    "name": "Christmas Pudding Pup",
     "category": "pets",
-    "value": 15.21,
+    "value": 4.2075,
+    "demand": 2,
+    "image": "images/pets/christmas-pudding-pup.webp"
+  },
+  {
+    "id": "pets-spinosaurus",
+    "name": "Spinosaurus",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/spinosaurus.webp"
+  },
+  {
+    "id": "pets-unicorn",
+    "name": "Unicorn",
+    "category": "pets",
+    "value": 0.9075,
     "demand": 3,
-    "image": "images/pets/fairy-bat-dragon.webp"
+    "image": "images/pets/unicorn.webp"
   },
   {
-    "id": "stickers-fossil-sticker-pack",
-    "name": "Fossil Sticker Pack",
-    "category": "stickers",
-    "value": 0.0253,
-    "demand": 1,
-    "image": "images/stickers/fossil-sticker-pack.webp"
-  },
-  {
-    "id": "pets-bobageist",
-    "name": "Bobageist",
+    "id": "pets-unicorn-ducky",
+    "name": "Unicorn Ducky",
     "category": "pets",
-    "value": 0.2958,
+    "value": 0.2557,
     "demand": 1,
-    "image": "images/pets/bobageist.webp"
+    "image": "images/pets/unicorn-ducky.webp"
   },
   {
-    "id": "potions-potion",
-    "name": "Fly Potion",
-    "category": "potions",
-    "value": 1.01,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-clementine-owl",
-    "name": "Clementine Owl",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/clementine-owl.webp"
-  },
-  {
-    "id": "gifts-spider-box",
-    "name": "Spider Box",
-    "category": "gifts",
-    "value": 0.24,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-frostbite-bear-and-cub-animated-sticker",
-    "name": "Frostbite Bear and Cub Animated Sticker",
-    "category": "stickers",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/stickers/frostbite-bear-and-cub-animated-sticker.webp"
-  },
-  {
-    "id": "eggs-crystal-egg",
-    "name": "Crystal Egg",
-    "category": "eggs",
-    "value": 0.0429,
-    "demand": 2,
-    "image": "images/eggs/crystal-egg.webp"
-  },
-  {
-    "id": "pets-poodle",
-    "name": "Poodle",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/poodle.webp"
-  },
-  {
-    "id": "petwear-spring-bunny-hood",
-    "name": "Spring Bunny Hood",
-    "category": "petwear",
-    "value": 2.535,
-    "demand": 2,
-    "image": "images/petwear/spring-bunny-hood.webp"
-  },
-  {
-    "id": "pets-gargoyle",
-    "name": "Gargoyle",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/pets/gargoyle.webp"
-  },
-  {
-    "id": "pets-berry-cool-cube",
-    "name": "Berry Cool Cube",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 1,
-    "image": "images/pets/berry-cool-cube.webp"
-  },
-  {
-    "id": "pets-dimension-drifter",
-    "name": "Dimension Drifter",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/dimension-drifter.webp"
-  },
-  {
-    "id": "pets-pretty-pony",
-    "name": "Pretty Pony",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/pets/pretty-pony.webp"
-  },
-  {
-    "id": "vehicles-beach-buggy",
-    "name": "Beach Buggy",
+    "id": "vehicles-speedboat",
+    "name": "Speedboat",
     "category": "vehicles",
-    "value": 0.1268,
+    "value": 0.1237,
     "demand": 1,
-    "image": "images/vehicles/beach-buggy.webp"
+    "image": "images/vehicles/speedboat.webp"
   },
   {
-    "id": "eggs-royal-moon-egg",
-    "name": "Royal Moon Egg",
-    "category": "eggs",
-    "value": 0.8084,
-    "demand": 2,
-    "image": "images/eggs/royal-moon-egg.webp"
-  },
-  {
-    "id": "petwear-kraken-hat",
-    "name": "Kraken Hat",
-    "category": "petwear",
-    "value": 0.2535,
+    "id": "strollers-crystal-ball-stroller",
+    "name": "Crystal Ball Stroller",
+    "category": "strollers",
+    "value": 0.0462,
     "demand": 1,
-    "image": "images/petwear/kraken-hat.webp"
+    "image": "images/strollers/crystal-ball-stroller.webp"
   },
   {
-    "id": "eggs-wrapped-doll",
-    "name": "Wrapped Doll",
-    "category": "eggs",
-    "value": 0.5111,
-    "demand": 1,
-    "image": "images/eggs/wrapped-doll.webp"
-  },
-  {
-    "id": "food-golden-leaf",
-    "name": "Golden Leaf",
-    "category": "food",
-    "value": 10.985,
-    "demand": 2,
-    "image": "images/food/golden-leaf.webp"
-  },
-  {
-    "id": "vehicles-glass-scooter",
-    "name": "Glass Scooter",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/glass-scooter.webp"
-  },
-  {
-    "id": "petwear-cowboy-saddle",
-    "name": "Cowboy Saddle",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/cowboy-saddle.webp"
-  },
-  {
-    "id": "pets-diamond-unicorn",
-    "name": "Diamond Unicorn",
+    "id": "pets-dolphin",
+    "name": "Dolphin",
     "category": "pets",
-    "value": 0.5704,
+    "value": 0.3712,
     "demand": 1,
-    "image": "images/pets/diamond-unicorn.webp"
+    "image": "images/pets/dolphin.webp"
   },
   {
-    "id": "stickers-pig-sticker",
-    "name": "Pig Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/pig-sticker.webp"
-  },
-  {
-    "id": "petwear-duck-floatie",
-    "name": "Duck Floatie",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/duck-floatie.webp"
-  },
-  {
-    "id": "pets-weevil",
-    "name": "Weevil",
+    "id": "pets-storm-condor",
+    "name": "Storm Condor",
     "category": "pets",
-    "value": 0.3591,
+    "value": 0.2557,
     "demand": 1,
-    "image": "images/pets/weevil.webp"
-  },
-  {
-    "id": "pets-robo-dog",
-    "name": "Robo Dog",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/robo-dog.webp"
-  },
-  {
-    "id": "pets-violet-butterfly",
-    "name": "Violet Butterfly",
-    "category": "pets",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/pets/violet-butterfly.webp"
-  },
-  {
-    "id": "vehicles-dogmobile",
-    "name": "Dogmobile",
-    "category": "vehicles",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/vehicles/dogmobile.webp"
-  },
-  {
-    "id": "eggs-easter-2020-egg",
-    "name": "Easter 2020 Egg",
-    "category": "eggs",
-    "value": 0.8052,
-    "demand": 2,
-    "image": "images/eggs/easter-2020-egg.webp"
-  },
-  {
-    "id": "toys-wallet-chew-toy",
-    "name": "Wallet Chew Toy",
-    "category": "toys",
-    "value": 0.0085,
-    "demand": 1,
-    "image": "images/toys/wallet-chew-toy.webp"
-  },
-  {
-    "id": "pets-wolpertinger",
-    "name": "Wolpertinger",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/wolpertinger.webp"
-  },
-  {
-    "id": "pets-icy-porcupine",
-    "name": "Icy Porcupine",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/icy-porcupine.webp"
-  },
-  {
-    "id": "pets-pinkypillar",
-    "name": "Pinkypillar",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/pinkypillar.webp"
-  },
-  {
-    "id": "vehicles-bethink-skateboard",
-    "name": "Bethink Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/bethink-skateboard.webp"
-  },
-  {
-    "id": "vehicles-glass-skateboard",
-    "name": "Glass Skateboard",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/glass-skateboard.webp"
-  },
-  {
-    "id": "vehicles-ruddy-duck-waddler",
-    "name": "Ruddy Duck Waddler",
-    "category": "vehicles",
-    "value": 0.0507,
-    "demand": 1,
-    "image": "images/vehicles/ruddy-duck-waddler.webp"
-  },
-  {
-    "id": "petwear-summer-walrus-sunhat",
-    "name": "Summer Walrus Sunhat",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/summer-walrus-sunhat.webp"
-  },
-  {
-    "id": "food-heart-potion",
-    "name": "Heart Potion",
-    "category": "food",
-    "value": 1.69,
-    "demand": 2,
-    "image": "images/food/heart-potion.webp"
-  },
-  {
-    "id": "pets-black-rhino",
-    "name": "Black Rhino",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/black-rhino.webp"
-  },
-  {
-    "id": "gifts-poltergeist-box",
-    "name": "Poltergeist Box",
-    "category": "gifts",
-    "value": 0.0411,
-    "demand": 1,
-    "image": "images/gifts/poltergeist-box.webp"
+    "image": "images/pets/storm-condor.webp"
   },
   {
     "id": "eggs-farm-egg",
     "name": "Farm Egg",
     "category": "eggs",
-    "value": 37.6156,
+    "value": 35.295,
     "demand": 2,
     "image": "images/eggs/farm-egg.webp"
   },
   {
-    "id": "petwear-ssbd-beanie",
-    "name": "SSBD Beanie",
+    "id": "petwear-bee-hive",
+    "name": "Bee Hive",
     "category": "petwear",
-    "value": 18.59,
-    "demand": 2,
-    "image": "images/petwear/ssbd-beanie.webp"
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/bee-hive.webp"
   },
   {
-    "id": "food-candy-cane",
-    "name": "Candy Cane",
-    "category": "food",
-    "value": 10.14,
-    "demand": 2,
-    "image": "images/food/candy-cane.webp"
+    "id": "eggs-retired-egg",
+    "name": "Retired Egg",
+    "category": "eggs",
+    "value": 0.0353,
+    "demand": 1,
+    "image": "images/eggs/retired-egg.webp"
   },
   {
-    "id": "pets-halloween-white-ghost-dragon",
-    "name": "Halloween White Ghost Dragon",
+    "id": "pets-koala",
+    "name": "Koala",
     "category": "pets",
-    "value": 2.9575,
-    "demand": 2,
-    "image": "images/pets/halloween-white-ghost-dragon.webp"
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/koala.webp"
   },
   {
-    "id": "pets-hot-doggo",
-    "name": "Hot Doggo",
-    "category": "pets",
-    "value": 19.435,
-    "demand": 3,
-    "image": "images/pets/hot-doggo.webp"
-  },
-  {
-    "id": "petwear-pink-heart-glasses",
-    "name": "Pink Heart Glasses",
+    "id": "petwear-sack-of-cash",
+    "name": "Sack of Cash",
     "category": "petwear",
-    "value": 0.845,
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/sack-of-cash.webp"
+  },
+  {
+    "id": "eggs-royal-desert-egg",
+    "name": "Royal Desert Egg",
+    "category": "eggs",
+    "value": 0.7106,
     "demand": 2,
-    "image": "images/petwear/pink-heart-glasses.webp"
+    "image": "images/eggs/royal-desert-egg.webp"
   },
   {
-    "id": "pets-arctic-tern",
-    "name": "Arctic Tern",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/arctic-tern.webp"
-  },
-  {
-    "id": "toys-blue-boohoo-paint",
-    "name": "Blue Boohoo Mega Neon Paint",
-    "category": "toys",
-    "value": 0.4647,
-    "demand": 3,
-    "image": "images/toys/blue-boohoo-mega-neon-paint.webp"
-  },
-  {
-    "id": "petwear-eaten-donut",
-    "name": "Eaten Donut",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/eaten-donut.webp"
-  },
-  {
-    "id": "pets-caramelgeist",
-    "name": "Caramelgeist",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/caramelgeist.webp"
-  },
-  {
-    "id": "pets-gibbon",
-    "name": "Gibbon",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/gibbon.webp"
-  },
-  {
-    "id": "pets-deinonychus",
-    "name": "Deinonychus",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/deinonychus.webp"
-  },
-  {
-    "id": "vehicles-micro-car",
-    "name": "Micro Car",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/micro-car.webp"
-  },
-  {
-    "id": "pets-elasmosaurus",
-    "name": "Elasmosaurus",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/elasmosaurus.webp"
-  },
-  {
-    "id": "pets-eggnog-hare",
-    "name": "Eggnog Hare",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/eggnog-hare.webp"
-  },
-  {
-    "id": "petwear-candy-corn-hat",
-    "name": "Candy Corn Hat",
-    "category": "petwear",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/petwear/candy-corn-hat.webp"
-  },
-  {
-    "id": "pets-stitches",
-    "name": "Stitches",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/stitches.webp"
-  },
-  {
-    "id": "pets-bolt",
-    "name": "Bolt",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/bolt.webp"
-  },
-  {
-    "id": "toys-duck-balloon",
-    "name": "Duck Balloon",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/duck-balloon.webp"
-  },
-  {
-    "id": "food-patterns-egg",
-    "name": "Patterns Egg",
-    "category": "food",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/food/patterns-egg.webp"
-  },
-  {
-    "id": "petwear-natures-crown",
-    "name": "Nature's Crown",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/nature-s-crown.webp"
-  },
-  {
-    "id": "vehicles-fossil-paw-helicopter",
-    "name": "Fossil Paw Helicopter",
-    "category": "vehicles",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/vehicles/fossil-paw-helicopter.webp"
-  },
-  {
-    "id": "pets-indian-flying-fox",
-    "name": "Indian Flying Fox",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/indian-flying-fox.webp"
-  },
-  {
-    "id": "vehicles-moped",
-    "name": "Moped",
-    "category": "vehicles",
-    "value": 0.9295,
-    "demand": 1,
-    "image": "images/vehicles/moped.webp"
-  },
-  {
-    "id": "pets-jellyfish",
-    "name": "Jellyfish",
-    "category": "pets",
-    "value": 5.7038,
-    "demand": 3,
-    "image": "images/pets/jellyfish.webp"
-  },
-  {
-    "id": "pets-2022-uplift-butterfly",
-    "name": "2022 Uplift Butterfly",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/2022-uplift-butterfly.webp"
-  },
-  {
-    "id": "toys-unicorn-plush",
-    "name": "Unicorn Plush",
-    "category": "toys",
-    "value": 1.2675,
+    "id": "eggs-danger-egg",
+    "name": "Danger Egg",
+    "category": "eggs",
+    "value": 0.4922,
     "demand": 2,
-    "image": "images/toys/unicorn-plush.webp"
+    "image": "images/eggs/danger-egg.webp"
   },
   {
-    "id": "pets-spider-crab",
-    "name": "Spider Crab",
+    "id": "pets-cuddly-candle",
+    "name": "Cuddly Candle",
     "category": "pets",
-    "value": 0.4647,
+    "value": 0.66,
     "demand": 1,
-    "image": "images/pets/spider-crab.webp"
+    "image": "images/pets/cuddly-candle.webp"
   },
   {
-    "id": "pets-slug",
-    "name": "Slug",
+    "id": "pets-peacock",
+    "name": "Peacock",
     "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/slug.webp"
-  },
-  {
-    "id": "pets-samoyed",
-    "name": "Samoyed",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/samoyed.webp"
-  },
-  {
-    "id": "pets-evil-chick",
-    "name": "Evil Chick",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/evil-chick.webp"
-  },
-  {
-    "id": "pets-winged-tiger",
-    "name": "Winged Tiger",
-    "category": "pets",
-    "value": 7.3937,
+    "value": 0.7425,
     "demand": 2,
-    "image": "images/pets/winged-tiger.webp"
+    "image": "images/pets/peacock.webp"
   },
   {
-    "id": "pets-woodpecker",
-    "name": "Woodpecker",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/woodpecker.webp"
-  },
-  {
-    "id": "strollers-donut-stroller",
-    "name": "Donut Stroller",
-    "category": "strollers",
-    "value": 0.0836,
-    "demand": 1,
-    "image": "images/strollers/donut-stroller.webp"
-  },
-  {
-    "id": "toys-rainbow-wand",
-    "name": "Rainbow Wand",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/rainbow-wand.webp"
-  },
-  {
-    "id": "pets-fossa",
-    "name": "Fossa",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/fossa.webp"
-  },
-  {
-    "id": "vehicles-doge-scooter",
-    "name": "Doge Scooter",
-    "category": "vehicles",
-    "value": 0.845,
-    "demand": 1,
-    "image": "images/vehicles/doge-scooter.webp"
-  },
-  {
-    "id": "pets-eggnog-dog",
-    "name": "Eggnog Dog",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/eggnog-dog.webp"
-  },
-  {
-    "id": "pets-hammerhead-shark",
-    "name": "Hammerhead Shark",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/hammerhead-shark.webp"
-  },
-  {
-    "id": "vehicles-canine-cruiser",
-    "name": "Canine Cruiser",
-    "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/canine-cruiser.webp"
-  },
-  {
-    "id": "pets-phantom-dragon",
-    "name": "Phantom Dragon",
-    "category": "pets",
-    "value": 5.4925,
-    "demand": 2,
-    "image": "images/pets/phantom-dragon.webp"
-  },
-  {
-    "id": "pets-golden-hummingbird",
-    "name": "Golden Hummingbird",
-    "category": "pets",
-    "value": 0.676,
-    "demand": 1,
-    "image": "images/pets/golden-hummingbird.webp"
-  },
-  {
-    "id": "strollers-triple-stroller",
-    "name": "Triple Stroller",
-    "category": "strollers",
-    "value": 0.0836,
-    "demand": 1,
-    "image": "images/strollers/triple-stroller.webp"
-  },
-  {
-    "id": "stickers-flaming-fox-sticker",
-    "name": "Flaming Fox Sticker",
+    "id": "stickers-otter-sticker",
+    "name": "Otter Sticker",
     "category": "stickers",
-    "value": 0.0423,
+    "value": 0.0578,
     "demand": 1,
-    "image": "images/stickers/flaming-fox-sticker.webp"
+    "image": "images/stickers/otter-sticker.webp"
   },
   {
-    "id": "petwear-rain-boots",
-    "name": "Rain Boots",
-    "category": "petwear",
-    "value": 1.0985,
+    "id": "pets-hare",
+    "name": "Hare",
+    "category": "pets",
+    "value": 1.7738,
     "demand": 2,
-    "image": "images/petwear/rain-boots.webp"
+    "image": "images/pets/hare.webp"
   },
   {
-    "id": "stickers-frog-sticker",
-    "name": "Frog Sticker",
-    "category": "stickers",
-    "value": 0.0592,
+    "id": "strollers-quad-stroller",
+    "name": "Quad Stroller",
+    "category": "strollers",
+    "value": 3.8911,
+    "demand": 2,
+    "image": "images/strollers/quad-stroller.webp"
+  },
+  {
+    "id": "toys-sock-chew-toy",
+    "name": "Sock Chew Toy",
+    "category": "toys",
+    "value": 0.0825,
     "demand": 1,
-    "image": "images/stickers/frog-sticker.webp"
+    "image": "images/toys/sock-chew-toy.webp"
   },
   {
-    "id": "gifts-standard-chest",
-    "name": "Standard Chest",
-    "category": "gifts",
+    "id": "pets-black-kite",
+    "name": "Black Kite",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/black-kite.webp"
+  },
+  {
+    "id": "pets-bandicoot",
+    "name": "Bandicoot",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/bandicoot.webp"
+  },
+  {
+    "id": "pets-pain-au-chat",
+    "name": "Pain au Chat",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 2,
+    "image": "images/pets/pain-au-chat.webp"
+  },
+  {
+    "id": "pets-crocodile",
+    "name": "Crocodile",
+    "category": "pets",
+    "value": 7.0125,
+    "demand": 3,
+    "image": "images/pets/crocodile.webp"
+  },
+  {
+    "id": "pets-slime",
+    "name": "Slime",
+    "category": "pets",
+    "value": 1.8975,
+    "demand": 2,
+    "image": "images/pets/slime.webp"
+  },
+  {
+    "id": "vehicles-rift-rider",
+    "name": "Rift Rider",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/rift-rider.webp"
+  },
+  {
+    "id": "pets-sandfish",
+    "name": "Sandfish",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/sandfish.webp"
+  },
+  {
+    "id": "toys-puppy-plush",
+    "name": "Puppy Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/puppy-plush.webp"
+  },
+  {
+    "id": "petwear-viking-helmet",
+    "name": "Viking Helmet",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/viking-helmet.webp"
+  },
+  {
+    "id": "pets-snorgle",
+    "name": "Snorgle",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/snorgle.webp"
+  },
+  {
+    "id": "pets-yellow-butterfly",
+    "name": "Yellow Butterfly",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/yellow-butterfly.webp"
+  },
+  {
+    "id": "pets-jekyll-hydra",
+    "name": "Jekyll Hydra",
+    "category": "pets",
+    "value": 32.175,
+    "demand": 2,
+    "image": "images/pets/jekyll-hydra.webp"
+  },
+  {
+    "id": "potions-hyperspeed-potion",
+    "name": "Hyperspeed Potion",
+    "category": "potions",
     "value": 0.05,
     "demand": 3,
     "image": ""
   },
   {
-    "id": "strollers-race-car-stroller",
-    "name": "Race Car Stroller",
-    "category": "strollers",
-    "value": 1.0238,
-    "demand": 2,
-    "image": "images/strollers/race-car-stroller.webp"
-  },
-  {
-    "id": "pets-purrowl",
-    "name": "Purrowl",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/purrowl.webp"
-  },
-  {
-    "id": "food-winter-deer-bait",
-    "name": "Winter Deer Bait",
+    "id": "food-super-ageup-potion",
+    "name": "Super Age-Up Potion",
     "category": "food",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/food/winter-deer-bait.webp"
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/food/super-age-up-potion.webp"
   },
   {
-    "id": "toys-aestus-kite",
-    "name": "Aestus Kite",
-    "category": "toys",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/toys/aestus-kite.webp"
+    "id": "pets-toy-monkey",
+    "name": "Toy Monkey",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/toy-monkey.webp"
   },
   {
-    "id": "stickers-fox-sticker",
-    "name": "Fox Sticker",
-    "category": "stickers",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/stickers/fox-sticker.webp"
+    "id": "food-chocolate-drop",
+    "name": "Chocolate Drop",
+    "category": "food",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/food/chocolate-drop.webp"
   },
   {
-    "id": "strollers-french-fries-stroller",
-    "name": "French Fries Stroller",
+    "id": "strollers-cannon-stroller",
+    "name": "Cannon Stroller",
     "category": "strollers",
-    "value": 0.2893,
+    "value": 0.1962,
     "demand": 1,
-    "image": "images/strollers/french-fries-stroller.webp"
+    "image": "images/strollers/cannon-stroller.webp"
   },
   {
-    "id": "pets-firefly",
-    "name": "Firefly",
+    "id": "pets-koi-carp",
+    "name": "Koi Carp",
     "category": "pets",
-    "value": 0.845,
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/koi-carp.webp"
+  },
+  {
+    "id": "pets-evil-rock",
+    "name": "Evil Rock",
+    "category": "pets",
+    "value": 0.66,
     "demand": 2,
-    "image": "images/pets/firefly.webp"
+    "image": "images/pets/evil-rock.webp"
   },
   {
-    "id": "pets-albatross",
-    "name": "Albatross",
+    "id": "pets-snowball-pet",
+    "name": "Snowball Pet",
     "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/albatross.webp"
-  },
-  {
-    "id": "pets-2021-uplift-butterfly",
-    "name": "2021 Uplift Butterfly",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/2021-uplift-butterfly.webp"
-  },
-  {
-    "id": "pets-pudding-cat",
-    "name": "Pudding Cat",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/pudding-cat.webp"
-  },
-  {
-    "id": "pets-lynx",
-    "name": "Lynx",
-    "category": "pets",
-    "value": 0.676,
+    "value": 0.6188,
     "demand": 2,
-    "image": "images/pets/lynx.webp"
+    "image": "images/pets/snowball-pet.webp"
   },
   {
-    "id": "toys-compass",
-    "name": "Compass",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/compass.webp"
-  },
-  {
-    "id": "petwear-strawberry-hat",
-    "name": "Strawberry Hat",
-    "category": "petwear",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/petwear/strawberry-hat.webp"
-  },
-  {
-    "id": "stickers-winter-deer-family-sticker",
-    "name": "Winter Deer Family Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/winter-deer-family-sticker.webp"
-  },
-  {
-    "id": "pets-fennec-fox",
-    "name": "Fennec Fox",
+    "id": "pets-kelp-crewmate",
+    "name": "Kelp Crewmate",
     "category": "pets",
-    "value": 0.2535,
+    "value": 0.33,
     "demand": 1,
-    "image": "images/pets/fennec-fox.webp"
-  },
-  {
-    "id": "petwear-dumpling-friend-hat",
-    "name": "Dumpling Friend Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/petwear/dumpling-friend-hat.webp"
-  },
-  {
-    "id": "pets-corn-doggo",
-    "name": "Corn Doggo",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/corn-doggo.webp"
-  },
-  {
-    "id": "strollers-woodland-cradle-stroller",
-    "name": "Woodland Cradle Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/woodland-cradle-stroller.webp"
-  },
-  {
-    "id": "toys-chick-plush",
-    "name": "Chick Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/chick-plush.webp"
-  },
-  {
-    "id": "petwear-glamicorn-purse-pet",
-    "name": "Glamicorn Purse Pet",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/glamicorn-purse-pet.webp"
-  },
-  {
-    "id": "pets-oakee-wizard",
-    "name": "Oakee Wizard",
-    "category": "pets",
-    "value": 0.3634,
-    "demand": 1,
-    "image": "images/pets/oakee-wizard.webp"
-  },
-  {
-    "id": "vehicles-postie-van",
-    "name": "Postie Van",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/postie-van.webp"
-  },
-  {
-    "id": "stickers-wailing-mr-whiskerpips-sticker",
-    "name": "Wailing Mr. Whiskerpips Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/wailing-mr-whiskerpips-sticker.webp"
+    "image": "images/pets/kelp-crewmate.webp"
   },
   {
     "id": "eggs-safari-egg",
@@ -11442,948 +954,204 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "pets-bald-eagle",
-    "name": "Bald Eagle",
+    "id": "pets-turkey",
+    "name": "Turkey",
     "category": "pets",
-    "value": 6.9713,
+    "value": 1.155,
     "demand": 2,
-    "image": "images/pets/bald-eagle.webp"
+    "image": "images/pets/turkey.webp"
   },
   {
-    "id": "pets-chicken",
-    "name": "Chicken",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/chicken.webp"
-  },
-  {
-    "id": "pets-mosquito",
-    "name": "Mosquito",
-    "category": "pets",
-    "value": 0.2958,
+    "id": "vehicles-shadow-dragon-skateboard",
+    "name": "Shadow Dragon Skateboard",
+    "category": "vehicles",
+    "value": 0.2475,
     "demand": 1,
-    "image": "images/pets/mosquito.webp"
+    "image": "images/vehicles/shadow-dragon-skateboard.webp"
   },
   {
-    "id": "pets-2d-doggy",
-    "name": "2D Doggy",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 1,
-    "image": "images/pets/2d-doggy.webp"
-  },
-  {
-    "id": "petwear-mandarins-hat",
-    "name": "Mandarin's Hat",
+    "id": "petwear-thinking-hat",
+    "name": "Thinking Hat",
     "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/mandarin-s-hat.webp"
-  },
-  {
-    "id": "pets-old-king-coal",
-    "name": "Old King Coal",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/old-king-coal.webp"
-  },
-  {
-    "id": "pets-great-pyrenees",
-    "name": "Great Pyrenees",
-    "category": "pets",
-    "value": 0.6337,
+    "value": 0.5363,
     "demand": 2,
-    "image": "images/pets/great-pyrenees.webp"
+    "image": "images/petwear/thinking-hat.webp"
+  },
+  {
+    "id": "toys-heart-balloon",
+    "name": "Heart Balloon",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/heart-balloon.webp"
+  },
+  {
+    "id": "pets-robin",
+    "name": "Robin",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/robin.webp"
+  },
+  {
+    "id": "vehicles-ice-queen-sleigh",
+    "name": "Ice Queen Sleigh",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/ice-queen-sleigh.webp"
+  },
+  {
+    "id": "petwear-purple-green-beads",
+    "name": "Purple & Green Beads",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/purple-green-beads.webp"
+  },
+  {
+    "id": "petwear-sandwich-hat",
+    "name": "Sandwich Hat",
+    "category": "petwear",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/petwear/sandwich-hat.webp"
+  },
+  {
+    "id": "petwear-candy-corn-hat",
+    "name": "Candy Corn Hat",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/candy-corn-hat.webp"
+  },
+  {
+    "id": "strollers-hover-stroller",
+    "name": "Hover Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/hover-stroller.webp"
+  },
+  {
+    "id": "vehicles-flower-wagon",
+    "name": "Flower Wagon",
+    "category": "vehicles",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/vehicles/flower-wagon.webp"
+  },
+  {
+    "id": "strollers-flower-stroller",
+    "name": "Flower Stroller",
+    "category": "strollers",
+    "value": 0.2524,
+    "demand": 1,
+    "image": "images/strollers/flower-stroller.webp"
   },
   {
     "id": "pets-candicorn",
     "name": "Candicorn",
     "category": "pets",
-    "value": 6.9713,
+    "value": 7.0125,
     "demand": 3,
     "image": "images/pets/candicorn.webp"
   },
   {
-    "id": "petwear-tutu",
-    "name": "Tutu",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 2,
-    "image": "images/petwear/tutu.webp"
-  },
-  {
-    "id": "toys-kangaroo-pogo",
-    "name": "Kangaroo Pogo",
-    "category": "toys",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/toys/kangaroo-pogo.webp"
-  },
-  {
-    "id": "pets-cupid-dragon",
-    "name": "Cupid Dragon",
+    "id": "pets-shark-puppy",
+    "name": "Shark Puppy",
     "category": "pets",
-    "value": 3.8025,
+    "value": 6.1875,
     "demand": 3,
-    "image": "images/pets/cupid-dragon.webp"
+    "image": "images/pets/shark-puppy.webp"
   },
   {
-    "id": "pets-momma-moose",
-    "name": "Momma Moose",
-    "category": "pets",
-    "value": 0.4225,
+    "id": "toys-fancy-umbrella",
+    "name": "Fancy Umbrella",
+    "category": "toys",
+    "value": 0.33,
     "demand": 1,
-    "image": "images/pets/momma-moose.webp"
+    "image": "images/toys/fancy-umbrella.webp"
   },
   {
-    "id": "pets-swan",
-    "name": "Swan",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/swan.webp"
-  },
-  {
-    "id": "pets-clover-cow",
-    "name": "Clover Cow",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/clover-cow.webp"
-  },
-  {
-    "id": "strollers-egyptian-chariot-stroller",
-    "name": "Egyptian Chariot Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/egyptian-chariot-stroller.webp"
-  },
-  {
-    "id": "vehicles-banana-car",
-    "name": "Banana Car",
+    "id": "vehicles-convertible",
+    "name": "Convertible",
     "category": "vehicles",
-    "value": 0.2535,
+    "value": 1.0725,
     "demand": 1,
-    "image": "images/vehicles/banana-car.webp"
+    "image": "images/vehicles/convertible.webp"
   },
   {
-    "id": "petwear-cutlass",
-    "name": "Cutlass",
-    "category": "petwear",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/petwear/cutlass.webp"
-  },
-  {
-    "id": "pets-stingray",
-    "name": "Stingray",
+    "id": "pets-bali-starling",
+    "name": "Bali Starling",
     "category": "pets",
-    "value": 0.2958,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/pets/stingray.webp"
+    "image": "images/pets/bali-starling.webp"
   },
   {
-    "id": "food-golden-wheat",
-    "name": "Golden Wheat",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-wheat.webp"
-  },
-  {
-    "id": "pets-winter-buck",
-    "name": "Winter Buck",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/winter-buck.webp"
-  },
-  {
-    "id": "toys-christmas-doge-rattle",
-    "name": "Christmas Doge Rattle",
+    "id": "toys-donut-throw-toy",
+    "name": "Donut Throw Toy",
     "category": "toys",
-    "value": 0.2535,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/toys/christmas-doge-rattle.webp"
+    "image": "images/toys/donut-throw-toy.webp"
   },
   {
-    "id": "toys-football-throw-toy",
-    "name": "Football Throw Toy",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/football-throw-toy.webp"
-  },
-  {
-    "id": "pets-red-squirrel",
-    "name": "Red Squirrel",
+    "id": "pets-california-condor",
+    "name": "California Condor",
     "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/red-squirrel.webp"
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/california-condor.webp"
   },
   {
-    "id": "stickers-bat-dragon-sticker",
-    "name": "Bat Dragon Sticker",
+    "id": "stickers-tree-decorating-animated-sticker",
+    "name": "Tree Decorating Animated Sticker",
     "category": "stickers",
-    "value": 0.2958,
+    "value": 0.495,
     "demand": 2,
-    "image": "images/stickers/bat-dragon-sticker.webp"
+    "image": "images/stickers/tree-decorating-animated-sticker.webp"
   },
   {
-    "id": "pets-turtle-doves",
-    "name": "Turtle Doves",
+    "id": "pets-albino-monkey",
+    "name": "Albino Monkey",
     "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/turtle-doves.webp"
-  },
-  {
-    "id": "vehicles-classic-american-car",
-    "name": "Classic American Car",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/classic-american-car.webp"
-  },
-  {
-    "id": "stickers-phoenix-sticker",
-    "name": "Phoenix Sticker",
-    "category": "stickers",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/stickers/phoenix-sticker.webp"
-  },
-  {
-    "id": "pets-purple-butterfly",
-    "name": "Purple Butterfly",
-    "category": "pets",
-    "value": 1.8167,
-    "demand": 2,
-    "image": "images/pets/purple-butterfly.webp"
-  },
-  {
-    "id": "petwear-candy-cane",
-    "name": "Candy Cane (Pet Wear)",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/candy-cane-pet-wear.webp"
-  },
-  {
-    "id": "pets-emperor-shrimp",
-    "name": "Emperor Shrimp",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/emperor-shrimp.webp"
-  },
-  {
-    "id": "vehicles-imagination-box",
-    "name": "Imagination Box",
-    "category": "vehicles",
-    "value": 0.2112,
-    "demand": 1,
-    "image": "images/vehicles/imagination-box.webp"
-  },
-  {
-    "id": "pets-clumpty",
-    "name": "Clumpty",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/clumpty.webp"
-  },
-  {
-    "id": "petwear-summer-straw-hat",
-    "name": "Summer Straw Hat",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/summer-straw-hat.webp"
-  },
-  {
-    "id": "pets-peahen",
-    "name": "Peahen",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/pets/peahen.webp"
-  },
-  {
-    "id": "pets-pilot-gull",
-    "name": "Pilot Gull",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/pilot-gull.webp"
-  },
-  {
-    "id": "food-fire-horse-apple",
-    "name": "Fire Horse Apple",
-    "category": "food",
-    "value": 0.0169,
-    "demand": 1,
-    "image": "images/food/fire-horse-apple.webp"
-  },
-  {
-    "id": "toys-telescope-pogo",
-    "name": "Telescope Pogo",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/telescope-pogo.webp"
-  },
-  {
-    "id": "pets-scarecrow",
-    "name": "Scarecrow",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/scarecrow.webp"
-  },
-  {
-    "id": "pets-gingerbread-mouse",
-    "name": "Gingerbread Mouse",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/gingerbread-mouse.webp"
-  },
-  {
-    "id": "pets-vulture",
-    "name": "Vulture",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/vulture.webp"
-  },
-  {
-    "id": "toys-reindeer-plush",
-    "name": "Reindeer Plush",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/reindeer-plush.webp"
-  },
-  {
-    "id": "petwear-monkey-king-crown",
-    "name": "Monkey King Crown",
-    "category": "petwear",
-    "value": 0.9295,
-    "demand": 2,
-    "image": "images/petwear/monkey-king-crown.webp"
-  },
-  {
-    "id": "pets-maine-coon",
-    "name": "Maine Coon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/maine-coon.webp"
-  },
-  {
-    "id": "strollers-pumpkin-stroller",
-    "name": "Pumpkin Stroller",
-    "category": "strollers",
-    "value": 0.1631,
-    "demand": 1,
-    "image": "images/strollers/pumpkin-stroller.webp"
-  },
-  {
-    "id": "petwear-bready-necklace",
-    "name": "Bready Necklace",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/bready-necklace.webp"
-  },
-  {
-    "id": "pets-diamond-albatross",
-    "name": "Diamond Albatross",
-    "category": "pets",
-    "value": 4.4363,
-    "demand": 2,
-    "image": "images/pets/diamond-albatross.webp"
-  },
-  {
-    "id": "gifts-lunar-tiger-box",
-    "name": "Lunar Tiger Box",
-    "category": "gifts",
-    "value": 0.1559,
-    "demand": 1,
-    "image": "images/gifts/lunar-tiger-box.webp"
-  },
-  {
-    "id": "vehicles-rgb-monster-truck",
-    "name": "RGB Monster Truck",
-    "category": "vehicles",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/vehicles/rgb-monster-truck.webp"
-  },
-  {
-    "id": "pets-aestus",
-    "name": "Aestus",
-    "category": "pets",
-    "value": 2.4505,
-    "demand": 2,
-    "image": "images/pets/aestus.webp"
-  },
-  {
-    "id": "pets-blue-whale",
-    "name": "Blue Whale",
-    "category": "pets",
-    "value": 0.3591,
-    "demand": 1,
-    "image": "images/pets/blue-whale.webp"
-  },
-  {
-    "id": "strollers-crystal-ball-stroller",
-    "name": "Crystal Ball Stroller",
-    "category": "strollers",
-    "value": 0.0466,
-    "demand": 1,
-    "image": "images/strollers/crystal-ball-stroller.webp"
-  },
-  {
-    "id": "pets-red-sand-dollar",
-    "name": "Red Sand Dollar",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/red-sand-dollar.webp"
-  },
-  {
-    "id": "petwear-santa-hat",
-    "name": "Santa Hat",
-    "category": "petwear",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/petwear/santa-hat.webp"
-  },
-  {
-    "id": "stickers-scarebear-sticker",
-    "name": "Scarebear Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/scarebear-sticker.webp"
-  },
-  {
-    "id": "pets-fire-foal",
-    "name": "Fire Foal",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/fire-foal.webp"
-  },
-  {
-    "id": "eggs-aussie-egg",
-    "name": "Aussie Egg",
-    "category": "eggs",
-    "value": 2.6809,
+    "value": 8.4562,
     "demand": 3,
-    "image": "images/eggs/aussie-egg.webp"
+    "image": "images/pets/albino-monkey.webp"
   },
   {
-    "id": "pets-galapagos-sea-lion",
-    "name": "Galapagos Sea Lion",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/galapagos-sea-lion.webp"
-  },
-  {
-    "id": "toys-cookie-dough-plush",
-    "name": "Cookie Dough Plush",
+    "id": "toys-marsh-plush",
+    "name": "Marsh Plush",
     "category": "toys",
-    "value": 0.169,
+    "value": 0.2475,
     "demand": 1,
-    "image": "images/toys/cookie-dough-plush.webp"
+    "image": "images/toys/marsh-plush.webp"
   },
   {
-    "id": "pets-golden-rat",
-    "name": "Golden Rat",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/golden-rat.webp"
-  },
-  {
-    "id": "pets-shadow-dragon-ducky",
-    "name": "Shadow Dragon Ducky",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/pets/shadow-dragon-ducky.webp"
-  },
-  {
-    "id": "vehicles-traveling-house",
-    "name": "Traveling House",
+    "id": "vehicles-dino-truck",
+    "name": "Dino Truck",
     "category": "vehicles",
-    "value": 0.2535,
+    "value": 0.2063,
     "demand": 1,
-    "image": "images/vehicles/traveling-house.webp"
+    "image": "images/vehicles/dino-truck.webp"
   },
   {
-    "id": "strollers-claw-machine-stroller",
-    "name": "Claw Machine Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/claw-machine-stroller.webp"
-  },
-  {
-    "id": "toys-marshmallow-stand",
-    "name": "Marshmallow Stand",
+    "id": "toys-ornament-throw-toy",
+    "name": "Ornament Throw Toy",
     "category": "toys",
-    "value": 0.2535,
+    "value": 0.1237,
     "demand": 1,
-    "image": "images/toys/marshmallow-stand.webp"
+    "image": "images/toys/ornament-throw-toy.webp"
   },
   {
-    "id": "pets-manta-ray",
-    "name": "Manta Ray",
-    "category": "pets",
-    "value": 0.4014,
-    "demand": 1,
-    "image": "images/pets/manta-ray.webp"
-  },
-  {
-    "id": "pets-frost-phoenix",
-    "name": "Frost Phoenix",
-    "category": "pets",
-    "value": 1.3942,
-    "demand": 2,
-    "image": "images/pets/frost-phoenix.webp"
-  },
-  {
-    "id": "pets-orange-betta-fish",
-    "name": "Orange Betta Fish",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/orange-betta-fish.webp"
-  },
-  {
-    "id": "strollers-ice-skate-stroller",
-    "name": "Ice Skate Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-singularity-beetle",
-    "name": "Singularity Beetle",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/singularity-beetle.webp"
-  },
-  {
-    "id": "vehicles-roblox-snowboard",
-    "name": "Roblox Snowboard",
-    "category": "vehicles",
-    "value": 4.225,
-    "demand": 1,
-    "image": "images/vehicles/roblox-snowboard.webp"
-  },
-  {
-    "id": "pets-giraffe",
-    "name": "Giraffe",
-    "category": "pets",
-    "value": 217.165,
-    "demand": 3,
-    "image": "images/pets/giraffe.webp"
-  },
-  {
-    "id": "stickers-jousting-horse-sticker",
-    "name": "Jousting Horse Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/jousting-horse-sticker.webp"
-  },
-  {
-    "id": "vehicles-donut-cycle",
-    "name": "Donut Cycle",
-    "category": "vehicles",
-    "value": 0.7605,
-    "demand": 1,
-    "image": "images/vehicles/donut-cycle.webp"
-  },
-  {
-    "id": "strollers-lunar-new-year-rickshaw-stroller",
-    "name": "Lunar New Year Rickshaw Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/lunar-new-year-rickshaw-stroller.webp"
-  },
-  {
-    "id": "pets-dracula-fish",
-    "name": "Dracula Fish",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/dracula-fish.webp"
-  },
-  {
-    "id": "petwear-queen-bee-slippers",
-    "name": "Queen Bee Slippers",
+    "id": "petwear-giraffe-backpack",
+    "name": "Giraffe Backpack",
     "category": "petwear",
-    "value": 37.18,
+    "value": 31.35,
     "demand": 2,
-    "image": "images/petwear/queen-bee-slippers.webp"
-  },
-  {
-    "id": "pets-starmite",
-    "name": "Starmite",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/starmite.webp"
-  },
-  {
-    "id": "toys-ferris-wheel-propeller",
-    "name": "Ferris Wheel Propeller",
-    "category": "toys",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/toys/ferris-wheel-propeller.webp"
-  },
-  {
-    "id": "petwear-satellite-spinner",
-    "name": "Satellite Spinner",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/satellite-spinner.webp"
-  },
-  {
-    "id": "vehicles-super-jetpack",
-    "name": "Super Jetpack",
-    "category": "vehicles",
-    "value": 11.83,
-    "demand": 2,
-    "image": "images/vehicles/super-jetpack.webp"
-  },
-  {
-    "id": "pets-frozen-penguin",
-    "name": "Frozen Penguin",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/frozen-penguin.webp"
-  },
-  {
-    "id": "petwear-candy-cane-wings",
-    "name": "Candy Cane Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/candy-cane-wings.webp"
-  },
-  {
-    "id": "pets-little-lamb",
-    "name": "Little Lamb",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/little-lamb.webp"
-  },
-  {
-    "id": "stickers-jekyll-hydra-animated-sticker",
-    "name": "Jekyll Hydra Animated Sticker",
-    "category": "stickers",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/stickers/jekyll-hydra-animated-sticker.webp"
-  },
-  {
-    "id": "pets-panda",
-    "name": "Panda",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/panda.webp"
-  },
-  {
-    "id": "pets-puffin",
-    "name": "Puffin",
-    "category": "pets",
-    "value": 2.873,
-    "demand": 2,
-    "image": "images/pets/puffin.webp"
-  },
-  {
-    "id": "vehicles-galactic-hoverboard",
-    "name": "Galactic Hoverboard",
-    "category": "vehicles",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/vehicles/galactic-hoverboard.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-cake",
-    "name": "2022 Birthday Cake",
-    "category": "petwear",
-    "value": 12.2525,
-    "demand": 3,
-    "image": "images/petwear/2022-birthday-cake.webp"
-  },
-  {
-    "id": "pets-mahi-mahi",
-    "name": "Mahi Mahi",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/mahi-mahi.webp"
-  },
-  {
-    "id": "toys-candle",
-    "name": "Candle",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/candle.webp"
-  },
-  {
-    "id": "pets-cactus-friend",
-    "name": "Cactus Friend",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/cactus-friend.webp"
-  },
-  {
-    "id": "petwear-eyepatch",
-    "name": "Eyepatch",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/eyepatch.webp"
-  },
-  {
-    "id": "vehicles-snowmobile",
-    "name": "Snowmobile",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/snowmobile.webp"
-  },
-  {
-    "id": "stickers-cow-loves-this-sticker",
-    "name": "Cow Loves This Sticker",
-    "category": "stickers",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/stickers/cow-loves-this-sticker.webp"
-  },
-  {
-    "id": "toys-dragon-balloon",
-    "name": "Dragon Balloon",
-    "category": "toys",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/toys/dragon-balloon.webp"
-  },
-  {
-    "id": "petwear-pink-butterfly-wings",
-    "name": "Pink Butterfly Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/pink-butterfly-wings.webp"
-  },
-  {
-    "id": "petwear-viking-helmet",
-    "name": "Viking Helmet",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/viking-helmet.webp"
-  },
-  {
-    "id": "strollers-teacup-stroller",
-    "name": "Teacup Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-glormy-dolphin",
-    "name": "Glormy Dolphin",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/glormy-dolphin.webp"
-  },
-  {
-    "id": "stickers-premium-sticker-pack",
-    "name": "Premium Sticker Pack",
-    "category": "stickers",
-    "value": 0.3802,
-    "demand": 2,
-    "image": "images/stickers/premium-sticker-pack.webp"
-  },
-  {
-    "id": "toys-anna-rattle",
-    "name": "Anna Rattle",
-    "category": "toys",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/toys/anna-rattle.webp"
-  },
-  {
-    "id": "pets-platypus",
-    "name": "Platypus",
-    "category": "pets",
-    "value": 1.9435,
-    "demand": 2,
-    "image": "images/pets/platypus.webp"
-  },
-  {
-    "id": "pets-evil-basilisk",
-    "name": "Evil Basilisk",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/evil-basilisk.webp"
-  },
-  {
-    "id": "vehicles-orange-skateboard",
-    "name": "Neon Orange Skateboard",
-    "category": "vehicles",
-    "value": 1.0985,
-    "demand": 1,
-    "image": "images/vehicles/neon-orange-skateboard.webp"
-  },
-  {
-    "id": "pets-hero-gibbon",
-    "name": "Hero Gibbon",
-    "category": "pets",
-    "value": 5.07,
-    "demand": 2,
-    "image": "images/pets/hero-gibbon.webp"
-  },
-  {
-    "id": "petwear-bat-wings",
-    "name": "Bat Wings",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/bat-wings.webp"
-  },
-  {
-    "id": "pets-amethyst-penguin",
-    "name": "Amethyst Penguin",
-    "category": "pets",
-    "value": 72.67,
-    "demand": 2,
-    "image": "images/pets/amethyst-penguin.webp"
-  },
-  {
-    "id": "strollers-princess-stroller",
-    "name": "Princess Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-royal-palace-spaniel",
-    "name": "Royal Palace Spaniel",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/royal-palace-spaniel.webp"
-  },
-  {
-    "id": "stickers-vol-2-pets-plus-sticker-pack",
-    "name": "Vol. 2 Pets Plus Sticker Pack",
-    "category": "stickers",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/stickers/vol-2-pets-plus-sticker-pack.webp"
-  },
-  {
-    "id": "toys-croc-plush",
-    "name": "Croc Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/croc-plush.webp"
-  },
-  {
-    "id": "toys-inflatable-sword",
-    "name": "Inflatable Sword",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/inflatable-sword.webp"
-  },
-  {
-    "id": "pets-gecko-ducky",
-    "name": "Gecko Ducky",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/gecko-ducky.webp"
-  },
-  {
-    "id": "pets-monkey",
-    "name": "Monkey",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/monkey.webp"
-  },
-  {
-    "id": "pets-jiggly-jerboa",
-    "name": "Jiggly Jerboa",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/jiggly-jerboa.webp"
-  },
-  {
-    "id": "strollers-hot-cocoa-stroller",
-    "name": "Hot Cocoa Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "stickers-turtle-sticker",
-    "name": "Turtle Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/turtle-sticker.webp"
-  },
-  {
-    "id": "pets-mummy-spider",
-    "name": "Mummy Spider",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/mummy-spider.webp"
-  },
-  {
-    "id": "vehicles-green-snowboard",
-    "name": "Green Neon Snowboard",
-    "category": "vehicles",
-    "value": 2.7463,
-    "demand": 2,
-    "image": "images/vehicles/green-neon-snowboard.webp"
+    "image": "images/petwear/giraffe-backpack.webp"
   },
   {
     "id": "potions-future-sight-potion",
@@ -12394,1420 +1162,1092 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "pets-lunar-white-tiger",
-    "name": "Lunar White Tiger",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/lunar-white-tiger.webp"
-  },
-  {
-    "id": "eggs-japan-egg",
-    "name": "Japan Egg",
-    "category": "eggs",
-    "value": 0.2089,
-    "demand": 2,
-    "image": "images/eggs/japan-egg.webp"
-  },
-  {
-    "id": "stickers-arctic-dusk-dragon-sticker",
-    "name": "Arctic Dusk Dragon Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/arctic-dusk-dragon-sticker.webp"
-  },
-  {
-    "id": "stickers-nautilus-sticker",
-    "name": "Nautilus Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/nautilus-sticker.webp"
-  },
-  {
-    "id": "pets-moose-calf",
-    "name": "Moose Calf",
-    "category": "pets",
-    "value": 1.8167,
-    "demand": 2,
-    "image": "images/pets/moose-calf.webp"
-  },
-  {
-    "id": "petwear-thinking-hat",
-    "name": "Thinking Hat",
+    "id": "petwear-macaw-wings",
+    "name": "Macaw Wings",
     "category": "petwear",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/petwear/thinking-hat.webp"
-  },
-  {
-    "id": "pets-ankylosaurus",
-    "name": "Ankylosaurus",
-    "category": "pets",
-    "value": 0.4225,
+    "value": 0.165,
     "demand": 1,
-    "image": "images/pets/ankylosaurus.webp"
+    "image": "images/petwear/macaw-wings.webp"
   },
   {
-    "id": "food-diamond-lavender",
-    "name": "Diamond Lavender",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/diamond-lavender.webp"
-  },
-  {
-    "id": "pets-irish-water-spaniel",
-    "name": "Irish Water Spaniel",
-    "category": "pets",
-    "value": 4.4363,
-    "demand": 2,
-    "image": "images/pets/irish-water-spaniel.webp"
-  },
-  {
-    "id": "pets-moonbeam-peacock",
-    "name": "Moonbeam Peacock",
-    "category": "pets",
-    "value": 6.3375,
-    "demand": 2,
-    "image": "images/pets/moonbeam-peacock.webp"
-  },
-  {
-    "id": "pets-christmas-spirit",
-    "name": "Christmas Spirit",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/christmas-spirit.webp"
-  },
-  {
-    "id": "strollers-heart-stroller",
-    "name": "Heart Stroller",
-    "category": "strollers",
-    "value": 5.6067,
-    "demand": 2,
-    "image": "images/strollers/heart-stroller.webp"
-  },
-  {
-    "id": "stickers-well-actually-walrus-sticker",
-    "name": "Well, Actually Walrus Sticker",
-    "category": "stickers",
-    "value": 0.2958,
-    "demand": 2,
-    "image": "images/stickers/well-actually-walrus-sticker.webp"
-  },
-  {
-    "id": "petwear-three-egg-basket",
-    "name": "Three Egg Basket",
+    "id": "petwear-unfortunate-eyelashes",
+    "name": "Unfortunate Eyelashes",
     "category": "petwear",
-    "value": 0.2112,
+    "value": 0.165,
     "demand": 1,
-    "image": "images/petwear/three-egg-basket.webp"
+    "image": "images/petwear/unfortunate-eyelashes.webp"
   },
   {
-    "id": "vehicles-enchanted-broomstick",
-    "name": "Enchanted Broomstick",
-    "category": "vehicles",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/vehicles/enchanted-broomstick.webp"
-  },
-  {
-    "id": "pets-fleur-de-ice",
-    "name": "Fleur De Ice",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/fleur-de-ice.webp"
-  },
-  {
-    "id": "pets-punk-pony",
-    "name": "Punk Pony",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/punk-pony.webp"
-  },
-  {
-    "id": "pets-diamond-hamster",
-    "name": "Diamond Hamster",
-    "category": "pets",
-    "value": 1.2675,
-    "demand": 2,
-    "image": "images/pets/diamond-hamster.webp"
-  },
-  {
-    "id": "pets-ornate-horned-frog",
-    "name": "Ornate Horned Frog",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/ornate-horned-frog.webp"
-  },
-  {
-    "id": "petwear-black-designer-backpack",
-    "name": "Black Designer Backpack",
-    "category": "petwear",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/petwear/black-designer-backpack.webp"
-  },
-  {
-    "id": "pets-rodeo-bull",
-    "name": "Rodeo Bull",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/rodeo-bull.webp"
-  },
-  {
-    "id": "pets-tarsier",
-    "name": "Tarsier",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/tarsier.webp"
-  },
-  {
-    "id": "petwear-lunar-new-year-shoes",
-    "name": "Lunar New Year Shoes",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/lunar-new-year-shoes.webp"
-  },
-  {
-    "id": "gifts-big-gift",
-    "name": "Big Gift",
-    "category": "gifts",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "toys-slimingo-feather-teleporter",
-    "name": "Slimingo Feather Teleporter",
-    "category": "toys",
-    "value": 0.2112,
-    "demand": 2,
-    "image": "images/toys/slimingo-feather-teleporter.webp"
-  },
-  {
-    "id": "pets-husky",
-    "name": "Husky",
-    "category": "pets",
-    "value": 1.4788,
-    "demand": 2,
-    "image": "images/pets/husky.webp"
-  },
-  {
-    "id": "gifts-regal-chest",
-    "name": "Regal Chest",
-    "category": "gifts",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "strollers-iced-cake-stroller",
-    "name": "Iced Cake Stroller",
+    "id": "strollers-ice-skate-stroller",
+    "name": "Ice Skate Stroller",
     "category": "strollers",
     "value": 0.05,
     "demand": 3,
     "image": ""
-  },
-  {
-    "id": "pets-inmate-capuchin-monkey",
-    "name": "Inmate Capuchin Monkey",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/inmate-capuchin-monkey.webp"
-  },
-  {
-    "id": "pets-winter-fawn",
-    "name": "Winter Fawn",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/winter-fawn.webp"
-  },
-  {
-    "id": "food-golden-petunia",
-    "name": "Golden Petunia",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-petunia.webp"
-  },
-  {
-    "id": "petwear-banana-hat",
-    "name": "Banana Hat",
-    "category": "petwear",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/petwear/banana-hat.webp"
-  },
-  {
-    "id": "pets-peppermint-penguin",
-    "name": "Peppermint Penguin",
-    "category": "pets",
-    "value": 17.745,
-    "demand": 3,
-    "image": "images/pets/peppermint-penguin.webp"
-  },
-  {
-    "id": "food-leaf",
-    "name": "Leaf",
-    "category": "food",
-    "value": 1.0563,
-    "demand": 2,
-    "image": "images/food/leaf.webp"
-  },
-  {
-    "id": "toys-fall-corn-grappling-hook",
-    "name": "Fall Corn Grappling Hook",
-    "category": "toys",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/toys/fall-corn-grappling-hook.webp"
-  },
-  {
-    "id": "pets-moonbeam-butterfly",
-    "name": "Moonbeam Butterfly",
-    "category": "pets",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/pets/moonbeam-butterfly.webp"
-  },
-  {
-    "id": "pets-shiba-inu",
-    "name": "Shiba Inu",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/shiba-inu.webp"
-  },
-  {
-    "id": "vehicles-santas-sleigh",
-    "name": "Santa's Sleigh",
-    "category": "vehicles",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/vehicles/santa-s-sleigh.webp"
-  },
-  {
-    "id": "pets-beluga-whale",
-    "name": "Beluga Whale",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/beluga-whale.webp"
-  },
-  {
-    "id": "eggs-cracked-egg",
-    "name": "Cracked Egg",
-    "category": "eggs",
-    "value": 0.0318,
-    "demand": 1,
-    "image": "images/eggs/cracked-egg.webp"
-  },
-  {
-    "id": "pets-leopard-cat",
-    "name": "Leopard Cat",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/leopard-cat.webp"
-  },
-  {
-    "id": "pets-sea-angel",
-    "name": "Sea Angel",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/sea-angel.webp"
-  },
-  {
-    "id": "pets-starhopper",
-    "name": "Starhopper",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/starhopper.webp"
-  },
-  {
-    "id": "pets-space-whale",
-    "name": "Space Whale",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 1,
-    "image": "images/pets/space-whale.webp"
-  },
-  {
-    "id": "stickers-shiba-inu-sticker",
-    "name": "Shiba Inu Sticker",
-    "category": "stickers",
-    "value": 0.0592,
-    "demand": 1,
-    "image": "images/stickers/shiba-inu-sticker.webp"
-  },
-  {
-    "id": "pets-ice-moth-dragon",
-    "name": "Ice Moth Dragon",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/ice-moth-dragon.webp"
-  },
-  {
-    "id": "pets-jousting-horse",
-    "name": "Jousting Horse",
-    "category": "pets",
-    "value": 3.042,
-    "demand": 2,
-    "image": "images/pets/jousting-horse.webp"
-  },
-  {
-    "id": "pets-arctic-reindeer",
-    "name": "Arctic Reindeer",
-    "category": "pets",
-    "value": 25.35,
-    "demand": 3,
-    "image": "images/pets/arctic-reindeer.webp"
-  },
-  {
-    "id": "pets-vanilla-penguin",
-    "name": "Vanilla Penguin",
-    "category": "pets",
-    "value": 0.845,
-    "demand": 2,
-    "image": "images/pets/vanilla-penguin.webp"
-  },
-  {
-    "id": "food-dim-sum",
-    "name": "Dim Sum",
-    "category": "food",
-    "value": 2.3237,
-    "demand": 2,
-    "image": "images/food/dim-sum.webp"
-  },
-  {
-    "id": "pets-quetzalcoatl",
-    "name": "Quetzalcoatl",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/quetzalcoatl.webp"
-  },
-  {
-    "id": "toys-egg-rattle",
-    "name": "Egg Rattle",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/egg-rattle.webp"
-  },
-  {
-    "id": "petwear-fishbone-badge",
-    "name": "Fishbone Badge",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/petwear/fishbone-badge.webp"
-  },
-  {
-    "id": "pets-groundhog",
-    "name": "Groundhog",
-    "category": "pets",
-    "value": 2.535,
-    "demand": 2,
-    "image": "images/pets/groundhog.webp"
-  },
-  {
-    "id": "potions-bonus-aging-potion",
-    "name": "Bonus Aging Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-cold-cube",
-    "name": "Cold Cube",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/cold-cube.webp"
-  },
-  {
-    "id": "toys-christmas-cat-rattle",
-    "name": "Christmas Cat Rattle",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/christmas-cat-rattle.webp"
-  },
-  {
-    "id": "pets-halloween-white-mummy-cat",
-    "name": "Halloween White Mummy Cat",
-    "category": "pets",
-    "value": 0.4014,
-    "demand": 1,
-    "image": "images/pets/halloween-white-mummy-cat.webp"
-  },
-  {
-    "id": "pets-officer-gibbon",
-    "name": "Officer Gibbon",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/officer-gibbon.webp"
-  },
-  {
-    "id": "pets-copycat",
-    "name": "Copycat",
-    "category": "pets",
-    "value": 4.4363,
-    "demand": 3,
-    "image": "images/pets/copycat.webp"
-  },
-  {
-    "id": "food-cookie",
-    "name": "Cookie",
-    "category": "food",
-    "value": 0.507,
-    "demand": 2,
-    "image": "images/food/cookie.webp"
-  },
-  {
-    "id": "pets-german-shepherd",
-    "name": "German Shepherd",
-    "category": "pets",
-    "value": 0.8873,
-    "demand": 2,
-    "image": "images/pets/german-shepherd.webp"
-  },
-  {
-    "id": "pets-tarantula",
-    "name": "Tarantula",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/tarantula.webp"
-  },
-  {
-    "id": "pets-starfish",
-    "name": "Starfish",
-    "category": "pets",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/pets/starfish.webp"
-  },
-  {
-    "id": "stickers-hot-doggo-sticker",
-    "name": "Hot Doggo Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/hot-doggo-sticker.webp"
-  },
-  {
-    "id": "vehicles-camping-van",
-    "name": "Camping Van",
-    "category": "vehicles",
-    "value": 0.076,
-    "demand": 1,
-    "image": "images/vehicles/camping-van.webp"
-  },
-  {
-    "id": "stickers-mini-pig-sticker",
-    "name": "Mini Pig Sticker",
-    "category": "stickers",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/stickers/mini-pig-sticker.webp"
-  },
-  {
-    "id": "toys-ukulele",
-    "name": "Ukulele",
-    "category": "toys",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/toys/ukulele.webp"
-  },
-  {
-    "id": "petwear-rubber-ducks",
-    "name": "Rubber Ducks",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/rubber-ducks.webp"
-  },
-  {
-    "id": "pets-oakee",
-    "name": "Oakee",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/oakee.webp"
-  },
-  {
-    "id": "pets-lionfish",
-    "name": "Lionfish",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/lionfish.webp"
-  },
-  {
-    "id": "pets-lunar-gold-tiger",
-    "name": "Lunar Gold Tiger",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/lunar-gold-tiger.webp"
-  },
-  {
-    "id": "vehicles-green-scooter",
-    "name": "Neon Green Scooter",
-    "category": "vehicles",
-    "value": 1.014,
-    "demand": 1,
-    "image": "images/vehicles/neon-green-scooter.webp"
-  },
-  {
-    "id": "pets-black-marlin",
-    "name": "Black Marlin",
-    "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/black-marlin.webp"
-  },
-  {
-    "id": "pets-kelp-hunter",
-    "name": "Kelp Hunter",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/kelp-hunter.webp"
-  },
-  {
-    "id": "vehicles-ribcage-carriage",
-    "name": "Ribcage Carriage",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/ribcage-carriage.webp"
-  },
-  {
-    "id": "pets-albino-monkey",
-    "name": "Albino Monkey",
-    "category": "pets",
-    "value": 8.6612,
-    "demand": 3,
-    "image": "images/pets/albino-monkey.webp"
-  },
-  {
-    "id": "toys-bunny-plush",
-    "name": "Bunny Plush",
-    "category": "toys",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/toys/bunny-plush.webp"
-  },
-  {
-    "id": "gifts-pet-handler-pro-certificate",
-    "name": "Pet Handler Pro Certificate",
-    "category": "gifts",
-    "value": 1.0985,
-    "demand": 3,
-    "image": "images/gifts/pet-handler-pro-certificate.webp"
-  },
-  {
-    "id": "food-golden-goldfish",
-    "name": "Golden Goldfish",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-goldfish.webp"
-  },
-  {
-    "id": "stickers-elephant-sticker",
-    "name": "Elephant Sticker",
-    "category": "stickers",
-    "value": 0.1268,
-    "demand": 1,
-    "image": "images/stickers/elephant-sticker.webp"
-  },
-  {
-    "id": "vehicles-orange-scooter",
-    "name": "Neon Orange Scooter",
-    "category": "vehicles",
-    "value": 1.0563,
-    "demand": 1,
-    "image": "images/vehicles/neon-orange-scooter.webp"
-  },
-  {
-    "id": "pets-warthog",
-    "name": "Warthog",
-    "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/warthog.webp"
-  },
-  {
-    "id": "pets-kaijunior",
-    "name": "Kaijunior",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/kaijunior.webp"
-  },
-  {
-    "id": "food-golden-dandelion",
-    "name": "Golden Dandelion",
-    "category": "food",
-    "value": 0.5493,
-    "demand": 2,
-    "image": "images/food/golden-dandelion.webp"
-  },
-  {
-    "id": "vehicles-wing-trunk-car",
-    "name": "Wing Trunk Car",
-    "category": "vehicles",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/vehicles/wing-trunk-car.webp"
-  },
-  {
-    "id": "pets-squid",
-    "name": "Squid",
-    "category": "pets",
-    "value": 0.6337,
-    "demand": 1,
-    "image": "images/pets/squid.webp"
-  },
-  {
-    "id": "stickers-seagull-yell-animated-sticker",
-    "name": "Seagull Yell Animated Sticker",
-    "category": "stickers",
-    "value": 8.45,
-    "demand": 2,
-    "image": "images/stickers/seagull-yell-animated-sticker.webp"
-  },
-  {
-    "id": "strollers-soy-sauce-stroller",
-    "name": "Soy Sauce Stroller",
-    "category": "strollers",
-    "value": 0.12,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-kakapo",
-    "name": "Kakapo",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/kakapo.webp"
   },
   {
     "id": "petwear-halloween-white-skull-hat",
     "name": "Halloween White Skull Hat",
     "category": "petwear",
-    "value": 0.2535,
+    "value": 0.2475,
     "demand": 2,
     "image": "images/petwear/halloween-white-skull-hat.webp"
   },
   {
-    "id": "pets-ringmaster-gibbon",
-    "name": "Ringmaster Gibbon",
+    "id": "pets-tortoiseshell-guinea-pig",
+    "name": "Tortoiseshell Guinea Pig",
     "category": "pets",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/pets/ringmaster-gibbon.webp"
-  },
-  {
-    "id": "potions-grow-potion",
-    "name": "Grow Potion",
-    "category": "potions",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-black-dog",
-    "name": "Black Dog",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/black-dog.webp"
-  },
-  {
-    "id": "strollers-hover-stroller",
-    "name": "Hover Stroller",
-    "category": "strollers",
-    "value": 0.0559,
-    "demand": 1,
-    "image": "images/strollers/hover-stroller.webp"
-  },
-  {
-    "id": "pets-sea-turtle",
-    "name": "Sea Turtle",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/sea-turtle.webp"
-  },
-  {
-    "id": "strollers-tractor-stroller",
-    "name": "Tractor Stroller",
-    "category": "strollers",
-    "value": 0.0651,
-    "demand": 1,
-    "image": "images/strollers/tractor-stroller.webp"
-  },
-  {
-    "id": "pets-pumpkin-friend",
-    "name": "Pumpkin Friend",
-    "category": "pets",
-    "value": 0.5704,
+    "value": 9.6937,
     "demand": 2,
-    "image": "images/pets/pumpkin-friend.webp"
+    "image": "images/pets/tortoiseshell-guinea-pig.webp"
   },
   {
-    "id": "vehicles-daisymobile",
-    "name": "Daisymobile",
+    "id": "vehicles-egg-delivery-machine",
+    "name": "Egg Delivery Machine",
     "category": "vehicles",
-    "value": 0.4225,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/vehicles/daisymobile.webp"
+    "image": "images/vehicles/egg-delivery-machine.webp"
   },
   {
-    "id": "vehicles-tiffany",
-    "name": "Tiffany",
+    "id": "vehicles-gold-skateboard",
+    "name": "Gold Skateboard",
     "category": "vehicles",
-    "value": 0.2535,
+    "value": 0.5363,
     "demand": 1,
-    "image": "images/vehicles/tiffany.webp"
+    "image": "images/vehicles/gold-skateboard.webp"
   },
   {
-    "id": "pets-midnight-dragon",
-    "name": "Midnight Dragon",
-    "category": "pets",
-    "value": 3.8448,
+    "id": "petwear-strawberry-hat",
+    "name": "Strawberry Hat",
+    "category": "petwear",
+    "value": 0.7425,
     "demand": 2,
-    "image": "images/pets/midnight-dragon.webp"
+    "image": "images/petwear/strawberry-hat.webp"
   },
   {
-    "id": "petwear-bat-backpack",
-    "name": "Bat Backpack",
-    "category": "petwear",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/petwear/bat-backpack.webp"
-  },
-  {
-    "id": "strollers-flip-phone-stroller",
-    "name": "Flip Phone Stroller",
-    "category": "strollers",
-    "value": 0.05,
-    "demand": 3,
-    "image": ""
-  },
-  {
-    "id": "pets-wildfire-hawk",
-    "name": "Wildfire Hawk",
+    "id": "pets-yule-log-dog",
+    "name": "Yule Log Dog",
     "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/wildfire-hawk.webp"
-  },
-  {
-    "id": "petwear-butter-knife",
-    "name": "Butter Knife",
-    "category": "petwear",
-    "value": 0.507,
+    "value": 1.32,
     "demand": 2,
-    "image": "images/petwear/butter-knife.webp"
+    "image": "images/pets/yule-log-dog.webp"
   },
   {
-    "id": "petwear-bewitched-hat",
-    "name": "Bewitched Hat",
-    "category": "petwear",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/petwear/bewitched-hat.webp"
-  },
-  {
-    "id": "vehicles-shadow-dragon-skateboard",
-    "name": "Shadow Dragon Skateboard",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/shadow-dragon-skateboard.webp"
-  },
-  {
-    "id": "stickers-blue-betta-fish-sticker",
-    "name": "Blue Betta Fish Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/blue-betta-fish-sticker.webp"
-  },
-  {
-    "id": "gifts-standard-gorilla-box",
-    "name": "Standard Gorilla Box",
-    "category": "gifts",
-    "value": 0.1414,
-    "demand": 1,
-    "image": "images/gifts/standard-gorilla-box.webp"
-  },
-  {
-    "id": "pets-oakee-knight",
-    "name": "Oakee Knight",
+    "id": "pets-trex",
+    "name": "T-Rex",
     "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/oakee-knight.webp"
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/t-rex.webp"
   },
   {
-    "id": "petwear-hero-mask",
-    "name": "Hero Mask",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/hero-mask.webp"
-  },
-  {
-    "id": "pets-rhino-beetle",
-    "name": "Rhino Beetle",
+    "id": "pets-ginger-cat",
+    "name": "Ginger Cat",
     "category": "pets",
-    "value": 0.338,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/pets/rhino-beetle.webp"
+    "image": "images/pets/ginger-cat.webp"
   },
   {
-    "id": "vehicles-tractor",
-    "name": "Tractor",
-    "category": "vehicles",
-    "value": 0.0845,
+    "id": "pets-bubblegeist",
+    "name": "Bubblegeist",
+    "category": "pets",
+    "value": 0.5156,
     "demand": 1,
-    "image": "images/vehicles/tractor.webp"
+    "image": "images/pets/bubblegeist.webp"
   },
   {
-    "id": "petwear-gingerbread-wings",
-    "name": "Gingerbread Wings",
-    "category": "petwear",
-    "value": 0.1268,
+    "id": "pets-ocelot",
+    "name": "Ocelot",
+    "category": "pets",
+    "value": 0.2557,
     "demand": 1,
-    "image": "images/petwear/gingerbread-wings.webp"
+    "image": "images/pets/ocelot.webp"
   },
   {
-    "id": "stickers-evil-unicorn-sticker",
-    "name": "Evil Unicorn Sticker",
-    "category": "stickers",
-    "value": 0.0507,
-    "demand": 1,
-    "image": "images/stickers/evil-unicorn-sticker.webp"
-  },
-  {
-    "id": "toys-elf-rattle",
-    "name": "Elf Rattle",
+    "id": "toys-gift-throw-toy",
+    "name": "Gift Throw Toy",
     "category": "toys",
-    "value": 0.0845,
+    "value": 0.0825,
     "demand": 1,
-    "image": "images/toys/elf-rattle.webp"
+    "image": "images/toys/gift-throw-toy.webp"
   },
   {
-    "id": "petwear-black-hightops",
-    "name": "Black Hightops",
-    "category": "petwear",
-    "value": 0.0845,
-    "demand": 1,
-    "image": "images/petwear/black-hightops.webp"
-  },
-  {
-    "id": "pets-skunk",
-    "name": "Skunk",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/skunk.webp"
-  },
-  {
-    "id": "toys-pro-ghost-blaster",
-    "name": "Pro Ghost Blaster",
+    "id": "toys-halloween-slime-paint",
+    "name": "Halloween Slime Mega Neon Paint",
     "category": "toys",
-    "value": 0.2535,
-    "demand": 2,
-    "image": "images/toys/pro-ghost-blaster.webp"
-  },
-  {
-    "id": "strollers-trike-stroller",
-    "name": "Trike Stroller",
-    "category": "strollers",
-    "value": 0.1945,
-    "demand": 1,
-    "image": "images/strollers/trike-stroller.webp"
-  },
-  {
-    "id": "pets-frog",
-    "name": "Frog",
-    "category": "pets",
-    "value": 0.5281,
-    "demand": 1,
-    "image": "images/pets/frog.webp"
-  },
-  {
-    "id": "pets-naughty-mistletroll",
-    "name": "Naughty Mistletroll",
-    "category": "pets",
-    "value": 2.5772,
-    "demand": 2,
-    "image": "images/pets/naughty-mistletroll.webp"
-  },
-  {
-    "id": "pets-nurse-shark",
-    "name": "Nurse Shark",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/nurse-shark.webp"
-  },
-  {
-    "id": "pets-blue-ringed-octopus",
-    "name": "Blue Ringed Octopus",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/blue-ringed-octopus.webp"
-  },
-  {
-    "id": "pets-capricorn",
-    "name": "Capricorn",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/capricorn.webp"
-  },
-  {
-    "id": "stickers-winged-horse-sticker",
-    "name": "Winged Horse Sticker",
-    "category": "stickers",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/stickers/winged-horse-sticker.webp"
-  },
-  {
-    "id": "petwear-science-hat",
-    "name": "Science Hat",
-    "category": "petwear",
-    "value": 0.2958,
-    "demand": 1,
-    "image": "images/petwear/science-hat.webp"
-  },
-  {
-    "id": "stickers-leviathan-sticker",
-    "name": "Leviathan Sticker",
-    "category": "stickers",
-    "value": 0.0423,
-    "demand": 1,
-    "image": "images/stickers/leviathan-sticker.webp"
-  },
-  {
-    "id": "petwear-chicken-hat",
-    "name": "Chicken Hat",
-    "category": "petwear",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/petwear/chicken-hat.webp"
-  },
-  {
-    "id": "toys-jackhammer",
-    "name": "Jackhammer",
-    "category": "toys",
-    "value": 0.4225,
-    "demand": 1,
-    "image": "images/toys/jackhammer.webp"
-  },
-  {
-    "id": "pets-pupcake",
-    "name": "Pupcake",
-    "category": "pets",
-    "value": 0.5704,
-    "demand": 2,
-    "image": "images/pets/pupcake.webp"
-  },
-  {
-    "id": "petwear-llamalush-purse-pet",
-    "name": "Llamalush Purse Pet",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/llamalush-purse-pet.webp"
-  },
-  {
-    "id": "pets-golden-chowchow",
-    "name": "Golden Chow-Chow",
-    "category": "pets",
-    "value": 1.183,
-    "demand": 2,
-    "image": "images/pets/golden-chow-chow.webp"
-  },
-  {
-    "id": "strollers-plane-stroller",
-    "name": "Plane Stroller",
-    "category": "strollers",
-    "value": 0.05,
+    "value": 0.4125,
     "demand": 3,
-    "image": ""
+    "image": "images/toys/halloween-slime-mega-neon-paint.webp"
   },
   {
-    "id": "pets-hyena",
-    "name": "Hyena",
-    "category": "pets",
-    "value": 2.1125,
-    "demand": 2,
-    "image": "images/pets/hyena.webp"
-  },
-  {
-    "id": "pets-ant",
-    "name": "Ant",
-    "category": "pets",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/pets/ant.webp"
-  },
-  {
-    "id": "petwear-lunar-new-year-collar",
-    "name": "Lunar New Year Collar",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/lunar-new-year-collar.webp"
-  },
-  {
-    "id": "pets-poison-dart-frog",
-    "name": "Poison Dart Frog",
-    "category": "pets",
-    "value": 0.3802,
-    "demand": 1,
-    "image": "images/pets/poison-dart-frog.webp"
-  },
-  {
-    "id": "petwear-balloon-dog",
-    "name": "Balloon Dog",
-    "category": "petwear",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/petwear/balloon-dog.webp"
-  },
-  {
-    "id": "vehicles-zamboni",
-    "name": "Zamboni",
+    "id": "vehicles-gokart",
+    "name": "GoKart",
     "category": "vehicles",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/vehicles/zamboni.webp"
-  },
-  {
-    "id": "pets-2d-kitty",
-    "name": "2D Kitty",
-    "category": "pets",
-    "value": 0.845,
+    "value": 3.3,
     "demand": 2,
-    "image": "images/pets/2d-kitty.webp"
+    "image": "images/vehicles/gokart.webp"
   },
   {
-    "id": "pets-skelerex",
-    "name": "Skele-Rex",
-    "category": "pets",
-    "value": 1.2675,
+    "id": "toys-chinese-lantern",
+    "name": "Chinese Lantern",
+    "category": "toys",
+    "value": 4.125,
     "demand": 2,
-    "image": "images/pets/skele-rex.webp"
+    "image": "images/toys/chinese-lantern.webp"
   },
   {
-    "id": "pets-golden-tortoise-beetle",
-    "name": "Golden Tortoise Beetle",
+    "id": "pets-cat",
+    "name": "Cat",
     "category": "pets",
-    "value": 0.5493,
+    "value": 0.2475,
     "demand": 1,
-    "image": "images/pets/golden-tortoise-beetle.webp"
+    "image": "images/pets/cat.webp"
   },
   {
-    "id": "pets-kappakid",
-    "name": "Kappakid",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/kappakid.webp"
-  },
-  {
-    "id": "petwear-winter-bow-wings",
-    "name": "Winter Bow Wings",
-    "category": "petwear",
-    "value": 0.169,
-    "demand": 1,
-    "image": "images/petwear/winter-bow-wings.webp"
-  },
-  {
-    "id": "pets-cheetah",
-    "name": "Cheetah",
-    "category": "pets",
-    "value": 1.3097,
-    "demand": 2,
-    "image": "images/pets/cheetah.webp"
-  },
-  {
-    "id": "pets-halloween-blue-scorpion",
-    "name": "Halloween Blue Scorpion",
-    "category": "pets",
-    "value": 0.338,
-    "demand": 1,
-    "image": "images/pets/halloween-blue-scorpion.webp"
-  },
-  {
-    "id": "pets-peacock",
-    "name": "Peacock",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/peacock.webp"
-  },
-  {
-    "id": "pets-meerkat",
-    "name": "Meerkat",
-    "category": "pets",
-    "value": 2.7463,
-    "demand": 2,
-    "image": "images/pets/meerkat.webp"
-  },
-  {
-    "id": "vehicles-powerbike",
-    "name": "Powerbike",
+    "id": "vehicles-dolphin-cruiser",
+    "name": "Dolphin Cruiser",
     "category": "vehicles",
-    "value": 0.1268,
+    "value": 0.1237,
     "demand": 1,
-    "image": "images/vehicles/powerbike.webp"
+    "image": "images/vehicles/dolphin-cruiser.webp"
+  },
+  {
+    "id": "eggs-admin-abuse-egg",
+    "name": "Admin Abuse Egg",
+    "category": "eggs",
+    "value": 0.0426,
+    "demand": 2,
+    "image": "images/eggs/admin-abuse-egg.webp"
+  },
+  {
+    "id": "pets-woolly-mammoth",
+    "name": "Woolly Mammoth",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/woolly-mammoth.webp"
+  },
+  {
+    "id": "petwear-flying-fairy",
+    "name": "Flying Fairy",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/flying-fairy.webp"
+  },
+  {
+    "id": "vehicles-bumper-car",
+    "name": "Bumper Car",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/bumper-car.webp"
+  },
+  {
+    "id": "pets-zebra",
+    "name": "Zebra",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/zebra.webp"
+  },
+  {
+    "id": "pets-ermine",
+    "name": "Ermine",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/ermine.webp"
+  },
+  {
+    "id": "vehicles-flower-truck",
+    "name": "Flower Truck",
+    "category": "vehicles",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/vehicles/flower-truck.webp"
+  },
+  {
+    "id": "pets-toucan",
+    "name": "Toucan",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/toucan.webp"
+  },
+  {
+    "id": "petwear-puddleducks-hood",
+    "name": "Puddleducks Hood",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/puddleducks-hood.webp"
+  },
+  {
+    "id": "pets-otter",
+    "name": "Otter",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/otter.webp"
+  },
+  {
+    "id": "pets-samoyed",
+    "name": "Samoyed",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/samoyed.webp"
   },
   {
     "id": "pets-jacobin-pigeon",
     "name": "Jacobin Pigeon",
     "category": "pets",
-    "value": 0.2746,
+    "value": 0.2681,
     "demand": 1,
     "image": "images/pets/jacobin-pigeon.webp"
   },
   {
-    "id": "pets-smores-raccoon",
-    "name": "S'mores Raccoon",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/s-mores-raccoon.webp"
-  },
-  {
-    "id": "pets-axolotl",
-    "name": "Axolotl",
-    "category": "pets",
-    "value": 0.7605,
-    "demand": 2,
-    "image": "images/pets/axolotl.webp"
-  },
-  {
-    "id": "vehicles-gold-scooter",
-    "name": "Gold Scooter",
-    "category": "vehicles",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/vehicles/gold-scooter.webp"
-  },
-  {
-    "id": "toys-lemonade-stand",
-    "name": "Lemonade Stand",
+    "id": "toys-ferris-wheel-propeller",
+    "name": "Ferris Wheel Propeller",
     "category": "toys",
-    "value": 0.1268,
+    "value": 0.2888,
     "demand": 1,
-    "image": "images/toys/lemonade-stand.webp"
+    "image": "images/toys/ferris-wheel-propeller.webp"
   },
   {
-    "id": "eggs-jungle-egg",
-    "name": "Jungle Egg",
-    "category": "eggs",
-    "value": 35.5297,
+    "id": "pets-white-sand-dollar",
+    "name": "White Sand Dollar",
+    "category": "pets",
+    "value": 0.7425,
     "demand": 2,
-    "image": "images/eggs/jungle-egg.webp"
+    "image": "images/pets/white-sand-dollar.webp"
   },
   {
-    "id": "pets-unicorn-ducky",
-    "name": "Unicorn Ducky",
+    "id": "pets-st-bernard",
+    "name": "St Bernard",
     "category": "pets",
-    "value": 0.262,
+    "value": 0.5156,
     "demand": 1,
-    "image": "images/pets/unicorn-ducky.webp"
+    "image": "images/pets/st-bernard.webp"
   },
   {
-    "id": "vehicles-summer-spectacle",
-    "name": "Summer Spectacle",
-    "category": "vehicles",
-    "value": 0.676,
-    "demand": 2,
-    "image": "images/vehicles/summer-spectacle.webp"
-  },
-  {
-    "id": "pets-rooster",
-    "name": "Rooster",
+    "id": "pets-steppe-lion",
+    "name": "Steppe Lion",
     "category": "pets",
-    "value": 0.5281,
+    "value": 0.4538,
     "demand": 1,
-    "image": "images/pets/rooster.webp"
+    "image": "images/pets/steppe-lion.webp"
   },
   {
-    "id": "pets-cerberus",
-    "name": "Cerberus",
-    "category": "pets",
-    "value": 2.3237,
-    "demand": 2,
-    "image": "images/pets/cerberus.webp"
-  },
-  {
-    "id": "pets-cozy-mistletroll",
-    "name": "Cozy Mistletroll",
-    "category": "pets",
-    "value": 0.4225,
+    "id": "stickers-peppermint-penguin-sticker",
+    "name": "Peppermint Penguin Sticker",
+    "category": "stickers",
+    "value": 0.0825,
     "demand": 1,
-    "image": "images/pets/cozy-mistletroll.webp"
+    "image": "images/stickers/peppermint-penguin-sticker.webp"
   },
   {
-    "id": "pets-zodiac-minion-chick",
-    "name": "Zodiac Minion Chick",
-    "category": "pets",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/pets/zodiac-minion-chick.webp"
-  },
-  {
-    "id": "gifts-massive-gift",
-    "name": "Massive Gift",
-    "category": "gifts",
-    "value": 0.05,
+    "id": "strollers-egg-stroller",
+    "name": "Egg Stroller",
+    "category": "strollers",
+    "value": 20.98,
     "demand": 3,
     "image": ""
   },
   {
-    "id": "pets-grim-dragon",
-    "name": "Grim Dragon",
-    "category": "pets",
-    "value": 17.9563,
-    "demand": 2,
-    "image": "images/pets/grim-dragon.webp"
-  },
-  {
-    "id": "pets-mermicorn",
-    "name": "Mermicorn",
-    "category": "pets",
-    "value": 13.3087,
-    "demand": 3,
-    "image": "images/pets/mermicorn.webp"
-  },
-  {
-    "id": "pets-aurora-fox",
-    "name": "Aurora Fox",
-    "category": "pets",
-    "value": 4.6475,
-    "demand": 2,
-    "image": "images/pets/aurora-fox.webp"
-  },
-  {
-    "id": "pets-irish-elk",
-    "name": "Irish Elk",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/irish-elk.webp"
-  },
-  {
-    "id": "pets-orangutan",
-    "name": "Orangutan",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/orangutan.webp"
-  },
-  {
-    "id": "pets-merry-mistletroll",
-    "name": "Merry Mistletroll",
-    "category": "pets",
-    "value": 0.5493,
-    "demand": 1,
-    "image": "images/pets/merry-mistletroll.webp"
-  },
-  {
-    "id": "pets-deathstalker-scorpion",
-    "name": "Deathstalker Scorpion",
-    "category": "pets",
-    "value": 0.4647,
-    "demand": 1,
-    "image": "images/pets/deathstalker-scorpion.webp"
-  },
-  {
-    "id": "vehicles-princess-carriage",
-    "name": "Princess Carriage",
+    "id": "vehicles-postie-van",
+    "name": "Postie Van",
     "category": "vehicles",
-    "value": 0.2958,
+    "value": 0.2475,
     "demand": 1,
-    "image": "images/vehicles/princess-carriage.webp"
+    "image": "images/vehicles/postie-van.webp"
   },
   {
-    "id": "petwear-sailor-cap",
-    "name": "Sailor Cap",
+    "id": "pets-glyptodon",
+    "name": "Glyptodon",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/glyptodon.webp"
+  },
+  {
+    "id": "pets-snow-cat",
+    "name": "Snow Cat",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/snow-cat.webp"
+  },
+  {
+    "id": "pets-dotted-eggy",
+    "name": "Dotted Eggy",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/dotted-eggy.webp"
+  },
+  {
+    "id": "petwear-energy-wings",
+    "name": "Energy Wings",
     "category": "petwear",
-    "value": 1.0985,
-    "demand": 2,
-    "image": "images/petwear/sailor-cap.webp"
-  },
-  {
-    "id": "strollers-wheelbarrow-stroller",
-    "name": "Wheelbarrow Stroller",
-    "category": "strollers",
-    "value": 0.0836,
+    "value": 0.165,
     "demand": 1,
-    "image": "images/strollers/wheelbarrow-stroller.webp"
+    "image": "images/petwear/energy-wings.webp"
   },
   {
-    "id": "pets-velociraptor",
-    "name": "Velociraptor",
+    "id": "pets-jester-dragon",
+    "name": "Jester Dragon",
     "category": "pets",
-    "value": 0.3169,
-    "demand": 1,
-    "image": "images/pets/velociraptor.webp"
+    "value": 4.5375,
+    "demand": 2,
+    "image": "images/pets/jester-dragon.webp"
   },
   {
-    "id": "vehicles-gold-snowboard",
-    "name": "Gold Snowboard",
+    "id": "vehicles-soccer-car",
+    "name": "Soccer Car",
     "category": "vehicles",
-    "value": 4.6475,
+    "value": 0.0825,
     "demand": 1,
-    "image": "images/vehicles/gold-snowboard.webp"
+    "image": "images/vehicles/soccer-car.webp"
   },
   {
-    "id": "pets-ice-wolf",
-    "name": "Ice Wolf",
-    "category": "pets",
-    "value": 1.5633,
+    "id": "petwear-queen-bee-slippers",
+    "name": "Queen Bee Slippers",
+    "category": "petwear",
+    "value": 36.3,
     "demand": 2,
-    "image": "images/pets/ice-wolf.webp"
+    "image": "images/petwear/queen-bee-slippers.webp"
   },
   {
-    "id": "stickers-kappakid-sticker",
-    "name": "Kappakid Sticker",
-    "category": "stickers",
-    "value": 0.0423,
+    "id": "pets-robot",
+    "name": "Robot",
+    "category": "pets",
+    "value": 0.2681,
     "demand": 1,
-    "image": "images/stickers/kappakid-sticker.webp"
+    "image": "images/pets/robot.webp"
+  },
+  {
+    "id": "eggs-pink-egg",
+    "name": "Pink Egg",
+    "category": "eggs",
+    "value": 13.5337,
+    "demand": 2,
+    "image": "images/eggs/pink-egg.webp"
+  },
+  {
+    "id": "pets-naga-dragon",
+    "name": "Naga Dragon",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/pets/naga-dragon.webp"
+  },
+  {
+    "id": "pets-monkey",
+    "name": "Monkey",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/monkey.webp"
+  },
+  {
+    "id": "pets-fanghorn-tortoise",
+    "name": "Fanghorn Tortoise",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/fanghorn-tortoise.webp"
+  },
+  {
+    "id": "petwear-jetpack",
+    "name": "Jetpack",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/jetpack.webp"
+  },
+  {
+    "id": "petwear-candy-cane",
+    "name": "Candy Cane (Pet Wear)",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/candy-cane-pet-wear.webp"
+  },
+  {
+    "id": "food-leaf",
+    "name": "Leaf",
+    "category": "food",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/food/leaf.webp"
+  },
+  {
+    "id": "stickers-vol-2-pets-plus-sticker-pack",
+    "name": "Vol. 2 Pets Plus Sticker Pack",
+    "category": "stickers",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/stickers/vol-2-pets-plus-sticker-pack.webp"
+  },
+  {
+    "id": "pets-ox",
+    "name": "Ox",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/ox.webp"
+  },
+  {
+    "id": "pets-monkey-king",
+    "name": "Monkey King",
+    "category": "pets",
+    "value": 17.325,
+    "demand": 2,
+    "image": "images/pets/monkey-king.webp"
+  },
+  {
+    "id": "pets-king-bee",
+    "name": "King Bee",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/king-bee.webp"
+  },
+  {
+    "id": "petwear-festive-light-crown",
+    "name": "Festive Light Crown",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/festive-light-crown.webp"
+  },
+  {
+    "id": "petwear-heart-hat",
+    "name": "Heart Hat",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/heart-hat.webp"
+  },
+  {
+    "id": "pets-winter-fawn",
+    "name": "Winter Fawn",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/winter-fawn.webp"
+  },
+  {
+    "id": "eggs-moon-egg",
+    "name": "Moon Egg",
+    "category": "eggs",
+    "value": 0.0628,
+    "demand": 1,
+    "image": "images/eggs/moon-egg.webp"
+  },
+  {
+    "id": "pets-dog",
+    "name": "Dog",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/dog.webp"
+  },
+  {
+    "id": "pets-eggnog-hare",
+    "name": "Eggnog Hare",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/eggnog-hare.webp"
+  },
+  {
+    "id": "pets-red-panda",
+    "name": "Red Panda",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/red-panda.webp"
+  },
+  {
+    "id": "pets-camel",
+    "name": "Camel",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/camel.webp"
+  },
+  {
+    "id": "strollers-half-egg-stroller",
+    "name": "Half Egg Stroller",
+    "category": "strollers",
+    "value": 0.6143,
+    "demand": 2,
+    "image": "images/strollers/half-egg-stroller.webp"
+  },
+  {
+    "id": "petwear-summer-walrus-sunhat",
+    "name": "Summer Walrus Sunhat",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/summer-walrus-sunhat.webp"
+  },
+  {
+    "id": "strollers-web-stroller",
+    "name": "Web Stroller",
+    "category": "strollers",
+    "value": 0.4259,
+    "demand": 1,
+    "image": "images/strollers/web-stroller.webp"
+  },
+  {
+    "id": "pets-burger-bear",
+    "name": "Burger Bear",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/burger-bear.webp"
+  },
+  {
+    "id": "pets-ibis",
+    "name": "Ibis",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/ibis.webp"
+  },
+  {
+    "id": "food-golden-wheat",
+    "name": "Golden Wheat",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-wheat.webp"
+  },
+  {
+    "id": "petwear-natures-crown",
+    "name": "Nature's Crown",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/nature-s-crown.webp"
+  },
+  {
+    "id": "pets-zombie-wolf",
+    "name": "Zombie Wolf",
+    "category": "pets",
+    "value": 1.485,
+    "demand": 2,
+    "image": "images/pets/zombie-wolf.webp"
+  },
+  {
+    "id": "stickers-fire-dimension-sticker-pack",
+    "name": "Fire Dimension Sticker Pack",
+    "category": "stickers",
+    "value": 0.0289,
+    "demand": 1,
+    "image": "images/stickers/fire-dimension-sticker-pack.webp"
+  },
+  {
+    "id": "pets-pomeranian",
+    "name": "Pomeranian",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/pomeranian.webp"
+  },
+  {
+    "id": "gifts-premium-capuchin-box",
+    "name": "Premium Capuchin Box",
+    "category": "gifts",
+    "value": 1.8741,
+    "demand": 2,
+    "image": "images/gifts/premium-capuchin-box.webp"
+  },
+  {
+    "id": "strollers-airplane-stroller",
+    "name": "Airplane Stroller",
+    "category": "strollers",
+    "value": 0.7664,
+    "demand": 2,
+    "image": "images/strollers/airplane-stroller.webp"
+  },
+  {
+    "id": "pets-tanuki",
+    "name": "Tanuki",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/tanuki.webp"
+  },
+  {
+    "id": "petwear-aestus-mane",
+    "name": "Aestus Mane",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/aestus-mane.webp"
+  },
+  {
+    "id": "pets-dracula-parrot",
+    "name": "Dracula Parrot",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/dracula-parrot.webp"
+  },
+  {
+    "id": "vehicles-horse-and-carriage",
+    "name": "Horse And Carriage",
+    "category": "vehicles",
+    "value": 2.8875,
+    "demand": 2,
+    "image": "images/vehicles/horse-and-carriage.webp"
+  },
+  {
+    "id": "pets-preppy-capuchin-monkey",
+    "name": "Preppy Capuchin Monkey",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/preppy-capuchin-monkey.webp"
+  },
+  {
+    "id": "pets-maleo-bird",
+    "name": "Maleo Bird",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/maleo-bird.webp"
+  },
+  {
+    "id": "pets-trihorned-treehopper",
+    "name": "Tri-horned Treehopper",
+    "category": "pets",
+    "value": 4.5375,
+    "demand": 2,
+    "image": "images/pets/tri-horned-treehopper.webp"
+  },
+  {
+    "id": "pets-influencer-gibbon",
+    "name": "Influencer Gibbon",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/pets/influencer-gibbon.webp"
+  },
+  {
+    "id": "pets-border-collie",
+    "name": "Border Collie",
+    "category": "pets",
+    "value": 6.3938,
+    "demand": 3,
+    "image": "images/pets/border-collie.webp"
+  },
+  {
+    "id": "stickers-panda-sticker",
+    "name": "Panda Sticker",
+    "category": "stickers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/stickers/panda-sticker.webp"
+  },
+  {
+    "id": "vehicles-red-skateboard",
+    "name": "Neon Red Skateboard",
+    "category": "vehicles",
+    "value": 1.0725,
+    "demand": 1,
+    "image": "images/vehicles/neon-red-skateboard.webp"
+  },
+  {
+    "id": "pets-bee",
+    "name": "Bee",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/bee.webp"
+  },
+  {
+    "id": "pets-glormy-leo",
+    "name": "Glormy Leo",
+    "category": "pets",
+    "value": 2.31,
+    "demand": 2,
+    "image": "images/pets/glormy-leo.webp"
+  },
+  {
+    "id": "pets-scarecrow-crow",
+    "name": "Scarecrow Crow",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/scarecrow-crow.webp"
+  },
+  {
+    "id": "pets-bunny",
+    "name": "Bunny",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/bunny.webp"
+  },
+  {
+    "id": "petwear-burger-bun-hat",
+    "name": "Burger Bun Hat",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/burger-bun-hat.webp"
+  },
+  {
+    "id": "toys-skeleton-pogo-stick",
+    "name": "Skeleton Pogo Stick",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/skeleton-pogo-stick.webp"
+  },
+  {
+    "id": "strollers-kangaroo-stroller",
+    "name": "Kangaroo Stroller",
+    "category": "strollers",
+    "value": 0.2119,
+    "demand": 1,
+    "image": "images/strollers/kangaroo-stroller.webp"
+  },
+  {
+    "id": "pets-caterpillar",
+    "name": "Caterpillar",
+    "category": "pets",
+    "value": 8.4562,
+    "demand": 2,
+    "image": "images/pets/caterpillar.webp"
+  },
+  {
+    "id": "petwear-halloween-green-zombie-bat-wings",
+    "name": "Halloween Green Zombie Bat Wings",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/halloween-green-zombie-bat-wings.webp"
+  },
+  {
+    "id": "stickers-phoenix-sticker",
+    "name": "Phoenix Sticker",
+    "category": "stickers",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/stickers/phoenix-sticker.webp"
+  },
+  {
+    "id": "petwear-rainbow-maker",
+    "name": "Rainbow Maker",
+    "category": "petwear",
+    "value": 32.175,
+    "demand": 3,
+    "image": "images/petwear/rainbow-maker.webp"
+  },
+  {
+    "id": "vehicles-lavender-teapot-carriage",
+    "name": "Lavender Teapot Carriage",
+    "category": "vehicles",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/vehicles/lavender-teapot-carriage.webp"
+  },
+  {
+    "id": "gifts-standard-gorilla-box",
+    "name": "Standard Gorilla Box",
+    "category": "gifts",
+    "value": 0.1397,
+    "demand": 1,
+    "image": "images/gifts/standard-gorilla-box.webp"
+  },
+  {
+    "id": "toys-heart-rattle",
+    "name": "Heart Rattle",
+    "category": "toys",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/toys/heart-rattle.webp"
+  },
+  {
+    "id": "pets-choco-penguin",
+    "name": "Choco Penguin",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/choco-penguin.webp"
+  },
+  {
+    "id": "pets-snow-leopard",
+    "name": "Snow Leopard",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/snow-leopard.webp"
+  },
+  {
+    "id": "pets-space-whale",
+    "name": "Space Whale",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/space-whale.webp"
+  },
+  {
+    "id": "petwear-duck-floatie",
+    "name": "Duck Floatie",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/duck-floatie.webp"
+  },
+  {
+    "id": "eggs-dylan",
+    "name": "Dylan",
+    "category": "eggs",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/eggs/dylan.webp"
+  },
+  {
+    "id": "petwear-gold-crown",
+    "name": "Gold Crown",
+    "category": "petwear",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/petwear/gold-crown.webp"
+  },
+  {
+    "id": "eggs-southeast-asia-egg",
+    "name": "Southeast Asia Egg",
+    "category": "eggs",
+    "value": 0.3007,
+    "demand": 2,
+    "image": "images/eggs/southeast-asia-egg.webp"
+  },
+  {
+    "id": "pets-dango-penguins",
+    "name": "Dango Penguins",
+    "category": "pets",
+    "value": 1.65,
+    "demand": 3,
+    "image": "images/pets/dango-penguins.webp"
+  },
+  {
+    "id": "toys-flying-broomstick",
+    "name": "Flying Broomstick",
+    "category": "toys",
+    "value": 42.075,
+    "demand": 2,
+    "image": "images/toys/flying-broomstick.webp"
+  },
+  {
+    "id": "pets-naughty-mistletroll",
+    "name": "Naughty Mistletroll",
+    "category": "pets",
+    "value": 2.5162,
+    "demand": 2,
+    "image": "images/pets/naughty-mistletroll.webp"
+  },
+  {
+    "id": "petwear-pink-butterfly-wings",
+    "name": "Pink Butterfly Wings",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/pink-butterfly-wings.webp"
+  },
+  {
+    "id": "toys-sour-glider",
+    "name": "Sour Glider",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/sour-glider.webp"
+  },
+  {
+    "id": "pets-black-tiger",
+    "name": "Black Tiger",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/black-tiger.webp"
+  },
+  {
+    "id": "vehicles-black-snowboard",
+    "name": "Black Snowboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/black-snowboard.webp"
+  },
+  {
+    "id": "vehicles-ice-cream-truck",
+    "name": "Ice Cream Truck",
+    "category": "vehicles",
+    "value": 0.4538,
+    "demand": 2,
+    "image": "images/vehicles/ice-cream-truck.webp"
+  },
+  {
+    "id": "eggs-christmas-future-egg",
+    "name": "Christmas Future Egg",
+    "category": "eggs",
+    "value": 0.2737,
+    "demand": 2,
+    "image": "images/eggs/christmas-future-egg.webp"
+  },
+  {
+    "id": "pets-black-moon-bear",
+    "name": "Black Moon Bear",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/black-moon-bear.webp"
+  },
+  {
+    "id": "pets-dimorphodon",
+    "name": "Dimorphodon",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/dimorphodon.webp"
+  },
+  {
+    "id": "stickers-nautilus-sticker",
+    "name": "Nautilus Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/nautilus-sticker.webp"
+  },
+  {
+    "id": "pets-phoenix",
+    "name": "Phoenix",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/phoenix.webp"
+  },
+  {
+    "id": "petwear-glamicorn-purse-pet",
+    "name": "Glamicorn Purse Pet",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/glamicorn-purse-pet.webp"
+  },
+  {
+    "id": "pets-eggnog-dog",
+    "name": "Eggnog Dog",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/eggnog-dog.webp"
+  },
+  {
+    "id": "toys-starpower-wand",
+    "name": "Starpower Wand",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/starpower-wand.webp"
+  },
+  {
+    "id": "vehicles-dapper-friend-carrier",
+    "name": "Dapper Friend Carrier",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/dapper-friend-carrier.webp"
+  },
+  {
+    "id": "gifts-spider-gift",
+    "name": "Spider Gift",
+    "category": "gifts",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/gifts/spider-gift.webp"
+  },
+  {
+    "id": "petwear-tutu",
+    "name": "Tutu",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/tutu.webp"
+  },
+  {
+    "id": "pets-berry-cool-cube",
+    "name": "Berry Cool Cube",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/berry-cool-cube.webp"
+  },
+  {
+    "id": "petwear-spring-bunny-hood",
+    "name": "Spring Bunny Hood",
+    "category": "petwear",
+    "value": 2.475,
+    "demand": 2,
+    "image": "images/petwear/spring-bunny-hood.webp"
+  },
+  {
+    "id": "toys-frosty-glow-paint",
+    "name": "Frosty Glow Mega Neon Paint",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 3,
+    "image": "images/toys/frosty-glow-mega-neon-paint.webp"
+  },
+  {
+    "id": "petwear-mule-baskets",
+    "name": "Mule Baskets",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/mule-baskets.webp"
+  },
+  {
+    "id": "stickers-leviathan-sticker",
+    "name": "Leviathan Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/leviathan-sticker.webp"
+  },
+  {
+    "id": "vehicles-street-drifter",
+    "name": "Street Drifter",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/street-drifter.webp"
+  },
+  {
+    "id": "vehicles-bee-shuttle",
+    "name": "Bee Shuttle",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/bee-shuttle.webp"
+  },
+  {
+    "id": "petwear-goth-shoes",
+    "name": "Goth Shoes",
+    "category": "petwear",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/petwear/goth-shoes.webp"
   },
   {
     "id": "strollers-potion-stroller",
@@ -13818,20 +2258,1484 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "pets-strawberry-penguin",
-    "name": "Strawberry Penguin",
-    "category": "pets",
-    "value": 4.0983,
-    "demand": 2,
-    "image": "images/pets/strawberry-penguin.webp"
+    "id": "strollers-halloween-black-witch-hat-stroller",
+    "name": "Halloween Black Witch Hat Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/halloween-black-witch-hat-stroller.webp"
   },
   {
-    "id": "strollers-unicorn-stroller",
-    "name": "Unicorn Stroller",
-    "category": "strollers",
-    "value": 1.162,
+    "id": "pets-hero-gibbon",
+    "name": "Hero Gibbon",
+    "category": "pets",
+    "value": 4.95,
     "demand": 2,
-    "image": "images/strollers/unicorn-stroller.webp"
+    "image": "images/pets/hero-gibbon.webp"
+  },
+  {
+    "id": "pets-dj-snooze",
+    "name": "DJ Snooze",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/dj-snooze.webp"
+  },
+  {
+    "id": "toys-homeing-rocket",
+    "name": "Homeing Rocket",
+    "category": "toys",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/toys/homeing-rocket.webp"
+  },
+  {
+    "id": "pets-munchkin-cat",
+    "name": "Munchkin Cat",
+    "category": "pets",
+    "value": 5.5688,
+    "demand": 3,
+    "image": "images/pets/munchkin-cat.webp"
+  },
+  {
+    "id": "stickers-flaming-fox-sticker",
+    "name": "Flaming Fox Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/flaming-fox-sticker.webp"
+  },
+  {
+    "id": "gifts-premium-monkey-box",
+    "name": "Premium Monkey Box",
+    "category": "gifts",
+    "value": 26.72,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-rain-boots",
+    "name": "Rain Boots",
+    "category": "petwear",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/petwear/rain-boots.webp"
+  },
+  {
+    "id": "petwear-grinder-hat",
+    "name": "Grinder Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/grinder-hat.webp"
+  },
+  {
+    "id": "pets-humbug",
+    "name": "Humbug",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/humbug.webp"
+  },
+  {
+    "id": "pets-emperor-shrimp",
+    "name": "Emperor Shrimp",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/emperor-shrimp.webp"
+  },
+  {
+    "id": "gifts-wolf-box",
+    "name": "Wolf Box",
+    "category": "gifts",
+    "value": 0.7071,
+    "demand": 2,
+    "image": "images/gifts/wolf-box.webp"
+  },
+  {
+    "id": "pets-rodeo-bull",
+    "name": "Rodeo Bull",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/rodeo-bull.webp"
+  },
+  {
+    "id": "petwear-unicorn-horn",
+    "name": "Unicorn Horn",
+    "category": "petwear",
+    "value": 10.725,
+    "demand": 3,
+    "image": "images/petwear/unicorn-horn.webp"
+  },
+  {
+    "id": "pets-greenchested-pheasant",
+    "name": "Green-Chested Pheasant",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/green-chested-pheasant.webp"
+  },
+  {
+    "id": "pets-chocolate-chowchow",
+    "name": "Chocolate Chow-Chow",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/chocolate-chow-chow.webp"
+  },
+  {
+    "id": "pets-grinmoire",
+    "name": "Grinmoire",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/grinmoire.webp"
+  },
+  {
+    "id": "gifts-standard-capuchin-box",
+    "name": "Standard Capuchin Box",
+    "category": "gifts",
+    "value": 0.2208,
+    "demand": 1,
+    "image": "images/gifts/standard-capuchin-box.webp"
+  },
+  {
+    "id": "vehicles-shadow-rider",
+    "name": "Shadow Rider",
+    "category": "vehicles",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/vehicles/shadow-rider.webp"
+  },
+  {
+    "id": "toys-christmas-doge-rattle",
+    "name": "Christmas Doge Rattle",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/christmas-doge-rattle.webp"
+  },
+  {
+    "id": "food-golden-dandelion",
+    "name": "Golden Dandelion",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-dandelion.webp"
+  },
+  {
+    "id": "pets-sea-slug",
+    "name": "Sea Slug",
+    "category": "pets",
+    "value": 5.9813,
+    "demand": 2,
+    "image": "images/pets/sea-slug.webp"
+  },
+  {
+    "id": "pets-sea-turtle",
+    "name": "Sea Turtle",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/sea-turtle.webp"
+  },
+  {
+    "id": "strollers-duck-stroller",
+    "name": "Duck Stroller",
+    "category": "strollers",
+    "value": 0.7043,
+    "demand": 1,
+    "image": "images/strollers/duck-stroller.webp"
+  },
+  {
+    "id": "strollers-vampire-stroller",
+    "name": "Vampire Stroller",
+    "category": "strollers",
+    "value": 1.9425,
+    "demand": 2,
+    "image": "images/strollers/vampire-stroller.webp"
+  },
+  {
+    "id": "food-flaming-zebra-bait",
+    "name": "Flaming Zebra Bait",
+    "category": "food",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/food/flaming-zebra-bait.webp"
+  },
+  {
+    "id": "pets-ruddy-duck",
+    "name": "Ruddy Duck",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/ruddy-duck.webp"
+  },
+  {
+    "id": "vehicles-rose-petal-carriage",
+    "name": "Rose Petal Carriage",
+    "category": "vehicles",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/vehicles/rose-petal-carriage.webp"
+  },
+  {
+    "id": "petwear-witch-hat",
+    "name": "Witch Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/witch-hat.webp"
+  },
+  {
+    "id": "food-stripes-egg",
+    "name": "Stripes Egg",
+    "category": "food",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/food/stripes-egg.webp"
+  },
+  {
+    "id": "pets-giraffe",
+    "name": "Giraffe",
+    "category": "pets",
+    "value": 212.025,
+    "demand": 3,
+    "image": "images/pets/giraffe.webp"
+  },
+  {
+    "id": "pets-black-rhino",
+    "name": "Black Rhino",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/black-rhino.webp"
+  },
+  {
+    "id": "stickers-mermicorn-animated-sticker",
+    "name": "Mermicorn Animated Sticker",
+    "category": "stickers",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/stickers/mermicorn-animated-sticker.webp"
+  },
+  {
+    "id": "vehicles-black-scooter",
+    "name": "Black Scooter",
+    "category": "vehicles",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/vehicles/black-scooter.webp"
+  },
+  {
+    "id": "gifts-admin-abuse-box",
+    "name": "Admin Abuse Box",
+    "category": "gifts",
+    "value": 0.039,
+    "demand": 1,
+    "image": "images/gifts/admin-abuse-box.webp"
+  },
+  {
+    "id": "stickers-scarebear-sticker",
+    "name": "Scarebear Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/scarebear-sticker.webp"
+  },
+  {
+    "id": "pets-ringtailed-lemur",
+    "name": "Ring-Tailed Lemur",
+    "category": "pets",
+    "value": 2.5575,
+    "demand": 2,
+    "image": "images/pets/ring-tailed-lemur.webp"
+  },
+  {
+    "id": "eggs-aussie-egg",
+    "name": "Aussie Egg",
+    "category": "eggs",
+    "value": 2.5005,
+    "demand": 3,
+    "image": "images/eggs/aussie-egg.webp"
+  },
+  {
+    "id": "vehicles-prince-carriage",
+    "name": "Prince Carriage",
+    "category": "vehicles",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/vehicles/prince-carriage.webp"
+  },
+  {
+    "id": "toys-chocolate-bunny-balloon",
+    "name": "Chocolate Bunny Balloon",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/chocolate-bunny-balloon.webp"
+  },
+  {
+    "id": "pets-candyfloss-chick",
+    "name": "Candyfloss Chick",
+    "category": "pets",
+    "value": 10.3125,
+    "demand": 3,
+    "image": "images/pets/candyfloss-chick.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-party-hat",
+    "name": "2022 Birthday Party Hat",
+    "category": "petwear",
+    "value": 13.4062,
+    "demand": 3,
+    "image": "images/petwear/2022-birthday-party-hat.webp"
+  },
+  {
+    "id": "food-strawberry-shortcake",
+    "name": "Strawberry Shortcake",
+    "category": "food",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/food/strawberry-shortcake.webp"
+  },
+  {
+    "id": "pets-phantom-dragon",
+    "name": "Phantom Dragon",
+    "category": "pets",
+    "value": 5.3625,
+    "demand": 2,
+    "image": "images/pets/phantom-dragon.webp"
+  },
+  {
+    "id": "pets-dire-stag",
+    "name": "Dire Stag",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/dire-stag.webp"
+  },
+  {
+    "id": "petwear-cupcake-sprinkle-wings",
+    "name": "Cupcake Sprinkle Wings",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 2,
+    "image": "images/petwear/cupcake-sprinkle-wings.webp"
+  },
+  {
+    "id": "pets-ratatoskr",
+    "name": "Ratatoskr",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/ratatoskr.webp"
+  },
+  {
+    "id": "pets-fire-stallion",
+    "name": "Fire Stallion",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/fire-stallion.webp"
+  },
+  {
+    "id": "toys-caticorn-rattle",
+    "name": "Caticorn Rattle",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/caticorn-rattle.webp"
+  },
+  {
+    "id": "food-golden-corn",
+    "name": "Golden Corn",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-corn.webp"
+  },
+  {
+    "id": "toys-smores-pogo-stick",
+    "name": "S'mores Pogo Stick",
+    "category": "toys",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/toys/s-mores-pogo-stick.webp"
+  },
+  {
+    "id": "petwear-city-hat",
+    "name": "City Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/city-hat.webp"
+  },
+  {
+    "id": "pets-blue-dog",
+    "name": "Blue Dog",
+    "category": "pets",
+    "value": 6.8063,
+    "demand": 2,
+    "image": "images/pets/blue-dog.webp"
+  },
+  {
+    "id": "toys-hot-cocoa-stand",
+    "name": "Hot Cocoa Stand",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/toys/hot-cocoa-stand.webp"
+  },
+  {
+    "id": "strollers-big-leaf-stroller",
+    "name": "Big Leaf Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-leopard-shark",
+    "name": "Leopard Shark",
+    "category": "pets",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/pets/leopard-shark.webp"
+  },
+  {
+    "id": "pets-winter-doe",
+    "name": "Winter Doe",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/winter-doe.webp"
+  },
+  {
+    "id": "pets-peregrine-falcon",
+    "name": "Peregrine Falcon",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/peregrine-falcon.webp"
+  },
+  {
+    "id": "pets-lion-cub",
+    "name": "Lion Cub",
+    "category": "pets",
+    "value": 3.9188,
+    "demand": 2,
+    "image": "images/pets/lion-cub.webp"
+  },
+  {
+    "id": "vehicles-bethink-skateboard",
+    "name": "Bethink Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/bethink-skateboard.webp"
+  },
+  {
+    "id": "toys-amethyst-skies-paint",
+    "name": "Amethyst Skies Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/amethyst-skies-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-toxic-kaijunior",
+    "name": "Toxic Kaijunior",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/toxic-kaijunior.webp"
+  },
+  {
+    "id": "pets-kakapo",
+    "name": "Kakapo",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/kakapo.webp"
+  },
+  {
+    "id": "eggs-christmas-egg",
+    "name": "Christmas Egg",
+    "category": "eggs",
+    "value": 8.5652,
+    "demand": 2,
+    "image": "images/eggs/christmas-egg.webp"
+  },
+  {
+    "id": "stickers-pet-rock-sticker",
+    "name": "Pet Rock Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/pet-rock-sticker.webp"
+  },
+  {
+    "id": "gifts-spider-box",
+    "name": "Spider Box",
+    "category": "gifts",
+    "value": 0.24,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-deathstalker-scorpion",
+    "name": "Deathstalker Scorpion",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/deathstalker-scorpion.webp"
+  },
+  {
+    "id": "toys-cat-plush",
+    "name": "Cat Plush",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/toys/cat-plush.webp"
+  },
+  {
+    "id": "strollers-ice-cream-stroller",
+    "name": "Ice Cream Stroller",
+    "category": "strollers",
+    "value": 0.3933,
+    "demand": 1,
+    "image": "images/strollers/ice-cream-stroller.webp"
+  },
+  {
+    "id": "pets-angus-calf",
+    "name": "Angus Calf",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/angus-calf.webp"
+  },
+  {
+    "id": "pets-puma",
+    "name": "Puma",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/puma.webp"
+  },
+  {
+    "id": "pets-yellowlipped-sea-krait",
+    "name": "Yellow-Lipped Sea Krait",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/yellow-lipped-sea-krait.webp"
+  },
+  {
+    "id": "petwear-golden-hair",
+    "name": "Golden Hair",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/golden-hair.webp"
+  },
+  {
+    "id": "toys-chick-plush",
+    "name": "Chick Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/chick-plush.webp"
+  },
+  {
+    "id": "stickers-pirate-dog-sticker",
+    "name": "Pirate Dog Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/pirate-dog-sticker.webp"
+  },
+  {
+    "id": "food-burnt-bites-bait",
+    "name": "Burnt Bites Bait",
+    "category": "food",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/food/burnt-bites-bait.webp"
+  },
+  {
+    "id": "pets-giant-anteater",
+    "name": "Giant Anteater",
+    "category": "pets",
+    "value": 4.5375,
+    "demand": 2,
+    "image": "images/pets/giant-anteater.webp"
+  },
+  {
+    "id": "strollers-snowman-stroller",
+    "name": "Snowman Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/snowman-stroller.webp"
+  },
+  {
+    "id": "strollers-rocket-ship-stroller",
+    "name": "Rocket Ship Stroller",
+    "category": "strollers",
+    "value": 0.057,
+    "demand": 1,
+    "image": "images/strollers/rocket-ship-stroller.webp"
+  },
+  {
+    "id": "pets-rattlesnake",
+    "name": "Rattlesnake",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/rattlesnake.webp"
+  },
+  {
+    "id": "pets-frost-phoenix",
+    "name": "Frost Phoenix",
+    "category": "pets",
+    "value": 1.3613,
+    "demand": 2,
+    "image": "images/pets/frost-phoenix.webp"
+  },
+  {
+    "id": "pets-green-amazon",
+    "name": "Green Amazon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/green-amazon.webp"
+  },
+  {
+    "id": "pets-mosquito",
+    "name": "Mosquito",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/mosquito.webp"
+  },
+  {
+    "id": "vehicles-monocycle",
+    "name": "Monocycle",
+    "category": "vehicles",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/vehicles/monocycle.webp"
+  },
+  {
+    "id": "pets-oakee",
+    "name": "Oakee",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/oakee.webp"
+  },
+  {
+    "id": "pets-spider-crab",
+    "name": "Spider Crab",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/spider-crab.webp"
+  },
+  {
+    "id": "strollers-toilet-stroller",
+    "name": "Toilet Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/toilet-stroller.webp"
+  },
+  {
+    "id": "toys-polar-bear-plush",
+    "name": "Polar Bear Plush",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/polar-bear-plush.webp"
+  },
+  {
+    "id": "pets-white-choccybunny",
+    "name": "White Choccybunny",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/white-choccybunny.webp"
+  },
+  {
+    "id": "petwear-copter-hat",
+    "name": "Copter Hat",
+    "category": "petwear",
+    "value": 0.99,
+    "demand": 2,
+    "image": "images/petwear/copter-hat.webp"
+  },
+  {
+    "id": "vehicles-fissy-skateboard",
+    "name": "Fissy Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/fissy-skateboard.webp"
+  },
+  {
+    "id": "pets-beaver",
+    "name": "Beaver",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/beaver.webp"
+  },
+  {
+    "id": "stickers-toasty-red-panda-sticker",
+    "name": "Toasty Red Panda Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/toasty-red-panda-sticker.webp"
+  },
+  {
+    "id": "vehicles-ruddy-duck-waddler",
+    "name": "Ruddy Duck Waddler",
+    "category": "vehicles",
+    "value": 0.0495,
+    "demand": 1,
+    "image": "images/vehicles/ruddy-duck-waddler.webp"
+  },
+  {
+    "id": "petwear-cloud-wings",
+    "name": "Cloud Wings",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/cloud-wings.webp"
+  },
+  {
+    "id": "pets-frostclaw",
+    "name": "Frostclaw",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/frostclaw.webp"
+  },
+  {
+    "id": "pets-dingo",
+    "name": "Dingo",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/dingo.webp"
+  },
+  {
+    "id": "petwear-bear-hood",
+    "name": "Bear Hood",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/bear-hood.webp"
+  },
+  {
+    "id": "pets-frost-fury",
+    "name": "Frost Fury",
+    "category": "pets",
+    "value": 3.0938,
+    "demand": 3,
+    "image": "images/pets/frost-fury.webp"
+  },
+  {
+    "id": "petwear-strawberry-shortcake-bow",
+    "name": "Strawberry Shortcake Bow",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/strawberry-shortcake-bow.webp"
+  },
+  {
+    "id": "gifts-2d-box",
+    "name": "2D Box",
+    "category": "gifts",
+    "value": 0.098,
+    "demand": 1,
+    "image": "images/gifts/2d-box.webp"
+  },
+  {
+    "id": "strollers-magic-moon-stroller",
+    "name": "Magic Moon Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "food-golden-lettuce",
+    "name": "Golden Lettuce",
+    "category": "food",
+    "value": 1.4438,
+    "demand": 2,
+    "image": "images/food/golden-lettuce.webp"
+  },
+  {
+    "id": "eggs-jungle-egg",
+    "name": "Jungle Egg",
+    "category": "eggs",
+    "value": 35.1122,
+    "demand": 2,
+    "image": "images/eggs/jungle-egg.webp"
+  },
+  {
+    "id": "petwear-heart-bow",
+    "name": "Heart Bow",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/petwear/heart-bow.webp"
+  },
+  {
+    "id": "gifts-lunar-new-year-gift-box",
+    "name": "Lunar New Year Gift Box",
+    "category": "gifts",
+    "value": 0.28,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-red-dutch-guinea-pig",
+    "name": "Red Dutch Guinea Pig",
+    "category": "pets",
+    "value": 2.7638,
+    "demand": 2,
+    "image": "images/pets/red-dutch-guinea-pig.webp"
+  },
+  {
+    "id": "petwear-dancing-tube-hat",
+    "name": "Dancing Tube Hat",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/dancing-tube-hat.webp"
+  },
+  {
+    "id": "strollers-crate-stroller",
+    "name": "Crate Stroller",
+    "category": "strollers",
+    "value": 0.0426,
+    "demand": 1,
+    "image": "images/strollers/crate-stroller.webp"
+  },
+  {
+    "id": "pets-bison",
+    "name": "Bison",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/bison.webp"
+  },
+  {
+    "id": "pets-candy-cane-snail",
+    "name": "Candy Cane Snail",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/candy-cane-snail.webp"
+  },
+  {
+    "id": "vehicles-blue-snowboard",
+    "name": "Blue Snowboard",
+    "category": "vehicles",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/vehicles/blue-snowboard.webp"
+  },
+  {
+    "id": "pets-sado-mole",
+    "name": "Sado Mole",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/sado-mole.webp"
+  },
+  {
+    "id": "strollers-froggy-stroller",
+    "name": "Froggy Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/froggy-stroller.webp"
+  },
+  {
+    "id": "pets-rock-pigeon",
+    "name": "Rock Pigeon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/rock-pigeon.webp"
+  },
+  {
+    "id": "pets-starmite",
+    "name": "Starmite",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/starmite.webp"
+  },
+  {
+    "id": "pets-jumping-spider",
+    "name": "Jumping Spider",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/jumping-spider.webp"
+  },
+  {
+    "id": "pets-singularity-pisces",
+    "name": "Singularity Pisces",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/singularity-pisces.webp"
+  },
+  {
+    "id": "gifts-halloween-mummy-cat-box",
+    "name": "Halloween Mummy Cat Box",
+    "category": "gifts",
+    "value": 0.3356,
+    "demand": 1,
+    "image": "images/gifts/halloween-mummy-cat-box.webp"
+  },
+  {
+    "id": "vehicles-white-snowboard",
+    "name": "White Snowboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/white-snowboard.webp"
+  },
+  {
+    "id": "pets-bat",
+    "name": "Bat",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/bat.webp"
+  },
+  {
+    "id": "toys-camping-tent",
+    "name": "Camping Tent",
+    "category": "toys",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/toys/camping-tent.webp"
+  },
+  {
+    "id": "stickers-aurora-fox-sticker",
+    "name": "Aurora Fox Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/aurora-fox-sticker.webp"
+  },
+  {
+    "id": "vehicles-green-skateboard",
+    "name": "Neon Green Skateboard",
+    "category": "vehicles",
+    "value": 1.0725,
+    "demand": 1,
+    "image": "images/vehicles/neon-green-skateboard.webp"
+  },
+  {
+    "id": "pets-liger",
+    "name": "Liger",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/liger.webp"
+  },
+  {
+    "id": "toys-easter-bunny-plush",
+    "name": "Easter Bunny Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/easter-bunny-plush.webp"
+  },
+  {
+    "id": "pets-skelebat",
+    "name": "Skelebat",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/skelebat.webp"
+  },
+  {
+    "id": "toys-pumpkin-rattle",
+    "name": "Pumpkin Rattle",
+    "category": "toys",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/toys/pumpkin-rattle.webp"
+  },
+  {
+    "id": "gifts-oakee-box",
+    "name": "Oakee Box",
+    "category": "gifts",
+    "value": 0.0083,
+    "demand": 1,
+    "image": "images/gifts/oakee-box.webp"
+  },
+  {
+    "id": "vehicles-enchanted-broomstick",
+    "name": "Enchanted Broomstick",
+    "category": "vehicles",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/vehicles/enchanted-broomstick.webp"
+  },
+  {
+    "id": "petwear-banana-hat",
+    "name": "Banana Hat",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/banana-hat.webp"
+  },
+  {
+    "id": "pets-gecko",
+    "name": "Gecko",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/gecko.webp"
+  },
+  {
+    "id": "vehicles-rabbit-helicopter",
+    "name": "Rabbit Helicopter",
+    "category": "vehicles",
+    "value": 0.99,
+    "demand": 1,
+    "image": "images/vehicles/rabbit-helicopter.webp"
+  },
+  {
+    "id": "pets-nebula-snake",
+    "name": "Nebula Snake",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/nebula-snake.webp"
+  },
+  {
+    "id": "stickers-phantom-dragon-sticker",
+    "name": "Phantom Dragon Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/phantom-dragon-sticker.webp"
+  },
+  {
+    "id": "pets-swan",
+    "name": "Swan",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/pets/swan.webp"
+  },
+  {
+    "id": "petwear-purple-heart-glasses",
+    "name": "Purple Heart Glasses",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/purple-heart-glasses.webp"
+  },
+  {
+    "id": "pets-zeopod",
+    "name": "Zeopod",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/zeopod.webp"
+  },
+  {
+    "id": "pets-giant-blue-scarab",
+    "name": "Giant Blue Scarab",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/giant-blue-scarab.webp"
+  },
+  {
+    "id": "vehicles-charons-boat",
+    "name": "Charon's Boat",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/charon-s-boat.webp"
+  },
+  {
+    "id": "strollers-car-stroller",
+    "name": "Car Stroller",
+    "category": "strollers",
+    "value": 0.057,
+    "demand": 1,
+    "image": "images/strollers/car-stroller.webp"
+  },
+  {
+    "id": "petwear-chimney-hat",
+    "name": "Chimney Hat",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/chimney-hat.webp"
+  },
+  {
+    "id": "pets-golden-dragon",
+    "name": "Golden Dragon",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/golden-dragon.webp"
+  },
+  {
+    "id": "pets-magpie",
+    "name": "Magpie",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/magpie.webp"
+  },
+  {
+    "id": "vehicles-candy-camper",
+    "name": "Candy Camper",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/candy-camper.webp"
+  },
+  {
+    "id": "stickers-sledding-penguin-sticker",
+    "name": "Sledding Penguin Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/sledding-penguin-sticker.webp"
+  },
+  {
+    "id": "pets-sprout-snail",
+    "name": "Sprout Snail",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/sprout-snail.webp"
+  },
+  {
+    "id": "pets-lamb",
+    "name": "Lamb",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/pets/lamb.webp"
+  },
+  {
+    "id": "stickers-sunrise-duckling-sticker",
+    "name": "Sunrise Duckling Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/sunrise-duckling-sticker.webp"
+  },
+  {
+    "id": "strollers-wheelbarrow-stroller",
+    "name": "Wheelbarrow Stroller",
+    "category": "strollers",
+    "value": 0.0823,
+    "demand": 1,
+    "image": "images/strollers/wheelbarrow-stroller.webp"
+  },
+  {
+    "id": "pets-golden-griffin",
+    "name": "Golden Griffin",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/golden-griffin.webp"
+  },
+  {
+    "id": "pets-balloon-unicorn",
+    "name": "Balloon Unicorn",
+    "category": "pets",
+    "value": 77.1375,
+    "demand": 3,
+    "image": "images/pets/balloon-unicorn.webp"
+  },
+  {
+    "id": "pets-alicorn",
+    "name": "Alicorn",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/alicorn.webp"
+  },
+  {
+    "id": "toys-strawberry-toast-flying-disc",
+    "name": "Strawberry Toast Flying Disc",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/strawberry-toast-flying-disc.webp"
+  },
+  {
+    "id": "petwear-fairy-wings",
+    "name": "Fairy Wings",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/fairy-wings.webp"
+  },
+  {
+    "id": "pets-irish-water-spaniel",
+    "name": "Irish Water Spaniel",
+    "category": "pets",
+    "value": 4.3312,
+    "demand": 2,
+    "image": "images/pets/irish-water-spaniel.webp"
+  },
+  {
+    "id": "toys-velvet-fuchsia-paint",
+    "name": "Velvet Fuchsia Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/velvet-fuchsia-mega-neon-paint.webp"
+  },
+  {
+    "id": "eggs-aztec-egg",
+    "name": "Aztec Egg",
+    "category": "eggs",
+    "value": 0.0408,
+    "demand": 1,
+    "image": "images/eggs/aztec-egg.webp"
+  },
+  {
+    "id": "vehicles-beachgoer",
+    "name": "Beachgoer",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/beachgoer.webp"
+  },
+  {
+    "id": "stickers-naughty-mistletroll-sticker",
+    "name": "Naughty Mistletroll Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/naughty-mistletroll-sticker.webp"
+  },
+  {
+    "id": "pets-lava-wolf",
+    "name": "Lava Wolf",
+    "category": "pets",
+    "value": 1.1138,
+    "demand": 2,
+    "image": "images/pets/lava-wolf.webp"
+  },
+  {
+    "id": "vehicles-wing-trunk-car",
+    "name": "Wing Trunk Car",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/wing-trunk-car.webp"
+  },
+  {
+    "id": "stickers-soulfire-animated-sticker",
+    "name": "Soulfire Animated Sticker",
+    "category": "stickers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/stickers/soulfire-animated-sticker.webp"
+  },
+  {
+    "id": "pets-raccoon",
+    "name": "Raccoon",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/raccoon.webp"
+  },
+  {
+    "id": "petwear-pink-instant-camera",
+    "name": "Pink Instant Camera",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/petwear/pink-instant-camera.webp"
+  },
+  {
+    "id": "vehicles-black-skateboard",
+    "name": "Black Skateboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/black-skateboard.webp"
+  },
+  {
+    "id": "pets-ant",
+    "name": "Ant",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/ant.webp"
+  },
+  {
+    "id": "pets-winged-tiger",
+    "name": "Winged Tiger",
+    "category": "pets",
+    "value": 7.2187,
+    "demand": 2,
+    "image": "images/pets/winged-tiger.webp"
+  },
+  {
+    "id": "pets-criosphinx",
+    "name": "Criosphinx",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/criosphinx.webp"
+  },
+  {
+    "id": "pets-pineapple-owl",
+    "name": "Pineapple Owl",
+    "category": "pets",
+    "value": 1.7738,
+    "demand": 2,
+    "image": "images/pets/pineapple-owl.webp"
+  },
+  {
+    "id": "toys-tea-party-set",
+    "name": "Tea Party Set",
+    "category": "toys",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/toys/tea-party-set.webp"
+  },
+  {
+    "id": "pets-strawberry-tortle",
+    "name": "Strawberry Tortle",
+    "category": "pets",
+    "value": 13.2,
+    "demand": 2,
+    "image": "images/pets/strawberry-tortle.webp"
+  },
+  {
+    "id": "strollers-shopping-cart-stroller",
+    "name": "Shopping Cart Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-aztec-crown",
+    "name": "Aztec Crown",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/aztec-crown.webp"
+  },
+  {
+    "id": "eggs-royal-egg",
+    "name": "Royal Egg",
+    "category": "eggs",
+    "value": 0.039,
+    "demand": 1,
+    "image": "images/eggs/royal-egg.webp"
+  },
+  {
+    "id": "stickers-long-ermine-sticker",
+    "name": "Long Ermine Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/long-ermine-sticker.webp"
+  },
+  {
+    "id": "pets-elasmosaurus",
+    "name": "Elasmosaurus",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/elasmosaurus.webp"
+  },
+  {
+    "id": "pets-siamese-cat",
+    "name": "Siamese Cat",
+    "category": "pets",
+    "value": 11.3438,
+    "demand": 3,
+    "image": "images/pets/siamese-cat.webp"
+  },
+  {
+    "id": "toys-christmas-cat-rattle",
+    "name": "Christmas Cat Rattle",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/christmas-cat-rattle.webp"
+  },
+  {
+    "id": "pets-cabbit",
+    "name": "Cabbit",
+    "category": "pets",
+    "value": 14.2312,
+    "demand": 3,
+    "image": "images/pets/cabbit.webp"
+  },
+  {
+    "id": "stickers-octopus-sticker",
+    "name": "Octopus Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/octopus-sticker.webp"
+  },
+  {
+    "id": "pets-black-chowchow",
+    "name": "Black Chow-Chow",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/black-chow-chow.webp"
+  },
+  {
+    "id": "food-golden-seed-ball",
+    "name": "Golden Seed Ball",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-seed-ball.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-confetti-drape",
+    "name": "2022 Birthday Confetti Drape",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/2022-birthday-confetti-drape.webp"
+  },
+  {
+    "id": "pets-groundhog",
+    "name": "Groundhog",
+    "category": "pets",
+    "value": 2.475,
+    "demand": 2,
+    "image": "images/pets/groundhog.webp"
   },
   {
     "id": "strollers-magic-carpet-stroller",
@@ -13842,147 +3746,10235 @@ const ITEMS = [
     "image": ""
   },
   {
-    "id": "vehicles-yellow-taxi-cab",
-    "name": "Yellow Taxi Cab",
-    "category": "vehicles",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/vehicles/yellow-taxi-cab.webp"
-  },
-  {
-    "id": "strollers-pelican-stroller",
-    "name": "Pelican Stroller",
-    "category": "strollers",
-    "value": 0.0429,
-    "demand": 1,
-    "image": "images/strollers/pelican-stroller.webp"
-  },
-  {
-    "id": "vehicles-giant-snowball",
-    "name": "Giant Snowball",
-    "category": "vehicles",
-    "value": 0.2535,
-    "demand": 1,
-    "image": "images/vehicles/giant-snowball.webp"
-  },
-  {
-    "id": "pets-storm-condor",
-    "name": "Storm Condor",
-    "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/storm-condor.webp"
-  },
-  {
-    "id": "eggs-pet-egg",
-    "name": "Pet Egg",
-    "category": "eggs",
-    "value": 0.0337,
-    "demand": 1,
-    "image": "images/eggs/pet-egg.webp"
-  },
-  {
-    "id": "pets-solaris",
-    "name": "Solaris",
-    "category": "pets",
-    "value": 2.2392,
+    "id": "gifts-golden-gift",
+    "name": "Golden Gift",
+    "category": "gifts",
+    "value": 10.8173,
     "demand": 2,
-    "image": "images/pets/solaris.webp"
+    "image": "images/gifts/golden-gift.webp"
   },
   {
-    "id": "vehicles-rgb-ufo",
-    "name": "RGB UFO",
-    "category": "vehicles",
-    "value": 0.1268,
+    "id": "stickers-scorching-kaijunior-sticker",
+    "name": "Scorching Kaijunior Sticker",
+    "category": "stickers",
+    "value": 0.0413,
     "demand": 1,
-    "image": "images/vehicles/rgb-ufo.webp"
+    "image": "images/stickers/scorching-kaijunior-sticker.webp"
   },
   {
-    "id": "vehicles-street-drifter",
-    "name": "Street Drifter",
+    "id": "vehicles-pumpkin-carriage",
+    "name": "Pumpkin Carriage",
     "category": "vehicles",
-    "value": 0.5493,
+    "value": 0.7425,
     "demand": 1,
-    "image": "images/vehicles/street-drifter.webp"
+    "image": "images/vehicles/pumpkin-carriage.webp"
   },
   {
-    "id": "vehicles-halloween-black-ponycycle",
-    "name": "Halloween Black Ponycycle",
-    "category": "vehicles",
-    "value": 0.507,
-    "demand": 1,
-    "image": "images/vehicles/halloween-black-ponycycle.webp"
-  },
-  {
-    "id": "pets-tree-frog",
-    "name": "Tree Frog",
+    "id": "pets-vanilla-penguin",
+    "name": "Vanilla Penguin",
     "category": "pets",
-    "value": 0.262,
-    "demand": 1,
-    "image": "images/pets/tree-frog.webp"
-  },
-  {
-    "id": "food-flaming-zebra-bait",
-    "name": "Flaming Zebra Bait",
-    "category": "food",
-    "value": 0.338,
+    "value": 0.825,
     "demand": 2,
-    "image": "images/food/flaming-zebra-bait.webp"
+    "image": "images/pets/vanilla-penguin.webp"
   },
   {
-    "id": "pets-amami-rabbit",
-    "name": "Amami Rabbit",
-    "category": "pets",
-    "value": 0.5915,
-    "demand": 2,
-    "image": "images/pets/amami-rabbit.webp"
-  },
-  {
-    "id": "petwear-2022-birthday-confetti-cannon",
-    "name": "2022 Birthday Confetti Cannon",
+    "id": "petwear-music-box-hat",
+    "name": "Music Box Hat",
     "category": "petwear",
-    "value": 6.9713,
-    "demand": 3,
-    "image": "images/petwear/2022-birthday-confetti-cannon.webp"
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/music-box-hat.webp"
   },
   {
-    "id": "toys-santa-rattle",
-    "name": "Santa Rattle",
+    "id": "petwear-festive-scarf",
+    "name": "Festive Scarf",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/festive-scarf.webp"
+  },
+  {
+    "id": "vehicles-traveling-house",
+    "name": "Traveling House",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/traveling-house.webp"
+  },
+  {
+    "id": "pets-castle-hermit-crab",
+    "name": "Castle Hermit Crab",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/castle-hermit-crab.webp"
+  },
+  {
+    "id": "petwear-flower-aura",
+    "name": "Flower Aura",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/flower-aura.webp"
+  },
+  {
+    "id": "strollers-santas-helper-stroller",
+    "name": "Santa's Helper Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/santa-s-helper-stroller.webp"
+  },
+  {
+    "id": "vehicles-bathtub",
+    "name": "Bathtub",
+    "category": "vehicles",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/vehicles/bathtub.webp"
+  },
+  {
+    "id": "stickers-pig-sticker",
+    "name": "Pig Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/pig-sticker.webp"
+  },
+  {
+    "id": "pets-undead-jousting-horse",
+    "name": "Undead Jousting Horse",
+    "category": "pets",
+    "value": 35.8875,
+    "demand": 2,
+    "image": "images/pets/undead-jousting-horse.webp"
+  },
+  {
+    "id": "pets-blue-butterfly",
+    "name": "Blue Butterfly",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/blue-butterfly.webp"
+  },
+  {
+    "id": "vehicles-unstable-triangle-car",
+    "name": "Unstable Triangle Car",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/unstable-triangle-car.webp"
+  },
+  {
+    "id": "pets-lunar-gold-tiger",
+    "name": "Lunar Gold Tiger",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/lunar-gold-tiger.webp"
+  },
+  {
+    "id": "vehicles-princess-carriage",
+    "name": "Princess Carriage",
+    "category": "vehicles",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/vehicles/princess-carriage.webp"
+  },
+  {
+    "id": "pets-chef-gorilla",
+    "name": "Chef Gorilla",
+    "category": "pets",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/pets/chef-gorilla.webp"
+  },
+  {
+    "id": "petwear-rb-battles-trophy-hat",
+    "name": "RB Battles Trophy Hat",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/rb-battles-trophy-hat.webp"
+  },
+  {
+    "id": "toys-elf-plush",
+    "name": "Elf Plush",
     "category": "toys",
-    "value": 0.0845,
+    "value": 0.1237,
     "demand": 1,
-    "image": "images/toys/santa-rattle.webp"
-  },
-  {
-    "id": "pets-huntsman-robin",
-    "name": "Huntsman Robin",
-    "category": "pets",
-    "value": 0.3634,
-    "demand": 1,
-    "image": "images/pets/huntsman-robin.webp"
-  },
-  {
-    "id": "pets-crimson-cape",
-    "name": "Crimson Cape",
-    "category": "pets",
-    "value": 0.2746,
-    "demand": 1,
-    "image": "images/pets/crimson-cape.webp"
+    "image": "images/toys/elf-plush.webp"
   },
   {
     "id": "pets-hippo",
     "name": "Hippo",
     "category": "pets",
-    "value": 0.5493,
+    "value": 0.5363,
     "demand": 1,
     "image": "images/pets/hippo.webp"
+  },
+  {
+    "id": "gifts-pony-box",
+    "name": "Pony Box",
+    "category": "gifts",
+    "value": 0.2625,
+    "demand": 2,
+    "image": "images/gifts/pony-box.webp"
+  },
+  {
+    "id": "eggs-fossil-egg",
+    "name": "Fossil Egg",
+    "category": "eggs",
+    "value": 0.4561,
+    "demand": 2,
+    "image": "images/eggs/fossil-egg.webp"
+  },
+  {
+    "id": "pets-old-king-coal",
+    "name": "Old King Coal",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/old-king-coal.webp"
+  },
+  {
+    "id": "toys-aestus-kite",
+    "name": "Aestus Kite",
+    "category": "toys",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/toys/aestus-kite.webp"
+  },
+  {
+    "id": "pets-water-moon-bear",
+    "name": "Water Moon Bear",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/water-moon-bear.webp"
+  },
+  {
+    "id": "vehicles-toxic-barrel",
+    "name": "Toxic Barrel",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/toxic-barrel.webp"
+  },
+  {
+    "id": "strollers-cauldron-stroller",
+    "name": "Cauldron Stroller",
+    "category": "strollers",
+    "value": 0.3415,
+    "demand": 1,
+    "image": "images/strollers/cauldron-stroller.webp"
+  },
+  {
+    "id": "toys-hotdog-stand",
+    "name": "Hotdog Stand",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/hotdog-stand.webp"
+  },
+  {
+    "id": "pets-blossom-snake",
+    "name": "Blossom Snake",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/blossom-snake.webp"
+  },
+  {
+    "id": "pets-royal-palace-spaniel",
+    "name": "Royal Palace Spaniel",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/royal-palace-spaniel.webp"
+  },
+  {
+    "id": "petwear-festive-antlers",
+    "name": "Festive Antlers",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/festive-antlers.webp"
+  },
+  {
+    "id": "petwear-white-chef-hat",
+    "name": "White Chef Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/white-chef-hat.webp"
+  },
+  {
+    "id": "pets-chimera",
+    "name": "Chimera",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/chimera.webp"
+  },
+  {
+    "id": "petwear-festive-beard",
+    "name": "Festive Beard",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/festive-beard.webp"
+  },
+  {
+    "id": "pets-ice-wolf",
+    "name": "Ice Wolf",
+    "category": "pets",
+    "value": 1.5262,
+    "demand": 2,
+    "image": "images/pets/ice-wolf.webp"
+  },
+  {
+    "id": "petwear-red-yellow-beads",
+    "name": "Red & Yellow Beads",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/red-yellow-beads.webp"
+  },
+  {
+    "id": "pets-brown-springer-spaniel",
+    "name": "Brown Springer Spaniel",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/brown-springer-spaniel.webp"
+  },
+  {
+    "id": "pets-clownfish",
+    "name": "Clownfish",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/clownfish.webp"
+  },
+  {
+    "id": "strollers-old-lump-of-log-stroller",
+    "name": "Old Lump of Log Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "toys-money-rattle",
+    "name": "Money Rattle",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/money-rattle.webp"
+  },
+  {
+    "id": "pets-cassowary",
+    "name": "Cassowary",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/cassowary.webp"
+  },
+  {
+    "id": "toys-jackhammer",
+    "name": "Jackhammer",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/toys/jackhammer.webp"
+  },
+  {
+    "id": "toys-blue-boohoo-paint",
+    "name": "Blue Boohoo Mega Neon Paint",
+    "category": "toys",
+    "value": 0.4538,
+    "demand": 3,
+    "image": "images/toys/blue-boohoo-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-australian-kelpie",
+    "name": "Australian Kelpie",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/australian-kelpie.webp"
+  },
+  {
+    "id": "pets-cuteacabra",
+    "name": "Cute-A-Cabra",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/cute-a-cabra.webp"
+  },
+  {
+    "id": "pets-blue-cat",
+    "name": "Blue Cat",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/blue-cat.webp"
+  },
+  {
+    "id": "stickers-shark-puppy-sticker",
+    "name": "Shark Puppy Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/shark-puppy-sticker.webp"
+  },
+  {
+    "id": "pets-onza",
+    "name": "Onza",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/onza.webp"
+  },
+  {
+    "id": "vehicles-orange-snowboard",
+    "name": "Orange Neon Snowboard",
+    "category": "vehicles",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/vehicles/orange-neon-snowboard.webp"
+  },
+  {
+    "id": "pets-grim-dragon",
+    "name": "Grim Dragon",
+    "category": "pets",
+    "value": 17.5312,
+    "demand": 2,
+    "image": "images/pets/grim-dragon.webp"
+  },
+  {
+    "id": "pets-ringmaster-gibbon",
+    "name": "Ringmaster Gibbon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/ringmaster-gibbon.webp"
+  },
+  {
+    "id": "petwear-science-hat",
+    "name": "Science Hat",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/science-hat.webp"
+  },
+  {
+    "id": "vehicles-snow-snowboard",
+    "name": "Snow Snowboard",
+    "category": "vehicles",
+    "value": 4.5375,
+    "demand": 1,
+    "image": "images/vehicles/snow-snowboard.webp"
+  },
+  {
+    "id": "pets-oakee-wizard",
+    "name": "Oakee Wizard",
+    "category": "pets",
+    "value": 0.3548,
+    "demand": 1,
+    "image": "images/pets/oakee-wizard.webp"
+  },
+  {
+    "id": "pets-scarecrow-cat",
+    "name": "Scarecrow Cat",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/scarecrow-cat.webp"
+  },
+  {
+    "id": "toys-donut-rattle",
+    "name": "Donut Rattle",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/donut-rattle.webp"
+  },
+  {
+    "id": "petwear-santas-bow",
+    "name": "Santa's Bow",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/santa-s-bow.webp"
+  },
+  {
+    "id": "pets-ladybug",
+    "name": "Ladybug",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/ladybug.webp"
+  },
+  {
+    "id": "pets-icy-porcupine",
+    "name": "Icy Porcupine",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/icy-porcupine.webp"
+  },
+  {
+    "id": "pets-aestus",
+    "name": "Aestus",
+    "category": "pets",
+    "value": 2.3925,
+    "demand": 2,
+    "image": "images/pets/aestus.webp"
+  },
+  {
+    "id": "pets-chickatrice",
+    "name": "Chickatrice",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/chickatrice.webp"
+  },
+  {
+    "id": "toys-noob-balloon",
+    "name": "Noob Balloon",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/noob-balloon.webp"
+  },
+  {
+    "id": "petwear-pirate-hat",
+    "name": "Pirate Hat",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/pirate-hat.webp"
+  },
+  {
+    "id": "vehicles-moped",
+    "name": "Moped",
+    "category": "vehicles",
+    "value": 0.9075,
+    "demand": 1,
+    "image": "images/vehicles/moped.webp"
+  },
+  {
+    "id": "pets-lammergeier",
+    "name": "Lammergeier",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/lammergeier.webp"
+  },
+  {
+    "id": "potions-bonus-aging-potion",
+    "name": "Bonus Aging Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-white-amazon",
+    "name": "White Amazon",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/white-amazon.webp"
+  },
+  {
+    "id": "stickers-grim-dragon-sticker",
+    "name": "Grim Dragon Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/grim-dragon-sticker.webp"
+  },
+  {
+    "id": "pets-kelp-hunter",
+    "name": "Kelp Hunter",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/kelp-hunter.webp"
+  },
+  {
+    "id": "pets-zombie-buffalo",
+    "name": "Zombie Buffalo",
+    "category": "pets",
+    "value": 5.3625,
+    "demand": 2,
+    "image": "images/pets/zombie-buffalo.webp"
+  },
+  {
+    "id": "pets-kelp-raider",
+    "name": "Kelp Raider",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/kelp-raider.webp"
+  },
+  {
+    "id": "gifts-regal-chest",
+    "name": "Regal Chest",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-aurora-fox",
+    "name": "Aurora Fox",
+    "category": "pets",
+    "value": 4.5375,
+    "demand": 2,
+    "image": "images/pets/aurora-fox.webp"
+  },
+  {
+    "id": "pets-alley-cat",
+    "name": "Alley Cat",
+    "category": "pets",
+    "value": 1.6913,
+    "demand": 2,
+    "image": "images/pets/alley-cat.webp"
+  },
+  {
+    "id": "petwear-summer-straw-hat",
+    "name": "Summer Straw Hat",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/summer-straw-hat.webp"
+  },
+  {
+    "id": "petwear-dragonfly-fairy-wings",
+    "name": "Dragonfly Fairy Wings",
+    "category": "petwear",
+    "value": 5.775,
+    "demand": 2,
+    "image": "images/petwear/dragonfly-fairy-wings.webp"
+  },
+  {
+    "id": "strollers-hot-cocoa-stroller",
+    "name": "Hot Cocoa Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "vehicles-imagination-box",
+    "name": "Imagination Box",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/imagination-box.webp"
+  },
+  {
+    "id": "vehicles-adopt-me-snowboard-2",
+    "name": "Adopt Me Snowboard 2",
+    "category": "vehicles",
+    "value": 1.5675,
+    "demand": 1,
+    "image": "images/vehicles/adopt-me-snowboard-2.webp"
+  },
+  {
+    "id": "pets-red-panda-ducky",
+    "name": "Red Panda Ducky",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/red-panda-ducky.webp"
+  },
+  {
+    "id": "petwear-rainbow-cloud-wings",
+    "name": "Rainbow Cloud Wings",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/petwear/rainbow-cloud-wings.webp"
+  },
+  {
+    "id": "food-winter-deer-bait",
+    "name": "Winter Deer Bait",
+    "category": "food",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/food/winter-deer-bait.webp"
+  },
+  {
+    "id": "pets-horse",
+    "name": "Horse",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/pets/horse.webp"
+  },
+  {
+    "id": "petwear-butter-knife",
+    "name": "Butter Knife",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/petwear/butter-knife.webp"
+  },
+  {
+    "id": "pets-chick",
+    "name": "Chick",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/chick.webp"
+  },
+  {
+    "id": "gifts-aberdeen-angus-box",
+    "name": "Aberdeen Angus Box",
+    "category": "gifts",
+    "value": 0.054,
+    "demand": 1,
+    "image": "images/gifts/aberdeen-angus-box.webp"
+  },
+  {
+    "id": "toys-classic-trade-stand",
+    "name": "Classic Trade Stand",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/toys/classic-trade-stand.webp"
+  },
+  {
+    "id": "strollers-flower-cart-stroller",
+    "name": "Flower Cart Stroller",
+    "category": "strollers",
+    "value": 0.0498,
+    "demand": 1,
+    "image": "images/strollers/flower-cart-stroller.webp"
+  },
+  {
+    "id": "pets-gumball-caterpillar",
+    "name": "Gumball Caterpillar",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/gumball-caterpillar.webp"
+  },
+  {
+    "id": "petwear-police-cap",
+    "name": "Police Cap",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/police-cap.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-confetti-cannon",
+    "name": "2022 Birthday Confetti Cannon",
+    "category": "petwear",
+    "value": 6.8063,
+    "demand": 3,
+    "image": "images/petwear/2022-birthday-confetti-cannon.webp"
+  },
+  {
+    "id": "pets-ice-cream-hermit-crab",
+    "name": "Ice Cream Hermit Crab",
+    "category": "pets",
+    "value": 1.3613,
+    "demand": 2,
+    "image": "images/pets/ice-cream-hermit-crab.webp"
+  },
+  {
+    "id": "pets-woodpecker",
+    "name": "Woodpecker",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/woodpecker.webp"
+  },
+  {
+    "id": "pets-flaming-fox",
+    "name": "Flaming Fox",
+    "category": "pets",
+    "value": 1.32,
+    "demand": 2,
+    "image": "images/pets/flaming-fox.webp"
+  },
+  {
+    "id": "pets-shark",
+    "name": "Shark",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/shark.webp"
+  },
+  {
+    "id": "petwear-waterfall-hat",
+    "name": "Waterfall Hat",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/waterfall-hat.webp"
+  },
+  {
+    "id": "vehicles-hot-air-balloon",
+    "name": "Hot Air Balloon",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/hot-air-balloon.webp"
+  },
+  {
+    "id": "pets-silverback-gorilla",
+    "name": "Silverback Gorilla",
+    "category": "pets",
+    "value": 7.0125,
+    "demand": 2,
+    "image": "images/pets/silverback-gorilla.webp"
+  },
+  {
+    "id": "pets-peppermint-penguin",
+    "name": "Peppermint Penguin",
+    "category": "pets",
+    "value": 17.325,
+    "demand": 3,
+    "image": "images/pets/peppermint-penguin.webp"
+  },
+  {
+    "id": "pets-candy-hare",
+    "name": "Candy Hare",
+    "category": "pets",
+    "value": 1.155,
+    "demand": 2,
+    "image": "images/pets/candy-hare.webp"
+  },
+  {
+    "id": "pets-inmate-capuchin-monkey",
+    "name": "Inmate Capuchin Monkey",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/inmate-capuchin-monkey.webp"
+  },
+  {
+    "id": "vehicles-horse-cycle",
+    "name": "Horse Cycle",
+    "category": "vehicles",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/vehicles/horse-cycle.webp"
+  },
+  {
+    "id": "pets-flamingo",
+    "name": "Flamingo",
+    "category": "pets",
+    "value": 10.3125,
+    "demand": 3,
+    "image": "images/pets/flamingo.webp"
+  },
+  {
+    "id": "pets-kangaroo",
+    "name": "Kangaroo",
+    "category": "pets",
+    "value": 9.6937,
+    "demand": 3,
+    "image": "images/pets/kangaroo.webp"
+  },
+  {
+    "id": "petwear-jeffs-nametag",
+    "name": "Jeff's Nametag",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/jeff-s-nametag.webp"
+  },
+  {
+    "id": "pets-gila-monster",
+    "name": "Gila Monster",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/gila-monster.webp"
+  },
+  {
+    "id": "gifts-standard-gibbon-box",
+    "name": "Standard Gibbon Box",
+    "category": "gifts",
+    "value": 0.1441,
+    "demand": 1,
+    "image": "images/gifts/standard-gibbon-box.webp"
+  },
+  {
+    "id": "strollers-easter-egg-stroller",
+    "name": "Easter Egg Stroller",
+    "category": "strollers",
+    "value": 1.1037,
+    "demand": 2,
+    "image": "images/strollers/easter-egg-stroller.webp"
+  },
+  {
+    "id": "eggs-throwback-egg",
+    "name": "Throwback Egg",
+    "category": "eggs",
+    "value": 0.0328,
+    "demand": 1,
+    "image": "images/eggs/throwback-egg.webp"
+  },
+  {
+    "id": "stickers-balloon-unicorn-sticker",
+    "name": "Balloon Unicorn Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/stickers/balloon-unicorn-sticker.webp"
+  },
+  {
+    "id": "strollers-banana-stroller",
+    "name": "Banana Stroller",
+    "category": "strollers",
+    "value": 0.1003,
+    "demand": 1,
+    "image": "images/strollers/banana-stroller.webp"
+  },
+  {
+    "id": "gifts-special-lunar-new-year-gift-box",
+    "name": "Special Lunar New Year Gift Box",
+    "category": "gifts",
+    "value": 0.4087,
+    "demand": 1,
+    "image": "images/gifts/special-lunar-new-year-gift-box.webp"
+  },
+  {
+    "id": "pets-strawberry-shortcake-bat-dragon",
+    "name": "Strawberry Shortcake Bat Dragon",
+    "category": "pets",
+    "value": 22.6875,
+    "demand": 3,
+    "image": "images/pets/strawberry-shortcake-bat-dragon.webp"
+  },
+  {
+    "id": "potions-bonus-bucks-potion",
+    "name": "Bonus Bucks Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "strollers-strawberry-stroller",
+    "name": "Strawberry Stroller",
+    "category": "strollers",
+    "value": 0.1545,
+    "demand": 1,
+    "image": "images/strollers/strawberry-stroller.webp"
+  },
+  {
+    "id": "pets-forest-sprite",
+    "name": "Forest Sprite",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/forest-sprite.webp"
+  },
+  {
+    "id": "pets-chicken",
+    "name": "Chicken",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/chicken.webp"
+  },
+  {
+    "id": "petwear-tiny-wings",
+    "name": "Tiny Wings",
+    "category": "petwear",
+    "value": 5.3625,
+    "demand": 3,
+    "image": "images/petwear/tiny-wings.webp"
+  },
+  {
+    "id": "pets-halloween-white-mummy-cat",
+    "name": "Halloween White Mummy Cat",
+    "category": "pets",
+    "value": 0.3919,
+    "demand": 1,
+    "image": "images/pets/halloween-white-mummy-cat.webp"
+  },
+  {
+    "id": "vehicles-gingerbread-sleigh",
+    "name": "Gingerbread Sleigh",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/vehicles/gingerbread-sleigh.webp"
+  },
+  {
+    "id": "petwear-sakura-scythe",
+    "name": "Sakura Scythe",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/sakura-scythe.webp"
+  },
+  {
+    "id": "petwear-heart-ribbon",
+    "name": "Heart Ribbon",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/heart-ribbon.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-cake",
+    "name": "2022 Birthday Cake",
+    "category": "petwear",
+    "value": 11.9625,
+    "demand": 3,
+    "image": "images/petwear/2022-birthday-cake.webp"
+  },
+  {
+    "id": "toys-zombie-buffalo-plush",
+    "name": "Zombie Buffalo Plush",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/toys/zombie-buffalo-plush.webp"
+  },
+  {
+    "id": "pets-mummy-spider",
+    "name": "Mummy Spider",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/mummy-spider.webp"
+  },
+  {
+    "id": "pets-ribbon-seal",
+    "name": "Ribbon Seal",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/ribbon-seal.webp"
+  },
+  {
+    "id": "stickers-majestic-pony-sticker",
+    "name": "Majestic Pony Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/majestic-pony-sticker.webp"
+  },
+  {
+    "id": "pets-velociraptor",
+    "name": "Velociraptor",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/velociraptor.webp"
+  },
+  {
+    "id": "toys-elf-rattle",
+    "name": "Elf Rattle",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/elf-rattle.webp"
+  },
+  {
+    "id": "pets-llama",
+    "name": "Llama",
+    "category": "pets",
+    "value": 1.2788,
+    "demand": 2,
+    "image": "images/pets/llama.webp"
+  },
+  {
+    "id": "pets-sushi-penguin",
+    "name": "Sushi Penguin",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/sushi-penguin.webp"
+  },
+  {
+    "id": "pets-bakeneko",
+    "name": "Bakeneko",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/bakeneko.webp"
+  },
+  {
+    "id": "potions-goofy-potion",
+    "name": "Goofy Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "stickers-walrus-sticker",
+    "name": "Walrus Sticker",
+    "category": "stickers",
+    "value": 0.0578,
+    "demand": 1,
+    "image": "images/stickers/walrus-sticker.webp"
+  },
+  {
+    "id": "petwear-spring-bunny-feet",
+    "name": "Spring Bunny Feet",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/spring-bunny-feet.webp"
+  },
+  {
+    "id": "toys-vampire-teeth-grappling-hook",
+    "name": "Vampire Teeth Grappling Hook",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/vampire-teeth-grappling-hook.webp"
+  },
+  {
+    "id": "pets-tree-frog",
+    "name": "Tree Frog",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/tree-frog.webp"
+  },
+  {
+    "id": "strollers-scarebear-stroller",
+    "name": "Scarebear Stroller",
+    "category": "strollers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/strollers/scarebear-stroller.webp"
+  },
+  {
+    "id": "pets-praying-mantis",
+    "name": "Praying Mantis",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/praying-mantis.webp"
+  },
+  {
+    "id": "vehicles-cupids-coupe",
+    "name": "Cupid's Coupe",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/cupid-s-coupe.webp"
+  },
+  {
+    "id": "pets-oakee-knight",
+    "name": "Oakee Knight",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/oakee-knight.webp"
+  },
+  {
+    "id": "petwear-human-feet-shoes",
+    "name": "Human Feet Shoes",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/human-feet-shoes.webp"
+  },
+  {
+    "id": "pets-primal-kaijunior",
+    "name": "Primal Kaijunior",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/primal-kaijunior.webp"
+  },
+  {
+    "id": "pets-red-fox",
+    "name": "Red Fox",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/red-fox.webp"
+  },
+  {
+    "id": "vehicles-firework-cycle",
+    "name": "Firework Cycle",
+    "category": "vehicles",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/vehicles/firework-cycle.webp"
+  },
+  {
+    "id": "pets-frostbite-bear",
+    "name": "Frostbite Bear",
+    "category": "pets",
+    "value": 16.7063,
+    "demand": 3,
+    "image": "images/pets/frostbite-bear.webp"
+  },
+  {
+    "id": "toys-turkey-plush",
+    "name": "Turkey Plush",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/turkey-plush.webp"
+  },
+  {
+    "id": "pets-black-widow",
+    "name": "Black Widow",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/black-widow.webp"
+  },
+  {
+    "id": "petwear-clam-wings",
+    "name": "Clam Wings",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/clam-wings.webp"
+  },
+  {
+    "id": "vehicles-duck-scooter",
+    "name": "Duck Scooter",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/duck-scooter.webp"
+  },
+  {
+    "id": "petwear-bunny-ear-tiara",
+    "name": "Bunny Ear Tiara",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/bunny-ear-tiara.webp"
+  },
+  {
+    "id": "stickers-evil-unicorn-sticker",
+    "name": "Evil Unicorn Sticker",
+    "category": "stickers",
+    "value": 0.0495,
+    "demand": 1,
+    "image": "images/stickers/evil-unicorn-sticker.webp"
+  },
+  {
+    "id": "pets-sea-angel",
+    "name": "Sea Angel",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/sea-angel.webp"
+  },
+  {
+    "id": "pets-flaming-zebra",
+    "name": "Flaming Zebra",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/flaming-zebra.webp"
+  },
+  {
+    "id": "vehicles-glass-skateboard",
+    "name": "Glass Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/glass-skateboard.webp"
+  },
+  {
+    "id": "strollers-cradle-stroller",
+    "name": "Cradle Stroller",
+    "category": "strollers",
+    "value": 1.0252,
+    "demand": 1,
+    "image": "images/strollers/cradle-stroller.webp"
+  },
+  {
+    "id": "pets-salamander",
+    "name": "Salamander",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/salamander.webp"
+  },
+  {
+    "id": "pets-clementine-owl",
+    "name": "Clementine Owl",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/clementine-owl.webp"
+  },
+  {
+    "id": "stickers-mini-pig-sticker",
+    "name": "Mini Pig Sticker",
+    "category": "stickers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/stickers/mini-pig-sticker.webp"
+  },
+  {
+    "id": "petwear-hive-backpack",
+    "name": "Hive Backpack",
+    "category": "petwear",
+    "value": 28.875,
+    "demand": 2,
+    "image": "images/petwear/hive-backpack.webp"
+  },
+  {
+    "id": "stickers-shiba-inu-sticker",
+    "name": "Shiba Inu Sticker",
+    "category": "stickers",
+    "value": 0.0578,
+    "demand": 1,
+    "image": "images/stickers/shiba-inu-sticker.webp"
+  },
+  {
+    "id": "stickers-fox-sticker",
+    "name": "Fox Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/fox-sticker.webp"
+  },
+  {
+    "id": "eggs-basic-egg",
+    "name": "Basic Egg",
+    "category": "eggs",
+    "value": 0.0325,
+    "demand": 1,
+    "image": "images/eggs/basic-egg.webp"
+  },
+  {
+    "id": "pets-midnight-dragon",
+    "name": "Midnight Dragon",
+    "category": "pets",
+    "value": 3.7537,
+    "demand": 2,
+    "image": "images/pets/midnight-dragon.webp"
+  },
+  {
+    "id": "pets-pig",
+    "name": "Pig",
+    "category": "pets",
+    "value": 5.1562,
+    "demand": 3,
+    "image": "images/pets/pig.webp"
+  },
+  {
+    "id": "petwear-ssbd-sunnies",
+    "name": "SSBD Sunnies",
+    "category": "petwear",
+    "value": 66.0,
+    "demand": 2,
+    "image": "images/petwear/ssbd-sunnies.webp"
+  },
+  {
+    "id": "toys-celebration-firework-launcher",
+    "name": "Celebration Firework Launcher",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/toys/celebration-firework-launcher.webp"
+  },
+  {
+    "id": "pets-ninja-monkey",
+    "name": "Ninja Monkey",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/pets/ninja-monkey.webp"
+  },
+  {
+    "id": "pets-rhino",
+    "name": "Rhino",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/rhino.webp"
+  },
+  {
+    "id": "pets-lynx",
+    "name": "Lynx",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/lynx.webp"
+  },
+  {
+    "id": "vehicles-glass-scooter",
+    "name": "Glass Scooter",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/glass-scooter.webp"
+  },
+  {
+    "id": "food-golden-plantain",
+    "name": "Golden Plantain",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-plantain.webp"
+  },
+  {
+    "id": "vehicles-classic-american-car",
+    "name": "Classic American Car",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/classic-american-car.webp"
+  },
+  {
+    "id": "pets-abyssinian-cat",
+    "name": "Abyssinian Cat",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/abyssinian-cat.webp"
+  },
+  {
+    "id": "pets-owl",
+    "name": "Owl",
+    "category": "pets",
+    "value": 110.9625,
+    "demand": 3,
+    "image": "images/pets/owl.webp"
+  },
+  {
+    "id": "toys-football-throw-toy",
+    "name": "Football Throw Toy",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/football-throw-toy.webp"
+  },
+  {
+    "id": "petwear-jester-hat",
+    "name": "Jester Hat",
+    "category": "petwear",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/petwear/jester-hat.webp"
+  },
+  {
+    "id": "toys-campfire-stories-paint",
+    "name": "Campfire Stories Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/campfire-stories-mega-neon-paint.webp"
+  },
+  {
+    "id": "gifts-big-gift",
+    "name": "Big Gift",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "toys-cookie-dough-plush",
+    "name": "Cookie Dough Plush",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/cookie-dough-plush.webp"
+  },
+  {
+    "id": "eggs-royal-moon-egg",
+    "name": "Royal Moon Egg",
+    "category": "eggs",
+    "value": 0.7997,
+    "demand": 2,
+    "image": "images/eggs/royal-moon-egg.webp"
+  },
+  {
+    "id": "eggs-pistachio",
+    "name": "Pistachio",
+    "category": "eggs",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/eggs/pistachio.webp"
+  },
+  {
+    "id": "pets-magma-snail",
+    "name": "Magma Snail",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/magma-snail.webp"
+  },
+  {
+    "id": "stickers-kitsune-sticker",
+    "name": "Kitsune Sticker",
+    "category": "stickers",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/stickers/kitsune-sticker.webp"
+  },
+  {
+    "id": "pets-sea-skeleton-panda",
+    "name": "Sea Skeleton Panda",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/sea-skeleton-panda.webp"
+  },
+  {
+    "id": "petwear-white-designer-backpack",
+    "name": "White Designer Backpack",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/white-designer-backpack.webp"
+  },
+  {
+    "id": "potions-secret-talent-potion",
+    "name": "Secret Talent Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-diamond-amazon",
+    "name": "Diamond Amazon",
+    "category": "pets",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/pets/diamond-amazon.webp"
+  },
+  {
+    "id": "petwear-cheesecake-hat",
+    "name": "Cheesecake Hat",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/cheesecake-hat.webp"
+  },
+  {
+    "id": "petwear-satellite-spinner",
+    "name": "Satellite Spinner",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/satellite-spinner.webp"
+  },
+  {
+    "id": "stickers-orange-butterfly-sticker",
+    "name": "Orange Butterfly Sticker",
+    "category": "stickers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/stickers/orange-butterfly-sticker.webp"
+  },
+  {
+    "id": "petwear-halloween-evil-barrel-backpack",
+    "name": "Halloween Evil Barrel Backpack",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/halloween-evil-barrel-backpack.webp"
+  },
+  {
+    "id": "pets-summer-walrus",
+    "name": "Summer Walrus",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/summer-walrus.webp"
+  },
+  {
+    "id": "pets-tawny-frogmouth",
+    "name": "Tawny Frogmouth",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/tawny-frogmouth.webp"
+  },
+  {
+    "id": "petwear-ghost-kitty-backpack",
+    "name": "Ghost Kitty Backpack",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/ghost-kitty-backpack.webp"
+  },
+  {
+    "id": "toys-glider",
+    "name": "Glider",
+    "category": "toys",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/toys/glider.webp"
+  },
+  {
+    "id": "petwear-chicken-hat",
+    "name": "Chicken Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/chicken-hat.webp"
+  },
+  {
+    "id": "pets-puptune",
+    "name": "Puptune",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/puptune.webp"
+  },
+  {
+    "id": "vehicles-daisymobile",
+    "name": "Daisymobile",
+    "category": "vehicles",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/vehicles/daisymobile.webp"
+  },
+  {
+    "id": "pets-cake-friend",
+    "name": "Cake Friend",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 2,
+    "image": "images/pets/cake-friend.webp"
+  },
+  {
+    "id": "petwear-yellow-instant-camera",
+    "name": "Yellow Instant Camera",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/petwear/yellow-instant-camera.webp"
+  },
+  {
+    "id": "stickers-pets-plus-sticker-pack",
+    "name": "Pets Plus Sticker Pack",
+    "category": "stickers",
+    "value": 0.6188,
+    "demand": 2,
+    "image": "images/stickers/pets-plus-sticker-pack.webp"
+  },
+  {
+    "id": "petwear-energy-aura-feet",
+    "name": "Energy Aura Feet",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/energy-aura-feet.webp"
+  },
+  {
+    "id": "pets-golden-jaguar",
+    "name": "Golden Jaguar",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/golden-jaguar.webp"
+  },
+  {
+    "id": "pets-honey-badger",
+    "name": "Honey Badger",
+    "category": "pets",
+    "value": 2.8875,
+    "demand": 2,
+    "image": "images/pets/honey-badger.webp"
+  },
+  {
+    "id": "petwear-brain-jar",
+    "name": "Brain Jar",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/brain-jar.webp"
+  },
+  {
+    "id": "vehicles-white-skateboard",
+    "name": "White Skateboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/white-skateboard.webp"
+  },
+  {
+    "id": "eggs-garden-egg",
+    "name": "Garden Egg",
+    "category": "eggs",
+    "value": 0.1078,
+    "demand": 1,
+    "image": "images/eggs/garden-egg.webp"
+  },
+  {
+    "id": "eggs-river",
+    "name": "River",
+    "category": "eggs",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/eggs/river.webp"
+  },
+  {
+    "id": "vehicles-adopt-me-girl-scooter",
+    "name": "Adopt Me Girl Scooter",
+    "category": "vehicles",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/vehicles/adopt-me-girl-scooter.webp"
+  },
+  {
+    "id": "toys-creator-rattle",
+    "name": "Creator Rattle (Bethink)",
+    "category": "toys",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/toys/creator-rattle-bethink.webp"
+  },
+  {
+    "id": "petwear-spring-bunny-nose",
+    "name": "Spring Bunny Nose",
+    "category": "petwear",
+    "value": 1.4438,
+    "demand": 2,
+    "image": "images/petwear/spring-bunny-nose.webp"
+  },
+  {
+    "id": "vehicles-lava-racer",
+    "name": "Lava Racer",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/lava-racer.webp"
+  },
+  {
+    "id": "eggs-easter-2020-egg",
+    "name": "Easter 2020 Egg",
+    "category": "eggs",
+    "value": 0.7718,
+    "demand": 2,
+    "image": "images/eggs/easter-2020-egg.webp"
+  },
+  {
+    "id": "pets-urchin",
+    "name": "Urchin",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/urchin.webp"
+  },
+  {
+    "id": "vehicles-witchs-caravan",
+    "name": "Witch's Caravan",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/witch-s-caravan.webp"
+  },
+  {
+    "id": "toys-dragon-balloon",
+    "name": "Dragon Balloon",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/dragon-balloon.webp"
+  },
+  {
+    "id": "stickers-skelerex-sticker",
+    "name": "Skele-Rex Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/skele-rex-sticker.webp"
+  },
+  {
+    "id": "petwear-halloween-black-axe-guitar-accessory",
+    "name": "Halloween Black Axe Guitar Accessory",
+    "category": "petwear",
+    "value": 0.99,
+    "demand": 2,
+    "image": "images/petwear/halloween-black-axe-guitar-accessory.webp"
+  },
+  {
+    "id": "food-golden-bone",
+    "name": "Golden Bone",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-bone.webp"
+  },
+  {
+    "id": "stickers-mochi-meow-tumble-animated-sticker",
+    "name": "Mochi Meow Tumble Animated Sticker",
+    "category": "stickers",
+    "value": 0.4538,
+    "demand": 2,
+    "image": "images/stickers/mochi-meow-tumble-animated-sticker.webp"
+  },
+  {
+    "id": "stickers-sakura-spirit-sticker",
+    "name": "Sakura Spirit Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/sakura-spirit-sticker.webp"
+  },
+  {
+    "id": "pets-borhyaena-gigantica",
+    "name": "Borhyaena Gigantica",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/borhyaena-gigantica.webp"
+  },
+  {
+    "id": "pets-ash-zebra",
+    "name": "Ash Zebra",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/ash-zebra.webp"
+  },
+  {
+    "id": "pets-villain-gibbon",
+    "name": "Villain Gibbon",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/villain-gibbon.webp"
+  },
+  {
+    "id": "pets-chilling-spider",
+    "name": "Chilling Spider",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/chilling-spider.webp"
+  },
+  {
+    "id": "petwear-chick-backpack",
+    "name": "Chick Backpack",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/chick-backpack.webp"
+  },
+  {
+    "id": "pets-sunflower-friend",
+    "name": "Sunflower Friend",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/sunflower-friend.webp"
+  },
+  {
+    "id": "petwear-shadow-wings",
+    "name": "Shadow Wings",
+    "category": "petwear",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/petwear/shadow-wings.webp"
+  },
+  {
+    "id": "petwear-blue-cat-ear-headphones",
+    "name": "Blue Cat Ear Headphones",
+    "category": "petwear",
+    "value": 0.4538,
+    "demand": 2,
+    "image": "images/petwear/blue-cat-ear-headphones.webp"
+  },
+  {
+    "id": "petwear-flower-wings",
+    "name": "Flower Wings",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/flower-wings.webp"
+  },
+  {
+    "id": "pets-ghost-dog",
+    "name": "Ghost Dog",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/pets/ghost-dog.webp"
+  },
+  {
+    "id": "food-heart-potion",
+    "name": "Heart Potion",
+    "category": "food",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/food/heart-potion.webp"
+  },
+  {
+    "id": "pets-2025-birthday-butterfly",
+    "name": "2025 Birthday Butterfly",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/2025-birthday-butterfly.webp"
+  },
+  {
+    "id": "eggs-urban-egg",
+    "name": "Urban Egg",
+    "category": "eggs",
+    "value": 0.4798,
+    "demand": 2,
+    "image": "images/eggs/urban-egg.webp"
+  },
+  {
+    "id": "pets-cocoadile",
+    "name": "Cocoadile",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/cocoadile.webp"
+  },
+  {
+    "id": "pets-wooly-rhino",
+    "name": "Wooly Rhino",
+    "category": "pets",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/pets/wooly-rhino.webp"
+  },
+  {
+    "id": "pets-orangutan",
+    "name": "Orangutan",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/orangutan.webp"
+  },
+  {
+    "id": "petwear-respectful-mustache",
+    "name": "Respectful Mustache",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/respectful-mustache.webp"
+  },
+  {
+    "id": "toys-stygian-hang-glider",
+    "name": "Stygian Hang Glider",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/stygian-hang-glider.webp"
+  },
+  {
+    "id": "vehicles-glyptodon-van",
+    "name": "Glyptodon Van",
+    "category": "vehicles",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/vehicles/glyptodon-van.webp"
+  },
+  {
+    "id": "pets-goat",
+    "name": "Goat",
+    "category": "pets",
+    "value": 3.5475,
+    "demand": 2,
+    "image": "images/pets/goat.webp"
+  },
+  {
+    "id": "pets-2022-uplift-butterfly",
+    "name": "2022 Uplift Butterfly",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/2022-uplift-butterfly.webp"
+  },
+  {
+    "id": "pets-purple-butterfly",
+    "name": "Purple Butterfly",
+    "category": "pets",
+    "value": 1.7738,
+    "demand": 2,
+    "image": "images/pets/purple-butterfly.webp"
+  },
+  {
+    "id": "pets-seabed-creeper",
+    "name": "Seabed Creeper",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 2,
+    "image": "images/pets/seabed-creeper.webp"
+  },
+  {
+    "id": "gifts-standard-wing-chest",
+    "name": "Standard Wing Chest",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-chocolate-chip-bat-dragon-backpack",
+    "name": "Chocolate Chip Bat Dragon Backpack",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/chocolate-chip-bat-dragon-backpack.webp"
+  },
+  {
+    "id": "pets-prismatic-butterfly",
+    "name": "Prismatic Butterfly",
+    "category": "pets",
+    "value": 0.9487,
+    "demand": 2,
+    "image": "images/pets/prismatic-butterfly.webp"
+  },
+  {
+    "id": "stickers-priceless-shrimp-sticker",
+    "name": "Priceless Shrimp Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/priceless-shrimp-sticker.webp"
+  },
+  {
+    "id": "pets-tuxedo-cat",
+    "name": "Tuxedo Cat",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/tuxedo-cat.webp"
+  },
+  {
+    "id": "pets-scarlet-butterfly",
+    "name": "Scarlet Butterfly",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/scarlet-butterfly.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-party-horn",
+    "name": "2022 Birthday Party Horn",
+    "category": "petwear",
+    "value": 6.8063,
+    "demand": 3,
+    "image": "images/petwear/2022-birthday-party-horn.webp"
+  },
+  {
+    "id": "petwear-money-hat",
+    "name": "Money Hat",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/money-hat.webp"
+  },
+  {
+    "id": "stickers-wailing-mr-whiskerpips-sticker",
+    "name": "Wailing Mr. Whiskerpips Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/wailing-mr-whiskerpips-sticker.webp"
+  },
+  {
+    "id": "petwear-gold-tiara",
+    "name": "Gold Tiara",
+    "category": "petwear",
+    "value": 0.1031,
+    "demand": 1,
+    "image": "images/petwear/gold-tiara.webp"
+  },
+  {
+    "id": "toys-santa-throne",
+    "name": "Santa Throne",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/toys/santa-throne.webp"
+  },
+  {
+    "id": "gifts-massive-gift",
+    "name": "Massive Gift",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "stickers-pretty-please-snowball-sticker",
+    "name": "Pretty Please Snowball Sticker",
+    "category": "stickers",
+    "value": 0.2888,
+    "demand": 2,
+    "image": "images/stickers/pretty-please-snowball-sticker.webp"
+  },
+  {
+    "id": "pets-gingerbread-mouse",
+    "name": "Gingerbread Mouse",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/gingerbread-mouse.webp"
+  },
+  {
+    "id": "stickers-cocoadile-sticker",
+    "name": "Cocoadile Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/cocoadile-sticker.webp"
+  },
+  {
+    "id": "vehicles-hot-rod-sleigh",
+    "name": "Hot Rod Sleigh",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/hot-rod-sleigh.webp"
+  },
+  {
+    "id": "pets-diamond-mahi-mahi",
+    "name": "Diamond Mahi Mahi",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/diamond-mahi-mahi.webp"
+  },
+  {
+    "id": "vehicles-glass-snowboard",
+    "name": "Glass Snowboard",
+    "category": "vehicles",
+    "value": 2.0625,
+    "demand": 1,
+    "image": "images/vehicles/glass-snowboard.webp"
+  },
+  {
+    "id": "pets-momma-moose",
+    "name": "Momma Moose",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/momma-moose.webp"
+  },
+  {
+    "id": "vehicles-festive-wagon",
+    "name": "Festive Wagon",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/festive-wagon.webp"
+  },
+  {
+    "id": "vehicles-gold-scooter",
+    "name": "Gold Scooter",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/gold-scooter.webp"
+  },
+  {
+    "id": "toys-llama-plush",
+    "name": "Llama Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/llama-plush.webp"
+  },
+  {
+    "id": "gifts-kelp-raider-box",
+    "name": "Kelp Raider Box",
+    "category": "gifts",
+    "value": 0.1205,
+    "demand": 1,
+    "image": "images/gifts/kelp-raider-box.webp"
+  },
+  {
+    "id": "pets-pilot-gull",
+    "name": "Pilot Gull",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/pilot-gull.webp"
+  },
+  {
+    "id": "strollers-meadow-barrow-stroller",
+    "name": "Meadow Barrow Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-modern-jetpack",
+    "name": "Modern Jetpack",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/modern-jetpack.webp"
+  },
+  {
+    "id": "toys-dance-arcade-stand",
+    "name": "Dance Arcade Stand",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/toys/dance-arcade-stand.webp"
+  },
+  {
+    "id": "pets-golden-hummingbird",
+    "name": "Golden Hummingbird",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/golden-hummingbird.webp"
+  },
+  {
+    "id": "vehicles-magical-girl-car",
+    "name": "Magical Girl Car",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/magical-girl-car.webp"
+  },
+  {
+    "id": "eggs-desert-egg",
+    "name": "Desert Egg",
+    "category": "eggs",
+    "value": 0.2297,
+    "demand": 2,
+    "image": "images/eggs/desert-egg.webp"
+  },
+  {
+    "id": "pets-husky",
+    "name": "Husky",
+    "category": "pets",
+    "value": 1.5262,
+    "demand": 2,
+    "image": "images/pets/husky.webp"
+  },
+  {
+    "id": "pets-black-panther",
+    "name": "Black Panther",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/black-panther.webp"
+  },
+  {
+    "id": "petwear-fishbowl-hat",
+    "name": "Fishbowl Hat",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/fishbowl-hat.webp"
+  },
+  {
+    "id": "toys-ice-saber",
+    "name": "Ice Saber",
+    "category": "toys",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/toys/ice-saber.webp"
+  },
+  {
+    "id": "pets-frozen-penguin",
+    "name": "Frozen Penguin",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/frozen-penguin.webp"
+  },
+  {
+    "id": "petwear-fantastical-wings",
+    "name": "Fantastical Wings",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/fantastical-wings.webp"
+  },
+  {
+    "id": "pets-golden-chowchow",
+    "name": "Golden Chow-Chow",
+    "category": "pets",
+    "value": 1.155,
+    "demand": 2,
+    "image": "images/pets/golden-chow-chow.webp"
+  },
+  {
+    "id": "food-levitation-potion",
+    "name": "Levitation Potion",
+    "category": "food",
+    "value": 1.2375,
+    "demand": 1,
+    "image": "images/food/levitation-potion.webp"
+  },
+  {
+    "id": "pets-capybara",
+    "name": "Capybara",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/capybara.webp"
+  },
+  {
+    "id": "vehicles-snow-globetrotter",
+    "name": "Snow Globetrotter",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/snow-globetrotter.webp"
+  },
+  {
+    "id": "vehicles-harvest-truck",
+    "name": "Harvest Truck",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/harvest-truck.webp"
+  },
+  {
+    "id": "petwear-ruff",
+    "name": "Ruff",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/ruff.webp"
+  },
+  {
+    "id": "vehicles-santas-sleigh",
+    "name": "Santa's Sleigh",
+    "category": "vehicles",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/vehicles/santa-s-sleigh.webp"
+  },
+  {
+    "id": "pets-mr-whiskerpips",
+    "name": "Mr. Whiskerpips",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/pets/mr-whiskerpips.webp"
+  },
+  {
+    "id": "petwear-sushi-skateboard",
+    "name": "Sushi Skateboard",
+    "category": "petwear",
+    "value": 0.99,
+    "demand": 2,
+    "image": "images/petwear/sushi-skateboard.webp"
+  },
+  {
+    "id": "pets-cactus-friend",
+    "name": "Cactus Friend",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/cactus-friend.webp"
+  },
+  {
+    "id": "eggs-japan-egg",
+    "name": "Japan Egg",
+    "category": "eggs",
+    "value": 0.2072,
+    "demand": 2,
+    "image": "images/eggs/japan-egg.webp"
+  },
+  {
+    "id": "pets-dragon",
+    "name": "Dragon",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/dragon.webp"
+  },
+  {
+    "id": "pets-malaysian-tapir",
+    "name": "Malaysian Tapir",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/malaysian-tapir.webp"
+  },
+  {
+    "id": "pets-diamond-griffin",
+    "name": "Diamond Griffin",
+    "category": "pets",
+    "value": 0.3919,
+    "demand": 1,
+    "image": "images/pets/diamond-griffin.webp"
+  },
+  {
+    "id": "petwear-eco-brown-hiking-backpack",
+    "name": "Eco Brown Hiking Backpack",
+    "category": "petwear",
+    "value": 0.99,
+    "demand": 2,
+    "image": "images/petwear/eco-brown-hiking-backpack.webp"
+  },
+  {
+    "id": "stickers-state-fair-sticker-pack",
+    "name": "State Fair Sticker Pack",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/state-fair-sticker-pack.webp"
+  },
+  {
+    "id": "petwear-burger-boots",
+    "name": "Burger Boots",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/burger-boots.webp"
+  },
+  {
+    "id": "pets-bauble-buddies",
+    "name": "Bauble Buddies",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/bauble-buddies.webp"
+  },
+  {
+    "id": "strollers-reindeer-stroller",
+    "name": "Reindeer Stroller",
+    "category": "strollers",
+    "value": 0.1364,
+    "demand": 1,
+    "image": "images/strollers/reindeer-stroller.webp"
+  },
+  {
+    "id": "toys-wallet-chew-toy",
+    "name": "Wallet Chew Toy",
+    "category": "toys",
+    "value": 0.0083,
+    "demand": 1,
+    "image": "images/toys/wallet-chew-toy.webp"
+  },
+  {
+    "id": "stickers-flamingo-sticker",
+    "name": "Flamingo Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/flamingo-sticker.webp"
+  },
+  {
+    "id": "stickers-trex-sticker",
+    "name": "T-Rex Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/t-rex-sticker.webp"
+  },
+  {
+    "id": "petwear-monkey-king-crown",
+    "name": "Monkey King Crown",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/monkey-king-crown.webp"
+  },
+  {
+    "id": "pets-chipmunk",
+    "name": "Chipmunk",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/chipmunk.webp"
+  },
+  {
+    "id": "stickers-jousting-horse-sticker",
+    "name": "Jousting Horse Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/jousting-horse-sticker.webp"
+  },
+  {
+    "id": "vehicles-galleon",
+    "name": "Galleon",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/galleon.webp"
+  },
+  {
+    "id": "pets-peahen",
+    "name": "Peahen",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/pets/peahen.webp"
+  },
+  {
+    "id": "pets-gold-mahi-mahi",
+    "name": "Gold Mahi Mahi",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/gold-mahi-mahi.webp"
+  },
+  {
+    "id": "toys-lemonade-stand",
+    "name": "Lemonade Stand",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/lemonade-stand.webp"
+  },
+  {
+    "id": "stickers-winged-horse-sticker",
+    "name": "Winged Horse Sticker",
+    "category": "stickers",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/stickers/winged-horse-sticker.webp"
+  },
+  {
+    "id": "toys-reindeer-plush",
+    "name": "Reindeer Plush",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/reindeer-plush.webp"
+  },
+  {
+    "id": "food-kitty-biscuit",
+    "name": "Kitty Biscuit",
+    "category": "food",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/food/kitty-biscuit.webp"
+  },
+  {
+    "id": "pets-haetae",
+    "name": "Haetae",
+    "category": "pets",
+    "value": 68.475,
+    "demand": 3,
+    "image": "images/pets/haetae.webp"
+  },
+  {
+    "id": "stickers-frostclaw-animated-sticker",
+    "name": "Frostclaw Animated Sticker",
+    "category": "stickers",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/stickers/frostclaw-animated-sticker.webp"
+  },
+  {
+    "id": "eggs-cracked-egg",
+    "name": "Cracked Egg",
+    "category": "eggs",
+    "value": 0.0317,
+    "demand": 1,
+    "image": "images/eggs/cracked-egg.webp"
+  },
+  {
+    "id": "pets-rose-dragon",
+    "name": "Rose Dragon",
+    "category": "pets",
+    "value": 1.98,
+    "demand": 2,
+    "image": "images/pets/rose-dragon.webp"
+  },
+  {
+    "id": "strollers-balloon-stroller",
+    "name": "Balloon Stroller",
+    "category": "strollers",
+    "value": 0.1545,
+    "demand": 1,
+    "image": "images/strollers/balloon-stroller.webp"
+  },
+  {
+    "id": "stickers-blue-betta-fish-sticker",
+    "name": "Blue Betta Fish Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/blue-betta-fish-sticker.webp"
+  },
+  {
+    "id": "pets-maine-coon",
+    "name": "Maine Coon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/maine-coon.webp"
+  },
+  {
+    "id": "eggs-zodiac-minion-egg",
+    "name": "Zodiac Minion Egg",
+    "category": "eggs",
+    "value": 0.125,
+    "demand": 1,
+    "image": "images/eggs/zodiac-minion-egg.webp"
+  },
+  {
+    "id": "pets-slimingo",
+    "name": "Slimingo",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/slimingo.webp"
+  },
+  {
+    "id": "petwear-head-chef",
+    "name": "Head Chef",
+    "category": "petwear",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/petwear/head-chef.webp"
+  },
+  {
+    "id": "vehicles-hoverboard",
+    "name": "Hoverboard",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/hoverboard.webp"
+  },
+  {
+    "id": "toys-premium-fire-pit",
+    "name": "Premium Fire Pit",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/premium-fire-pit.webp"
+  },
+  {
+    "id": "stickers-volcanic-rhino-sticker",
+    "name": "Volcanic Rhino Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/volcanic-rhino-sticker.webp"
+  },
+  {
+    "id": "toys-egg-rattle",
+    "name": "Egg Rattle",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/egg-rattle.webp"
+  },
+  {
+    "id": "pets-ghost-chick",
+    "name": "Ghost Chick",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/ghost-chick.webp"
+  },
+  {
+    "id": "pets-blue-ringed-octopus",
+    "name": "Blue Ringed Octopus",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/blue-ringed-octopus.webp"
+  },
+  {
+    "id": "pets-harp-seal",
+    "name": "Harp Seal",
+    "category": "pets",
+    "value": 0.9487,
+    "demand": 2,
+    "image": "images/pets/harp-seal.webp"
+  },
+  {
+    "id": "pets-lunar-tiger",
+    "name": "Lunar Tiger",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/lunar-tiger.webp"
+  },
+  {
+    "id": "petwear-dumpling-friend-hat",
+    "name": "Dumpling Friend Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/petwear/dumpling-friend-hat.webp"
+  },
+  {
+    "id": "vehicles-wood-skateboard",
+    "name": "Wood Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/wood-skateboard.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-5-badge",
+    "name": "2022 Birthday 5 Badge",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/2022-birthday-5-badge.webp"
+  },
+  {
+    "id": "pets-oryx",
+    "name": "Oryx",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/oryx.webp"
+  },
+  {
+    "id": "pets-sugar-glider",
+    "name": "Sugar Glider",
+    "category": "pets",
+    "value": 13.8188,
+    "demand": 3,
+    "image": "images/pets/sugar-glider.webp"
+  },
+  {
+    "id": "vehicles-unicorn-zombie-ponycycle",
+    "name": "Unicorn Zombie Ponycycle",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/unicorn-zombie-ponycycle.webp"
+  },
+  {
+    "id": "pets-mermicorn",
+    "name": "Mermicorn",
+    "category": "pets",
+    "value": 12.9938,
+    "demand": 3,
+    "image": "images/pets/mermicorn.webp"
+  },
+  {
+    "id": "pets-ms-muffet",
+    "name": "Ms. Muffet",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/ms-muffet.webp"
+  },
+  {
+    "id": "pets-ehecatl",
+    "name": "Ehecatl",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/ehecatl.webp"
+  },
+  {
+    "id": "pets-red-squirrel",
+    "name": "Red Squirrel",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/red-squirrel.webp"
+  },
+  {
+    "id": "pets-pinkypillar",
+    "name": "Pinkypillar",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/pinkypillar.webp"
+  },
+  {
+    "id": "pets-rooster",
+    "name": "Rooster",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/rooster.webp"
+  },
+  {
+    "id": "toys-bunny-plush",
+    "name": "Bunny Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/bunny-plush.webp"
+  },
+  {
+    "id": "gifts-poltergeist-box",
+    "name": "Poltergeist Box",
+    "category": "gifts",
+    "value": 0.041,
+    "demand": 1,
+    "image": "images/gifts/poltergeist-box.webp"
+  },
+  {
+    "id": "pets-kraken",
+    "name": "Kraken",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/kraken.webp"
+  },
+  {
+    "id": "pets-merry-mistletroll",
+    "name": "Merry Mistletroll",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/merry-mistletroll.webp"
+  },
+  {
+    "id": "pets-dilophosaurus",
+    "name": "Dilophosaurus",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/dilophosaurus.webp"
+  },
+  {
+    "id": "pets-mini-pig",
+    "name": "Mini Pig",
+    "category": "pets",
+    "value": 20.625,
+    "demand": 3,
+    "image": "images/pets/mini-pig.webp"
+  },
+  {
+    "id": "pets-sneak-weasel",
+    "name": "Sneak Weasel",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/sneak-weasel.webp"
+  },
+  {
+    "id": "pets-frankenfeline",
+    "name": "Frankenfeline",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/frankenfeline.webp"
+  },
+  {
+    "id": "petwear-snow-cloud-wings",
+    "name": "Snow Cloud Wings",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/snow-cloud-wings.webp"
+  },
+  {
+    "id": "food-golden-clam",
+    "name": "Golden Clam",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-clam.webp"
+  },
+  {
+    "id": "pets-german-shepherd",
+    "name": "German Shepherd",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/german-shepherd.webp"
+  },
+  {
+    "id": "pets-firefighter-gibbon",
+    "name": "Firefighter Gibbon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/firefighter-gibbon.webp"
+  },
+  {
+    "id": "pets-lava-dragon",
+    "name": "Lava Dragon",
+    "category": "pets",
+    "value": 2.3925,
+    "demand": 2,
+    "image": "images/pets/lava-dragon.webp"
+  },
+  {
+    "id": "pets-evil-chick",
+    "name": "Evil Chick",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/evil-chick.webp"
+  },
+  {
+    "id": "pets-kitsune",
+    "name": "Kitsune",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/kitsune.webp"
+  },
+  {
+    "id": "gifts-ox-box",
+    "name": "Ox Box",
+    "category": "gifts",
+    "value": 0.1533,
+    "demand": 1,
+    "image": "images/gifts/ox-box.webp"
+  },
+  {
+    "id": "pets-orchid-butterfly",
+    "name": "Orchid Butterfly",
+    "category": "pets",
+    "value": 54.45,
+    "demand": 2,
+    "image": "images/pets/orchid-butterfly.webp"
+  },
+  {
+    "id": "petwear-steampunk-clock-hat",
+    "name": "Steampunk Clock Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/steampunk-clock-hat.webp"
+  },
+  {
+    "id": "pets-persian-cat",
+    "name": "Persian Cat",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/persian-cat.webp"
+  },
+  {
+    "id": "vehicles-ice-plane",
+    "name": "Ice Plane",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/ice-plane.webp"
+  },
+  {
+    "id": "vehicles-doge-skateboard",
+    "name": "Doge Skateboard",
+    "category": "vehicles",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/vehicles/doge-skateboard.webp"
+  },
+  {
+    "id": "pets-sweetheart-rat",
+    "name": "Sweetheart Rat",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/sweetheart-rat.webp"
+  },
+  {
+    "id": "food-taco",
+    "name": "Taco",
+    "category": "food",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/food/taco.webp"
+  },
+  {
+    "id": "stickers-winter-deer-family-sticker",
+    "name": "Winter Deer Family Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/winter-deer-family-sticker.webp"
+  },
+  {
+    "id": "pets-rat",
+    "name": "Rat",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/rat.webp"
+  },
+  {
+    "id": "pets-meerkat",
+    "name": "Meerkat",
+    "category": "pets",
+    "value": 2.6812,
+    "demand": 2,
+    "image": "images/pets/meerkat.webp"
+  },
+  {
+    "id": "pets-chestnut-glyptodon",
+    "name": "Chestnut Glyptodon",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/chestnut-glyptodon.webp"
+  },
+  {
+    "id": "potions-translucent-tea-potion",
+    "name": "Translucent Tea Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "strollers-race-car-stroller",
+    "name": "Race Car Stroller",
+    "category": "strollers",
+    "value": 1.0085,
+    "demand": 2,
+    "image": "images/strollers/race-car-stroller.webp"
+  },
+  {
+    "id": "pets-pudding-cat",
+    "name": "Pudding Cat",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/pudding-cat.webp"
+  },
+  {
+    "id": "pets-majestic-pony",
+    "name": "Majestic Pony",
+    "category": "pets",
+    "value": 1.3613,
+    "demand": 2,
+    "image": "images/pets/majestic-pony.webp"
+  },
+  {
+    "id": "food-subzero-popsicle-bait",
+    "name": "Subzero Popsicle Bait",
+    "category": "food",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/food/subzero-popsicle-bait.webp"
+  },
+  {
+    "id": "pets-golden-ladybug",
+    "name": "Golden Ladybug",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/golden-ladybug.webp"
+  },
+  {
+    "id": "pets-polar-bear",
+    "name": "Polar Bear",
+    "category": "pets",
+    "value": 2.2687,
+    "demand": 2,
+    "image": "images/pets/polar-bear.webp"
+  },
+  {
+    "id": "pets-ground-sloth",
+    "name": "Ground Sloth",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/ground-sloth.webp"
+  },
+  {
+    "id": "pets-toy-poodle",
+    "name": "Toy Poodle",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/toy-poodle.webp"
+  },
+  {
+    "id": "pets-ghost-bunny",
+    "name": "Ghost Bunny",
+    "category": "pets",
+    "value": 1.3613,
+    "demand": 2,
+    "image": "images/pets/ghost-bunny.webp"
+  },
+  {
+    "id": "pets-binturong",
+    "name": "Binturong",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 2,
+    "image": "images/pets/binturong.webp"
+  },
+  {
+    "id": "pets-shadow-dragon-ducky",
+    "name": "Shadow Dragon Ducky",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/pets/shadow-dragon-ducky.webp"
+  },
+  {
+    "id": "pets-cherub-chipmunk",
+    "name": "Cherub Chipmunk",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/cherub-chipmunk.webp"
+  },
+  {
+    "id": "stickers-pelican-sticker",
+    "name": "Pelican Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/pelican-sticker.webp"
+  },
+  {
+    "id": "petwear-blue-butterfly-wings",
+    "name": "Blue Butterfly Wings",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/blue-butterfly-wings.webp"
+  },
+  {
+    "id": "food-dim-sum",
+    "name": "Dim Sum",
+    "category": "food",
+    "value": 2.2687,
+    "demand": 2,
+    "image": "images/food/dim-sum.webp"
+  },
+  {
+    "id": "petwear-cherryontop",
+    "name": "Cherry-On-Top",
+    "category": "petwear",
+    "value": 16.0875,
+    "demand": 2,
+    "image": "images/petwear/cherry-on-top.webp"
+  },
+  {
+    "id": "pets-vulture",
+    "name": "Vulture",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/vulture.webp"
+  },
+  {
+    "id": "pets-bolt",
+    "name": "Bolt",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/bolt.webp"
+  },
+  {
+    "id": "petwear-halloween-orange-pumpkin-friend-hat",
+    "name": "Halloween Orange Pumpkin Friend Hat",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/halloween-orange-pumpkin-friend-hat.webp"
+  },
+  {
+    "id": "stickers-bat-dragon-sticker",
+    "name": "Bat Dragon Sticker",
+    "category": "stickers",
+    "value": 0.2888,
+    "demand": 2,
+    "image": "images/stickers/bat-dragon-sticker.webp"
+  },
+  {
+    "id": "vehicles-waffle-wagon",
+    "name": "Waffle Wagon",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/waffle-wagon.webp"
+  },
+  {
+    "id": "pets-gibbon",
+    "name": "Gibbon",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/gibbon.webp"
+  },
+  {
+    "id": "petwear-pterodactyl-wings",
+    "name": "Pterodactyl Wings",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/pterodactyl-wings.webp"
+  },
+  {
+    "id": "toys-tea-party-chair",
+    "name": "Tea Party Chair",
+    "category": "toys",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/toys/tea-party-chair.webp"
+  },
+  {
+    "id": "pets-ghostly-cat",
+    "name": "Ghostly Cat",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/ghostly-cat.webp"
+  },
+  {
+    "id": "petwear-eco-brown-earthwizard-hat",
+    "name": "Eco Brown Earth-Wizard Hat",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/eco-brown-earth-wizard-hat.webp"
+  },
+  {
+    "id": "vehicles-sunshine-chariot",
+    "name": "Sunshine Chariot",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/sunshine-chariot.webp"
+  },
+  {
+    "id": "toys-unicorn-plush",
+    "name": "Unicorn Plush",
+    "category": "toys",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/toys/unicorn-plush.webp"
+  },
+  {
+    "id": "food-sugar-skull-potion",
+    "name": "Sugar Skull Potion",
+    "category": "food",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/food/sugar-skull-potion.webp"
+  },
+  {
+    "id": "gifts-hare-box",
+    "name": "Hare Box",
+    "category": "gifts",
+    "value": 0.544,
+    "demand": 2,
+    "image": "images/gifts/hare-box.webp"
+  },
+  {
+    "id": "petwear-propeller-hat",
+    "name": "Propeller Hat",
+    "category": "petwear",
+    "value": 1.4438,
+    "demand": 2,
+    "image": "images/petwear/propeller-hat.webp"
+  },
+  {
+    "id": "vehicles-tractor",
+    "name": "Tractor",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/tractor.webp"
+  },
+  {
+    "id": "pets-golden-penguin",
+    "name": "Golden Penguin",
+    "category": "pets",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/pets/golden-penguin.webp"
+  },
+  {
+    "id": "pets-singularity-beetle",
+    "name": "Singularity Beetle",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/singularity-beetle.webp"
+  },
+  {
+    "id": "pets-japanese-snow-fairy",
+    "name": "Japanese Snow Fairy",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/japanese-snow-fairy.webp"
+  },
+  {
+    "id": "pets-orange-butterfly",
+    "name": "Orange Butterfly",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/orange-butterfly.webp"
+  },
+  {
+    "id": "eggs-mythic-egg",
+    "name": "Mythic Egg",
+    "category": "eggs",
+    "value": 0.2838,
+    "demand": 2,
+    "image": "images/eggs/mythic-egg.webp"
+  },
+  {
+    "id": "pets-garden-snake",
+    "name": "Garden Snake",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/garden-snake.webp"
+  },
+  {
+    "id": "petwear-chick-hat",
+    "name": "Chick Hat",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/chick-hat.webp"
+  },
+  {
+    "id": "stickers-cherry-blossom-flower-sticker",
+    "name": "Cherry Blossom Flower Sticker",
+    "category": "stickers",
+    "value": 0.0206,
+    "demand": 1,
+    "image": "images/stickers/cherry-blossom-flower-sticker.webp"
+  },
+  {
+    "id": "pets-red-sand-dollar",
+    "name": "Red Sand Dollar",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/red-sand-dollar.webp"
+  },
+  {
+    "id": "pets-astronaut-gorilla",
+    "name": "Astronaut Gorilla",
+    "category": "pets",
+    "value": 0.9487,
+    "demand": 2,
+    "image": "images/pets/astronaut-gorilla.webp"
+  },
+  {
+    "id": "pets-gummy-guana",
+    "name": "Gummy Guana",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/gummy-guana.webp"
+  },
+  {
+    "id": "gifts-lunar-tiger-box",
+    "name": "Lunar Tiger Box",
+    "category": "gifts",
+    "value": 0.1533,
+    "demand": 1,
+    "image": "images/gifts/lunar-tiger-box.webp"
+  },
+  {
+    "id": "vehicles-tundra-exploration-machine",
+    "name": "Tundra Exploration Machine",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/tundra-exploration-machine.webp"
+  },
+  {
+    "id": "vehicles-stocked-santa-sleigh",
+    "name": "Stocked Santa Sleigh",
+    "category": "vehicles",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/vehicles/stocked-santa-sleigh.webp"
+  },
+  {
+    "id": "stickers-elephant-sticker",
+    "name": "Elephant Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/elephant-sticker.webp"
+  },
+  {
+    "id": "vehicles-pink-snowboard",
+    "name": "Pink Neon Snowboard",
+    "category": "vehicles",
+    "value": 3.7125,
+    "demand": 2,
+    "image": "images/vehicles/pink-neon-snowboard.webp"
+  },
+  {
+    "id": "potions-super-ageup-potion",
+    "name": "Super Age-Up Potion",
+    "category": "potions",
+    "value": 5.72,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-eaten-donut",
+    "name": "Eaten Donut",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/eaten-donut.webp"
+  },
+  {
+    "id": "vehicles-headless-horsemans-biplane",
+    "name": "Headless Horseman's Biplane",
+    "category": "vehicles",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/vehicles/headless-horseman-s-biplane.webp"
+  },
+  {
+    "id": "pets-arctic-hare",
+    "name": "Arctic Hare",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/arctic-hare.webp"
+  },
+  {
+    "id": "pets-winged-horse",
+    "name": "Winged Horse",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/winged-horse.webp"
+  },
+  {
+    "id": "pets-punk-pony",
+    "name": "Punk Pony",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/punk-pony.webp"
+  },
+  {
+    "id": "petwear-pirate-hat-friend",
+    "name": "Pirate Hat & Friend",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/pirate-hat-friend.webp"
+  },
+  {
+    "id": "vehicles-festive-deliveries-present-truck",
+    "name": "Festive Deliveries Present Truck",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/festive-deliveries-present-truck.webp"
+  },
+  {
+    "id": "pets-mrs-whiskerpips",
+    "name": "Mrs. Whiskerpips",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/mrs-whiskerpips.webp"
+  },
+  {
+    "id": "petwear-glormy-backpack",
+    "name": "Glormy Backpack",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/glormy-backpack.webp"
+  },
+  {
+    "id": "pets-emu",
+    "name": "Emu",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/emu.webp"
+  },
+  {
+    "id": "pets-prism-snake",
+    "name": "Prism Snake",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/prism-snake.webp"
+  },
+  {
+    "id": "pets-golden-walrus",
+    "name": "Golden Walrus",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/golden-walrus.webp"
+  },
+  {
+    "id": "pets-royal-mistletroll",
+    "name": "Royal Mistletroll",
+    "category": "pets",
+    "value": 16.0875,
+    "demand": 2,
+    "image": "images/pets/royal-mistletroll.webp"
+  },
+  {
+    "id": "stickers-candicorn-sticker",
+    "name": "Candicorn Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/candicorn-sticker.webp"
+  },
+  {
+    "id": "food-fire-horse-apple",
+    "name": "Fire Horse Apple",
+    "category": "food",
+    "value": 0.0165,
+    "demand": 1,
+    "image": "images/food/fire-horse-apple.webp"
+  },
+  {
+    "id": "petwear-bat-wings",
+    "name": "Bat Wings",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/bat-wings.webp"
+  },
+  {
+    "id": "pets-general-sheepdog",
+    "name": "General Sheepdog",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/general-sheepdog.webp"
+  },
+  {
+    "id": "pets-sabertooth",
+    "name": "Sabertooth",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/sabertooth.webp"
+  },
+  {
+    "id": "toys-tombstone-ghostify",
+    "name": "Tombstone Ghostify",
+    "category": "toys",
+    "value": 21.45,
+    "demand": 2,
+    "image": "images/toys/tombstone-ghostify.webp"
+  },
+  {
+    "id": "pets-komodo-dragon",
+    "name": "Komodo Dragon",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/komodo-dragon.webp"
+  },
+  {
+    "id": "petwear-clockwork-wings",
+    "name": "Clockwork Wings",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/clockwork-wings.webp"
+  },
+  {
+    "id": "pets-evil-unicorn",
+    "name": "Evil Unicorn",
+    "category": "pets",
+    "value": 53.2125,
+    "demand": 3,
+    "image": "images/pets/evil-unicorn.webp"
+  },
+  {
+    "id": "food-cookie",
+    "name": "Cookie",
+    "category": "food",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/food/cookie.webp"
+  },
+  {
+    "id": "petwear-rotating-periscope",
+    "name": "Rotating Periscope",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/rotating-periscope.webp"
+  },
+  {
+    "id": "pets-black-springer-spaniel",
+    "name": "Black Springer Spaniel",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/black-springer-spaniel.webp"
+  },
+  {
+    "id": "petwear-gold-fairy-crown",
+    "name": "Gold Fairy Crown",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/gold-fairy-crown.webp"
+  },
+  {
+    "id": "pets-royal-corgi",
+    "name": "Royal Corgi",
+    "category": "pets",
+    "value": 1.1138,
+    "demand": 2,
+    "image": "images/pets/royal-corgi.webp"
+  },
+  {
+    "id": "toys-duck-balloon",
+    "name": "Duck Balloon",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/duck-balloon.webp"
+  },
+  {
+    "id": "pets-panda",
+    "name": "Panda",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/panda.webp"
+  },
+  {
+    "id": "vehicles-latte-motorcycle",
+    "name": "Latte Motorcycle",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/latte-motorcycle.webp"
+  },
+  {
+    "id": "pets-fairy-bat-dragon",
+    "name": "Fairy Bat Dragon",
+    "category": "pets",
+    "value": 14.85,
+    "demand": 3,
+    "image": "images/pets/fairy-bat-dragon.webp"
+  },
+  {
+    "id": "pets-red-crowned-crane",
+    "name": "Red Crowned Crane",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/red-crowned-crane.webp"
+  },
+  {
+    "id": "vehicles-fossil-paw-helicopter",
+    "name": "Fossil Paw Helicopter",
+    "category": "vehicles",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/vehicles/fossil-paw-helicopter.webp"
+  },
+  {
+    "id": "vehicles-micro-car",
+    "name": "Micro Car",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/micro-car.webp"
+  },
+  {
+    "id": "stickers-space-whale-sticker",
+    "name": "Space Whale Sticker",
+    "category": "stickers",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/stickers/space-whale-sticker.webp"
+  },
+  {
+    "id": "pets-dancing-dragon",
+    "name": "Dancing Dragon",
+    "category": "pets",
+    "value": 1.8975,
+    "demand": 2,
+    "image": "images/pets/dancing-dragon.webp"
+  },
+  {
+    "id": "petwear-gingerbread-wings",
+    "name": "Gingerbread Wings",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/gingerbread-wings.webp"
+  },
+  {
+    "id": "pets-pumpkin-friend",
+    "name": "Pumpkin Friend",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/pumpkin-friend.webp"
+  },
+  {
+    "id": "pets-fire-foal",
+    "name": "Fire Foal",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/fire-foal.webp"
+  },
+  {
+    "id": "vehicles-zamboni",
+    "name": "Zamboni",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/zamboni.webp"
+  },
+  {
+    "id": "pets-rosy-maple-moth",
+    "name": "Rosy Maple Moth",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/rosy-maple-moth.webp"
+  },
+  {
+    "id": "pets-corgi",
+    "name": "Corgi",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/corgi.webp"
+  },
+  {
+    "id": "pets-shetland-pony-light-brown",
+    "name": "Shetland Pony Light Brown",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/pets/shetland-pony-light-brown.webp"
+  },
+  {
+    "id": "petwear-lightbulb-hat",
+    "name": "Lightbulb Hat",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/lightbulb-hat.webp"
+  },
+  {
+    "id": "strollers-plane-stroller",
+    "name": "Plane Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "toys-premium-camping-tent",
+    "name": "Premium Camping Tent",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/premium-camping-tent.webp"
+  },
+  {
+    "id": "pets-happy-duckling",
+    "name": "Happy Duckling",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/happy-duckling.webp"
+  },
+  {
+    "id": "stickers-dalmatian-sticker",
+    "name": "Dalmatian Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/dalmatian-sticker.webp"
+  },
+  {
+    "id": "pets-bush-elephant",
+    "name": "Bush Elephant",
+    "category": "pets",
+    "value": 10.9313,
+    "demand": 2,
+    "image": "images/pets/bush-elephant.webp"
+  },
+  {
+    "id": "pets-birthday-butterfly-2023",
+    "name": "Birthday Butterfly 2023",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/birthday-butterfly-2023.webp"
+  },
+  {
+    "id": "pets-roadrunner",
+    "name": "Roadrunner",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/roadrunner.webp"
+  },
+  {
+    "id": "gifts-standard-chest",
+    "name": "Standard Chest",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-canadian-goose",
+    "name": "Canadian Goose",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/canadian-goose.webp"
+  },
+  {
+    "id": "pets-mexican-wolf",
+    "name": "Mexican Wolf",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/mexican-wolf.webp"
+  },
+  {
+    "id": "strollers-tractor-stroller",
+    "name": "Tractor Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/tractor-stroller.webp"
+  },
+  {
+    "id": "vehicles-toy-rescue-helicopter",
+    "name": "Toy Rescue Helicopter",
+    "category": "vehicles",
+    "value": 0.99,
+    "demand": 1,
+    "image": "images/vehicles/toy-rescue-helicopter.webp"
+  },
+  {
+    "id": "toys-banana-plush",
+    "name": "Banana Plush",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/banana-plush.webp"
+  },
+  {
+    "id": "pets-karate-gorilla",
+    "name": "Karate Gorilla",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 2,
+    "image": "images/pets/karate-gorilla.webp"
+  },
+  {
+    "id": "vehicles-dogmobile",
+    "name": "Dogmobile",
+    "category": "vehicles",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/vehicles/dogmobile.webp"
+  },
+  {
+    "id": "toys-witches-wand",
+    "name": "Witches Wand",
+    "category": "toys",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/toys/witches-wand.webp"
+  },
+  {
+    "id": "pets-lunar-ox",
+    "name": "Lunar Ox",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/lunar-ox.webp"
+  },
+  {
+    "id": "petwear-llamalush-purse-pet",
+    "name": "Llamalush Purse Pet",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/llamalush-purse-pet.webp"
+  },
+  {
+    "id": "toys-carrot-friend-plushie",
+    "name": "Carrot Friend Plushie",
+    "category": "toys",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/toys/carrot-friend-plushie.webp"
+  },
+  {
+    "id": "petwear-gold-circle-glasses",
+    "name": "Gold Circle Glasses",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 2,
+    "image": "images/petwear/gold-circle-glasses.webp"
+  },
+  {
+    "id": "pets-gilded-snake",
+    "name": "Gilded Snake",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/gilded-snake.webp"
+  },
+  {
+    "id": "pets-coconut-friend",
+    "name": "Coconut Friend",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/coconut-friend.webp"
+  },
+  {
+    "id": "potions-big-brew-potion",
+    "name": "Big Brew Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-ghost-wolf",
+    "name": "Ghost Wolf",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/ghost-wolf.webp"
+  },
+  {
+    "id": "gifts-halloween-chick-box",
+    "name": "Halloween Chick Box",
+    "category": "gifts",
+    "value": 0.3232,
+    "demand": 1,
+    "image": "images/gifts/halloween-chick-box.webp"
+  },
+  {
+    "id": "petwear-puppeteer-hand",
+    "name": "Puppeteer Hand",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/puppeteer-hand.webp"
+  },
+  {
+    "id": "toys-axe-rattle",
+    "name": "Axe Rattle",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/axe-rattle.webp"
+  },
+  {
+    "id": "stickers-coconut-friend-sticker",
+    "name": "Coconut Friend Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/coconut-friend-sticker.webp"
+  },
+  {
+    "id": "pets-glormy-hound",
+    "name": "Glormy Hound",
+    "category": "pets",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/pets/glormy-hound.webp"
+  },
+  {
+    "id": "pets-muskrat",
+    "name": "Muskrat",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/muskrat.webp"
+  },
+  {
+    "id": "food-snapdragon-flower",
+    "name": "Snapdragon Flower",
+    "category": "food",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/food/snapdragon-flower.webp"
+  },
+  {
+    "id": "toys-dandelion-propeller",
+    "name": "Dandelion Propeller",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/dandelion-propeller.webp"
+  },
+  {
+    "id": "pets-tarsier",
+    "name": "Tarsier",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/tarsier.webp"
+  },
+  {
+    "id": "strollers-baby-basket-stroller",
+    "name": "Baby Basket Stroller",
+    "category": "strollers",
+    "value": 0.8541,
+    "demand": 2,
+    "image": "images/strollers/baby-basket-stroller.webp"
+  },
+  {
+    "id": "strollers-donut-stroller",
+    "name": "Donut Stroller",
+    "category": "strollers",
+    "value": 0.0823,
+    "demand": 1,
+    "image": "images/strollers/donut-stroller.webp"
+  },
+  {
+    "id": "pets-ankylosaurus",
+    "name": "Ankylosaurus",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/ankylosaurus.webp"
+  },
+  {
+    "id": "pets-blue-whale",
+    "name": "Blue Whale",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/blue-whale.webp"
+  },
+  {
+    "id": "toys-scarab-crossbow-grappling-hook",
+    "name": "Scarab Crossbow Grappling Hook",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/scarab-crossbow-grappling-hook.webp"
+  },
+  {
+    "id": "pets-pink-betta-fish",
+    "name": "Pink Betta Fish",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/pink-betta-fish.webp"
+  },
+  {
+    "id": "strollers-shipwreck-stroller",
+    "name": "Shipwreck Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "stickers-dinner-discourse-cat-sticker",
+    "name": "Dinner Discourse Cat Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/stickers/dinner-discourse-cat-sticker.webp"
+  },
+  {
+    "id": "pets-toasty-red-panda",
+    "name": "Toasty Red Panda",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/toasty-red-panda.webp"
+  },
+  {
+    "id": "food-baked-alaska-bait",
+    "name": "Baked Alaska Bait",
+    "category": "food",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/food/baked-alaska-bait.webp"
+  },
+  {
+    "id": "toys-sleigh-bells-rattle",
+    "name": "Sleigh Bells Rattle",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/sleigh-bells-rattle.webp"
+  },
+  {
+    "id": "pets-tasmanian-devil",
+    "name": "Tasmanian Devil",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/tasmanian-devil.webp"
+  },
+  {
+    "id": "eggs-crystal-egg",
+    "name": "Crystal Egg",
+    "category": "eggs",
+    "value": 0.0426,
+    "demand": 2,
+    "image": "images/eggs/crystal-egg.webp"
+  },
+  {
+    "id": "pets-granny-wolf",
+    "name": "Granny Wolf",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/granny-wolf.webp"
+  },
+  {
+    "id": "vehicles-gingerbread-stunt-plane",
+    "name": "Gingerbread Stunt Plane",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/gingerbread-stunt-plane.webp"
+  },
+  {
+    "id": "eggs-fairytale-egg",
+    "name": "Fairytale Egg",
+    "category": "eggs",
+    "value": 0.0353,
+    "demand": 1,
+    "image": "images/eggs/fairytale-egg.webp"
+  },
+  {
+    "id": "pets-royal-capuchin-monkey",
+    "name": "Royal Capuchin Monkey",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 1,
+    "image": "images/pets/royal-capuchin-monkey.webp"
+  },
+  {
+    "id": "pets-papa-moose",
+    "name": "Papa Moose",
+    "category": "pets",
+    "value": 3.9188,
+    "demand": 2,
+    "image": "images/pets/papa-moose.webp"
+  },
+  {
+    "id": "pets-mole",
+    "name": "Mole",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/mole.webp"
+  },
+  {
+    "id": "stickers-sasquatch-sticker",
+    "name": "Sasquatch Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/sasquatch-sticker.webp"
+  },
+  {
+    "id": "pets-shoebill",
+    "name": "Shoebill",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/shoebill.webp"
+  },
+  {
+    "id": "petwear-star-sunglasses",
+    "name": "Star Sunglasses",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/star-sunglasses.webp"
+  },
+  {
+    "id": "pets-dugong",
+    "name": "Dugong",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/dugong.webp"
+  },
+  {
+    "id": "stickers-solaris-animated-sticker",
+    "name": "Solaris Animated Sticker",
+    "category": "stickers",
+    "value": 0.4538,
+    "demand": 2,
+    "image": "images/stickers/solaris-animated-sticker.webp"
+  },
+  {
+    "id": "petwear-candy-cane-wings",
+    "name": "Candy Cane Wings",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/candy-cane-wings.webp"
+  },
+  {
+    "id": "toys-compass",
+    "name": "Compass",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/compass.webp"
+  },
+  {
+    "id": "petwear-mandarins-hat",
+    "name": "Mandarin's Hat",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/mandarin-s-hat.webp"
+  },
+  {
+    "id": "toys-telescope-pogo",
+    "name": "Telescope Pogo",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/telescope-pogo.webp"
+  },
+  {
+    "id": "pets-nessie",
+    "name": "Nessie",
+    "category": "pets",
+    "value": 2.7638,
+    "demand": 2,
+    "image": "images/pets/nessie.webp"
+  },
+  {
+    "id": "vehicles-melon-skateboard",
+    "name": "Melon Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/melon-skateboard.webp"
+  },
+  {
+    "id": "pets-alpaca",
+    "name": "Alpaca",
+    "category": "pets",
+    "value": 10.9313,
+    "demand": 3,
+    "image": "images/pets/alpaca.webp"
+  },
+  {
+    "id": "strollers-takoyaki-stroller",
+    "name": "Takoyaki Stroller",
+    "category": "strollers",
+    "value": 0.1024,
+    "demand": 1,
+    "image": "images/strollers/takoyaki-stroller.webp"
+  },
+  {
+    "id": "pets-golden-unicorn",
+    "name": "Golden Unicorn",
+    "category": "pets",
+    "value": 0.3919,
+    "demand": 1,
+    "image": "images/pets/golden-unicorn.webp"
+  },
+  {
+    "id": "petwear-fishbone-badge",
+    "name": "Fishbone Badge",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/petwear/fishbone-badge.webp"
+  },
+  {
+    "id": "pets-rabbit",
+    "name": "Rabbit",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/rabbit.webp"
+  },
+  {
+    "id": "pets-clubtail-dragonfly",
+    "name": "Clubtail Dragonfly",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/clubtail-dragonfly.webp"
+  },
+  {
+    "id": "food-christmas-pudding-pup-bait",
+    "name": "Christmas Pudding Pup Bait",
+    "category": "food",
+    "value": 3.7125,
+    "demand": 2,
+    "image": "images/food/christmas-pudding-pup-bait.webp"
+  },
+  {
+    "id": "stickers-shark-sticker",
+    "name": "Shark Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/shark-sticker.webp"
+  },
+  {
+    "id": "pets-lion",
+    "name": "Lion",
+    "category": "pets",
+    "value": 7.0125,
+    "demand": 3,
+    "image": "images/pets/lion.webp"
+  },
+  {
+    "id": "pets-brown-bear",
+    "name": "Brown Bear",
+    "category": "pets",
+    "value": 2.31,
+    "demand": 2,
+    "image": "images/pets/brown-bear.webp"
+  },
+  {
+    "id": "petwear-swamp-mist-wings",
+    "name": "Swamp Mist Wings",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/swamp-mist-wings.webp"
+  },
+  {
+    "id": "pets-diamond-king-penguin",
+    "name": "Diamond King Penguin",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 2,
+    "image": "images/pets/diamond-king-penguin.webp"
+  },
+  {
+    "id": "strollers-smores-stroller",
+    "name": "S'mores Stroller",
+    "category": "strollers",
+    "value": 0.2183,
+    "demand": 1,
+    "image": "images/strollers/s-mores-stroller.webp"
+  },
+  {
+    "id": "pets-capricorn",
+    "name": "Capricorn",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/capricorn.webp"
+  },
+  {
+    "id": "stickers-koala-sticker",
+    "name": "Koala Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/koala-sticker.webp"
+  },
+  {
+    "id": "gifts-moon-bear-box",
+    "name": "Moon Bear Box",
+    "category": "gifts",
+    "value": 0.2951,
+    "demand": 1,
+    "image": "images/gifts/moon-bear-box.webp"
+  },
+  {
+    "id": "pets-leopard-cat",
+    "name": "Leopard Cat",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/leopard-cat.webp"
+  },
+  {
+    "id": "petwear-golden-walrus-crown",
+    "name": "Golden Walrus Crown",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/golden-walrus-crown.webp"
+  },
+  {
+    "id": "pets-snow-owl",
+    "name": "Snow Owl",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/snow-owl.webp"
+  },
+  {
+    "id": "strollers-hatched-egg-stroller",
+    "name": "Hatched Egg Stroller",
+    "category": "strollers",
+    "value": 0.0823,
+    "demand": 1,
+    "image": "images/strollers/hatched-egg-stroller.webp"
+  },
+  {
+    "id": "petwear-cat-backpack",
+    "name": "Cat Backpack",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/cat-backpack.webp"
+  },
+  {
+    "id": "pets-officer-gibbon",
+    "name": "Officer Gibbon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/officer-gibbon.webp"
+  },
+  {
+    "id": "vehicles-ribcage-carriage",
+    "name": "Ribcage Carriage",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/ribcage-carriage.webp"
+  },
+  {
+    "id": "vehicles-shooting-star-board",
+    "name": "Shooting Star Board",
+    "category": "vehicles",
+    "value": 2.6812,
+    "demand": 2,
+    "image": "images/vehicles/shooting-star-board.webp"
+  },
+  {
+    "id": "vehicles-douglas",
+    "name": "Douglas",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/douglas.webp"
+  },
+  {
+    "id": "pets-emberlight",
+    "name": "Emberlight",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/emberlight.webp"
+  },
+  {
+    "id": "food-golden-leaf",
+    "name": "Golden Leaf",
+    "category": "food",
+    "value": 10.725,
+    "demand": 2,
+    "image": "images/food/golden-leaf.webp"
+  },
+  {
+    "id": "petwear-balloon-dog",
+    "name": "Balloon Dog",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/balloon-dog.webp"
+  },
+  {
+    "id": "petwear-demon-wings",
+    "name": "Demon Wings",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/demon-wings.webp"
+  },
+  {
+    "id": "vehicles-dragonster",
+    "name": "Dragonster",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/dragonster.webp"
+  },
+  {
+    "id": "petwear-bewitched-hat",
+    "name": "Bewitched Hat",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/bewitched-hat.webp"
+  },
+  {
+    "id": "pets-gingerbread-hare",
+    "name": "Gingerbread Hare",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/gingerbread-hare.webp"
+  },
+  {
+    "id": "pets-mini-schnauzer",
+    "name": "Mini Schnauzer",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/mini-schnauzer.webp"
+  },
+  {
+    "id": "vehicles-axel",
+    "name": "Axel",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/axel.webp"
+  },
+  {
+    "id": "pets-tarantula",
+    "name": "Tarantula",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/tarantula.webp"
+  },
+  {
+    "id": "pets-irish-elk",
+    "name": "Irish Elk",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/irish-elk.webp"
+  },
+  {
+    "id": "vehicles-crabby-cruiser",
+    "name": "Crabby Cruiser",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/crabby-cruiser.webp"
+  },
+  {
+    "id": "food-maple-leaf-treat",
+    "name": "Maple Leaf Treat",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/maple-leaf-treat.webp"
+  },
+  {
+    "id": "pets-cobra",
+    "name": "Cobra",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/cobra.webp"
+  },
+  {
+    "id": "pets-peachick",
+    "name": "Peachick",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/peachick.webp"
+  },
+  {
+    "id": "pets-scarebear",
+    "name": "Scarebear",
+    "category": "pets",
+    "value": 1.155,
+    "demand": 2,
+    "image": "images/pets/scarebear.webp"
+  },
+  {
+    "id": "pets-many-mackerel",
+    "name": "Many Mackerel",
+    "category": "pets",
+    "value": 3.4238,
+    "demand": 2,
+    "image": "images/pets/many-mackerel.webp"
+  },
+  {
+    "id": "vehicles-dragon-train",
+    "name": "Dragon Train",
+    "category": "vehicles",
+    "value": 2.0625,
+    "demand": 1,
+    "image": "images/vehicles/dragon-train.webp"
+  },
+  {
+    "id": "vehicles-red-scooter",
+    "name": "Neon Red Scooter",
+    "category": "vehicles",
+    "value": 0.99,
+    "demand": 1,
+    "image": "images/vehicles/neon-red-scooter.webp"
+  },
+  {
+    "id": "pets-warthog",
+    "name": "Warthog",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/warthog.webp"
+  },
+  {
+    "id": "pets-wildfire-hawk",
+    "name": "Wildfire Hawk",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/wildfire-hawk.webp"
+  },
+  {
+    "id": "pets-headless-horse",
+    "name": "Headless Horse",
+    "category": "pets",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/pets/headless-horse.webp"
+  },
+  {
+    "id": "strollers-pizza-stroller",
+    "name": "Pizza Stroller",
+    "category": "strollers",
+    "value": 0.3607,
+    "demand": 1,
+    "image": "images/strollers/pizza-stroller.webp"
+  },
+  {
+    "id": "potions-choosy-potion",
+    "name": "Choosy Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-nest-of-eggs",
+    "name": "Nest of Eggs",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/nest-of-eggs.webp"
+  },
+  {
+    "id": "toys-candle",
+    "name": "Candle",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/candle.webp"
+  },
+  {
+    "id": "pets-quetzalcoatl",
+    "name": "Quetzalcoatl",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/quetzalcoatl.webp"
+  },
+  {
+    "id": "potions-cure-all-potion",
+    "name": "Cure All Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-priceless-shrimp",
+    "name": "Priceless Shrimp",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/priceless-shrimp.webp"
+  },
+  {
+    "id": "pets-baku",
+    "name": "Baku",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/baku.webp"
+  },
+  {
+    "id": "pets-kid-goat",
+    "name": "Kid Goat",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/kid-goat.webp"
+  },
+  {
+    "id": "eggs-ocean-egg",
+    "name": "Ocean Egg",
+    "category": "eggs",
+    "value": 0.3063,
+    "demand": 2,
+    "image": "images/eggs/ocean-egg.webp"
+  },
+  {
+    "id": "pets-jellyfish",
+    "name": "Jellyfish",
+    "category": "pets",
+    "value": 5.5688,
+    "demand": 3,
+    "image": "images/pets/jellyfish.webp"
+  },
+  {
+    "id": "stickers-seagull-yell-animated-sticker",
+    "name": "Seagull Yell Animated Sticker",
+    "category": "stickers",
+    "value": 8.25,
+    "demand": 2,
+    "image": "images/stickers/seagull-yell-animated-sticker.webp"
+  },
+  {
+    "id": "potions-potion",
+    "name": "Fly Potion",
+    "category": "potions",
+    "value": 1.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-glormy-crab",
+    "name": "Glormy Crab",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/glormy-crab.webp"
+  },
+  {
+    "id": "toys-hugging-egg",
+    "name": "Hugging Egg",
+    "category": "toys",
+    "value": 1.2375,
+    "demand": 1,
+    "image": "images/toys/hugging-egg.webp"
+  },
+  {
+    "id": "pets-lunar-moon-bear",
+    "name": "Lunar Moon Bear",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/lunar-moon-bear.webp"
+  },
+  {
+    "id": "gifts-rgb-reward-box",
+    "name": "RGB Reward Box",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "potions-big-head-potion",
+    "name": "Big Head Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "vehicles-gyrocopter",
+    "name": "Gyrocopter",
+    "category": "vehicles",
+    "value": 1.0312,
+    "demand": 1,
+    "image": "images/vehicles/gyrocopter.webp"
+  },
+  {
+    "id": "pets-stegosaurus",
+    "name": "Stegosaurus",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/stegosaurus.webp"
+  },
+  {
+    "id": "petwear-festive-stocking-shoes",
+    "name": "Festive Stocking Shoes",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/festive-stocking-shoes.webp"
+  },
+  {
+    "id": "pets-cold-cube",
+    "name": "Cold Cube",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/cold-cube.webp"
+  },
+  {
+    "id": "strollers-ufo-stroller",
+    "name": "UFO Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/ufo-stroller.webp"
+  },
+  {
+    "id": "petwear-eyepatch",
+    "name": "Eyepatch",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/eyepatch.webp"
+  },
+  {
+    "id": "pets-snow-puma",
+    "name": "Snow Puma",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/snow-puma.webp"
+  },
+  {
+    "id": "pets-frost-unicorn",
+    "name": "Frost Unicorn",
+    "category": "pets",
+    "value": 11.1375,
+    "demand": 3,
+    "image": "images/pets/frost-unicorn.webp"
+  },
+  {
+    "id": "strollers-rgb-stroller",
+    "name": "RGB Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-scarecrow-horse",
+    "name": "Scarecrow Horse",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/scarecrow-horse.webp"
+  },
+  {
+    "id": "petwear-cotton-candy-hat",
+    "name": "Cotton Candy Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/petwear/cotton-candy-hat.webp"
+  },
+  {
+    "id": "vehicles-camper-van",
+    "name": "Camper Van",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/camper-van.webp"
+  },
+  {
+    "id": "gifts-pet-handler-pro-certificate",
+    "name": "Pet Handler Pro Certificate",
+    "category": "gifts",
+    "value": 1.0725,
+    "demand": 3,
+    "image": "images/gifts/pet-handler-pro-certificate.webp"
+  },
+  {
+    "id": "pets-blue-jay",
+    "name": "Blue Jay",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/blue-jay.webp"
+  },
+  {
+    "id": "pets-fleur-de-ice",
+    "name": "Fleur De Ice",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/fleur-de-ice.webp"
+  },
+  {
+    "id": "pets-basilisk",
+    "name": "Basilisk",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/basilisk.webp"
+  },
+  {
+    "id": "pets-caelum-cervi",
+    "name": "Caelum Cervi",
+    "category": "pets",
+    "value": 3.5887,
+    "demand": 2,
+    "image": "images/pets/caelum-cervi.webp"
+  },
+  {
+    "id": "pets-ornate-horned-frog",
+    "name": "Ornate Horned Frog",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/ornate-horned-frog.webp"
+  },
+  {
+    "id": "pets-lunar-white-tiger",
+    "name": "Lunar White Tiger",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/lunar-white-tiger.webp"
+  },
+  {
+    "id": "toys-skeleton-winged-glider",
+    "name": "Skeleton Winged Glider",
+    "category": "toys",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/toys/skeleton-winged-glider.webp"
+  },
+  {
+    "id": "strollers-stocking-stroller",
+    "name": "Stocking Stroller",
+    "category": "strollers",
+    "value": 0.063,
+    "demand": 1,
+    "image": "images/strollers/stocking-stroller.webp"
+  },
+  {
+    "id": "vehicles-cloud-car",
+    "name": "Cloud Car",
+    "category": "vehicles",
+    "value": 14.025,
+    "demand": 2,
+    "image": "images/vehicles/cloud-car.webp"
+  },
+  {
+    "id": "vehicles-halloween-black-ponycycle",
+    "name": "Halloween Black Ponycycle",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/halloween-black-ponycycle.webp"
+  },
+  {
+    "id": "vehicles-rgb-monster-truck",
+    "name": "RGB Monster Truck",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/rgb-monster-truck.webp"
+  },
+  {
+    "id": "gifts-small-gift",
+    "name": "Small Gift",
+    "category": "gifts",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-red-cardinal",
+    "name": "Red Cardinal",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/red-cardinal.webp"
+  },
+  {
+    "id": "eggs-endangered-egg",
+    "name": "Endangered Egg",
+    "category": "eggs",
+    "value": 0.0353,
+    "demand": 1,
+    "image": "images/eggs/endangered-egg.webp"
+  },
+  {
+    "id": "pets-mirai-moth",
+    "name": "Mirai Moth",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/mirai-moth.webp"
+  },
+  {
+    "id": "pets-rainbow-trout",
+    "name": "Rainbow Trout",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/rainbow-trout.webp"
+  },
+  {
+    "id": "stickers-candyfloss-chick-sticker",
+    "name": "Candyfloss Chick Sticker",
+    "category": "stickers",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/stickers/candyfloss-chick-sticker.webp"
+  },
+  {
+    "id": "pets-tegu",
+    "name": "Tegu",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/tegu.webp"
+  },
+  {
+    "id": "pets-pink-cat",
+    "name": "Pink Cat",
+    "category": "pets",
+    "value": 4.62,
+    "demand": 3,
+    "image": "images/pets/pink-cat.webp"
+  },
+  {
+    "id": "pets-golden-rat",
+    "name": "Golden Rat",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/golden-rat.webp"
+  },
+  {
+    "id": "toys-rainbow-wand",
+    "name": "Rainbow Wand",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/rainbow-wand.webp"
+  },
+  {
+    "id": "toys-candy-cannon",
+    "name": "Candy Cannon",
+    "category": "toys",
+    "value": 107.25,
+    "demand": 2,
+    "image": "images/toys/candy-cannon.webp"
+  },
+  {
+    "id": "petwear-top-hat",
+    "name": "Top Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/top-hat.webp"
+  },
+  {
+    "id": "stickers-premium-sticker-pack",
+    "name": "Premium Sticker Pack",
+    "category": "stickers",
+    "value": 0.3712,
+    "demand": 2,
+    "image": "images/stickers/premium-sticker-pack.webp"
+  },
+  {
+    "id": "pets-brachiosaurus",
+    "name": "Brachiosaurus",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/brachiosaurus.webp"
+  },
+  {
+    "id": "pets-sunrise-duckling",
+    "name": "Sunrise Duckling",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/sunrise-duckling.webp"
+  },
+  {
+    "id": "food-snowflake-potion",
+    "name": "Snowflake Potion",
+    "category": "food",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/food/snowflake-potion.webp"
+  },
+  {
+    "id": "vehicles-galactic-hoverboard",
+    "name": "Galactic Hoverboard",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/galactic-hoverboard.webp"
+  },
+  {
+    "id": "eggs-diamond-egg",
+    "name": "Diamond Egg",
+    "category": "eggs",
+    "value": 0.2445,
+    "demand": 1,
+    "image": "images/eggs/diamond-egg.webp"
+  },
+  {
+    "id": "toys-unicorn-leash",
+    "name": "Unicorn Leash",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/unicorn-leash.webp"
+  },
+  {
+    "id": "pets-river-otter",
+    "name": "River Otter",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/river-otter.webp"
+  },
+  {
+    "id": "pets-glyptodon-ducky",
+    "name": "Glyptodon Ducky",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/glyptodon-ducky.webp"
+  },
+  {
+    "id": "pets-lobster",
+    "name": "Lobster",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/lobster.webp"
+  },
+  {
+    "id": "vehicles-suv",
+    "name": "SUV",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/suv.webp"
+  },
+  {
+    "id": "pets-peach-owl",
+    "name": "Peach Owl",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/peach-owl.webp"
+  },
+  {
+    "id": "pets-seafoam-butterfly",
+    "name": "Seafoam Butterfly",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/seafoam-butterfly.webp"
+  },
+  {
+    "id": "stickers-arctic-dusk-dragon-sticker",
+    "name": "Arctic Dusk Dragon Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/arctic-dusk-dragon-sticker.webp"
+  },
+  {
+    "id": "food-golden-petunia",
+    "name": "Golden Petunia",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-petunia.webp"
+  },
+  {
+    "id": "petwear-volcanic-boots",
+    "name": "Volcanic Boots",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/volcanic-boots.webp"
+  },
+  {
+    "id": "pets-gingerbread-reindeer",
+    "name": "Gingerbread Reindeer",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/gingerbread-reindeer.webp"
+  },
+  {
+    "id": "gifts-premium-gorilla-box",
+    "name": "Premium Gorilla Box",
+    "category": "gifts",
+    "value": 1.8293,
+    "demand": 2,
+    "image": "images/gifts/premium-gorilla-box.webp"
+  },
+  {
+    "id": "pets-rubber-ducky",
+    "name": "Rubber Ducky",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/rubber-ducky.webp"
+  },
+  {
+    "id": "pets-coyote",
+    "name": "Coyote",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/coyote.webp"
+  },
+  {
+    "id": "pets-puffer-fish",
+    "name": "Puffer Fish",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/puffer-fish.webp"
+  },
+  {
+    "id": "vehicles-clown-car",
+    "name": "Clown Car",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/clown-car.webp"
+  },
+  {
+    "id": "stickers-halloween-2024-sticker-pack",
+    "name": "Halloween 2024 Sticker Pack",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/halloween-2024-sticker-pack.webp"
+  },
+  {
+    "id": "petwear-ice-cream-cone-hat",
+    "name": "Ice Cream Cone Hat",
+    "category": "petwear",
+    "value": 3.7125,
+    "demand": 2,
+    "image": "images/petwear/ice-cream-cone-hat.webp"
+  },
+  {
+    "id": "toys-horse-plush",
+    "name": "Horse Plush",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/horse-plush.webp"
+  },
+  {
+    "id": "pets-mule",
+    "name": "Mule",
+    "category": "pets",
+    "value": 0.9487,
+    "demand": 2,
+    "image": "images/pets/mule.webp"
+  },
+  {
+    "id": "pets-jousting-horse",
+    "name": "Jousting Horse",
+    "category": "pets",
+    "value": 2.8875,
+    "demand": 2,
+    "image": "images/pets/jousting-horse.webp"
+  },
+  {
+    "id": "pets-badger",
+    "name": "Badger",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/badger.webp"
+  },
+  {
+    "id": "pets-mecha-r4bbit",
+    "name": "Mecha R4BBIT",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/mecha-r4bbit.webp"
+  },
+  {
+    "id": "stickers-santa-pet-rock-sticker",
+    "name": "Santa Pet Rock Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/santa-pet-rock-sticker.webp"
+  },
+  {
+    "id": "pets-ice-golem",
+    "name": "Ice Golem",
+    "category": "pets",
+    "value": 1.8975,
+    "demand": 2,
+    "image": "images/pets/ice-golem.webp"
+  },
+  {
+    "id": "pets-crow",
+    "name": "Crow",
+    "category": "pets",
+    "value": 80.4375,
+    "demand": 3,
+    "image": "images/pets/crow.webp"
+  },
+  {
+    "id": "pets-violet-butterfly",
+    "name": "Violet Butterfly",
+    "category": "pets",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/pets/violet-butterfly.webp"
+  },
+  {
+    "id": "strollers-droplet-stroller",
+    "name": "Droplet Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/droplet-stroller.webp"
+  },
+  {
+    "id": "vehicles-ice-snowboard",
+    "name": "Ice Snowboard",
+    "category": "vehicles",
+    "value": 4.125,
+    "demand": 1,
+    "image": "images/vehicles/ice-snowboard.webp"
+  },
+  {
+    "id": "pets-frog",
+    "name": "Frog",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/frog.webp"
+  },
+  {
+    "id": "vehicles-hovertible",
+    "name": "Hovertible",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/hovertible.webp"
+  },
+  {
+    "id": "pets-bird-of-paradise",
+    "name": "Bird of Paradise",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/bird-of-paradise.webp"
+  },
+  {
+    "id": "pets-seahorse",
+    "name": "Seahorse",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/seahorse.webp"
+  },
+  {
+    "id": "pets-ostrich",
+    "name": "Ostrich",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/ostrich.webp"
+  },
+  {
+    "id": "pets-angler-fish",
+    "name": "Angler Fish",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/angler-fish.webp"
+  },
+  {
+    "id": "pets-hermit-crab",
+    "name": "Hermit Crab",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/hermit-crab.webp"
+  },
+  {
+    "id": "pets-matcha-cat",
+    "name": "Matcha Cat",
+    "category": "pets",
+    "value": 4.125,
+    "demand": 2,
+    "image": "images/pets/matcha-cat.webp"
+  },
+  {
+    "id": "petwear-watery-wings",
+    "name": "Watery Wings",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/watery-wings.webp"
+  },
+  {
+    "id": "stickers-lava-dragon-sticker",
+    "name": "Lava Dragon Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/lava-dragon-sticker.webp"
+  },
+  {
+    "id": "pets-eel",
+    "name": "Eel",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/eel.webp"
+  },
+  {
+    "id": "pets-axolotl",
+    "name": "Axolotl",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/axolotl.webp"
+  },
+  {
+    "id": "vehicles-emoji-scooter",
+    "name": "Emoji Scooter",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/emoji-scooter.webp"
+  },
+  {
+    "id": "vehicles-fidget-skateboard",
+    "name": "Fidget Skateboard",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/fidget-skateboard.webp"
+  },
+  {
+    "id": "pets-queen-bee",
+    "name": "Queen Bee",
+    "category": "pets",
+    "value": 1.6913,
+    "demand": 2,
+    "image": "images/pets/queen-bee.webp"
+  },
+  {
+    "id": "strollers-lunar-stroller",
+    "name": "Lunar Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/lunar-stroller.webp"
+  },
+  {
+    "id": "petwear-leprechaun-hat",
+    "name": "Leprechaun Hat",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/leprechaun-hat.webp"
+  },
+  {
+    "id": "pets-turtle-doves",
+    "name": "Turtle Doves",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/turtle-doves.webp"
+  },
+  {
+    "id": "toys-panda-pal",
+    "name": "Panda Pal",
+    "category": "toys",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/toys/panda-pal.webp"
+  },
+  {
+    "id": "pets-dragonfruit-fox",
+    "name": "Dragonfruit Fox",
+    "category": "pets",
+    "value": 1.7738,
+    "demand": 2,
+    "image": "images/pets/dragonfruit-fox.webp"
+  },
+  {
+    "id": "stickers-well-actually-walrus-sticker",
+    "name": "Well, Actually Walrus Sticker",
+    "category": "stickers",
+    "value": 0.2888,
+    "demand": 2,
+    "image": "images/stickers/well-actually-walrus-sticker.webp"
+  },
+  {
+    "id": "pets-rock",
+    "name": "Rock",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/rock.webp"
+  },
+  {
+    "id": "stickers-kelp-captain-sticker",
+    "name": "Kelp Captain Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/kelp-captain-sticker.webp"
+  },
+  {
+    "id": "food-patterns-egg",
+    "name": "Patterns Egg",
+    "category": "food",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/food/patterns-egg.webp"
+  },
+  {
+    "id": "pets-king-penguin",
+    "name": "King Penguin",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/king-penguin.webp"
+  },
+  {
+    "id": "pets-sakura-spirit",
+    "name": "Sakura Spirit",
+    "category": "pets",
+    "value": 4.3312,
+    "demand": 2,
+    "image": "images/pets/sakura-spirit.webp"
+  },
+  {
+    "id": "pets-pine-marten",
+    "name": "Pine Marten",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/pine-marten.webp"
+  },
+  {
+    "id": "vehicles-ice-scooter",
+    "name": "Ice Scooter",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/ice-scooter.webp"
+  },
+  {
+    "id": "pets-black-macaque",
+    "name": "Black Macaque",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/black-macaque.webp"
+  },
+  {
+    "id": "pets-blackchested-pheasant",
+    "name": "Black-Chested Pheasant",
+    "category": "pets",
+    "value": 8.4562,
+    "demand": 2,
+    "image": "images/pets/black-chested-pheasant.webp"
+  },
+  {
+    "id": "pets-green-butterfly",
+    "name": "Green Butterfly",
+    "category": "pets",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/pets/green-butterfly.webp"
+  },
+  {
+    "id": "pets-pretty-pony",
+    "name": "Pretty Pony",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/pretty-pony.webp"
+  },
+  {
+    "id": "petwear-chef-hat",
+    "name": "Chef Hat",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/chef-hat.webp"
+  },
+  {
+    "id": "petwear-rain-hat",
+    "name": "Rain Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/petwear/rain-hat.webp"
+  },
+  {
+    "id": "stickers-frog-sticker",
+    "name": "Frog Sticker",
+    "category": "stickers",
+    "value": 0.0578,
+    "demand": 1,
+    "image": "images/stickers/frog-sticker.webp"
+  },
+  {
+    "id": "gifts-duckling-box",
+    "name": "Duckling Box",
+    "category": "gifts",
+    "value": 0.6565,
+    "demand": 2,
+    "image": "images/gifts/duckling-box.webp"
+  },
+  {
+    "id": "toys-sunrise-hang-glider",
+    "name": "Sunrise Hang Glider",
+    "category": "toys",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/toys/sunrise-hang-glider.webp"
+  },
+  {
+    "id": "toys-octopus-plush",
+    "name": "Octopus Plush",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/octopus-plush.webp"
+  },
+  {
+    "id": "pets-diamond-hummingbird",
+    "name": "Diamond Hummingbird",
+    "category": "pets",
+    "value": 3.9188,
+    "demand": 2,
+    "image": "images/pets/diamond-hummingbird.webp"
+  },
+  {
+    "id": "pets-cupid-dragon",
+    "name": "Cupid Dragon",
+    "category": "pets",
+    "value": 3.7125,
+    "demand": 3,
+    "image": "images/pets/cupid-dragon.webp"
+  },
+  {
+    "id": "pets-smores-raccoon",
+    "name": "S'mores Raccoon",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/s-mores-raccoon.webp"
+  },
+  {
+    "id": "petwear-cheese-hat",
+    "name": "Cheese Hat",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/cheese-hat.webp"
+  },
+  {
+    "id": "pets-love-bird",
+    "name": "Love Bird",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/love-bird.webp"
+  },
+  {
+    "id": "vehicles-blue-scooter",
+    "name": "Blue Scooter",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/blue-scooter.webp"
+  },
+  {
+    "id": "pets-nurse-shark",
+    "name": "Nurse Shark",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/nurse-shark.webp"
+  },
+  {
+    "id": "pets-emperor-gorilla",
+    "name": "Emperor Gorilla",
+    "category": "pets",
+    "value": 6.8063,
+    "demand": 2,
+    "image": "images/pets/emperor-gorilla.webp"
+  },
+  {
+    "id": "pets-2d-doggy",
+    "name": "2D Doggy",
+    "category": "pets",
+    "value": 1.155,
+    "demand": 1,
+    "image": "images/pets/2d-doggy.webp"
+  },
+  {
+    "id": "pets-owlbear",
+    "name": "Owlbear",
+    "category": "pets",
+    "value": 2.475,
+    "demand": 2,
+    "image": "images/pets/owlbear.webp"
+  },
+  {
+    "id": "pets-aye-aye",
+    "name": "Aye Aye",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/aye-aye.webp"
+  },
+  {
+    "id": "vehicles-motorized-sofa",
+    "name": "Motorized Sofa",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/motorized-sofa.webp"
+  },
+  {
+    "id": "strollers-sailboat-stroller",
+    "name": "Sailboat Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-island-tarsier",
+    "name": "Island Tarsier",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/island-tarsier.webp"
+  },
+  {
+    "id": "pets-rainbow-dragon",
+    "name": "Rainbow Dragon",
+    "category": "pets",
+    "value": 1.7325,
+    "demand": 2,
+    "image": "images/pets/rainbow-dragon.webp"
+  },
+  {
+    "id": "vehicles-festive-deliveries-sleigh",
+    "name": "Festive Deliveries Sleigh",
+    "category": "vehicles",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/vehicles/festive-deliveries-sleigh.webp"
+  },
+  {
+    "id": "petwear-flower-beret",
+    "name": "Flower Beret",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/flower-beret.webp"
+  },
+  {
+    "id": "toys-rocket-pogo",
+    "name": "Rocket Pogo",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/rocket-pogo.webp"
+  },
+  {
+    "id": "stickers-spinning-cat-animated-sticker",
+    "name": "Spinning Cat Animated Sticker",
+    "category": "stickers",
+    "value": 9.9,
+    "demand": 2,
+    "image": "images/stickers/spinning-cat-animated-sticker.webp"
+  },
+  {
+    "id": "pets-hedgehog",
+    "name": "Hedgehog",
+    "category": "pets",
+    "value": 35.8875,
+    "demand": 3,
+    "image": "images/pets/hedgehog.webp"
+  },
+  {
+    "id": "gifts-scarecrow-box",
+    "name": "Scarecrow Box",
+    "category": "gifts",
+    "value": 0.4875,
+    "demand": 2,
+    "image": "images/gifts/scarecrow-box.webp"
+  },
+  {
+    "id": "vehicles-snowblower-toboggan",
+    "name": "Snowblower Toboggan",
+    "category": "vehicles",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/vehicles/snowblower-toboggan.webp"
+  },
+  {
+    "id": "pets-mongoose",
+    "name": "Mongoose",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/mongoose.webp"
+  },
+  {
+    "id": "toys-cymbal-ingredient",
+    "name": "Cymbal Ingredient",
+    "category": "toys",
+    "value": 0.1031,
+    "demand": 1,
+    "image": "images/toys/cymbal-ingredient.webp"
+  },
+  {
+    "id": "pets-nautilus",
+    "name": "Nautilus",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/nautilus.webp"
+  },
+  {
+    "id": "pets-brownchested-pheasant",
+    "name": "Brown-Chested Pheasant",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/brown-chested-pheasant.webp"
+  },
+  {
+    "id": "food-mud-ball",
+    "name": "Mud Ball",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/mud-ball.webp"
+  },
+  {
+    "id": "pets-chihuahua",
+    "name": "Chihuahua",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/chihuahua.webp"
+  },
+  {
+    "id": "stickers-cherry-blossom-tree-sticker",
+    "name": "Cherry Blossom Tree Sticker",
+    "category": "stickers",
+    "value": 0.0206,
+    "demand": 1,
+    "image": "images/stickers/cherry-blossom-tree-sticker.webp"
+  },
+  {
+    "id": "vehicles-giant-snowball",
+    "name": "Giant Snowball",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/giant-snowball.webp"
+  },
+  {
+    "id": "pets-volcanic-rhino",
+    "name": "Volcanic Rhino",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/volcanic-rhino.webp"
+  },
+  {
+    "id": "petwear-rubber-ducks",
+    "name": "Rubber Ducks",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/rubber-ducks.webp"
+  },
+  {
+    "id": "vehicles-blue-skateboard",
+    "name": "Blue Skateboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/blue-skateboard.webp"
+  },
+  {
+    "id": "vehicles-donut-cycle",
+    "name": "Donut Cycle",
+    "category": "vehicles",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/vehicles/donut-cycle.webp"
+  },
+  {
+    "id": "strollers-snow-globe-stroller",
+    "name": "Snow Globe Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/snow-globe-stroller.webp"
+  },
+  {
+    "id": "vehicles-ghost-vehicle",
+    "name": "Ghost Vehicle",
+    "category": "vehicles",
+    "value": 15.675,
+    "demand": 2,
+    "image": "images/vehicles/ghost-vehicle.webp"
+  },
+  {
+    "id": "pets-golden-king-penguin",
+    "name": "Golden King Penguin",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/golden-king-penguin.webp"
+  },
+  {
+    "id": "pets-christmas-spirit",
+    "name": "Christmas Spirit",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/christmas-spirit.webp"
+  },
+  {
+    "id": "pets-boohoo",
+    "name": "Boohoo",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/boohoo.webp"
+  },
+  {
+    "id": "pets-bullfrog",
+    "name": "Bullfrog",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/bullfrog.webp"
+  },
+  {
+    "id": "pets-african-wild-dog",
+    "name": "African Wild Dog",
+    "category": "pets",
+    "value": 72.6,
+    "demand": 3,
+    "image": "images/pets/african-wild-dog.webp"
+  },
+  {
+    "id": "pets-angelfish",
+    "name": "Angelfish",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/angelfish.webp"
+  },
+  {
+    "id": "pets-skunk",
+    "name": "Skunk",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/skunk.webp"
+  },
+  {
+    "id": "strollers-coconut-stroller",
+    "name": "Coconut Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-angel-wings",
+    "name": "Angel Wings",
+    "category": "petwear",
+    "value": 16.0875,
+    "demand": 3,
+    "image": "images/petwear/angel-wings.webp"
+  },
+  {
+    "id": "pets-english-sheepdog",
+    "name": "English Sheepdog",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 2,
+    "image": "images/pets/english-sheepdog.webp"
+  },
+  {
+    "id": "petwear-elf-bandana",
+    "name": "Elf Bandana",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/elf-bandana.webp"
+  },
+  {
+    "id": "vehicles-royal-carriage",
+    "name": "Royal Carriage",
+    "category": "vehicles",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/vehicles/royal-carriage.webp"
+  },
+  {
+    "id": "petwear-corndog-mustache",
+    "name": "Corndog Mustache",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/corndog-mustache.webp"
+  },
+  {
+    "id": "pets-swordfish",
+    "name": "Swordfish",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/swordfish.webp"
+  },
+  {
+    "id": "pets-therapy-dog",
+    "name": "Therapy Dog",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/therapy-dog.webp"
+  },
+  {
+    "id": "strollers-elephant-stroller",
+    "name": "Elephant Stroller",
+    "category": "strollers",
+    "value": 0.1938,
+    "demand": 1,
+    "image": "images/strollers/elephant-stroller.webp"
+  },
+  {
+    "id": "strollers-woodland-cradle-stroller",
+    "name": "Woodland Cradle Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/woodland-cradle-stroller.webp"
+  },
+  {
+    "id": "strollers-iced-cake-stroller",
+    "name": "Iced Cake Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-cutlass",
+    "name": "Cutlass",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/cutlass.webp"
+  },
+  {
+    "id": "pets-magma-moose",
+    "name": "Magma Moose",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/magma-moose.webp"
+  },
+  {
+    "id": "pets-poodle",
+    "name": "Poodle",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/poodle.webp"
+  },
+  {
+    "id": "strollers-bunny-stroller",
+    "name": "Bunny Stroller",
+    "category": "strollers",
+    "value": 0.6323,
+    "demand": 2,
+    "image": "images/strollers/bunny-stroller.webp"
+  },
+  {
+    "id": "toys-marshmallow-stand",
+    "name": "Marshmallow Stand",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/marshmallow-stand.webp"
+  },
+  {
+    "id": "gifts-walrus-box",
+    "name": "Walrus Box",
+    "category": "gifts",
+    "value": 0.4371,
+    "demand": 2,
+    "image": "images/gifts/walrus-box.webp"
+  },
+  {
+    "id": "vehicles-rocket-sled",
+    "name": "Rocket Sled",
+    "category": "vehicles",
+    "value": 11.55,
+    "demand": 2,
+    "image": "images/vehicles/rocket-sled.webp"
+  },
+  {
+    "id": "gifts-premium-gibbon-box",
+    "name": "Premium Gibbon Box",
+    "category": "gifts",
+    "value": 1.2698,
+    "demand": 2,
+    "image": "images/gifts/premium-gibbon-box.webp"
+  },
+  {
+    "id": "pets-water-opossum",
+    "name": "Water Opossum",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/water-opossum.webp"
+  },
+  {
+    "id": "pets-halloween-evil-dachshund",
+    "name": "Halloween Evil Dachshund",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/halloween-evil-dachshund.webp"
+  },
+  {
+    "id": "pets-flower-power-duckling",
+    "name": "Flower Power Duckling",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/flower-power-duckling.webp"
+  },
+  {
+    "id": "pets-glacier-moth",
+    "name": "Glacier Moth",
+    "category": "pets",
+    "value": 3.0112,
+    "demand": 2,
+    "image": "images/pets/glacier-moth.webp"
+  },
+  {
+    "id": "pets-golden-albatross",
+    "name": "Golden Albatross",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/golden-albatross.webp"
+  },
+  {
+    "id": "pets-catte",
+    "name": "Catte",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/catte.webp"
+  },
+  {
+    "id": "strollers-swan-stroller",
+    "name": "Swan Stroller",
+    "category": "strollers",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/strollers/swan-stroller.webp"
+  },
+  {
+    "id": "pets-black-dog",
+    "name": "Black Dog",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/black-dog.webp"
+  },
+  {
+    "id": "petwear-ghost-hat",
+    "name": "Ghost Hat",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/ghost-hat.webp"
+  },
+  {
+    "id": "pets-pterodactyl",
+    "name": "Pterodactyl",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/pterodactyl.webp"
+  },
+  {
+    "id": "petwear-unicorn-backpack",
+    "name": "Unicorn Backpack",
+    "category": "petwear",
+    "value": 2.2687,
+    "demand": 2,
+    "image": "images/petwear/unicorn-backpack.webp"
+  },
+  {
+    "id": "gifts-ice-tray",
+    "name": "Ice Tray",
+    "category": "gifts",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/gifts/ice-tray.webp"
+  },
+  {
+    "id": "pets-diamond-hamster",
+    "name": "Diamond Hamster",
+    "category": "pets",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/pets/diamond-hamster.webp"
+  },
+  {
+    "id": "pets-bunny-swirl",
+    "name": "Bunny Swirl",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/bunny-swirl.webp"
+  },
+  {
+    "id": "toys-fall-corn-grappling-hook",
+    "name": "Fall Corn Grappling Hook",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/fall-corn-grappling-hook.webp"
+  },
+  {
+    "id": "pets-longhorn-cow",
+    "name": "Longhorn Cow",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/longhorn-cow.webp"
+  },
+  {
+    "id": "pets-wolf",
+    "name": "Wolf",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/wolf.webp"
+  },
+  {
+    "id": "pets-kiwi-kiwi",
+    "name": "Kiwi Kiwi",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/kiwi-kiwi.webp"
+  },
+  {
+    "id": "pets-hyena",
+    "name": "Hyena",
+    "category": "pets",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/pets/hyena.webp"
+  },
+  {
+    "id": "vehicles-yellow-taxi-cab",
+    "name": "Yellow Taxi Cab",
+    "category": "vehicles",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/vehicles/yellow-taxi-cab.webp"
+  },
+  {
+    "id": "petwear-black-hightops",
+    "name": "Black Hightops",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/black-hightops.webp"
+  },
+  {
+    "id": "gifts-golden-mistletoe",
+    "name": "Golden Mistletoe",
+    "category": "gifts",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/gifts/golden-mistletoe.webp"
+  },
+  {
+    "id": "pets-beluga-whale",
+    "name": "Beluga Whale",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/beluga-whale.webp"
+  },
+  {
+    "id": "petwear-halo",
+    "name": "Halo",
+    "category": "petwear",
+    "value": 18.15,
+    "demand": 3,
+    "image": "images/petwear/halo.webp"
+  },
+  {
+    "id": "petwear-midnight-wings",
+    "name": "Midnight Wings",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/midnight-wings.webp"
+  },
+  {
+    "id": "pets-starhopper",
+    "name": "Starhopper",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/starhopper.webp"
+  },
+  {
+    "id": "pets-stygian-owl",
+    "name": "Stygian Owl",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/stygian-owl.webp"
+  },
+  {
+    "id": "pets-nutcracker-squirrel",
+    "name": "Nutcracker Squirrel",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/nutcracker-squirrel.webp"
   },
   {
     "id": "vehicles-lunar-muscle-car",
     "name": "Lunar Muscle Car",
     "category": "vehicles",
-    "value": 0.169,
+    "value": 0.165,
     "demand": 1,
     "image": "images/vehicles/lunar-muscle-car.webp"
+  },
+  {
+    "id": "toys-magic-house-door",
+    "name": "Magic House Door",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 2,
+    "image": "images/toys/magic-house-door.webp"
+  },
+  {
+    "id": "pets-sasquatch",
+    "name": "Sasquatch",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/sasquatch.webp"
+  },
+  {
+    "id": "pets-wren",
+    "name": "Wren",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/wren.webp"
+  },
+  {
+    "id": "petwear-volcano-hat",
+    "name": "Volcano Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/volcano-hat.webp"
+  },
+  {
+    "id": "pets-shadow-dragon",
+    "name": "Shadow Dragon",
+    "category": "pets",
+    "value": 309.375,
+    "demand": 3,
+    "image": "images/pets/shadow-dragon.webp"
+  },
+  {
+    "id": "toys-candyfloss-paint",
+    "name": "Candyfloss Mega Neon Paint",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 3,
+    "image": "images/toys/candyfloss-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-highland-cow",
+    "name": "Highland Cow",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/highland-cow.webp"
+  },
+  {
+    "id": "toys-marsh-balloon",
+    "name": "Marsh Balloon",
+    "category": "toys",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/toys/marsh-balloon.webp"
+  },
+  {
+    "id": "strollers-apple-barrel-stroller",
+    "name": "Apple Barrel Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/apple-barrel-stroller.webp"
+  },
+  {
+    "id": "pets-mochi-meow",
+    "name": "Mochi Meow",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/mochi-meow.webp"
+  },
+  {
+    "id": "eggs-fool-egg",
+    "name": "Fool Egg",
+    "category": "eggs",
+    "value": 0.5494,
+    "demand": 2,
+    "image": "images/eggs/fool-egg.webp"
+  },
+  {
+    "id": "pets-snowball-pug",
+    "name": "Snowball Pug",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/snowball-pug.webp"
+  },
+  {
+    "id": "pets-angus-cow",
+    "name": "Angus Cow",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/angus-cow.webp"
+  },
+  {
+    "id": "pets-trapdoor-snail",
+    "name": "Trapdoor Snail",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/trapdoor-snail.webp"
+  },
+  {
+    "id": "stickers-ginger-cat-sticker",
+    "name": "Ginger Cat Sticker",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/ginger-cat-sticker.webp"
+  },
+  {
+    "id": "pets-strawberry-shortcake-ducky",
+    "name": "Strawberry Shortcake Ducky",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/strawberry-shortcake-ducky.webp"
+  },
+  {
+    "id": "strollers-trike-stroller",
+    "name": "Trike Stroller",
+    "category": "strollers",
+    "value": 0.1905,
+    "demand": 1,
+    "image": "images/strollers/trike-stroller.webp"
+  },
+  {
+    "id": "vehicles-trireme",
+    "name": "Trireme",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/trireme.webp"
+  },
+  {
+    "id": "pets-golden-hamster",
+    "name": "Golden Hamster",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/golden-hamster.webp"
+  },
+  {
+    "id": "pets-quokka",
+    "name": "Quokka",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/quokka.webp"
+  },
+  {
+    "id": "pets-solaris",
+    "name": "Solaris",
+    "category": "pets",
+    "value": 2.1862,
+    "demand": 2,
+    "image": "images/pets/solaris.webp"
+  },
+  {
+    "id": "pets-chanekeh",
+    "name": "Chanekeh",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/chanekeh.webp"
+  },
+  {
+    "id": "pets-piranha",
+    "name": "Piranha",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/piranha.webp"
+  },
+  {
+    "id": "pets-shetland-pony-dark-brown",
+    "name": "Shetland Pony Dark Brown",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/shetland-pony-dark-brown.webp"
+  },
+  {
+    "id": "pets-tree-kangaroo",
+    "name": "Tree Kangaroo",
+    "category": "pets",
+    "value": 1.2788,
+    "demand": 2,
+    "image": "images/pets/tree-kangaroo.webp"
+  },
+  {
+    "id": "pets-sugar-axolotl",
+    "name": "Sugar Axolotl",
+    "category": "pets",
+    "value": 6.3938,
+    "demand": 2,
+    "image": "images/pets/sugar-axolotl.webp"
+  },
+  {
+    "id": "pets-manta-ray",
+    "name": "Manta Ray",
+    "category": "pets",
+    "value": 0.3919,
+    "demand": 1,
+    "image": "images/pets/manta-ray.webp"
+  },
+  {
+    "id": "pets-halloween-black-mummy-cat",
+    "name": "Halloween Black Mummy Cat",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/halloween-black-mummy-cat.webp"
+  },
+  {
+    "id": "toys-tropical-surge-paint",
+    "name": "Tropical Surge Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/tropical-surge-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-turtle",
+    "name": "Turtle",
+    "category": "pets",
+    "value": 12.7875,
+    "demand": 3,
+    "image": "images/pets/turtle.webp"
+  },
+  {
+    "id": "toys-skull-drum",
+    "name": "Skull Drum",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/skull-drum.webp"
+  },
+  {
+    "id": "stickers-fossil-sticker-pack",
+    "name": "Fossil Sticker Pack",
+    "category": "stickers",
+    "value": 0.0247,
+    "demand": 1,
+    "image": "images/stickers/fossil-sticker-pack.webp"
+  },
+  {
+    "id": "pets-amami-rabbit",
+    "name": "Amami Rabbit",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/amami-rabbit.webp"
+  },
+  {
+    "id": "toys-balloons",
+    "name": "Balloons",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/balloons.webp"
+  },
+  {
+    "id": "petwear-bat-backpack",
+    "name": "Bat Backpack",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/bat-backpack.webp"
+  },
+  {
+    "id": "pets-platypus",
+    "name": "Platypus",
+    "category": "pets",
+    "value": 1.8975,
+    "demand": 2,
+    "image": "images/pets/platypus.webp"
+  },
+  {
+    "id": "strollers-sleigh-stroller",
+    "name": "Sleigh Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-stitches",
+    "name": "Stitches",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/stitches.webp"
+  },
+  {
+    "id": "pets-crimson-cape",
+    "name": "Crimson Cape",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/crimson-cape.webp"
+  },
+  {
+    "id": "pets-mecha-meow",
+    "name": "Mecha Meow",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/mecha-meow.webp"
+  },
+  {
+    "id": "pets-temple-friend",
+    "name": "Temple Friend",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/temple-friend.webp"
+  },
+  {
+    "id": "pets-firefly",
+    "name": "Firefly",
+    "category": "pets",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/pets/firefly.webp"
+  },
+  {
+    "id": "pets-goldfish",
+    "name": "Goldfish",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/goldfish.webp"
+  },
+  {
+    "id": "strollers-teacup-stroller",
+    "name": "Teacup Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "gifts-choccybunny-box",
+    "name": "Choccybunny Box",
+    "category": "gifts",
+    "value": 0.0317,
+    "demand": 1,
+    "image": "images/gifts/choccybunny-box.webp"
+  },
+  {
+    "id": "strollers-throne-stroller",
+    "name": "Throne Stroller",
+    "category": "strollers",
+    "value": 0.0823,
+    "demand": 1,
+    "image": "images/strollers/throne-stroller.webp"
+  },
+  {
+    "id": "petwear-invisible-wings",
+    "name": "Invisible Wings",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/invisible-wings.webp"
+  },
+  {
+    "id": "pets-chameleon",
+    "name": "Chameleon",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/chameleon.webp"
+  },
+  {
+    "id": "pets-rhino-beetle",
+    "name": "Rhino Beetle",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/rhino-beetle.webp"
+  },
+  {
+    "id": "pets-undead-elk",
+    "name": "Undead Elk",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/undead-elk.webp"
+  },
+  {
+    "id": "pets-blazing-lion",
+    "name": "Blazing Lion",
+    "category": "pets",
+    "value": 90.75,
+    "demand": 3,
+    "image": "images/pets/blazing-lion.webp"
+  },
+  {
+    "id": "petwear-marshmallow-friend",
+    "name": "Marshmallow Friend",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/marshmallow-friend.webp"
+  },
+  {
+    "id": "toys-netzooka",
+    "name": "Netzooka",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/netzooka.webp"
+  },
+  {
+    "id": "vehicles-crescent-moon-car",
+    "name": "Crescent Moon Car",
+    "category": "vehicles",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/vehicles/crescent-moon-car.webp"
+  },
+  {
+    "id": "pets-ice-moth-dragon",
+    "name": "Ice Moth Dragon",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/ice-moth-dragon.webp"
+  },
+  {
+    "id": "vehicles-personal-cannon-launcher",
+    "name": "Personal Cannon Launcher",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/personal-cannon-launcher.webp"
+  },
+  {
+    "id": "petwear-ponytail",
+    "name": "Ponytail",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/ponytail.webp"
+  },
+  {
+    "id": "pets-subzero-scorpion",
+    "name": "Subzero Scorpion",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/subzero-scorpion.webp"
+  },
+  {
+    "id": "stickers-squished-red-pandorama-sticker",
+    "name": "Squished Red Pandorama Sticker",
+    "category": "stickers",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/stickers/squished-red-pandorama-sticker.webp"
+  },
+  {
+    "id": "potions-small-sip-potion",
+    "name": "Small Sip Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-cattuccino",
+    "name": "Cattuccino",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 2,
+    "image": "images/pets/cattuccino.webp"
+  },
+  {
+    "id": "pets-dodo",
+    "name": "Dodo",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/dodo.webp"
+  },
+  {
+    "id": "pets-ice-cube",
+    "name": "Ice Cube",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/ice-cube.webp"
+  },
+  {
+    "id": "toys-whoopee-cushion",
+    "name": "Whoopee Cushion",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/whoopee-cushion.webp"
+  },
+  {
+    "id": "strollers-unicorn-stroller",
+    "name": "Unicorn Stroller",
+    "category": "strollers",
+    "value": 1.0027,
+    "demand": 2,
+    "image": "images/strollers/unicorn-stroller.webp"
+  },
+  {
+    "id": "strollers-egyptian-chariot-stroller",
+    "name": "Egyptian Chariot Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/egyptian-chariot-stroller.webp"
+  },
+  {
+    "id": "pets-pangolin",
+    "name": "Pangolin",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/pangolin.webp"
+  },
+  {
+    "id": "pets-giant-gold-scarab",
+    "name": "Giant Gold Scarab",
+    "category": "pets",
+    "value": 2.6812,
+    "demand": 2,
+    "image": "images/pets/giant-gold-scarab.webp"
+  },
+  {
+    "id": "pets-clover-cow",
+    "name": "Clover Cow",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/clover-cow.webp"
+  },
+  {
+    "id": "vehicles-canine-cruiser",
+    "name": "Canine Cruiser",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/canine-cruiser.webp"
+  },
+  {
+    "id": "pets-purrowl",
+    "name": "Purrowl",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/purrowl.webp"
+  },
+  {
+    "id": "pets-snowy-mammoth",
+    "name": "Snowy Mammoth",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/snowy-mammoth.webp"
+  },
+  {
+    "id": "toys-golden-goblet",
+    "name": "Golden Goblet",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/toys/golden-goblet.webp"
+  },
+  {
+    "id": "pets-dark-choccybunny",
+    "name": "Dark Choccybunny",
+    "category": "pets",
+    "value": 0.3548,
+    "demand": 1,
+    "image": "images/pets/dark-choccybunny.webp"
+  },
+  {
+    "id": "vehicles-banana-car",
+    "name": "Banana Car",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/banana-car.webp"
+  },
+  {
+    "id": "pets-apple-owl",
+    "name": "Apple Owl",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/apple-owl.webp"
+  },
+  {
+    "id": "eggs-pet-egg",
+    "name": "Pet Egg",
+    "category": "eggs",
+    "value": 0.0335,
+    "demand": 1,
+    "image": "images/eggs/pet-egg.webp"
+  },
+  {
+    "id": "strollers-rainbow-stroller",
+    "name": "Rainbow Stroller",
+    "category": "strollers",
+    "value": 0.6319,
+    "demand": 2,
+    "image": "images/strollers/rainbow-stroller.webp"
+  },
+  {
+    "id": "pets-guardian-lion",
+    "name": "Guardian Lion",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/guardian-lion.webp"
+  },
+  {
+    "id": "vehicles-unicorn-cycle",
+    "name": "Unicorn Cycle",
+    "category": "vehicles",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/vehicles/unicorn-cycle.webp"
+  },
+  {
+    "id": "pets-great-pyrenees",
+    "name": "Great Pyrenees",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 2,
+    "image": "images/pets/great-pyrenees.webp"
+  },
+  {
+    "id": "pets-ibex",
+    "name": "Ibex",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/ibex.webp"
+  },
+  {
+    "id": "pets-vermilion-butterfly",
+    "name": "Vermilion Butterfly",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/vermilion-butterfly.webp"
+  },
+  {
+    "id": "pets-snowman",
+    "name": "Snowman",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/snowman.webp"
+  },
+  {
+    "id": "pets-fallow-deer",
+    "name": "Fallow Deer",
+    "category": "pets",
+    "value": 2.2687,
+    "demand": 2,
+    "image": "images/pets/fallow-deer.webp"
+  },
+  {
+    "id": "pets-werewolf",
+    "name": "Werewolf",
+    "category": "pets",
+    "value": 15.675,
+    "demand": 2,
+    "image": "images/pets/werewolf.webp"
+  },
+  {
+    "id": "toys-elephant-plush",
+    "name": "Elephant Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/elephant-plush.webp"
+  },
+  {
+    "id": "pets-cryptid",
+    "name": "Cryptid",
+    "category": "pets",
+    "value": 69.3,
+    "demand": 3,
+    "image": "images/pets/cryptid.webp"
+  },
+  {
+    "id": "pets-ghost",
+    "name": "Ghost",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/ghost.webp"
+  },
+  {
+    "id": "toys-fancy-balloon",
+    "name": "Fancy Balloon",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/fancy-balloon.webp"
+  },
+  {
+    "id": "strollers-egg-basket-stroller",
+    "name": "Egg Basket Stroller",
+    "category": "strollers",
+    "value": 0.1216,
+    "demand": 1,
+    "image": "images/strollers/egg-basket-stroller.webp"
+  },
+  {
+    "id": "pets-arctic-dusk-dragon",
+    "name": "Arctic Dusk Dragon",
+    "category": "pets",
+    "value": 3.2175,
+    "demand": 3,
+    "image": "images/pets/arctic-dusk-dragon.webp"
+  },
+  {
+    "id": "petwear-personal-controller",
+    "name": "Personal Controller",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/personal-controller.webp"
+  },
+  {
+    "id": "vehicles-emperors-chariot",
+    "name": "Emperor's Chariot",
+    "category": "vehicles",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/vehicles/emperor-s-chariot.webp"
+  },
+  {
+    "id": "pets-cow",
+    "name": "Cow",
+    "category": "pets",
+    "value": 17.7375,
+    "demand": 3,
+    "image": "images/pets/cow.webp"
+  },
+  {
+    "id": "pets-tan-chowchow",
+    "name": "Tan Chow-Chow",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/tan-chow-chow.webp"
+  },
+  {
+    "id": "vehicles-medieval-wagon",
+    "name": "Medieval Wagon",
+    "category": "vehicles",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/vehicles/medieval-wagon.webp"
+  },
+  {
+    "id": "pets-happy-clam",
+    "name": "Happy Clam",
+    "category": "pets",
+    "value": 2.2687,
+    "demand": 2,
+    "image": "images/pets/happy-clam.webp"
+  },
+  {
+    "id": "pets-lionfish",
+    "name": "Lionfish",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/lionfish.webp"
+  },
+  {
+    "id": "pets-banded-palm-civet",
+    "name": "Banded Palm Civet",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/banded-palm-civet.webp"
+  },
+  {
+    "id": "gifts-regal-wing-chest",
+    "name": "Regal Wing Chest",
+    "category": "gifts",
+    "value": 0.9434,
+    "demand": 2,
+    "image": "images/gifts/regal-wing-chest.webp"
+  },
+  {
+    "id": "pets-metal-ox",
+    "name": "Metal Ox",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/metal-ox.webp"
+  },
+  {
+    "id": "pets-water-rabbit",
+    "name": "Water Rabbit",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 2,
+    "image": "images/pets/water-rabbit.webp"
+  },
+  {
+    "id": "food-broken-egg",
+    "name": "Broken Egg",
+    "category": "food",
+    "value": 1.0725,
+    "demand": 1,
+    "image": "images/food/broken-egg.webp"
+  },
+  {
+    "id": "vehicles-celestial-carrier",
+    "name": "Celestial Carrier",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/celestial-carrier.webp"
+  },
+  {
+    "id": "pets-puffin",
+    "name": "Puffin",
+    "category": "pets",
+    "value": 2.805,
+    "demand": 2,
+    "image": "images/pets/puffin.webp"
+  },
+  {
+    "id": "pets-musk-ox",
+    "name": "Musk Ox",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/musk-ox.webp"
+  },
+  {
+    "id": "pets-capuchin-monkey",
+    "name": "Capuchin Monkey",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/capuchin-monkey.webp"
+  },
+  {
+    "id": "toys-ice-grapple",
+    "name": "Ice Grapple",
+    "category": "toys",
+    "value": 0.2269,
+    "demand": 1,
+    "image": "images/toys/ice-grapple.webp"
+  },
+  {
+    "id": "toys-cherry-blossom-hang-glider",
+    "name": "Cherry Blossom Hang Glider",
+    "category": "toys",
+    "value": 2.97,
+    "demand": 2,
+    "image": "images/toys/cherry-blossom-hang-glider.webp"
+  },
+  {
+    "id": "pets-wild-boar",
+    "name": "Wild Boar",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/wild-boar.webp"
+  },
+  {
+    "id": "toys-discosplosion",
+    "name": "Discosplosion",
+    "category": "toys",
+    "value": 0.3712,
+    "demand": 2,
+    "image": "images/toys/discosplosion.webp"
+  },
+  {
+    "id": "pets-hummingbird",
+    "name": "Hummingbird",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/hummingbird.webp"
+  },
+  {
+    "id": "petwear-heart-lock-necklace",
+    "name": "Heart Lock Necklace",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/heart-lock-necklace.webp"
+  },
+  {
+    "id": "pets-moonbeam-peacock",
+    "name": "Moonbeam Peacock",
+    "category": "pets",
+    "value": 6.1875,
+    "demand": 2,
+    "image": "images/pets/moonbeam-peacock.webp"
+  },
+  {
+    "id": "stickers-super-saru-animated-sticker",
+    "name": "Super Saru Animated Sticker",
+    "category": "stickers",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/stickers/super-saru-animated-sticker.webp"
+  },
+  {
+    "id": "vehicles-spinning-teacup-vehicle",
+    "name": "Spinning Teacup Vehicle",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/spinning-teacup-vehicle.webp"
+  },
+  {
+    "id": "pets-mechapup",
+    "name": "Mechapup",
+    "category": "pets",
+    "value": 8.8688,
+    "demand": 2,
+    "image": "images/pets/mechapup.webp"
+  },
+  {
+    "id": "pets-rice-cake-rabbit",
+    "name": "Rice Cake Rabbit",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/rice-cake-rabbit.webp"
+  },
+  {
+    "id": "vehicles-corsair-cruiser",
+    "name": "Corsair Cruiser",
+    "category": "vehicles",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/vehicles/corsair-cruiser.webp"
+  },
+  {
+    "id": "pets-tortuga-de-la-isla",
+    "name": "Tortuga de la Isla",
+    "category": "pets",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/pets/tortuga-de-la-isla.webp"
+  },
+  {
+    "id": "pets-giant-panda",
+    "name": "Giant Panda",
+    "category": "pets",
+    "value": 99.4125,
+    "demand": 3,
+    "image": "images/pets/giant-panda.webp"
+  },
+  {
+    "id": "pets-kaijunior",
+    "name": "Kaijunior",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/kaijunior.webp"
+  },
+  {
+    "id": "vehicles-black-cab",
+    "name": "Black Cab",
+    "category": "vehicles",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/vehicles/black-cab.webp"
+  },
+  {
+    "id": "gifts-1000-bucks-silk-bag",
+    "name": "1000 Bucks Silk Bag",
+    "category": "gifts",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/gifts/1000-bucks-silk-bag.webp"
+  },
+  {
+    "id": "vehicles-bubble-car",
+    "name": "Bubble Car",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/bubble-car.webp"
+  },
+  {
+    "id": "petwear-jade-moth-wings",
+    "name": "Jade Moth Wings",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/jade-moth-wings.webp"
+  },
+  {
+    "id": "petwear-magic-girl-wings",
+    "name": "Magic Girl Wings",
+    "category": "petwear",
+    "value": 10.725,
+    "demand": 2,
+    "image": "images/petwear/magic-girl-wings.webp"
+  },
+  {
+    "id": "pets-diamond-ladybug",
+    "name": "Diamond Ladybug",
+    "category": "pets",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/pets/diamond-ladybug.webp"
+  },
+  {
+    "id": "pets-diamond-unicorn",
+    "name": "Diamond Unicorn",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/diamond-unicorn.webp"
+  },
+  {
+    "id": "vehicles-snow-plow",
+    "name": "Snow Plow",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/snow-plow.webp"
+  },
+  {
+    "id": "pets-wolpertinger",
+    "name": "Wolpertinger",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/wolpertinger.webp"
+  },
+  {
+    "id": "petwear-sakura-wings",
+    "name": "Sakura Wings",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/sakura-wings.webp"
+  },
+  {
+    "id": "toys-pumpkin",
+    "name": "Pumpkin",
+    "category": "toys",
+    "value": 6.1875,
+    "demand": 2,
+    "image": "images/toys/pumpkin.webp"
+  },
+  {
+    "id": "petwear-elf-shoes",
+    "name": "Elf Shoes",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/elf-shoes.webp"
+  },
+  {
+    "id": "pets-dalmatian",
+    "name": "Dalmatian",
+    "category": "pets",
+    "value": 30.1125,
+    "demand": 3,
+    "image": "images/pets/dalmatian.webp"
+  },
+  {
+    "id": "pets-jumpscare",
+    "name": "Jumpscare",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/jumpscare.webp"
+  },
+  {
+    "id": "pets-pirate-hermit-crab",
+    "name": "Pirate Hermit Crab",
+    "category": "pets",
+    "value": 0.7837,
+    "demand": 2,
+    "image": "images/pets/pirate-hermit-crab.webp"
+  },
+  {
+    "id": "petwear-love-letter",
+    "name": "Love Letter",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/love-letter.webp"
+  },
+  {
+    "id": "strollers-red-wagon-stroller",
+    "name": "Red Wagon Stroller",
+    "category": "strollers",
+    "value": 0.1003,
+    "demand": 1,
+    "image": "images/strollers/red-wagon-stroller.webp"
+  },
+  {
+    "id": "pets-manekineko",
+    "name": "Maneki-Neko",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/maneki-neko.webp"
+  },
+  {
+    "id": "strollers-double-stroller",
+    "name": "Double Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/double-stroller.webp"
+  },
+  {
+    "id": "pets-dracula-fish",
+    "name": "Dracula Fish",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/dracula-fish.webp"
+  },
+  {
+    "id": "pets-stingray",
+    "name": "Stingray",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/stingray.webp"
+  },
+  {
+    "id": "petwear-leaf-hat",
+    "name": "Leaf Hat",
+    "category": "petwear",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/petwear/leaf-hat.webp"
+  },
+  {
+    "id": "toys-banjo",
+    "name": "Banjo",
+    "category": "toys",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/toys/banjo.webp"
+  },
+  {
+    "id": "pets-shiba-inu",
+    "name": "Shiba Inu",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/shiba-inu.webp"
+  },
+  {
+    "id": "vehicles-green-scooter",
+    "name": "Neon Green Scooter",
+    "category": "vehicles",
+    "value": 0.99,
+    "demand": 1,
+    "image": "images/vehicles/neon-green-scooter.webp"
+  },
+  {
+    "id": "strollers-soy-sauce-stroller",
+    "name": "Soy Sauce Stroller",
+    "category": "strollers",
+    "value": 0.12,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "toys-candy-flare-paint",
+    "name": "Candy Flare Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/candy-flare-mega-neon-paint.webp"
+  },
+  {
+    "id": "strollers-claw-machine-stroller",
+    "name": "Claw Machine Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/claw-machine-stroller.webp"
+  },
+  {
+    "id": "pets-indian-flying-fox",
+    "name": "Indian Flying Fox",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/indian-flying-fox.webp"
+  },
+  {
+    "id": "pets-hippogriff",
+    "name": "Hippogriff",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/hippogriff.webp"
+  },
+  {
+    "id": "petwear-rain-cloud-hat",
+    "name": "Rain Cloud Hat",
+    "category": "petwear",
+    "value": 8.25,
+    "demand": 3,
+    "image": "images/petwear/rain-cloud-hat.webp"
+  },
+  {
+    "id": "petwear-strawberry-plushie-rider",
+    "name": "Strawberry Plushie Rider",
+    "category": "petwear",
+    "value": 48.675,
+    "demand": 2,
+    "image": "images/petwear/strawberry-plushie-rider.webp"
+  },
+  {
+    "id": "petwear-toaster-hat",
+    "name": "Toaster Hat",
+    "category": "petwear",
+    "value": 5.5688,
+    "demand": 3,
+    "image": "images/petwear/toaster-hat.webp"
+  },
+  {
+    "id": "petwear-icey-aura",
+    "name": "Icey Aura",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/icey-aura.webp"
+  },
+  {
+    "id": "pets-shrew",
+    "name": "Shrew",
+    "category": "pets",
+    "value": 3.7125,
+    "demand": 2,
+    "image": "images/pets/shrew.webp"
+  },
+  {
+    "id": "gifts-hermit-crab-box",
+    "name": "Hermit Crab Box",
+    "category": "gifts",
+    "value": 0.724,
+    "demand": 2,
+    "image": "images/gifts/hermit-crab-box.webp"
+  },
+  {
+    "id": "pets-scorching-kaijunior",
+    "name": "Scorching Kaijunior",
+    "category": "pets",
+    "value": 1.8975,
+    "demand": 2,
+    "image": "images/pets/scorching-kaijunior.webp"
+  },
+  {
+    "id": "petwear-shadow-aura",
+    "name": "Shadow Aura",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/shadow-aura.webp"
+  },
+  {
+    "id": "vehicles-cupcake-scooter",
+    "name": "Cupcake Scooter",
+    "category": "vehicles",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/vehicles/cupcake-scooter.webp"
+  },
+  {
+    "id": "stickers-african-painted-dog-sticker",
+    "name": "African Painted Dog Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/african-painted-dog-sticker.webp"
+  },
+  {
+    "id": "pets-zodiac-minion-chick",
+    "name": "Zodiac Minion Chick",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/zodiac-minion-chick.webp"
+  },
+  {
+    "id": "petwear-shark-swimcap",
+    "name": "Shark Swimcap",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/shark-swimcap.webp"
+  },
+  {
+    "id": "stickers-parrot-sticker",
+    "name": "Parrot Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/parrot-sticker.webp"
+  },
+  {
+    "id": "petwear-buzzing-honeypot-hat",
+    "name": "Buzzing Honeypot Hat",
+    "category": "petwear",
+    "value": 59.4,
+    "demand": 2,
+    "image": "images/petwear/buzzing-honeypot-hat.webp"
+  },
+  {
+    "id": "petwear-security-spotlight",
+    "name": "Security Spotlight",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/security-spotlight.webp"
+  },
+  {
+    "id": "vehicles-pink-scooter",
+    "name": "Pink Scooter",
+    "category": "vehicles",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/vehicles/pink-scooter.webp"
+  },
+  {
+    "id": "pets-sheepdog-ducky",
+    "name": "Sheepdog Ducky",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/sheepdog-ducky.webp"
+  },
+  {
+    "id": "toys-squid-plush",
+    "name": "Squid Plush",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/squid-plush.webp"
+  },
+  {
+    "id": "pets-copycat",
+    "name": "Copycat",
+    "category": "pets",
+    "value": 4.3312,
+    "demand": 3,
+    "image": "images/pets/copycat.webp"
+  },
+  {
+    "id": "pets-kage-crow",
+    "name": "Kage Crow",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/kage-crow.webp"
+  },
+  {
+    "id": "pets-birthday-butterfly-2024",
+    "name": "Birthday Butterfly 2024",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/birthday-butterfly-2024.webp"
+  },
+  {
+    "id": "pets-moose-calf",
+    "name": "Moose Calf",
+    "category": "pets",
+    "value": 1.7738,
+    "demand": 2,
+    "image": "images/pets/moose-calf.webp"
+  },
+  {
+    "id": "strollers-pelican-stroller",
+    "name": "Pelican Stroller",
+    "category": "strollers",
+    "value": 0.0426,
+    "demand": 1,
+    "image": "images/strollers/pelican-stroller.webp"
+  },
+  {
+    "id": "pets-show-pony",
+    "name": "Show Pony",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/show-pony.webp"
+  },
+  {
+    "id": "petwear-strawberry-shortcake-bat-dragon-backpack",
+    "name": "Strawberry Shortcake Bat Dragon Backpack",
+    "category": "petwear",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/petwear/strawberry-shortcake-bat-dragon-backpack.webp"
+  },
+  {
+    "id": "stickers-christmas-dog-sticker",
+    "name": "Christmas Dog Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/christmas-dog-sticker.webp"
+  },
+  {
+    "id": "potions-grow-potion",
+    "name": "Grow Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "potions-antigravity-potion",
+    "name": "Anti-gravity Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "toys-festive-bells-balloon",
+    "name": "Festive Bells Balloon",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/festive-bells-balloon.webp"
+  },
+  {
+    "id": "pets-hydra",
+    "name": "Hydra",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/hydra.webp"
+  },
+  {
+    "id": "toys-teddy-bear",
+    "name": "Teddy Bear",
+    "category": "toys",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/toys/teddy-bear.webp"
+  },
+  {
+    "id": "petwear-ferris-wheel-hat",
+    "name": "Ferris Wheel Hat",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/petwear/ferris-wheel-hat.webp"
+  },
+  {
+    "id": "pets-griffin",
+    "name": "Griffin",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/griffin.webp"
+  },
+  {
+    "id": "petwear-2022-birthday-cupcake-shoes",
+    "name": "2022 Birthday Cupcake Shoes",
+    "category": "petwear",
+    "value": 9.9,
+    "demand": 3,
+    "image": "images/petwear/2022-birthday-cupcake-shoes.webp"
+  },
+  {
+    "id": "strollers-pea-pod-stroller",
+    "name": "Pea Pod Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/pea-pod-stroller.webp"
+  },
+  {
+    "id": "petwear-lunar-new-year-collar",
+    "name": "Lunar New Year Collar",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/lunar-new-year-collar.webp"
+  },
+  {
+    "id": "vehicles-powerbike",
+    "name": "Powerbike",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/powerbike.webp"
+  },
+  {
+    "id": "pets-frogspawn",
+    "name": "Frogspawn",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/frogspawn.webp"
+  },
+  {
+    "id": "pets-mouse",
+    "name": "Mouse",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/mouse.webp"
+  },
+  {
+    "id": "petwear-black-designer-backpack",
+    "name": "Black Designer Backpack",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/black-designer-backpack.webp"
+  },
+  {
+    "id": "vehicles-regal-roller",
+    "name": "Regal Roller",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/regal-roller.webp"
+  },
+  {
+    "id": "petwear-pink-cat-ear-headphones",
+    "name": "Pink Cat Ear Headphones",
+    "category": "petwear",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/petwear/pink-cat-ear-headphones.webp"
+  },
+  {
+    "id": "petwear-cowboy-saddle",
+    "name": "Cowboy Saddle",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/cowboy-saddle.webp"
+  },
+  {
+    "id": "stickers-jekyll-hydra-animated-sticker",
+    "name": "Jekyll Hydra Animated Sticker",
+    "category": "stickers",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/stickers/jekyll-hydra-animated-sticker.webp"
+  },
+  {
+    "id": "toys-ukulele",
+    "name": "Ukulele",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/ukulele.webp"
+  },
+  {
+    "id": "pets-2021-uplift-butterfly",
+    "name": "2021 Uplift Butterfly",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/2021-uplift-butterfly.webp"
+  },
+  {
+    "id": "pets-strawberry-penguin",
+    "name": "Strawberry Penguin",
+    "category": "pets",
+    "value": 4.0012,
+    "demand": 2,
+    "image": "images/pets/strawberry-penguin.webp"
+  },
+  {
+    "id": "pets-frost-dragon",
+    "name": "Frost Dragon",
+    "category": "pets",
+    "value": 143.55,
+    "demand": 3,
+    "image": "images/pets/frost-dragon.webp"
+  },
+  {
+    "id": "petwear-buttoned-ushanka",
+    "name": "Buttoned Ushanka",
+    "category": "petwear",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/petwear/buttoned-ushanka.webp"
+  },
+  {
+    "id": "petwear-strawberry-clip",
+    "name": "Strawberry Clip",
+    "category": "petwear",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/petwear/strawberry-clip.webp"
+  },
+  {
+    "id": "pets-shetland-pony-white",
+    "name": "Shetland Pony White",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/shetland-pony-white.webp"
+  },
+  {
+    "id": "toys-heart-plushie",
+    "name": "Heart Plushie",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/heart-plushie.webp"
+  },
+  {
+    "id": "petwear-firey-aura",
+    "name": "Firey Aura",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/firey-aura.webp"
+  },
+  {
+    "id": "vehicles-monomoped",
+    "name": "Mono-Moped",
+    "category": "vehicles",
+    "value": 1.65,
+    "demand": 2,
+    "image": "images/vehicles/mono-moped.webp"
+  },
+  {
+    "id": "food-chocolate-twist",
+    "name": "Chocolate Twist",
+    "category": "food",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/food/chocolate-twist.webp"
+  },
+  {
+    "id": "toys-briefcase-ingredient",
+    "name": "Briefcase Ingredient",
+    "category": "toys",
+    "value": 0.1031,
+    "demand": 1,
+    "image": "images/toys/briefcase-ingredient.webp"
+  },
+  {
+    "id": "vehicles-adopt-me-boy-scooter",
+    "name": "Adopt Me Boy Scooter",
+    "category": "vehicles",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/vehicles/adopt-me-boy-scooter.webp"
+  },
+  {
+    "id": "pets-arctic-fox",
+    "name": "Arctic Fox",
+    "category": "pets",
+    "value": 4.62,
+    "demand": 3,
+    "image": "images/pets/arctic-fox.webp"
+  },
+  {
+    "id": "pets-albino-bat",
+    "name": "Albino Bat",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/albino-bat.webp"
+  },
+  {
+    "id": "pets-goldhorn",
+    "name": "Goldhorn",
+    "category": "pets",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/pets/goldhorn.webp"
+  },
+  {
+    "id": "strollers-drone-stroller",
+    "name": "Drone Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/drone-stroller.webp"
+  },
+  {
+    "id": "pets-cockroach",
+    "name": "Cockroach",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/cockroach.webp"
+  },
+  {
+    "id": "pets-indian-leopard",
+    "name": "Indian Leopard",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/indian-leopard.webp"
+  },
+  {
+    "id": "pets-shih-tzu",
+    "name": "Shih Tzu",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/shih-tzu.webp"
+  },
+  {
+    "id": "food-diamond-lavender",
+    "name": "Diamond Lavender",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/diamond-lavender.webp"
+  },
+  {
+    "id": "stickers-dragon-breath-animated-sticker",
+    "name": "Dragon Breath Animated Sticker",
+    "category": "stickers",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/stickers/dragon-breath-animated-sticker.webp"
+  },
+  {
+    "id": "pets-hot-doggo",
+    "name": "Hot Doggo",
+    "category": "pets",
+    "value": 18.975,
+    "demand": 3,
+    "image": "images/pets/hot-doggo.webp"
+  },
+  {
+    "id": "eggs-gemstone-egg",
+    "name": "Gemstone Egg",
+    "category": "eggs",
+    "value": 0.3717,
+    "demand": 2,
+    "image": "images/eggs/gemstone-egg.webp"
+  },
+  {
+    "id": "pets-caramelgeist",
+    "name": "Caramelgeist",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/caramelgeist.webp"
+  },
+  {
+    "id": "pets-buffalo",
+    "name": "Buffalo",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/buffalo.webp"
+  },
+  {
+    "id": "eggs-royal-aztec-egg",
+    "name": "Royal Aztec Egg",
+    "category": "eggs",
+    "value": 0.5102,
+    "demand": 2,
+    "image": "images/eggs/royal-aztec-egg.webp"
+  },
+  {
+    "id": "stickers-kraken-sticker",
+    "name": "Kraken Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/kraken-sticker.webp"
+  },
+  {
+    "id": "pets-diamond-dragon",
+    "name": "Diamond Dragon",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/diamond-dragon.webp"
+  },
+  {
+    "id": "toys-pro-ghost-blaster",
+    "name": "Pro Ghost Blaster",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/toys/pro-ghost-blaster.webp"
+  },
+  {
+    "id": "stickers-kappakid-sticker",
+    "name": "Kappakid Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/kappakid-sticker.webp"
+  },
+  {
+    "id": "pets-giant-black-scarab",
+    "name": "Giant Black Scarab",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/giant-black-scarab.webp"
+  },
+  {
+    "id": "toys-croc-plush",
+    "name": "Croc Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/croc-plush.webp"
+  },
+  {
+    "id": "pets-orange-betta-fish",
+    "name": "Orange Betta Fish",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/orange-betta-fish.webp"
+  },
+  {
+    "id": "toys-teddy-skele",
+    "name": "Teddy Skele",
+    "category": "toys",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/toys/teddy-skele.webp"
+  },
+  {
+    "id": "petwear-kraken-hat",
+    "name": "Kraken Hat",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/kraken-hat.webp"
+  },
+  {
+    "id": "pets-bald-eagle",
+    "name": "Bald Eagle",
+    "category": "pets",
+    "value": 6.8063,
+    "demand": 2,
+    "image": "images/pets/bald-eagle.webp"
+  },
+  {
+    "id": "food-stars-egg",
+    "name": "Stars Egg",
+    "category": "food",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/food/stars-egg.webp"
+  },
+  {
+    "id": "pets-robo-dog",
+    "name": "Robo Dog",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/robo-dog.webp"
+  },
+  {
+    "id": "pets-pirate-ghost-capuchin-monkey",
+    "name": "Pirate Ghost Capuchin Monkey",
+    "category": "pets",
+    "value": 6.3938,
+    "demand": 2,
+    "image": "images/pets/pirate-ghost-capuchin-monkey.webp"
+  },
+  {
+    "id": "toys-slimingo-feather-teleporter",
+    "name": "Slimingo Feather Teleporter",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 2,
+    "image": "images/toys/slimingo-feather-teleporter.webp"
+  },
+  {
+    "id": "pets-gargoyle",
+    "name": "Gargoyle",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 1,
+    "image": "images/pets/gargoyle.webp"
+  },
+  {
+    "id": "pets-weevil",
+    "name": "Weevil",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/weevil.webp"
+  },
+  {
+    "id": "pets-ranger-beaver",
+    "name": "Ranger Beaver",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/ranger-beaver.webp"
+  },
+  {
+    "id": "gifts-monkey-box",
+    "name": "Monkey Box",
+    "category": "gifts",
+    "value": 1.7002,
+    "demand": 2,
+    "image": "images/gifts/monkey-box.webp"
+  },
+  {
+    "id": "pets-billy-goat",
+    "name": "Billy Goat",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/billy-goat.webp"
+  },
+  {
+    "id": "petwear-ember-wings",
+    "name": "Ember Wings",
+    "category": "petwear",
+    "value": 2.475,
+    "demand": 2,
+    "image": "images/petwear/ember-wings.webp"
+  },
+  {
+    "id": "toys-paint-sealer",
+    "name": "Paint Sealer",
+    "category": "toys",
+    "value": 0.0454,
+    "demand": 2,
+    "image": "images/toys/paint-sealer.webp"
+  },
+  {
+    "id": "pets-huntsman-robin",
+    "name": "Huntsman Robin",
+    "category": "pets",
+    "value": 0.3548,
+    "demand": 1,
+    "image": "images/pets/huntsman-robin.webp"
+  },
+  {
+    "id": "pets-lavender-dragon",
+    "name": "Lavender Dragon",
+    "category": "pets",
+    "value": 1.2788,
+    "demand": 2,
+    "image": "images/pets/lavender-dragon.webp"
+  },
+  {
+    "id": "vehicles-prehistoric-car",
+    "name": "Prehistoric Car",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/prehistoric-car.webp"
+  },
+  {
+    "id": "pets-parakeet",
+    "name": "Parakeet",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/parakeet.webp"
+  },
+  {
+    "id": "petwear-headband",
+    "name": "Headband",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/headband.webp"
+  },
+  {
+    "id": "petwear-winter-bow-wings",
+    "name": "Winter Bow Wings",
+    "category": "petwear",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/petwear/winter-bow-wings.webp"
+  },
+  {
+    "id": "toys-wooden-pogo",
+    "name": "Wooden Pogo",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/wooden-pogo.webp"
+  },
+  {
+    "id": "pets-french-bulldog",
+    "name": "French Bulldog",
+    "category": "pets",
+    "value": 0.8663,
+    "demand": 2,
+    "image": "images/pets/french-bulldog.webp"
+  },
+  {
+    "id": "toys-anna-rattle",
+    "name": "Anna Rattle",
+    "category": "toys",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/toys/anna-rattle.webp"
+  },
+  {
+    "id": "stickers-turtle-sticker",
+    "name": "Turtle Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/turtle-sticker.webp"
+  },
+  {
+    "id": "stickers-blazing-lion-animated-sticker",
+    "name": "Blazing Lion Animated Sticker",
+    "category": "stickers",
+    "value": 3.3,
+    "demand": 2,
+    "image": "images/stickers/blazing-lion-animated-sticker.webp"
+  },
+  {
+    "id": "food-candy-cane",
+    "name": "Candy Cane",
+    "category": "food",
+    "value": 9.9,
+    "demand": 2,
+    "image": "images/food/candy-cane.webp"
+  },
+  {
+    "id": "vehicles-pink-skateboard",
+    "name": "Pink Skateboard",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/pink-skateboard.webp"
+  },
+  {
+    "id": "pets-blackfooted-ferret",
+    "name": "Black-Footed Ferret",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/black-footed-ferret.webp"
+  },
+  {
+    "id": "pets-walrus",
+    "name": "Walrus",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/walrus.webp"
+  },
+  {
+    "id": "pets-crab",
+    "name": "Crab",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/crab.webp"
+  },
+  {
+    "id": "pets-fennec-fox",
+    "name": "Fennec Fox",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/fennec-fox.webp"
+  },
+  {
+    "id": "vehicles-candy-snowmobile",
+    "name": "Candy Snowmobile",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/candy-snowmobile.webp"
+  },
+  {
+    "id": "pets-amethyst-penguin",
+    "name": "Amethyst Penguin",
+    "category": "pets",
+    "value": 70.95,
+    "demand": 2,
+    "image": "images/pets/amethyst-penguin.webp"
+  },
+  {
+    "id": "food-honey",
+    "name": "Honey",
+    "category": "food",
+    "value": 0.3712,
+    "demand": 2,
+    "image": "images/food/honey.webp"
+  },
+  {
+    "id": "petwear-strawberry-cupcake-shoes",
+    "name": "Strawberry Cupcake Shoes",
+    "category": "petwear",
+    "value": 78.375,
+    "demand": 2,
+    "image": "images/petwear/strawberry-cupcake-shoes.webp"
+  },
+  {
+    "id": "pets-albino-gorilla",
+    "name": "Albino Gorilla",
+    "category": "pets",
+    "value": 1.32,
+    "demand": 2,
+    "image": "images/pets/albino-gorilla.webp"
+  },
+  {
+    "id": "toys-ice-cream-plush",
+    "name": "Ice Cream Plush",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/ice-cream-plush.webp"
+  },
+  {
+    "id": "vehicles-hovercar",
+    "name": "Hovercar",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/hovercar.webp"
+  },
+  {
+    "id": "toys-kangaroo-pogo",
+    "name": "Kangaroo Pogo",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/kangaroo-pogo.webp"
+  },
+  {
+    "id": "pets-skelerex",
+    "name": "Skele-Rex",
+    "category": "pets",
+    "value": 1.155,
+    "demand": 2,
+    "image": "images/pets/skele-rex.webp"
+  },
+  {
+    "id": "petwear-venus-flytrap-hat",
+    "name": "Venus Flytrap Hat",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/venus-flytrap-hat.webp"
+  },
+  {
+    "id": "pets-halloween-white-skeleton-dog",
+    "name": "Halloween White Skeleton Dog",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/halloween-white-skeleton-dog.webp"
+  },
+  {
+    "id": "pets-ancient-dragon",
+    "name": "Ancient Dragon",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/ancient-dragon.webp"
+  },
+  {
+    "id": "gifts-bat-box",
+    "name": "Bat Box",
+    "category": "gifts",
+    "value": 0.7252,
+    "demand": 2,
+    "image": "images/gifts/bat-box.webp"
+  },
+  {
+    "id": "strollers-humbug-stroller",
+    "name": "Humbug Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-zombie-chick",
+    "name": "Zombie Chick",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/zombie-chick.webp"
+  },
+  {
+    "id": "petwear-hero-mask",
+    "name": "Hero Mask",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/hero-mask.webp"
+  },
+  {
+    "id": "pets-goose",
+    "name": "Goose",
+    "category": "pets",
+    "value": 18.3562,
+    "demand": 3,
+    "image": "images/pets/goose.webp"
+  },
+  {
+    "id": "vehicles-heart-hoverboard",
+    "name": "Heart Hoverboard",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/heart-hoverboard.webp"
+  },
+  {
+    "id": "food-shiver-cone-bait",
+    "name": "Shiver Cone Bait",
+    "category": "food",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/food/shiver-cone-bait.webp"
+  },
+  {
+    "id": "pets-2d-kitty",
+    "name": "2D Kitty",
+    "category": "pets",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/pets/2d-kitty.webp"
+  },
+  {
+    "id": "pets-sheeeeep",
+    "name": "Sheeeeep",
+    "category": "pets",
+    "value": 3.0112,
+    "demand": 2,
+    "image": "images/pets/sheeeeep.webp"
+  },
+  {
+    "id": "pets-violet-friend",
+    "name": "Violet Friend",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/violet-friend.webp"
+  },
+  {
+    "id": "pets-mahi-mahi",
+    "name": "Mahi Mahi",
+    "category": "pets",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/pets/mahi-mahi.webp"
+  },
+  {
+    "id": "toys-phoenix-plush",
+    "name": "Phoenix Plush",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/phoenix-plush.webp"
+  },
+  {
+    "id": "pets-glormy-dolphin",
+    "name": "Glormy Dolphin",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/glormy-dolphin.webp"
+  },
+  {
+    "id": "petwear-pink-designer-backpack",
+    "name": "Pink Designer Backpack",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/pink-designer-backpack.webp"
+  },
+  {
+    "id": "pets-irish-setter",
+    "name": "Irish Setter",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/irish-setter.webp"
+  },
+  {
+    "id": "vehicles-orange-scooter",
+    "name": "Neon Orange Scooter",
+    "category": "vehicles",
+    "value": 1.0312,
+    "demand": 1,
+    "image": "images/vehicles/neon-orange-scooter.webp"
+  },
+  {
+    "id": "vehicles-adopt-me-snowboard-1",
+    "name": "Adopt Me Snowboard 1",
+    "category": "vehicles",
+    "value": 1.5675,
+    "demand": 1,
+    "image": "images/vehicles/adopt-me-snowboard-1.webp"
+  },
+  {
+    "id": "pets-chocolate-labrador",
+    "name": "Chocolate Labrador",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/chocolate-labrador.webp"
+  },
+  {
+    "id": "stickers-jimothy",
+    "name": "Jimothy",
+    "category": "stickers",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/stickers/jimothy.webp"
+  },
+  {
+    "id": "gifts-kaijunior-box",
+    "name": "Kaijunior Box",
+    "category": "gifts",
+    "value": 0.188,
+    "demand": 1,
+    "image": "images/gifts/kaijunior-box.webp"
+  },
+  {
+    "id": "toys-wing-hang-glider",
+    "name": "Wing Hang Glider",
+    "category": "toys",
+    "value": 1.2375,
+    "demand": 2,
+    "image": "images/toys/wing-hang-glider.webp"
+  },
+  {
+    "id": "petwear-back-taco",
+    "name": "Back Taco",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 2,
+    "image": "images/petwear/back-taco.webp"
+  },
+  {
+    "id": "pets-floral-eggy",
+    "name": "Floral Eggy",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/floral-eggy.webp"
+  },
+  {
+    "id": "petwear-ssbd-beanie",
+    "name": "SSBD Beanie",
+    "category": "petwear",
+    "value": 18.15,
+    "demand": 2,
+    "image": "images/petwear/ssbd-beanie.webp"
+  },
+  {
+    "id": "petwear-watermelon-backpack",
+    "name": "Watermelon Backpack",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/watermelon-backpack.webp"
+  },
+  {
+    "id": "petwear-giraffe-hat",
+    "name": "Giraffe Hat",
+    "category": "petwear",
+    "value": 20.2125,
+    "demand": 2,
+    "image": "images/petwear/giraffe-hat.webp"
+  },
+  {
+    "id": "pets-moon-rabbit",
+    "name": "Moon Rabbit",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 2,
+    "image": "images/pets/moon-rabbit.webp"
+  },
+  {
+    "id": "pets-hamster",
+    "name": "Hamster",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/hamster.webp"
+  },
+  {
+    "id": "strollers-triple-stroller",
+    "name": "Triple Stroller",
+    "category": "strollers",
+    "value": 0.0823,
+    "demand": 1,
+    "image": "images/strollers/triple-stroller.webp"
+  },
+  {
+    "id": "pets-nightmare-owl",
+    "name": "Nightmare Owl",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/nightmare-owl.webp"
+  },
+  {
+    "id": "vehicles-rgb-ufo",
+    "name": "RGB UFO",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/rgb-ufo.webp"
+  },
+  {
+    "id": "pets-thorny-devil",
+    "name": "Thorny Devil",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/thorny-devil.webp"
+  },
+  {
+    "id": "pets-partridge",
+    "name": "Partridge",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/partridge.webp"
+  },
+  {
+    "id": "petwear-flower-monocle",
+    "name": "Flower Monocle",
+    "category": "petwear",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/petwear/flower-monocle.webp"
+  },
+  {
+    "id": "strollers-palanquin-stroller",
+    "name": "Palanquin Stroller",
+    "category": "strollers",
+    "value": 0.1003,
+    "demand": 1,
+    "image": "images/strollers/palanquin-stroller.webp"
+  },
+  {
+    "id": "pets-parrot",
+    "name": "Parrot",
+    "category": "pets",
+    "value": 88.6875,
+    "demand": 3,
+    "image": "images/pets/parrot.webp"
+  },
+  {
+    "id": "pets-poison-dart-frog",
+    "name": "Poison Dart Frog",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/poison-dart-frog.webp"
+  },
+  {
+    "id": "toys-orbweaver-glider",
+    "name": "Orbweaver Glider",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/orbweaver-glider.webp"
+  },
+  {
+    "id": "vehicles-tiffany",
+    "name": "Tiffany",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/tiffany.webp"
+  },
+  {
+    "id": "petwear-eco-brown-branch-headphones",
+    "name": "Eco Brown Branch Headphones",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/petwear/eco-brown-branch-headphones.webp"
+  },
+  {
+    "id": "pets-merhorse",
+    "name": "Merhorse",
+    "category": "pets",
+    "value": 0.3919,
+    "demand": 1,
+    "image": "images/pets/merhorse.webp"
+  },
+  {
+    "id": "pets-dragonfly",
+    "name": "Dragonfly",
+    "category": "pets",
+    "value": 0.3506,
+    "demand": 1,
+    "image": "images/pets/dragonfly.webp"
+  },
+  {
+    "id": "pets-gaelic-fae",
+    "name": "Gaelic Fae",
+    "category": "pets",
+    "value": 1.1138,
+    "demand": 2,
+    "image": "images/pets/gaelic-fae.webp"
+  },
+  {
+    "id": "toys-staff-ingredient",
+    "name": "Staff Ingredient",
+    "category": "toys",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/toys/staff-ingredient.webp"
+  },
+  {
+    "id": "strollers-high-heel-stroller",
+    "name": "High Heel Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/high-heel-stroller.webp"
+  },
+  {
+    "id": "pets-frostbite-cub",
+    "name": "Frostbite Cub",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 2,
+    "image": "images/pets/frostbite-cub.webp"
+  },
+  {
+    "id": "pets-hopbop",
+    "name": "Hopbop",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/hopbop.webp"
+  },
+  {
+    "id": "pets-business-monkey",
+    "name": "Business Monkey",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/business-monkey.webp"
+  },
+  {
+    "id": "stickers-dimorphodon-sticker",
+    "name": "Dimorphodon Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/dimorphodon-sticker.webp"
+  },
+  {
+    "id": "pets-wyvern",
+    "name": "Wyvern",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/wyvern.webp"
+  },
+  {
+    "id": "food-chocolate-egg",
+    "name": "Chocolate Egg",
+    "category": "food",
+    "value": 1.4438,
+    "demand": 2,
+    "image": "images/food/chocolate-egg.webp"
+  },
+  {
+    "id": "pets-wood-pigeon",
+    "name": "Wood Pigeon",
+    "category": "pets",
+    "value": 1.2788,
+    "demand": 2,
+    "image": "images/pets/wood-pigeon.webp"
+  },
+  {
+    "id": "toys-snowball-launcher",
+    "name": "Snowball Launcher",
+    "category": "toys",
+    "value": 0.066,
+    "demand": 1,
+    "image": "images/toys/snowball-launcher.webp"
+  },
+  {
+    "id": "pets-flying-fish",
+    "name": "Flying Fish",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/flying-fish.webp"
+  },
+  {
+    "id": "pets-tree-sasquatch",
+    "name": "Tree Sasquatch",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/tree-sasquatch.webp"
+  },
+  {
+    "id": "pets-princess-mare",
+    "name": "Princess Mare",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/princess-mare.webp"
+  },
+  {
+    "id": "toys-electric-tide-paint",
+    "name": "Electric Tide Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/electric-tide-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-black-marlin",
+    "name": "Black Marlin",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/black-marlin.webp"
+  },
+  {
+    "id": "pets-seagull",
+    "name": "Seagull",
+    "category": "pets",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/pets/seagull.webp"
+  },
+  {
+    "id": "pets-halloween-blue-scorpion",
+    "name": "Halloween Blue Scorpion",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/halloween-blue-scorpion.webp"
+  },
+  {
+    "id": "vehicles-hot-tub-muscle-car",
+    "name": "Hot Tub Muscle Car",
+    "category": "vehicles",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/vehicles/hot-tub-muscle-car.webp"
+  },
+  {
+    "id": "pets-halloween-white-ghost-dragon",
+    "name": "Halloween White Ghost Dragon",
+    "category": "pets",
+    "value": 2.8875,
+    "demand": 2,
+    "image": "images/pets/halloween-white-ghost-dragon.webp"
+  },
+  {
+    "id": "pets-kookaburra",
+    "name": "Kookaburra",
+    "category": "pets",
+    "value": 1.5262,
+    "demand": 2,
+    "image": "images/pets/kookaburra.webp"
+  },
+  {
+    "id": "pets-pink-dog",
+    "name": "Pink Dog",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/pink-dog.webp"
+  },
+  {
+    "id": "toys-throwing-pumpkin",
+    "name": "Throwing Pumpkin",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/throwing-pumpkin.webp"
+  },
+  {
+    "id": "pets-2026-birthday-butterfly",
+    "name": "2026 Birthday Butterfly",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/2026-birthday-butterfly.webp"
+  },
+  {
+    "id": "vehicles-wizard-caravan",
+    "name": "Wizard Caravan",
+    "category": "vehicles",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/vehicles/wizard-caravan.webp"
+  },
+  {
+    "id": "vehicles-camping-van",
+    "name": "Camping Van",
+    "category": "vehicles",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/vehicles/camping-van.webp"
+  },
+  {
+    "id": "toys-inflatable-sword",
+    "name": "Inflatable Sword",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/inflatable-sword.webp"
+  },
+  {
+    "id": "strollers-pumpkin-stroller",
+    "name": "Pumpkin Stroller",
+    "category": "strollers",
+    "value": 0.1601,
+    "demand": 1,
+    "image": "images/strollers/pumpkin-stroller.webp"
+  },
+  {
+    "id": "petwear-eco-orange-pumpkin-pie-wings",
+    "name": "Eco Orange Pumpkin Pie Wings",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/eco-orange-pumpkin-pie-wings.webp"
+  },
+  {
+    "id": "pets-evil-chickatrice",
+    "name": "Evil Chickatrice",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/evil-chickatrice.webp"
+  },
+  {
+    "id": "vehicles-flying-cloud",
+    "name": "Flying Cloud",
+    "category": "vehicles",
+    "value": 0.9075,
+    "demand": 2,
+    "image": "images/vehicles/flying-cloud.webp"
+  },
+  {
+    "id": "vehicles-chairlift",
+    "name": "Chairlift",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/chairlift.webp"
+  },
+  {
+    "id": "pets-gecko-ducky",
+    "name": "Gecko Ducky",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/gecko-ducky.webp"
+  },
+  {
+    "id": "vehicles-super-jetpack",
+    "name": "Super Jetpack",
+    "category": "vehicles",
+    "value": 11.55,
+    "demand": 2,
+    "image": "images/vehicles/super-jetpack.webp"
+  },
+  {
+    "id": "stickers-cow-loves-this-sticker",
+    "name": "Cow Loves This Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/cow-loves-this-sticker.webp"
+  },
+  {
+    "id": "petwear-lava-lamp-hat",
+    "name": "Lava Lamp Hat",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/lava-lamp-hat.webp"
+  },
+  {
+    "id": "toys-santa-rattle",
+    "name": "Santa Rattle",
+    "category": "toys",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/toys/santa-rattle.webp"
+  },
+  {
+    "id": "food-apet-potion",
+    "name": "Ride-A-Pet Potion",
+    "category": "food",
+    "value": 0.5775,
+    "demand": 3,
+    "image": "images/food/ride-a-pet-potion.webp"
+  },
+  {
+    "id": "petwear-yellow-designer-backpack",
+    "name": "Yellow Designer Backpack",
+    "category": "petwear",
+    "value": 0.0165,
+    "demand": 1,
+    "image": "images/petwear/yellow-designer-backpack.webp"
+  },
+  {
+    "id": "pets-cow-calf",
+    "name": "Cow Calf",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/cow-calf.webp"
+  },
+  {
+    "id": "stickers-hamster-selfie-sticker",
+    "name": "Hamster Selfie Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/stickers/hamster-selfie-sticker.webp"
+  },
+  {
+    "id": "pets-clumpty",
+    "name": "Clumpty",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/clumpty.webp"
+  },
+  {
+    "id": "vehicles-roblox-snowboard",
+    "name": "Roblox Snowboard",
+    "category": "vehicles",
+    "value": 4.125,
+    "demand": 1,
+    "image": "images/vehicles/roblox-snowboard.webp"
+  },
+  {
+    "id": "pets-tasmanian-tiger",
+    "name": "Tasmanian Tiger",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/tasmanian-tiger.webp"
+  },
+  {
+    "id": "stickers-winter-2024-sticker-pack",
+    "name": "Winter 2024 Sticker Pack",
+    "category": "stickers",
+    "value": 0.0742,
+    "demand": 1,
+    "image": "images/stickers/winter-2024-sticker-pack.webp"
+  },
+  {
+    "id": "pets-yeti",
+    "name": "Yeti",
+    "category": "pets",
+    "value": 0.7013,
+    "demand": 2,
+    "image": "images/pets/yeti.webp"
+  },
+  {
+    "id": "stickers-rat-sticker",
+    "name": "Rat Sticker",
+    "category": "stickers",
+    "value": 0.0578,
+    "demand": 1,
+    "image": "images/stickers/rat-sticker.webp"
+  },
+  {
+    "id": "toys-snow-cone-stand",
+    "name": "Snow Cone Stand",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/snow-cone-stand.webp"
+  },
+  {
+    "id": "vehicles-choo-choo-train",
+    "name": "Choo Choo Train",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/choo-choo-train.webp"
+  },
+  {
+    "id": "gifts-box-of-jokes",
+    "name": "Box of Jokes",
+    "category": "gifts",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/gifts/box-of-jokes.webp"
+  },
+  {
+    "id": "eggs-wrapped-doll",
+    "name": "Wrapped Doll",
+    "category": "eggs",
+    "value": 0.5011,
+    "demand": 1,
+    "image": "images/eggs/wrapped-doll.webp"
+  },
+  {
+    "id": "food-chocolate",
+    "name": "Chocolate",
+    "category": "food",
+    "value": 2.0625,
+    "demand": 2,
+    "image": "images/food/chocolate.webp"
+  },
+  {
+    "id": "pets-scarecrow",
+    "name": "Scarecrow",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/scarecrow.webp"
+  },
+  {
+    "id": "pets-diamond-butterfly",
+    "name": "Diamond Butterfly",
+    "category": "pets",
+    "value": 31.7625,
+    "demand": 2,
+    "image": "images/pets/diamond-butterfly.webp"
+  },
+  {
+    "id": "pets-gorilla",
+    "name": "Gorilla",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/gorilla.webp"
+  },
+  {
+    "id": "food-golden-goldfish",
+    "name": "Golden Goldfish",
+    "category": "food",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/food/golden-goldfish.webp"
+  },
+  {
+    "id": "pets-bloodhound",
+    "name": "Bloodhound",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/bloodhound.webp"
+  },
+  {
+    "id": "pets-three-blind-mice",
+    "name": "Three Blind Mice",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/three-blind-mice.webp"
+  },
+  {
+    "id": "toys-crossbow-grappling-hook",
+    "name": "Crossbow Grappling Hook",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/toys/crossbow-grappling-hook.webp"
+  },
+  {
+    "id": "toys-carrot-rattle",
+    "name": "Carrot Rattle",
+    "category": "toys",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/toys/carrot-rattle.webp"
+  },
+  {
+    "id": "vehicles-beach-buggy",
+    "name": "Beach Buggy",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/beach-buggy.webp"
+  },
+  {
+    "id": "pets-narwhal",
+    "name": "Narwhal",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/narwhal.webp"
+  },
+  {
+    "id": "toys-rose-quartz-glow-paint",
+    "name": "Rose Quartz Glow Mega Neon Paint",
+    "category": "toys",
+    "value": 0.33,
+    "demand": 3,
+    "image": "images/toys/rose-quartz-glow-mega-neon-paint.webp"
+  },
+  {
+    "id": "pets-feesh",
+    "name": "Feesh",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 1,
+    "image": "images/pets/feesh.webp"
+  },
+  {
+    "id": "eggs-golden-egg",
+    "name": "Golden Egg",
+    "category": "eggs",
+    "value": 0.1397,
+    "demand": 1,
+    "image": "images/eggs/golden-egg.webp"
+  },
+  {
+    "id": "pets-golden-tortoise-beetle",
+    "name": "Golden Tortoise Beetle",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/golden-tortoise-beetle.webp"
+  },
+  {
+    "id": "pets-tealwood-monster",
+    "name": "Tealwood Monster",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/tealwood-monster.webp"
+  },
+  {
+    "id": "pets-dirty-ducky",
+    "name": "Dirty Ducky",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/dirty-ducky.webp"
+  },
+  {
+    "id": "pets-drake",
+    "name": "Drake",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/drake.webp"
+  },
+  {
+    "id": "pets-possum",
+    "name": "Possum",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/possum.webp"
+  },
+  {
+    "id": "pets-diamond-albatross",
+    "name": "Diamond Albatross",
+    "category": "pets",
+    "value": 4.3312,
+    "demand": 2,
+    "image": "images/pets/diamond-albatross.webp"
+  },
+  {
+    "id": "potions-sugar-skull-potion",
+    "name": "Sugar Skull Potion",
+    "category": "potions",
+    "value": 2.34,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "petwear-elf-hat",
+    "name": "Elf Hat",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/petwear/elf-hat.webp"
+  },
+  {
+    "id": "petwear-lunar-new-year-shoes",
+    "name": "Lunar New Year Shoes",
+    "category": "petwear",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/petwear/lunar-new-year-shoes.webp"
+  },
+  {
+    "id": "vehicles-ghoul-mobile",
+    "name": "Ghoul Mobile",
+    "category": "vehicles",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/vehicles/ghoul-mobile.webp"
+  },
+  {
+    "id": "pets-bluebottle",
+    "name": "Bluebottle Fly",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/bluebottle-fly.webp"
+  },
+  {
+    "id": "eggs-royal-fairytale-egg",
+    "name": "Royal Fairytale Egg",
+    "category": "eggs",
+    "value": 0.2309,
+    "demand": 1,
+    "image": "images/eggs/royal-fairytale-egg.webp"
+  },
+  {
+    "id": "pets-winter-buck",
+    "name": "Winter Buck",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 1,
+    "image": "images/pets/winter-buck.webp"
+  },
+  {
+    "id": "strollers-fall-wheelbarrow-stroller",
+    "name": "Fall Wheelbarrow Stroller",
+    "category": "strollers",
+    "value": 0.0462,
+    "demand": 1,
+    "image": "images/strollers/fall-wheelbarrow-stroller.webp"
+  },
+  {
+    "id": "toys-creepy-balloon",
+    "name": "Creepy Balloon",
+    "category": "toys",
+    "value": 0.2063,
+    "demand": 1,
+    "image": "images/toys/creepy-balloon.webp"
+  },
+  {
+    "id": "stickers-round-fallow-deer-sticker",
+    "name": "Round Fallow Deer Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/stickers/round-fallow-deer-sticker.webp"
+  },
+  {
+    "id": "pets-milk-choccybunny",
+    "name": "Milk Choccybunny",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/milk-choccybunny.webp"
+  },
+  {
+    "id": "stickers-dodo-sticker",
+    "name": "Dodo Sticker",
+    "category": "stickers",
+    "value": 0.0413,
+    "demand": 1,
+    "image": "images/stickers/dodo-sticker.webp"
+  },
+  {
+    "id": "vehicles-royal-crown-carriage",
+    "name": "Royal Crown Carriage",
+    "category": "vehicles",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/vehicles/royal-crown-carriage.webp"
+  },
+  {
+    "id": "strollers-lunar-new-year-rickshaw-stroller",
+    "name": "Lunar New Year Rickshaw Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/lunar-new-year-rickshaw-stroller.webp"
+  },
+  {
+    "id": "pets-snow-monkey",
+    "name": "Snow Monkey",
+    "category": "pets",
+    "value": 1.2788,
+    "demand": 2,
+    "image": "images/pets/snow-monkey.webp"
+  },
+  {
+    "id": "pets-deinonychus",
+    "name": "Deinonychus",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/deinonychus.webp"
+  },
+  {
+    "id": "pets-dire-wolf",
+    "name": "Dire Wolf",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/dire-wolf.webp"
+  },
+  {
+    "id": "toys-rib-guitar",
+    "name": "Rib Guitar",
+    "category": "toys",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/toys/rib-guitar.webp"
+  },
+  {
+    "id": "stickers-strawberry-shortcake-bat-dragon-sticker",
+    "name": "Strawberry Shortcake Bat Dragon Sticker",
+    "category": "stickers",
+    "value": 0.33,
+    "demand": 2,
+    "image": "images/stickers/strawberry-shortcake-bat-dragon-sticker.webp"
+  },
+  {
+    "id": "pets-sunglider",
+    "name": "Sunglider",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/sunglider.webp"
+  },
+  {
+    "id": "strollers-spikey-chariot-stroller",
+    "name": "Spikey Chariot Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-glacier-kitsune",
+    "name": "Glacier Kitsune",
+    "category": "pets",
+    "value": 3.5063,
+    "demand": 2,
+    "image": "images/pets/glacier-kitsune.webp"
+  },
+  {
+    "id": "petwear-pancake-stack",
+    "name": "Pancake Stack",
+    "category": "petwear",
+    "value": 1.5675,
+    "demand": 2,
+    "image": "images/petwear/pancake-stack.webp"
+  },
+  {
+    "id": "pets-penguin",
+    "name": "Penguin",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/penguin.webp"
+  },
+  {
+    "id": "vehicles-giant-cheetah-mount",
+    "name": "Giant Cheetah Mount",
+    "category": "vehicles",
+    "value": 6.1875,
+    "demand": 2,
+    "image": "images/vehicles/giant-cheetah-mount.webp"
+  },
+  {
+    "id": "pets-grave-owl",
+    "name": "Grave Owl",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/grave-owl.webp"
+  },
+  {
+    "id": "pets-moonlight-moth",
+    "name": "Moonlight Moth",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/moonlight-moth.webp"
+  },
+  {
+    "id": "vehicles-wood-scooter",
+    "name": "Wood Scooter",
+    "category": "vehicles",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/vehicles/wood-scooter.webp"
+  },
+  {
+    "id": "strollers-princess-stroller",
+    "name": "Princess Stroller",
+    "category": "strollers",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "stickers-cow-sticker",
+    "name": "Cow Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/cow-sticker.webp"
+  },
+  {
+    "id": "pets-leviathan",
+    "name": "Leviathan",
+    "category": "pets",
+    "value": 1.3613,
+    "demand": 2,
+    "image": "images/pets/leviathan.webp"
+  },
+  {
+    "id": "pets-kirin",
+    "name": "Kirin",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/kirin.webp"
+  },
+  {
+    "id": "pets-triceratops",
+    "name": "Triceratops",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/triceratops.webp"
+  },
+  {
+    "id": "pets-kappakid",
+    "name": "Kappakid",
+    "category": "pets",
+    "value": 0.4538,
+    "demand": 1,
+    "image": "images/pets/kappakid.webp"
+  },
+  {
+    "id": "eggs-blue-egg",
+    "name": "Blue Egg",
+    "category": "eggs",
+    "value": 17.145,
+    "demand": 2,
+    "image": "images/eggs/blue-egg.webp"
+  },
+  {
+    "id": "potions-home-potion",
+    "name": "Home Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "vehicles-green-snowboard",
+    "name": "Green Neon Snowboard",
+    "category": "vehicles",
+    "value": 2.6812,
+    "demand": 2,
+    "image": "images/vehicles/green-neon-snowboard.webp"
+  },
+  {
+    "id": "eggs-woodland-egg",
+    "name": "Woodland Egg",
+    "category": "eggs",
+    "value": 0.3851,
+    "demand": 2,
+    "image": "images/eggs/woodland-egg.webp"
+  },
+  {
+    "id": "pets-cozy-mistletroll",
+    "name": "Cozy Mistletroll",
+    "category": "pets",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/pets/cozy-mistletroll.webp"
+  },
+  {
+    "id": "pets-waffle-wyrm",
+    "name": "Waffle Wyrm",
+    "category": "pets",
+    "value": 0.3094,
+    "demand": 1,
+    "image": "images/pets/waffle-wyrm.webp"
+  },
+  {
+    "id": "pets-patchy-bear",
+    "name": "Patchy Bear",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/patchy-bear.webp"
+  },
+  {
+    "id": "pets-mistletroll",
+    "name": "Mistletroll",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/mistletroll.webp"
+  },
+  {
+    "id": "petwear-ice-cream-heels",
+    "name": "Ice Cream Heels",
+    "category": "petwear",
+    "value": 0.495,
+    "demand": 2,
+    "image": "images/petwear/ice-cream-heels.webp"
+  },
+  {
+    "id": "vehicles-doge-scooter",
+    "name": "Doge Scooter",
+    "category": "vehicles",
+    "value": 0.825,
+    "demand": 1,
+    "image": "images/vehicles/doge-scooter.webp"
+  },
+  {
+    "id": "pets-pelican",
+    "name": "Pelican",
+    "category": "pets",
+    "value": 16.5,
+    "demand": 2,
+    "image": "images/pets/pelican.webp"
+  },
+  {
+    "id": "vehicles-gummy-biplane",
+    "name": "Gummy Biplane",
+    "category": "vehicles",
+    "value": 0.165,
+    "demand": 1,
+    "image": "images/vehicles/gummy-biplane.webp"
+  },
+  {
+    "id": "pets-sloth",
+    "name": "Sloth",
+    "category": "pets",
+    "value": 0.5156,
+    "demand": 2,
+    "image": "images/pets/sloth.webp"
+  },
+  {
+    "id": "gifts-christmas-gift",
+    "name": "Christmas Gift",
+    "category": "gifts",
+    "value": 5.738,
+    "demand": 2,
+    "image": "images/gifts/christmas-gift.webp"
+  },
+  {
+    "id": "vehicles-santa-copter",
+    "name": "Santa Copter",
+    "category": "vehicles",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/vehicles/santa-copter.webp"
+  },
+  {
+    "id": "strollers-french-fries-stroller",
+    "name": "French Fries Stroller",
+    "category": "strollers",
+    "value": 0.2953,
+    "demand": 1,
+    "image": "images/strollers/french-fries-stroller.webp"
+  },
+  {
+    "id": "pets-fossa",
+    "name": "Fossa",
+    "category": "pets",
+    "value": 0.33,
+    "demand": 1,
+    "image": "images/pets/fossa.webp"
+  },
+  {
+    "id": "pets-silly-duck",
+    "name": "Silly Duck",
+    "category": "pets",
+    "value": 1.0312,
+    "demand": 2,
+    "image": "images/pets/silly-duck.webp"
+  },
+  {
+    "id": "pets-jiggly-jerboa",
+    "name": "Jiggly Jerboa",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/jiggly-jerboa.webp"
+  },
+  {
+    "id": "petwear-knitted-pumpkin-hat",
+    "name": "Knitted Pumpkin Hat",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/knitted-pumpkin-hat.webp"
+  },
+  {
+    "id": "petwear-pink-heart-glasses",
+    "name": "Pink Heart Glasses",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/pink-heart-glasses.webp"
+  },
+  {
+    "id": "strollers-catapult-stroller",
+    "name": "Catapult Stroller",
+    "category": "strollers",
+    "value": 0.0552,
+    "demand": 1,
+    "image": "images/strollers/catapult-stroller.webp"
+  },
+  {
+    "id": "pets-velocirooster",
+    "name": "Velocirooster",
+    "category": "pets",
+    "value": 4.3312,
+    "demand": 2,
+    "image": "images/pets/velocirooster.webp"
+  },
+  {
+    "id": "petwear-bready-necklace",
+    "name": "Bready Necklace",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/bready-necklace.webp"
+  },
+  {
+    "id": "pets-pupcake",
+    "name": "Pupcake",
+    "category": "pets",
+    "value": 0.5569,
+    "demand": 2,
+    "image": "images/pets/pupcake.webp"
+  },
+  {
+    "id": "petwear-alien-eyes-hat",
+    "name": "Alien Eyes Hat",
+    "category": "petwear",
+    "value": 0.5363,
+    "demand": 2,
+    "image": "images/petwear/alien-eyes-hat.webp"
+  },
+  {
+    "id": "pets-hawk",
+    "name": "Hawk",
+    "category": "pets",
+    "value": 0.5775,
+    "demand": 1,
+    "image": "images/pets/hawk.webp"
+  },
+  {
+    "id": "pets-dimension-drifter",
+    "name": "Dimension Drifter",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/dimension-drifter.webp"
+  },
+  {
+    "id": "pets-amber-butterfly",
+    "name": "Amber Butterfly",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/amber-butterfly.webp"
+  },
+  {
+    "id": "vehicles-gold-snowboard",
+    "name": "Gold Snowboard",
+    "category": "vehicles",
+    "value": 4.5375,
+    "demand": 1,
+    "image": "images/vehicles/gold-snowboard.webp"
+  },
+  {
+    "id": "strollers-popsicle-stroller",
+    "name": "Popsicle Stroller",
+    "category": "strollers",
+    "value": 0.2716,
+    "demand": 1,
+    "image": "images/strollers/popsicle-stroller.webp"
+  },
+  {
+    "id": "petwear-picnic-basket",
+    "name": "Picnic Basket",
+    "category": "petwear",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/petwear/picnic-basket.webp"
+  },
+  {
+    "id": "vehicles-husky-sled",
+    "name": "Husky Sled",
+    "category": "vehicles",
+    "value": 0.4125,
+    "demand": 1,
+    "image": "images/vehicles/husky-sled.webp"
+  },
+  {
+    "id": "stickers-fairy-bat-dragon-sticker",
+    "name": "Fairy Bat Dragon Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/fairy-bat-dragon-sticker.webp"
+  },
+  {
+    "id": "pets-blue-betta-fish",
+    "name": "Blue Betta Fish",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/blue-betta-fish.webp"
+  },
+  {
+    "id": "vehicles-orange-skateboard",
+    "name": "Neon Orange Skateboard",
+    "category": "vehicles",
+    "value": 1.0725,
+    "demand": 1,
+    "image": "images/vehicles/neon-orange-skateboard.webp"
+  },
+  {
+    "id": "gifts-rat-box",
+    "name": "Rat Box",
+    "category": "gifts",
+    "value": 5.7586,
+    "demand": 2,
+    "image": "images/gifts/rat-box.webp"
+  },
+  {
+    "id": "petwear-founders-crown",
+    "name": "Founder's Crown",
+    "category": "petwear",
+    "value": 0.0825,
+    "demand": 1,
+    "image": "images/petwear/founder-s-crown.webp"
+  },
+  {
+    "id": "stickers-wet-owl-sticker",
+    "name": "Wet Owl Sticker",
+    "category": "stickers",
+    "value": 0.2475,
+    "demand": 2,
+    "image": "images/stickers/wet-owl-sticker.webp"
+  },
+  {
+    "id": "potions-preferred-potion",
+    "name": "Preferred Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-bobageist",
+    "name": "Bobageist",
+    "category": "pets",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/pets/bobageist.webp"
+  },
+  {
+    "id": "vehicles-bunny-carriage",
+    "name": "Bunny Carriage",
+    "category": "vehicles",
+    "value": 4.5375,
+    "demand": 2,
+    "image": "images/vehicles/bunny-carriage.webp"
+  },
+  {
+    "id": "petwear-easter-egg-friends",
+    "name": "Easter Egg Friends",
+    "category": "petwear",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/petwear/easter-egg-friends.webp"
+  },
+  {
+    "id": "pets-ballet-swan",
+    "name": "Ballet Swan",
+    "category": "pets",
+    "value": 2.805,
+    "demand": 2,
+    "image": "images/pets/ballet-swan.webp"
+  },
+  {
+    "id": "pets-arctic-tern",
+    "name": "Arctic Tern",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/arctic-tern.webp"
+  },
+  {
+    "id": "pets-squid",
+    "name": "Squid",
+    "category": "pets",
+    "value": 0.6188,
+    "demand": 1,
+    "image": "images/pets/squid.webp"
+  },
+  {
+    "id": "pets-kitty-bat",
+    "name": "Kitty Bat",
+    "category": "pets",
+    "value": 0.7425,
+    "demand": 2,
+    "image": "images/pets/kitty-bat.webp"
+  },
+  {
+    "id": "petwear-magpie-wings",
+    "name": "Magpie Wings",
+    "category": "petwear",
+    "value": 0.825,
+    "demand": 2,
+    "image": "images/petwear/magpie-wings.webp"
+  },
+  {
+    "id": "strollers-tulip-stroller",
+    "name": "Tulip Stroller",
+    "category": "strollers",
+    "value": 0.0642,
+    "demand": 1,
+    "image": "images/strollers/tulip-stroller.webp"
+  },
+  {
+    "id": "pets-marabou-stork",
+    "name": "Marabou Stork",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/marabou-stork.webp"
+  },
+  {
+    "id": "vehicles-snowmobile",
+    "name": "Snowmobile",
+    "category": "vehicles",
+    "value": 0.495,
+    "demand": 1,
+    "image": "images/vehicles/snowmobile.webp"
+  },
+  {
+    "id": "vehicles-paint-roller-truck",
+    "name": "Paint Roller Truck",
+    "category": "vehicles",
+    "value": 0.2475,
+    "demand": 1,
+    "image": "images/vehicles/paint-roller-truck.webp"
+  },
+  {
+    "id": "toys-cotton-candy-stand",
+    "name": "Cotton Candy Stand",
+    "category": "toys",
+    "value": 0.2888,
+    "demand": 1,
+    "image": "images/toys/cotton-candy-stand.webp"
+  },
+  {
+    "id": "pets-vampire-dragon",
+    "name": "Vampire Dragon",
+    "category": "pets",
+    "value": 6.6,
+    "demand": 2,
+    "image": "images/pets/vampire-dragon.webp"
+  },
+  {
+    "id": "pets-elephant",
+    "name": "Elephant",
+    "category": "pets",
+    "value": 8.4562,
+    "demand": 3,
+    "image": "images/pets/elephant.webp"
+  },
+  {
+    "id": "pets-easter-bunny",
+    "name": "Easter Bunny",
+    "category": "pets",
+    "value": 0.3712,
+    "demand": 1,
+    "image": "images/pets/easter-bunny.webp"
+  },
+  {
+    "id": "stickers-hot-doggo-sticker",
+    "name": "Hot Doggo Sticker",
+    "category": "stickers",
+    "value": 0.1237,
+    "demand": 1,
+    "image": "images/stickers/hot-doggo-sticker.webp"
+  },
+  {
+    "id": "pets-little-lamb",
+    "name": "Little Lamb",
+    "category": "pets",
+    "value": 0.2681,
+    "demand": 1,
+    "image": "images/pets/little-lamb.webp"
+  },
+  {
+    "id": "strollers-heart-stroller",
+    "name": "Heart Stroller",
+    "category": "strollers",
+    "value": 3.7955,
+    "demand": 2,
+    "image": "images/strollers/heart-stroller.webp"
+  },
+  {
+    "id": "pets-super-saru",
+    "name": "Super Saru",
+    "category": "pets",
+    "value": 0.66,
+    "demand": 1,
+    "image": "images/pets/super-saru.webp"
+  },
+  {
+    "id": "pets-galapagos-sea-lion",
+    "name": "Galapagos Sea Lion",
+    "category": "pets",
+    "value": 0.2557,
+    "demand": 1,
+    "image": "images/pets/galapagos-sea-lion.webp"
+  },
+  {
+    "id": "potions-busy-body-potion",
+    "name": "Busy Body Potion",
+    "category": "potions",
+    "value": 0.05,
+    "demand": 3,
+    "image": ""
+  },
+  {
+    "id": "pets-halloween-golden-mummy-cat",
+    "name": "Halloween Golden Mummy Cat",
+    "category": "pets",
+    "value": 0.5363,
+    "demand": 1,
+    "image": "images/pets/halloween-golden-mummy-cat.webp"
+  },
+  {
+    "id": "pets-kelp-captain",
+    "name": "Kelp Captain",
+    "category": "pets",
+    "value": 1.0725,
+    "demand": 1,
+    "image": "images/pets/kelp-captain.webp"
+  },
+  {
+    "id": "pets-chocolate-chip-bat-dragon",
+    "name": "Chocolate Chip Bat Dragon",
+    "category": "pets",
+    "value": 22.275,
+    "demand": 3,
+    "image": "images/pets/chocolate-chip-bat-dragon.webp"
   }
 ];
